@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>叉叉 の 站</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      position: relative;
+      overflow-x: hidden;
+    }
+
+    /* 粒子效果 */
+    #particle-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      z-index: 999;
+    }
+
+
+    .background-rectangle {
+      position: absolute;
+      top: 0;
+      left: 100%;
+      width: 100%;
+      height: 1000px;
+      background-color: rgb(255, 255, 255);
+      z-index: 0;
+    }
+
+    /* 顶部选择条 */
+    .head-selection {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 0px;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 40px;
+      background-color: rgb(115, 227, 255);
+      z-index: 20;
+      box-shadow: 0 40px 40px rgb(255, 255, 255);
+    }
+
+    
+
+    /* link按钮样式 */
+    .link-button {
+      color: rgb(255, 0, 0);
+      width: 100px;
+      height: 40px;
+      font-size: 16px;
+      margin-left: 0px;
+      margin-top: 10px;
+    }
+
+    .link-button:hover {
+      text-decoration: underline;
+    }
+
+    .image-display-container {
+      position: relative;
+      width: 100%;
+      margin-top: 0;
+      z-index: 0;
+    }
+
+    .displayed-image {
+      width: 100%;
+      display: block;
+      z-index: 10;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.95);
+    }
+    
+    .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 80px;
+      padding-top: 50px;
+      position: relative;
+      z-index: 1;
+      background-color: rgba(0, 170, 255, 0.355);
+      box-shadow: 10 10px 40px rgba(0, 0, 0, 0.95);
+    }
+
+    .video-container2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 80px;
+      padding-top: 50px;
+      position: relative;
+      z-index: 1;
+      background-color: rgba(0, 170, 255, 0.355);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.95);
+    }
+
+    .video-button,
+    .video-button1 {
+      width: 300px;
+      height: 450px;
+      background-size: contain;
+      /* 自动缩放 */
+      background-repeat: no-repeat;
+      /* 不重复 */
+      background-position: center;
+      /* 居中显示 */
+      border: 4px solid rgb(255, 68, 0);
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    /* 鼠标悬停放大动画 */
+    .video-button:hover,
+    .video-button1:hover {
+      transform: scale(1.1);
+    }
+
+    .image-button       { background-image: url('https://static-cse.canva.cn/blob/54341/%E3%80%8A%E8%BF%9B%E5%87%BB%E7%9A%84%E5%B7%A8%E4%BA%BA%E3%80%8B%E6%B5%B7%E6%8A%A5%E8%AE%BE%E8%AE%A1%EF%BC%9A%E4%BC%A0%E9%80%92%E7%83%AD%E8%A1%80%E3%80%81%E5%8A%9B%E9%87%8F%E4%B8%8E%E6%96%97%E5%BF%97-3.jpg'); }
+    .video-2-button     { background-image: url('https://so1.360tres.com/t019351e6134c5bc94f.jpg'); }
+    .video-3-button     { background-image: url('https://p1.ssl.qhimg.com/t01ff348336fa73236d.jpg'); }
+    .video-4-button     { background-image: url('https://pic4.zhimg.com/v2-73fd6f654ff26af8773b28752ee29824_qhd.jpg'); }
+    .video-5-button     { background-image: url('https://www.acgndog.com/wp-content/uploads/2016/06/5058f1af8388633f609cadb75a75dc9d.jpg'); }
+    .video-6-button     { background-image: url('https://vistapointe.net/images/bloodc-wallpaper-18.jpg'); }
+    .video-7-button     { background-image: url('https://th.bing.com/th/id/OIP.hb4s4mE_V2suvWZi0IKIcgHaLA?rs=1&pid=ImgDetMain'); }
+
+    
+
+    .rotating-triangle-svg {
+      position: absolute;
+      top: 58%;
+      left: 50%;
+      width: 280px;
+      height: 280px;
+      transform: translate(-50%, -50%);
+      overflow: visible;
+      z-index: 2;
+    }
+
+    .rotating-triangle-polygon {
+      fill: rgba(255, 255, 255, 0.4);
+      transform-origin: center;
+    }
+
+    @keyframes rotateTriangle {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .title-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: rgb(23, 179, 166);
+      font-size: 64px;
+      z-index: 3;
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+      pointer-events: none;
+    }
+
+    @media (max-width: 768px) {
+      .video-container {
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .video-container2 {
+        flex-direction: column;
+        gap: 40px;
+      }
+
+      .video-button,
+      .video-button1 {
+        width: 90%;
+        height: auto;
+        aspect-ratio: 2 / 3;
+        /* 保持海报比例，避免图片变形 */
+      }
+
+      .title-text {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 粒子效果 -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- 顶部选择条 -->
+  <div class="head-selection">
+    <p>CPU 温度: {{ temperature }}°C</p>
+    <a class="link-button" onclick="window.location.href='https://space.bilibili.com/34355249/bangumi?from_spmid=666.4.mylist.more'">哔哩哔哩</a>
+    <a class="link-button" onclick="window.location.href='https://xccl95.xyz/'">小草磁力</a>
+    <a class="link-button" onclick="window.location.href='https://www.acgndog.com/'">次元狗</a>
+    <a class="link-button" onclick="window.location.href='https://www.jzacg.com/'">橘子动漫</a>
+    <a class="link-button" onclick="window.location.href='https://zimuku.org/'">字幕库</a>
+  </div>
+
+  <div class="image-display-container">
+    <img class="displayed-image" src="{{ url_for('get_image') }}" alt="图片无法显示">
+
+    <!-- 多个旋转三角形 -->
+    {% for speed in [5, 4, 3, 2, 1.5, 1, 0.8, 0.5] %}
+    <svg class="rotating-triangle-svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+      <polygon class="rotating-triangle-polygon"
+        points="50,0 100,100 0,100"
+        style="animation: rotateTriangle {{ speed }}s linear infinite;" />
+    </svg>
+    {% endfor %}
+
+    <!-- 页面标题 -->
+    <div class="title-text">叉叉 の 站</div>
+  </div>
+  <div class="background-rectangle"></div>
+
+  <div class="video-container">
+    <!-- 第1-4个视频 -->
+    {% for i in range(1, 5) %}
+    <button class="video-button {{ 'image-button' if i == 1 else 'video-' ~ i ~ '-button' }}"
+            onclick="window.location.href='{{ url_for('video_1', video_type=i|string) }}'"></button>
+    {% endfor %}
+  </div>
+    
+
+  <div class="video-container2">
+     <!-- 第5-7个视频 -->
+     {% for i in range(5, 8) %}
+     <button class="video-button1 {{ 'image-button' if i == 1 else 'video-' ~ i ~ '-button' }}"
+             onclick="window.location.href='{{ url_for('video_1', video_type=i|string) }}'"></button>
+     {% endfor %}
+
+    <!-- 记得修改排序代码 -->
+  </div>
+  
+
+  <!-- 粒子效果 -->
+  <script>
+    const canvas = document.getElementById("particle-canvas");
+    const ctx = canvas.getContext("2d");
+
+    let particles = [];
+    const emojis = ["✨", "👩", "👨"];
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    }
+
+    window.addEventListener("resize", resizeCanvas);
+    resizeCanvas();
+
+    function createEmojiParticle(x, y) {
+      particles.push({
+        x,
+        y,
+        size: Math.random() * 24 + 16, // Emoji 尺寸
+        emoji: emojis[Math.floor(Math.random() * emojis.length)],
+        speedX: (Math.random() - 0.5) * 2,
+        speedY: (Math.random() - 0.5) * 2,
+        alpha: 1
+      });
+    }
+
+    window.addEventListener("mousemove", (e) => {
+      for (let i = 0; i < 2; i++) {
+        createEmojiParticle(e.clientX, e.clientY);
+      }
+    });
+
+    function drawEmoji(particle) {
+      ctx.globalAlpha = particle.alpha;
+      ctx.font = `${particle.size}px serif`;
+      ctx.fillText(particle.emoji, particle.x, particle.y);
+      ctx.globalAlpha = 1;
+    }
+
+    function animate() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      for (let i = 0; i < particles.length; i++) {
+        const p = particles[i];
+        p.x += p.speedX;
+        p.y += p.speedY;
+        p.alpha -= 0.015;
+
+        if (p.alpha <= 0) {
+          particles.splice(i, 1);
+          i--;
+          continue;
+        }
+
+        drawEmoji(p);
+      }
+
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  </script>
+
+
+</body>
+
+</html>

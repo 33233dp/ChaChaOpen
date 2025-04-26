@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{{ title }}</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 40px;
+      position: relative;
+      background-image: url('{{ background_image }}');
+      background-size: cover;
+    }
+
+    .container {
+      display: flex;
+      gap: 100px;
+      z-index: 1;
+    }
+
+    .playlist {
+      width: 600px;
+      max-height: 575px;
+      overflow-y: auto;
+      border: 2px solid #ccc;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.452);
+    }
+
+    .playlist ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .playlist li {
+      margin-bottom: 10px;
+    }
+
+    .playlist a {
+      text-decoration: none;
+      color: #007bff;
+      cursor: pointer;
+    }
+
+    .playlist a:hover {
+      text-decoration: underline;
+    }
+
+    .playlist a.active {
+      color: rgb(255, 232, 157);
+      pointer-events: none;
+    }
+
+    .video-wrapper {
+      position: relative;
+      width: 1032px;
+      height: 600px;
+      background: black;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+    }
+
+    .custom-controls {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      gap: 10px;
+      box-sizing: border-box;
+      transition: opacity 0.3s;
+    }
+
+    .custom-controls.hide {
+      opacity: 0;
+    }
+
+    .custom-controls button,
+    .custom-controls input[type="range"] {
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      color: white;
+      padding: 6px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .custom-controls input[type="range"] {
+      width: 100px;
+    }
+
+    .progress-bar {
+      flex: 1;
+      height: 6px;
+      background: gray;
+      border-radius: 3px;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .progress {
+      height: 100%;
+      width: 0;
+      background: #00a1d6;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+        width: 380px;
+        margin: 0 auto;
+        gap: 10px;
+      }
+
+      .playlist {
+        width: 100%;
+      }
+
+      .playlist a {
+        font-size: 14px;
+      }
+
+      .video-wrapper {
+        width: 380px;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- 视频播放器部分 -->
+    <div class="video-wrapper" id="videoWrapper">
+        <video id="videoPlayer"> <!-- ✅ 移除了 controls 属性 -->
+            <source id="videoSource" src="" type="video/mp4">
+                Your browser does not support the video tag.
+            </source>
+            <track id="subtitleTrack" label="Subtitles" kind="subtitles" srclang="zh" src="" default>
+        </video>
+
+        <!-- ✅ 自定义控制栏 -->
+        <div class="custom-controls" id="customControls">
+            <button id="playPause">▶</button>
+            <button onclick="playPrev()">⏮ 上一集</button>
+            <button onclick="playNext()">下一集 ⏭</button>
+            <div class="progress-bar" onclick="seek(event)">
+                <div class="progress" id="progress"></div>
+            </div>
+            <input type="range" id="volume" min="0" max="1" step="0.01">
+            <button onclick="toggleFullScreen()">⛶</button>
+        </div>
+    </div>
+
+    <!-- 播放列表 -->
+    <div class="playlist">
+      <button id="copyLinksBtn">复制所有视频链接</button> <!-- 复制按钮 -->
+      <ul>
+        {% for video in videos %}
+          <li>
+            <a href="#" onclick="playVideo('{{ video }}', '{{ video_type }}')">
+              {% set cleaned_video = video %}
+              {% set cleaned_video = cleaned_video | replace('.mp4', '') %}
+              {% set cleaned_video = cleaned_video | replace('p', '.') %}
+              {% set cleaned_video = cleaned_video | replace('s', '.') %}
+              {% set cleaned_video = cleaned_video | replace('e', '.') %}
+              {% set cleaned_video = cleaned_video | replace(' ', '') %}
+              {{ cleaned_video }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    let videoList = [];
+    let currentIndex = -1;
+    let currentVideoType = '{{ video_type }}';
+    const video = document.getElementById('videoPlayer');
+    const playPause = document.getElementById('playPause');
+    const progress = document.getElementById('progress');
+    const controls = document.getElementById('customControls');
+    const wrapper = document.getElementById('videoWrapper');
+
+    window.onload = function () {
+      const links = document.querySelectorAll('.playlist a');
+      videoList = Array.from(links).map(link => {
+        const href = link.getAttribute('onclick');
+        const match = href.match(/playVideo\('(.+?)'/);
+        return match ? match[1] : '';
+      });
+      document.getElementById('volume').value = 0.5;
+      video.volume = 0.5;
+    };
+
+    function playVideo(filename, videoType) {
+      const source = document.getElementById('videoSource');
+      const subtitleTrack = document.getElementById('subtitleTrack');
+      source.src = `/play_video?filename=${encodeURIComponent(filename)}&video_type=${videoType}`;
+      subtitleTrack.src = `/play_subtitle?filename=${encodeURIComponent(filename)}&video_type=${videoType}`;
+      video.load();
+      video.play();
+      playPause.textContent = '⏸';
+
+      const links = document.querySelectorAll('.playlist a');
+      links.forEach(link => link.classList.remove('active'));
+      const activeLink = Array.from(links).find(link => link.getAttribute('onclick').includes(filename));
+      if (activeLink) activeLink.classList.add('active');
+
+      currentIndex = videoList.indexOf(filename);
+    }
+
+    function playPrev() {
+      if (currentIndex > 0) {
+        currentIndex--;
+        playVideo(videoList[currentIndex], currentVideoType);
+      }
+    }
+
+    function playNext() {
+      if (currentIndex < videoList.length - 1) {
+        currentIndex++;
+        playVideo(videoList[currentIndex], currentVideoType);
+      }
+    }
+
+    playPause.onclick = function () {
+      if (video.paused) {
+        video.play();
+        playPause.textContent = '⏸';
+      } else {
+        video.pause();
+        playPause.textContent = '▶';
+      }
+    };
+
+    video.ontimeupdate = function () {
+      const ratio = video.currentTime / video.duration;
+      progress.style.width = `${ratio * 100}%`;
+    };
+
+    function seek(e) {
+      const rect = e.currentTarget.getBoundingClientRect();
+      const percent = (e.clientX - rect.left) / rect.width;
+      video.currentTime = percent * video.duration;
+    }
+
+    document.getElementById('volume').oninput = function () {
+      video.volume = this.value;
+    };
+
+    function toggleFullScreen() {
+      if (!document.fullscreenElement) {
+        wrapper.requestFullscreen();
+      } else {
+        document.exitFullscreen();
+      }
+    }
+
+    let hideTimeout;
+    function showControls() {
+      controls.classList.remove('hide');
+      clearTimeout(hideTimeout);
+      hideTimeout = setTimeout(() => {
+        if (document.fullscreenElement) {
+          controls.classList.add('hide');
+        }
+      }, 2000);
+    }
+
+    wrapper.addEventListener('mousemove', showControls);
+    video.addEventListener('play', showControls);
+
+    video.addEventListener('click', function () {
+      if (video.paused) {
+        video.play();
+        playPause.textContent = '⏸';
+      } else {
+        video.pause();
+        playPause.textContent = '▶';
+      }
+    });
+
+    video.addEventListener('ended', playNext);  // 自动播放下一集
+
+    document.addEventListener('keydown', function(event) {
+      if (event.target.tagName.toLowerCase() !== 'input') {
+        switch (event.key.toLowerCase()) {
+          case ' ':
+            event.preventDefault();
+            playPause.click();
+            break;
+          case 'f':
+            toggleFullScreen();
+            break;
+          case 'arrowleft':
+            video.currentTime = Math.max(video.currentTime - 5, 0);
+            break;
+          case 'arrowright':
+            video.currentTime = Math.min(video.currentTime + 5, video.duration);
+            break;
+        }
+      }
+    });
+
+    // 复制按钮功能
+    document.getElementById('copyLinksBtn').onclick = function () {
+      const links = videoList.map(filename => {
+        return `http://192.168.152.195:5004/play_video?filename=${encodeURIComponent(filename)}&video_type=${currentVideoType}`;
+      }).join('\n');
+
+      const textarea = document.createElement('textarea');
+      textarea.value = links;
+      textarea.style.position = 'fixed';
+      textarea.style.opacity = 0;
+      document.body.appendChild(textarea);
+      textarea.select();
+
+      try {
+        const successful = document.execCommand('copy');
+        if (successful) {
+          alert('所有视频链接已复制到剪贴板！');
+        } else {
+          alert('复制失败，请重试！');
+        }
+      } catch (err) {
+        alert('复制失败，请重试！');
+        console.error('复制链接时出错:', err);
+      }
+
+      document.body.removeChild(textarea);
+    };
+  </script>
+</body>
+</html>
+    
