@@ -62,15 +62,24 @@ function on_mouse_lbtn_down(x, y) {
     if (isInside(centerX - spacing * 2 + 24, centerY)) {
         fb.Prev();
         window.Repaint();
+        updateLoveStatus(); // 更新红心状态
+        return;
     } else if (isInside(centerX, centerY)) {
         fb.PlayOrPause();
         window.Repaint();
-        setTimeout(() => {
-            window.Repaint();
-        }, 150);
+        setTimeout(() => window.Repaint(), 150);
+        updateLoveStatus();
+        return;
     } else if (isInside(centerX + spacing + 24, centerY)) {
         fb.Next();
         window.Repaint();
+        updateLoveStatus();
+        return;
+    }
+
+    if (isInLoveButton(x, y)) {
+        toggleLove(); // 点击红心打分
+        return;
     }
 
     if (isInProgressBar(x, y)) {
@@ -79,8 +88,6 @@ function on_mouse_lbtn_down(x, y) {
         window.Repaint();
     }
 }
-
-
 
 // === 鼠标移动时的回调 ===
 function on_mouse_move(x, y) {
@@ -145,7 +152,6 @@ function Progress_Bar(gr) {
     }
 }
 
-
 // === 绘制时间文本（当前 / 总时长） ===
 function drawTimeText(gr) {
     if (!fb.IsPlaying || fb.PlaybackLength <= 0) return;
@@ -191,18 +197,16 @@ function playBack_Info(gr){
 
 // === 播放器事件监听 ===
 function on_playback_time(pos) { window.Repaint(); }           // 播放时间变化时刷新
-function on_playback_new_track(metadb) { window.Repaint(); }  // 切换曲目时刷新
-function on_playback_pause(state) {
+function on_playback_new_track(metadb) {
+    updateLoveStatus(); // 每次切歌时更新红心状态
     window.Repaint();
 }
 function on_playback_start() {
+    updateLoveStatus(); // 播放时也更新红心状态
     window.Repaint();
-}   
+}
 
-// 状态变量，true 表示正在播放，false 表示暂停
-let isPlaying = false;
-
-// 状态：当前曲目是否被标记喜欢
+// === 红心按钮逻辑 ===
 let isLoved = false;
 
 // 计算爱心按钮位置和大小
@@ -213,40 +217,6 @@ function getLoveButtonY() {
     return window.Height / 3 - 14;
 }
 const loveButtonSize = 40; // 按钮大小（宽高）
-
-// 读取当前曲目的评分，判断是否喜欢
-function updateLoveStatus() {
-    let metadb = fb.GetNowPlaying();
-    if (!metadb) {
-        isLoved = false;
-        return;
-    }
-    // 读取 rating，0~5
-    let rating = metadb.RawMetadata && metadb.RawMetadata["*rating*"];
-    rating = rating ? parseInt(rating) : 0;
-    isLoved = (rating >= 5);
-}
-
-// 切换喜欢状态，设置评分
-function toggleLove() {
-    let metadb = fb.GetNowPlaying();
-    if (!metadb) return;
-
-    try {
-        // 如果当前已喜欢，则取消喜欢
-        if (isLoved) {
-            metadb.SetRating(0);
-            isLoved = false;
-        } else {
-            metadb.SetRating(5);
-            isLoved = true;
-        }
-        window.Repaint();
-    } catch (e) {
-        // 若报错，提示不支持写操作
-        fb.ShowPopupMessage("无法修改评分，请确认你的 SMP 版本支持 metadb.SetRating()");
-    }
-}
 
 // 判断坐标是否在爱心按钮范围内
 function isInLoveButton(x, y) {
@@ -268,50 +238,61 @@ function drawLoveButton(gr) {
     gr.GdiDrawText(heart, font, color, x, y, loveButtonSize, loveButtonSize +20, 0x00000001 | 0x00000004);
 }
 
-// 重写鼠标左键按下，增加检测爱心点击
-function on_mouse_lbtn_down(x, y) {
-    let centerY = window.Height / 3;
-    let centerX = window.Width / 2;
-    let spacing = 60;
-    let radius = 24;
+// === 节流更新红心状态 ===
+let lastUpdateLoveTime = 0;
+function updateLoveStatus() {
+    let now = Date.now();
+    if (now - lastUpdateLoveTime < 1000) return; // 1秒内只更新一次，节流保护
+    lastUpdateLoveTime = now;
 
-    function isInside(cx, cy) {
-        let dx = x - cx;
-        let dy = y - cy;
-        return dx * dx + dy * dy <= radius * radius;
-    }
-
-    if (isInside(centerX - spacing * 2 + 24, centerY)) {
-        fb.Prev();
-        window.Repaint();
-        updateLoveStatus(); // 更新红心状态
-        return;
-    } else if (isInside(centerX, centerY)) {
-        fb.PlayOrPause();
-        window.Repaint();
-        setTimeout(() => window.Repaint(), 150);
-        updateLoveStatus();
-        return;
-    } else if (isInside(centerX + spacing + 24, centerY)) {
-        fb.Next();
-        window.Repaint();
-        updateLoveStatus();
+    let metadb = fb.GetNowPlaying();
+    if (!metadb) {
+        isLoved = false;
         return;
     }
+    let rating = parseInt(fb.TitleFormat("%rating%").EvalWithMetadb(metadb));
+    isLoved = rating >= 5;
+}
 
-    if (isInLoveButton(x, y)) {
-        toggleLove();
-        return;
-    }
+// 切换喜欢状态，点击爱心即可切换打分/取消评分
+function toggleLove() {
+    let metadb = fb.GetNowPlaying();
+    if (!metadb) return;
 
-    if (isInProgressBar(x, y)) {
-        isSeeking = true;
-        seekX = x;
+    try {
+        if (isLoved) {
+            fb.RunContextCommandWithMetadb("Rating/1", metadb);
+            isLoved = false;
+        } else {
+            fb.RunContextCommandWithMetadb("Rating/5", metadb);
+            isLoved = true;
+        }
         window.Repaint();
+    } catch (e) {
+        fb.ShowPopupMessage("无法修改评分，请确认插件和写标签设置正常。\n错误：" + e);
     }
 }
 
-// 主绘制函数加上爱心绘制
+
+// === 播放器事件监听 ===
+function on_playback_time(pos) {
+    updateLoveStatus();
+    window.Repaint();
+}
+function on_playback_new_track(metadb) {
+    updateLoveStatus();
+    window.Repaint();
+}
+function on_playback_start() {
+    updateLoveStatus();
+    window.Repaint();
+}
+
+// === 初始化时读取当前曲目红心状态 ===
+updateLoveStatus();
+
+
+// === 主绘制函数 ===
 function on_paint(gr) {
     gr.FillSolidRect(0, 0, window.Width, window.Height, 0xffffffff); // 白底背景
     cover_print(gr);               // 封面
@@ -345,16 +326,5 @@ function on_paint(gr) {
         0x00000001 | 0x00000004);
 }
 
-// 初始化时读取当前曲目红心状态
-function on_playback_new_track(metadb) {
-    updateLoveStatus();
-    window.Repaint();
-}
-function on_playback_start() {
-    updateLoveStatus();
-    window.Repaint();
-}
-
-// 载入脚本时初始化
+// === 初始化时读取当前曲目红心状态 ===
 updateLoveStatus();
-
