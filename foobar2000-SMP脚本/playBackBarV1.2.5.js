@@ -1,491 +1,600 @@
 ﻿/*
-1.封面显示
-2.歌曲信息显示
-3.进度条，时间显示
+1.封面显示 (优化：支持旋转，网易云黑胶风格)
+2.歌曲信息显示 (优化：布局微调)
+3.进度条，时间显示 (优化：网易云风格配色)
 4.播放，上下曲切换按钮
 5.红心当前曲目--并将该曲目标记为最高rating
 6.搜索歌曲的歌手
-7.背景图显示    
-8.评论功能 2025年7月14日  ----评论的内容写进了%COMMENT%数据里面，因此可以根据评论内容创建自动播放列表
+7.背景图显示 (优化：暗色遮罩)
+8.评论功能 2025年7月14日
 9.将评论框的文字内容改成"所属歌单"
-新增：
-本文件是暗色主题，没有添加额外新功能
+
+优化：
+- 暗色主题 (Dark Theme)
+- 封面旋转动画 (30FPS)
+- 性能优化 (缓存图片，避免重复加载)
 */
 
+// === 配置与常量 ===
+var conf = {
+    // 颜色定义 (网易云暗色系)
+    colors: {
+        bg: 0xFF2D2F33,          // 整体背景
+        bgOverlay: 0xCC000000,   // 背景图遮罩 (加深)
+        textMain: 0xFFDCDDE4,    // 主要文字
+        textSub: 0xFF828385,     // 次要文字
+        progressBarBg: 0xFF454546,
+        progressBarFill: 0xFFEC4141, // 网易红
+        love: 0xFFEC4141,
+        loveEmpty: 0xFF828385,
+        btnNormal: 0xFFDCDDE4,
+        btnHover: 0xFFFFFFFF
+    },
+    // 布局尺寸
+    layout: {
+        coverSize: 0, // 在 on_size 中计算
+        barHeight: 4, // 进度条高度 (更细)
+        barHoverHeight: 8
+    }
+};
+
 //背景图片路径
-var imgPath = "G:/project/foobar2000-SMP/bg.png"; // 绝对路径，注意格式
+var imgPath = "G:/project/foobar2000-SMP/bg.png"; 
 
+// === 全局变量 ===
+var g_metadb = null;
+var g_img_bg = null;
+var g_img_cover = null;     // 原始封面
+var g_img_vinyl = null;     // 处理后的黑胶圆盘图片
+var g_timer_rotate = null;  // 旋转定时器
+var g_angle = 0;            // 当前旋转角度
+// var g_is_playing = false; // 移除：直接使用 fb.IsPlaying
+var g_is_seeking = false;
+var g_seek_pos = 0;
+var g_hover_progress = false;
 
-// === 封面绘制函数 ===*****************************************************************************************************/
-function cover_print(gr) {
-    let metadb = fb.GetNowPlaying(); // 获取当前播放曲目的元数据（metadb）
-    if (!metadb) return; // 如果没有播放内容，直接返回
+// 字体缓存
+var g_fonts = {
+    title: gdi.Font("Segoe UI", 16, 1),
+    artist: gdi.Font("Segoe UI", 14, 0),
+    album: gdi.Font("Segoe UI", 12, 0),
+    time: gdi.Font("Segoe UI", 12, 0),
+    icon: gdi.Font("Segoe UI Symbol", 24, 0),
+    iconLarge: gdi.Font("Segoe UI Symbol", 42, 0),
+    comment: gdi.Font("Segoe UI", 12, 0)
+};
 
-    let cover = null; // 初始化封面变量
+// === 初始化 ===
+function on_size() {
+    // 重新计算尺寸相关
+    conf.layout.coverSize = window.Height - 20; // 留一点边距
+    if (conf.layout.coverSize < 0) conf.layout.coverSize = 0;
+    
+    // 更新字体大小以适应窗口高度 (保持原有逻辑的比例自适应)
+    let h = window.Height;
+    g_fonts.title = gdi.Font("Segoe UI", Math.floor(h / 10), 1);
+    g_fonts.artist = gdi.Font("Segoe UI", Math.floor(h / 12), 0);
+    g_fonts.album = gdi.Font("Segoe UI", Math.floor(h / 14), 0);
+    g_fonts.time = gdi.Font("Segoe UI", Math.floor(h / 14), 0);
+    g_fonts.iconLarge = gdi.Font("Segoe UI Symbol", Math.floor(h / 2.5), 0);
+    
+    // 重新生成黑胶图片
+    createVinylImage();
+}
 
+// === 核心逻辑：黑胶封面生成 ===
+function createVinylImage() {
+    if (!g_img_cover || conf.layout.coverSize <= 0) {
+        g_img_vinyl = null;
+        return;
+    }
+
+    let size = conf.layout.coverSize;
+    // 创建一个正方形的临时图片 (背景透明)
+    let img = gdi.CreateImage(size, size);
+    let g = img.GetGraphics();
+    
+    // 开启高质量绘图
+    g.SetSmoothingMode(2); // HighQuality
+
+    // 计算尺寸
+    // 参考图封面比例约为 66%
+    let coverDiameter = Math.floor(size * 0.66); 
+    let offset = (size - coverDiameter) / 2;
+
+    // 1. 绘制封面 (方形，居中)
+    // 稍后用黑胶纹理遮盖四角
+    g.DrawImage(g_img_cover, offset, offset, coverDiameter, coverDiameter, 0, 0, g_img_cover.Width, g_img_cover.Height, 0, 255);
+
+    // 2. 绘制黑胶纹理 (核心部分：遮罩+纹理)
+    // 从封面边缘向外画圆环，模拟唱片沟壑
+    
+    let r_start = Math.floor(coverDiameter / 2); 
+    let r_end = Math.ceil(size / 2);             
+    
+    // 稍微向内缩一点点，确保覆盖封面边缘
+    let r_inner_fix = r_start - 1; 
+
+    // 使用循环绘制同心圆，模拟纹理
+    for (let r = r_inner_fix; r < r_end; r++) {
+        let d = r * 2;
+        let off = (size - d) / 2;
+        let lineW = 2.0; 
+        
+        // 颜色计算 (模拟光泽和纹理)
+        let color;
+        
+        // A. 最外圈 (Rim): 亮灰色边框 (约 4px)
+        if (r > r_end - 4) {
+            color = 0xFF353535; 
+        } 
+        // B. 唱片沟壑 (Grooves): 深黑与暗灰交替
+        else {
+            // 每隔 3px 一个微亮纹，模拟反光
+            if (r % 3 === 0) {
+                 color = 0xFF222222; // 微亮
+            } else {
+                 color = 0xFF121212; // 深黑底色
+            }
+        }
+        
+        g.DrawEllipse(off, off, d, d, lineW, color);
+    }
+    
+    // 3. 封面与黑胶的交界处描边 (内圈阴影，增加立体感)
+    let d_border = coverDiameter;
+    let off_border = (size - d_border) / 2;
+    g.DrawEllipse(off_border, off_border, d_border, d_border, 2.0, 0xFF080808); 
+
+    // 4. 添加整体高光/阴影效果 (简单的线性渐变模拟光照)
+    // 这里简单画一个半透明的白色渐变圆覆盖在上面不太容易，
+    // 我们用一个淡淡的半透明圆环再次叠加在中间区域，增加质感
+    /*
+    let r_mid = (r_start + r_end) / 2;
+    g.DrawEllipse(size/2 - r_mid, size/2 - r_mid, r_mid*2, r_mid*2, (r_end-r_start), 0x05FFFFFF);
+    */
+
+    img.ReleaseGraphics(g);
+    g_img_vinyl = img;
+}
+
+// === 播放控制 ===
+function on_playback_new_track(metadb) {
+    g_metadb = metadb;
+    g_angle = 0; // 切歌重置角度
+    
+    // 获取封面
+    let art = null;
     try {
-        cover = utils.GetAlbumArtV2(metadb, 0); // 获取封面（0 表示 front cover）
-    } catch (e) {
-        cover = null; // 如果获取失败，设为 null
-    }
-
-    if (cover) {
-        // 将封面图片绘制在左上角，尺寸为 window.Height * window.Height（正方形）
-        gr.DrawImage(cover, 0, 0, window.Height, window.Height, 0, 0, cover.Width, cover.Height, 0);
-    }
-}
-//进度条*****************************************************************************************************/
-// === 计算当前播放百分比 ===
-function getPlaybackPercent() {
-    let pos = fb.PlaybackTime;       // 当前播放时间（单位：秒）
-    let len = fb.PlaybackLength;     // 曲目总时长（单位：秒）
-
-    // 如果播放时长非法，则返回 0，避免计算错误
-    if (!len || isNaN(pos) || pos < 0 || len <= 0) return 0;
-
-    return pos / len; // 返回百分比（范围 0~1）
+        art = utils.GetAlbumArtV2(metadb, 0);
+    } catch(e) {}
+    
+    g_img_cover = art;
+    createVinylImage();
+    
+    updateLoveStatus();
+    updateCommentFromMeta();
+    
+    // 启动/检查旋转
+    checkTimer();
+    window.Repaint();
 }
 
-// === 播放条控制状态变量 ===
-let isSeeking = false; // 表示是否正在拖动进度条
-let seekX = 0;          // 拖动时鼠标的 x 坐标
-let hoverX = 0;         // 鼠标悬浮时的 x 坐标
-let isHovering = false; // 鼠标是否悬停在进度条上
+function on_playback_start(cmd) {
+    checkTimer();
+    updateLoveStatus();
+    window.Repaint();
+}
 
-// === 鼠标按下时的回调 ===
-// 不要定义 isPlaying，全用 fb.IsPlaying 判断状态
+function on_playback_pause(state) {
+    checkTimer();
+    window.Repaint();
+}
+
+function on_playback_stop(reason) {
+    if (reason !== 2) { // 2 = starting_another，如果是切歌，不要清空所有状态，等待 new_track
+        g_metadb = null;
+        g_img_cover = null;
+        g_img_vinyl = null;
+        g_angle = 0;
+    }
+    stopTimer();
+    window.Repaint();
+}
+
+function on_playback_time(time) {
+    // 每秒刷新一次进度条 (如果不拖动)
+    // 如果定时器在跑（30FPS），这里就不需要 Repaint 了，避免重复刷新
+    if (!g_is_seeking && !g_timer_rotate) {
+        window.Repaint();
+    }
+}
+
+// === 旋转定时器 ===
+function checkTimer() {
+    if (fb.IsPlaying && !fb.IsPaused) {
+        startTimer();
+    } else {
+        stopTimer();
+    }
+}
+
+function startTimer() {
+    if (!g_timer_rotate) {
+        // 30FPS (1000/30 ≈ 33ms)
+        g_timer_rotate = window.SetInterval(function() {
+            g_angle = (g_angle + 0.5) % 360; // 每次旋转 0.5 度
+            window.Repaint();
+        }, 33);
+    }
+}
+
+function stopTimer() {
+    if (g_timer_rotate) {
+        window.ClearInterval(g_timer_rotate);
+        g_timer_rotate = null;
+    }
+}
+
+// === 绘制主函数 ===
+function on_paint(gr) {
+    // 1. 绘制背景
+    // 填充纯色底
+    gr.FillSolidRect(0, 0, window.Width, window.Height, conf.colors.bg);
+    
+    // 尝试绘制用户背景图 (带遮罩)
+    if (!g_img_bg) {
+        try { g_img_bg = gdi.Image(imgPath); } catch(e) {}
+    }
+    if (g_img_bg) {
+        // 保持比例填充或拉伸？原代码是右上角绘制。这里改为全屏覆盖或者保持原样。
+        // 为了"主题是暗色的"，我们全屏绘制并加重遮罩
+        // gr.DrawImage(g_img_bg, 0, 0, window.Width, window.Height, 0, 0, g_img_bg.Width, g_img_bg.Height, 0, 50); // 低透明度
+        // 为了兼容原作者意图，保留右上角绘制逻辑，但加深遮罩
+        let size = window.Height;
+        let x = window.Width - size;
+        gr.DrawImage(g_img_bg, x, 0, size, size, 0, 0, g_img_bg.Width, g_img_bg.Height, 0, 100);
+        // 渐变遮罩
+        gr.FillGradRect(x, 0, size, size, 0, conf.colors.bg, 0x002D2F33, 0); // 从左到右渐变透明?
+        // 简单加一层深色盖住
+        gr.FillSolidRect(0, 0, window.Width, window.Height, 0xAA2D2F33);
+    }
+
+    // 2. 绘制旋转封面 (黑胶)
+    if (g_img_vinyl) {
+        let size = conf.layout.coverSize;
+        let x = 10; // 左边距
+        let y = (window.Height - size) / 2;
+        
+        // 注意: DrawImage 的第10个参数是 angle (度数)
+        // 旋转中心默认为目标矩形中心
+        gr.DrawImage(g_img_vinyl, x, y, size, size, 0, 0, size, size, g_angle, 255);
+    } else {
+        // 无封面时的占位 (画个黑圆)
+        let size = conf.layout.coverSize;
+        let x = 10;
+        let y = (window.Height - size) / 2;
+        gr.FillEllipse(x, y, size, size, 0xFF111111);
+    }
+
+    // 3. 绘制进度条
+    drawProgressBar(gr);
+
+    // 4. 绘制控制按钮 (上一曲, 播放, 下一曲)
+    drawControls(gr);
+
+    // 5. 绘制歌曲信息
+    drawInfo(gr);
+
+    // 6. 绘制红心
+    drawLove(gr);
+
+    // 7. 搜索按钮
+    drawSearchBtn(gr);
+    
+    // 8. 评论/歌单信息
+    drawCommentBox(gr);
+}
+
+// === 组件绘制 ===
+
+function getControlLayout() {
+    // 1. 尝试绝对居中 (水平和垂直)
+    let cx = window.Width / 2;
+    // 视觉修正：向上微调，平衡底部进度条 (进度条区域约 12px，我们将中心上移，使其位于剩余空间的中心)
+    let cy = (window.Height - 16) / 2; 
+    
+    // 2. 动态间距 (基于窗口宽度)
+    let sp = 60;
+    if (window.Width < 600) {
+        sp = Math.max(30, window.Width / 12);
+    }
+    
+    // 3. 防重叠保护 (左侧封面)
+    // 按钮组左边缘约 = cx - 2*sp - btnRadius
+    // 封面右边缘 = conf.layout.coverSize + 10
+    let btnLeft = cx - 2 * sp - 30; 
+    let coverRight = (conf.layout.coverSize || 0) + 20;
+    
+    if (btnLeft < coverRight) {
+        // 如果居中会挡住封面，被迫右移
+        cx = coverRight + 2 * sp + 30;
+    }
+    
+    return { cx: cx, cy: cy, sp: sp };
+}
+
+function getBarDims() {
+    let left = window.Height + 40; // 封面右侧
+    let right = window.Width - 40;
+    let width = right - left;
+    // 进度条下移至底部，避免被垂直居中的按钮遮挡
+    let top = window.Height - 12; 
+    let height = g_hover_progress || g_is_seeking ? conf.layout.barHoverHeight : conf.layout.barHeight;
+    return { x: left, y: top, w: width, h: height };
+}
+
+function drawProgressBar(gr) {
+    if (!g_metadb) return;
+    
+    let dim = getBarDims();
+    // 安全检查：如果宽度或高度非法，不绘制
+    if (dim.w <= 0 || dim.h <= 0) return;
+    
+    // 背景
+    // 动态计算圆角，防止圆角大于尺寸的一半导致报错
+    let arcBg = Math.min(2, dim.w / 2, dim.h / 2);
+    if (arcBg < 1) {
+         gr.FillSolidRect(dim.x, dim.y, dim.w, dim.h, conf.colors.progressBarBg);
+    } else {
+         gr.FillRoundRect(dim.x, dim.y, dim.w, dim.h, arcBg, arcBg, conf.colors.progressBarBg);
+    }
+    
+    // 进度
+    let len = fb.PlaybackLength;
+    if (len > 0) {
+        let pos = g_is_seeking ? (g_seek_pos * len) : fb.PlaybackTime;
+        let pct = pos / len;
+        if (pct > 1) pct = 1;
+        if (pct < 0) pct = 0;
+        
+        let fillW = Math.floor(dim.w * pct);
+        if (fillW > 0) {
+            let fillArc = Math.min(2, fillW / 2, dim.h / 2);
+            if (fillArc < 1) {
+                gr.FillSolidRect(dim.x, dim.y, fillW, dim.h, conf.colors.progressBarFill);
+            } else {
+                gr.FillRoundRect(dim.x, dim.y, fillW, dim.h, fillArc, fillArc, conf.colors.progressBarFill);
+            }
+        }
+        
+        // 拖动滑块 (圆点)
+        if (g_hover_progress || g_is_seeking) {
+            // FillEllipse 应该是支持的，如果再次报错，可改为 FillSolidRect 或 FillRoundRect
+            // 安全起见，这里也加上尺寸检查
+            gr.FillEllipse(dim.x + fillW - 6, dim.y + (dim.h/2) - 6, 12, 12, 0xFFFFFFFF);
+        }
+        
+        // 时间文字
+        let timeStr = utils.FormatDuration(pos) + " / " + utils.FormatDuration(len);
+        gr.GdiDrawText(timeStr, g_fonts.time, conf.colors.textSub, dim.x + dim.w + 10, dim.y - 10, 150, 30, 0);
+    }
+}
+
+function drawInfo(gr) {
+    if (!g_metadb) return;
+    
+    let left = window.Height + 40;
+    
+    // 计算可用宽度：避免与居中的控制按钮重叠
+    // 按钮组左边界 (Prev按钮左侧)
+    let layout = getControlLayout();
+    let btnGroupLeft = layout.cx - 2 * layout.sp - 40; // 留点余量
+    
+    let w = btnGroupLeft - left;
+    // 最小宽度保护
+    if (w < 50) w = 50;
+    
+    // 垂直位置也微调居中一点 (跟随控制按钮)
+    let top = layout.cy - 35; 
+    
+    // Title
+    let title = fb.TitleFormat("%title%").EvalWithMetadb(g_metadb);
+    gr.GdiDrawText(title, g_fonts.title, conf.colors.textMain, left, top, w, 40, 0 | 4); // 0|4 = Left | VCenter
+    
+    // Artist - Album
+    let artist = fb.TitleFormat("%artist%").EvalWithMetadb(g_metadb);
+    let album = fb.TitleFormat("%album%").EvalWithMetadb(g_metadb);
+    gr.GdiDrawText(artist + " - " + album, g_fonts.artist, conf.colors.textSub, left, top + 35, w, 30, 0 | 4);
+}
+
+function drawControls(gr) {
+    // 使用动态计算的布局
+    let layout = getControlLayout();
+    let centerX = layout.cx;
+    let centerY = layout.cy;
+    let spacing = layout.sp;
+    
+    let prevSymbol = "\u23EE"; // ⏮
+    let playSymbol = fb.IsPlaying && !fb.IsPaused ? "\u23F8" : "\u23F5"; // ⏸ : ⏵
+    let nextSymbol = "\u23ED"; // ⏭
+    
+    // 动态计算按钮大小 (基于窗口高度，确保能容纳 h/2.5 大小的字体)
+    // 字体大小是 h/2.5，我们给框留足空间，比如 h/2 + 10
+    let btnSize = Math.floor(window.Height / 1.8); 
+    let half = btnSize / 2;
+    
+    // 绘制文字按钮
+    // 按钮位置: Prev(-2*sp), Play(0), Next(+2*sp)
+    // 注意：GdiDrawText 的坐标是 rect，需要居中绘制
+    gr.GdiDrawText(prevSymbol, g_fonts.iconLarge, conf.colors.btnNormal, centerX - spacing * 2 - half, centerY - half, btnSize, btnSize, 1 | 4);
+    gr.GdiDrawText(playSymbol, g_fonts.iconLarge, conf.colors.btnNormal, centerX - half, centerY - half, btnSize, btnSize, 1 | 4);
+    gr.GdiDrawText(nextSymbol, g_fonts.iconLarge, conf.colors.btnNormal, centerX + spacing * 2 - half, centerY - half, btnSize, btnSize, 1 | 4);
+}
+
+// === 红心与评论 ===
+var isLoved = false;
+var g_comment = "";
+
+function updateLoveStatus() {
+    if (!g_metadb) { isLoved = false; return; }
+    let rating = parseInt(fb.TitleFormat("%rating%").EvalWithMetadb(g_metadb));
+    isLoved = (rating >= 5);
+}
+
+function drawLove(gr) {
+    let layout = getControlLayout();
+    // 动态计算大小
+    let btnSize = Math.floor(window.Height / 1.8); 
+    let half = btnSize / 2;
+    
+    // 放在 Next 按钮右侧
+    let offset = Math.max(50, layout.sp * 1.2); 
+    let x = layout.cx + layout.sp * 2 + offset - half; 
+    let y = layout.cy - half; 
+    
+    let txt = isLoved ? "❤️" : "♡"; // 实心/空心
+    let color = isLoved ? conf.colors.love : conf.colors.loveEmpty;
+    
+    gr.GdiDrawText(txt, g_fonts.iconLarge, color, x, y, btnSize, btnSize, 1|4);
+}
+
+function updateCommentFromMeta() {
+    if (g_metadb) {
+        g_comment = fb.TitleFormat("%comment%").EvalWithMetadb(g_metadb);
+    } else {
+        g_comment = "";
+    }
+}
+
+function drawCommentBox(gr) {
+    let x = window.Width - 220;
+    let y = window.Height - 40;
+    
+    // Label
+    gr.GdiDrawText("所属歌单: " + g_comment, g_fonts.comment, conf.colors.textSub, x, y, 200, 30, 0 | 4); // Right align?
+}
+
+function drawSearchBtn(gr) {
+    let x = window.Width - 220;
+    let y = 10;
+    
+    gr.GdiDrawText("🔍 搜索歌手", g_fonts.comment, conf.colors.textSub, x, y, 200, 30, 2); // Center
+    gr.DrawRect(x, y, 200, 30, 1, 0xFF555555);
+}
+
+
+// === 鼠标交互 ===
+function on_mouse_move(x, y) {
+    let dim = getBarDims();
+    let inBar = (x >= dim.x && x <= dim.x + dim.w && y >= dim.y - 5 && y <= dim.y + dim.h + 5);
+    
+    if (inBar != g_hover_progress) {
+        g_hover_progress = inBar;
+        window.Repaint();
+    }
+    
+    if (g_is_seeking) {
+        let pct = (x - dim.x) / dim.w;
+        if (pct < 0) pct = 0;
+        if (pct > 1) pct = 1;
+        g_seek_pos = pct;
+        window.Repaint();
+    }
+}
 
 function on_mouse_lbtn_down(x, y) {
-    let centerY = window.Height / 3;
-    let centerX = window.Width / 2;
-    let spacing = 60;
-    let radius = 24;
-
+    // 1. 进度条
+    let dim = getBarDims();
+    if (x >= dim.x && x <= dim.x + dim.w && y >= dim.y - 5 && y <= dim.y + dim.h + 5) {
+        g_is_seeking = true;
+        g_seek_pos = (x - dim.x) / dim.w;
+        window.Repaint();
+        return;
+    }
     
-
-    function isInside(cx, cy) {
-        let dx = x - cx;
-        let dy = y - cy;
-        return dx * dx + dy * dy <= radius * radius;
+    // 2. 控制按钮 (简单判定)
+    let layout = getControlLayout();
+    let centerX = layout.cx;
+    let centerY = layout.cy;
+    let spacing = layout.sp;
+    
+    // 动态计算点击半径
+    let btnSize = Math.floor(window.Height / 1.8);
+    let radius = btnSize / 2;
+    
+    // Prev
+    if (Math.abs(x - (centerX - spacing * 2)) < radius && Math.abs(y - centerY) < radius) {
+        fb.Prev(); return;
     }
-
-    if (isInside(centerX - spacing * 2 + 24, centerY)) {
-        fb.Prev();
-        window.Repaint();
-        updateLoveStatus(); // 更新红心状态
+    // Play
+    if (Math.abs(x - centerX) < radius && Math.abs(y - centerY) < radius) {
+        fb.PlayOrPause(); return;
+    }
+    // Next
+    if (Math.abs(x - (centerX + spacing * 2)) < radius && Math.abs(y - centerY) < radius) {
+        fb.Next(); return;
+    }
+    
+    // 3. Love
+    // drawLove 绘制区域: x = centerX + 2*sp + offset - half, y = centerY - half, w = btnSize, h = btnSize
+    let offset = Math.max(50, layout.sp * 1.2); 
+    let loveX = centerX + spacing * 2 + offset - radius;
+    let loveY = centerY - radius;
+    if (x >= loveX && x <= loveX + btnSize && y >= loveY && y <= loveY + btnSize) {
+        // Toggle Love
+        if (g_metadb) {
+            let cmd = isLoved ? "Rating/1" : "Rating/5";
+            fb.RunContextCommandWithMetadb(cmd, g_metadb);
+            // 立即更新状态，不必等回调
+            isLoved = !isLoved;
+            window.Repaint();
+        }
         return;
-    } else if (isInside(centerX, centerY)) {
-        fb.PlayOrPause();
-        window.Repaint();
-        setTimeout(() => window.Repaint(), 150);
-        updateLoveStatus();
+    }
+    
+    // 4. Search
+    if (x > window.Width - 220 && x < window.Width - 20 && y < 50) {
+        if (g_metadb) {
+            let artist = fb.TitleFormat("%artist%").EvalWithMetadb(g_metadb);
+            let url = "https://music.163.com/#/search/m/?s=" + encodeURIComponent(artist);
+            try {
+                let shell = new ActiveXObject("WScript.Shell");
+                shell.Run(url);
+            } catch(e) {}
+        }
         return;
-    } else if (isInside(centerX + spacing + 24, centerY)) {
-        fb.Next();
-        window.Repaint();
-        updateLoveStatus();
-        return;
-    }else if (isInLoveButton(x, y)) {
-        toggleLove(); // 点击红心打分
-        return;
-    }else if (isInProgressBar(x, y)) {
-        isSeeking = true;
-        seekX = x;
-        window.Repaint();
-    }else if (isInCommentBar(x, y)) {//如果按下评论框
-        // 触发评论输入
-        updateComment();
-    }else{
-        window.Repaint();
+    }
+    
+    // 5. Comment (Edit)
+    if (x > window.Width - 220 && y > window.Height - 50) {
+         let handles = plman.GetPlaylistSelectedItems(plman.ActivePlaylist);
+         if (handles && handles.Count > 0) {
+             let input = utils.InputBox("输入歌单唯一编号", "编辑歌单编号", g_comment);
+             if (input !== null) { // null means cancel
+                 let arr = [];
+                 for(let i=0; i<handles.Count; i++) arr.push({"COMMENT": input});
+                 handles.UpdateFileInfoFromJSON(JSON.stringify(arr));
+             }
+         } else {
+             fb.ShowPopupMessage("请先选中一首歌曲");
+         }
     }
 }
 
-
-
-// === 鼠标移动时的回调 ===
-function on_mouse_move(x, y) {
-    if (isSeeking) {
-        seekX = x; // 拖动中，实时记录位置
-        window.Repaint();
-    } else {
-        // 非拖动状态，只处理悬浮提示
-        isHovering = isInProgressBar(x, y);
-        hoverX = x;
-        window.Repaint();
-    }
-}
-
-// === 鼠标抬起时的回调 ===
 function on_mouse_lbtn_up(x, y) {
-    if (isSeeking) {
-        // 计算拖动后的百分比位置
-        let percent = (seekX - getBarX()) / getBarWidth();
-        percent = Math.max(0, Math.min(1, percent)); // 限制 0~1 范围
-
-        // 设置新的播放时间
-        fb.PlaybackTime = fb.PlaybackLength * percent;
-
-        isSeeking = false;
-        window.Repaint();
-    }
-    if (x >= btn_x && x <= btn_x + btn_w && y >= btn_y && y <= btn_y + btn_h) {
-        var metadb = fb.GetFocusItem();
-        if (metadb) {
-            var title = metadb.Title || "";
-            var artist = "";
-
-            var info = metadb.GetFileInfo();
-            if (info) {
-                var index = info.MetaFind("artist");
-                if (index >= 0) {
-                    artist = info.MetaValue(index, 0);
-                }
-            }
-
-            var query = encodeURIComponent(title + " " + artist);
-            var url = "https://music.163.com/#/search/m/?s=" + query;
-
-            // 打开浏览器
-            var shell = new ActiveXObject("WScript.Shell");
-            shell.Run(url);
-        } else {
-            fb.ShowPopupMessage("请先选中一首歌曲");
-        }
-    }
-}
-
-// === 判断是否在进度条区域内 ===
-function isInProgressBar(x, y) {
-    return x >= getBarX() && x <= getBarX() + getBarWidth() &&
-           y >= getBarY() && y <= getBarY() + getBarHeight();
-}
-
-// === 获取进度条位置和尺寸 ===
-function getBarX() { return window.Height * 2; }               // 左边距
-function getBarY() { return window.Height * 0.75 - 4; }        // 上边距
-function getBarWidth() { return window.Width - 2 * getBarX(); }// 宽度
-function getBarHeight() { return 8; }                          // 高度
-
-// === 绘制进度条背景 ===
-function ProgressBackGround_Bar(gr) {
-    gr.FillRoundRect(getBarX(), getBarY(), getBarWidth(), getBarHeight(), 2, 2, 0xFFE0E0E0); // 灰色圆角矩形
-}
-
-// === 绘制已播放进度条 ===
-function Progress_Bar(gr) {
-    if (fb.PlaybackLength <= 0) return; // 仅判断时长合法性即可
-
-    let percent = isSeeking ? (seekX - getBarX()) / getBarWidth() : getPlaybackPercent();
-    percent = Math.max(0, Math.min(1, percent)); // 限制 0~1 范围
-
-    let w = Math.floor(getBarWidth() * percent);
-    let h = getBarHeight();
-
-    // 只有当宽高都大于 0 时才绘制
-    if (!isNaN(w) && w > 0 && h > 0) {
-        // 圆角不能超过宽或高的一半
-        let arc = Math.min(2, w / 2, h / 2);
-        gr.FillRoundRect(getBarX(), getBarY(), w, h, arc, arc, 0xFF1E90FF);
-    }
-}
-
-// === 绘制时间文本（当前 / 总时长） ===
-function drawTimeText(gr) {
-    if (!fb.IsPlaying || fb.PlaybackLength <= 0) return;
-
-    let font = gdi.Font("Segoe UI", Math.floor(window.Height / 14), 0);
-    let color = 0xff000000; // 黑色
-
-    let pos = isSeeking ? (seekX - getBarX()) / getBarWidth() : getPlaybackPercent();
-    pos = Math.max(0, Math.min(1, pos));
-
-    let sec = Math.floor(fb.PlaybackLength * pos);
-    let curTime = formatTime(sec);
-    let totalTime = formatTime(Math.floor(fb.PlaybackLength));
-
-    let text = `${curTime} / ${totalTime}`;
-
-    gr.GdiDrawText(text, font, color, getBarX()+getBarWidth(), getBarY() - 12, 140, window.Height / 2, 0);
-}
-
-// === 秒转为 mm:ss 字符串 ===
-function formatTime(sec) {
-    let m = Math.floor(sec / 60);
-    let s = sec % 60;
-    return `${m}:${s < 10 ? '0' + s : s}`;
-}
-
-// === 绘制播放信息 ===*****************************************************************************************************/
-function playBack_Info(gr){
-    let metadb = fb.GetNowPlaying();
-    if (!metadb) return;
-
-    // 读取标签字段
-    let title = fb.TitleFormat("%title%").EvalWithMetadb(metadb);
-    let artist = fb.TitleFormat("%artist%").EvalWithMetadb(metadb);
-    let album = fb.TitleFormat("%album%").EvalWithMetadb(metadb);
-
-    let font = gdi.Font("Segoe UI", window.Height / 10, 0);
-    let color = 0xff000000;
-    gr.GdiDrawText("标题: " + title, font, color, window.Height*1.1,  window.Height / 12, window.Width, window.Height / 2);
-    gr.GdiDrawText("歌手: " + artist, font, color, window.Height*1.1, (window.Height / 12)+(window.Height / 5), window.Width, window.Height / 2);
-    gr.GdiDrawText("专辑: " + album, font, color, window.Height*1.1, (window.Height / 12) + 2*(window.Height / 5), window.Width, window.Height / 2);   
-}
-
-// === 播放器事件监听 ===
-function on_playback_time(pos) { window.Repaint(); }           // 播放时间变化时刷新
-function on_playback_new_track(metadb) {
-    updateLoveStatus(); // 每次切歌时更新红心状态
-    window.Repaint();
-}
-function on_playback_start() {
-    updateLoveStatus(); // 播放时也更新红心状态
-    window.Repaint();
-}
-
-// === 红心按钮逻辑 ===*****************************************************************************************************/
-let isLoved = false;
-
-// 计算爱心按钮位置和大小
-function getLoveButtonX() {
-    return getBarX() + getBarWidth() + 20;
-}
-function getLoveButtonY() {
-    return window.Height / 3 - 14;
-}
-const loveButtonSize = 40; // 按钮大小（宽高）
-
-// 判断坐标是否在爱心按钮范围内
-function isInLoveButton(x, y) {
-    let bx = getLoveButtonX();
-    let by = getLoveButtonY();
-    return x >= bx && x <= bx + loveButtonSize &&
-           y >= by && y <= by + loveButtonSize;
-}
-
-// 绘制爱心按钮（字符）
-function drawLoveButton(gr) {
-    let font = gdi.Font("Segoe UI Symbol", loveButtonSize, 1);
-    // 红色或者灰色
-    let color = isLoved ? 0xFFFF0000 : 0xFF888888;
-    let x = getLoveButtonX();
-    let y = getLoveButtonY();
-
-    let heart = "❤️";  // Unicode 红心符号
-    gr.GdiDrawText(heart, font, color, x, y, loveButtonSize, loveButtonSize +20, 0x00000001 | 0x00000004);
-}
-
-// === 节流更新红心状态 ===
-let lastUpdateLoveTime = 0;
-function updateLoveStatus() {
-    let now = Date.now();
-    if (now - lastUpdateLoveTime < 1000) return; // 1秒内只更新一次，节流保护
-    lastUpdateLoveTime = now;
-
-    let metadb = fb.GetNowPlaying();
-    if (!metadb) {
-        isLoved = false;
-        return;
-    }
-    let rating = parseInt(fb.TitleFormat("%rating%").EvalWithMetadb(metadb));
-    isLoved = rating >= 5;
-}
-
-// 切换喜欢状态，点击爱心即可切换打分/取消评分
-function toggleLove() {
-    let metadb = fb.GetNowPlaying();
-    if (!metadb) return;
-
-    try {
-        if (isLoved) {
-            fb.RunContextCommandWithMetadb("Rating/1", metadb);
-            isLoved = false;
-        } else {
-            fb.RunContextCommandWithMetadb("Rating/5", metadb);
-            isLoved = true;
+    if (g_is_seeking) {
+        g_is_seeking = false;
+        if (fb.PlaybackLength > 0) {
+            fb.PlaybackTime = fb.PlaybackLength * g_seek_pos;
         }
         window.Repaint();
-    } catch (e) {
-        fb.ShowPopupMessage("无法修改评分，请确认插件和写标签设置正常。\n错误：" + e);
     }
 }
 
-
-// === 播放器事件监听 ===
-function on_playback_time(pos) {
-    updateLoveStatus();
-    window.Repaint();
+// 确保初始化
+on_size();
+if (fb.IsPlaying) {
+    on_playback_new_track(fb.GetNowPlaying());
 }
-function on_playback_new_track(metadb) {
-    updateLoveStatus();
-    window.Repaint();
-}
-function on_playback_start() {
-    updateLoveStatus();
-    window.Repaint();
-}
-
-// === 初始化时读取当前曲目红心状态 ===
-updateLoveStatus();
-
-//百度当前歌曲的歌手*****************************************************************************************************/
-// 与绘图一致的按钮坐标
-var btn_x = window.Width - window.Width / 10;
-var btn_y = window.Height / 12;
-var btn_w = 200;
-var btn_h = 30;
-
-var bg_img = null;
-function PathJoin() {
-    let parts = Array.from(arguments);
-    return parts.map((p, i) => {
-        if (i === 0) return p.replace(/[\/\\]+$/, '');
-        else return p.replace(/^[\/\\]+|[\/\\]+$/g, '');
-    }).join('\\');
-}
-// 加载背景图片，路径是 SMP 默认文件夹下的 bg.png*****************************************************************************************************/
-var bg_img = null;
-var bg_img_load_failed = false;
-
-
-function loadBackgroundImage() {
-    if (bg_img || bg_img_load_failed) return; // 已加载或失败过，不再重复尝试
-
-    try {
-        bg_img = gdi.Image(imgPath);
-    } catch (e) {
-        bg_img_load_failed = true;
-        fb.ShowPopupMessage("加载背景图片失败，请确认文件路径和格式正确。\n错误：" + e);
-    }
-}
-
-
-// 绘制背景图片，绘制在左上角，尺寸为 window.Height * window.Height*****************************************************************************************************/
-// 绘制背景图片，绘制在右上角，尺寸为 window.Height * window.Height
-function drawBackgroundImage(gr) {
-    if (!bg_img) return;
-
-    let size = window.Height;
-    let x = window.Width - size; // 右上角
-    let y = 0;
-
-    // 绘制背景图
-    gr.DrawImage(bg_img, x, y, size, size, 0, 0, bg_img.Width, bg_img.Height, 0);
-
-    // 叠加渐变遮罩（从左侧全白不透明 → 右侧透明）
-    let gradientWidth = Math.floor(size * 2.5); // 渐变宽度为背景图宽度的60%
-    for (let i = 0; i < gradientWidth; i++) {
-        let alpha = 255 - Math.floor((i / gradientWidth) * 255);
-        let color = (alpha << 24) | 0xFFFFFF;
-        gr.FillSolidRect(x + i, y, 1, size, color);
-    }
-}
-
-// 评论功能 *****************************************************************************************************/
-// var WinHight =  window.Height / 10;
-var comment_font =  gdi.Font("Segoe UI", 10, 1);
-const g_text = "所属歌单:";
-var MetaDB_Comment;
-
-//鼠标点击评论区域
-function isInCommentBar(x, y) {
-    // btn_x, btn_y 文字区域左上角坐标
-    // 这里宽度200，高度30
-    return x >= btn_x && x <= (btn_x + 200) && y >= (btn_y * 4) && y <= (btn_y * 4 + 30);
-}
-
-function commentBox(gr) {
-    gr.FillSolidRect(btn_x, btn_y * 4, 200, 30,0x00333333);
-    var NowPlay = fb.GetNowPlaying();
-    comment_font =  gdi.Font("Segoe UI", window.Height / 10, 1);
-    if (NowPlay) {
-        // 读取元数据中的评论
-        MetaDB_Comment = fb.TitleFormat("%comment%").EvalWithMetadb(NowPlay) || "";
-        if (MetaDB_Comment) {
-            gr.GdiDrawText(g_text + MetaDB_Comment, comment_font, 0xFF000000, btn_x, btn_y * 4, 200, 30);
-        }
-    } else {
-        // 没有播放曲目时，可以显示默认文字或者不显示
-        // gr.GdiDrawText("No track playing", g_font, 0xFF000000, btn_x, btn_y * 4, 200, 30);
-    }
-}
-
-
-function updateComment(){
-    let handles = plman.GetPlaylistSelectedItems(plman.ActivePlaylist);
-    if (handles.Count === 0) {
-        fb.ShowPopupMessage("请选择一个曲目");
-        return;
-    }
-    if (!handles) return;
-
-    var input = utils.InputBox("输入歌单唯一编号", "编辑歌单编号", MetaDB_Comment);
-
-    if (input !== null) {
-        MetaDB_Comment = input;
-
-        // write %comment% tag
-        //Create a metadata object for each track, setting only the new tag
-        let arr = [];
-        for (let i = 0; i < handles.Count; i++) {
-            arr.push({
-                "COMMENT": MetaDB_Comment
-            });
-        }
-         // Apply the metadata update using JSON
-        handles.UpdateFileInfoFromJSON(JSON.stringify(arr));
-        // fb.ShowPopupMessage(" your comment is add to " + handles.Count + " track(s).");
-
-        window.Repaint();
-    }
-}
-
-// === 主绘制函数 ===*****************************************************************************************************/
-function on_paint(gr) {
-    gr.FillSolidRect(0, 0, window.Width, window.Height, 0xe2333333); // 背景色
-
-    // loadBackgroundImage();
-    // drawBackgroundImage(gr);
-
-    cover_print(gr);               // 封面
-    ProgressBackGround_Bar(gr);   // 进度条背景
-    Progress_Bar(gr);             // 播放进度
-    drawTimeText(gr);             // 时间显示
-    playBack_Info(gr);            // 曲目信息
-    drawLoveButton(gr);           // 爱心按钮
-
-    // 使用内置符号绘制上一曲、播放/暂停、下一曲按钮
-    let symbolFont = gdi.Font("Segoe UI Symbol", 42, 0);
-    let color = 0xFF000000;
-    let centerY = window.Height / 3;
-    let spacing = 60;
-    let centerX = window.Width / 2;
-
-    let prevSymbol = "⏮";
-    let playSymbol = fb.IsPlaying ? "⏸" : "⏵";
-    let nextSymbol = "⏭";
-
-    gr.GdiDrawText(prevSymbol, symbolFont, color,
-        centerX - spacing * 2, centerY - 24, 48, 48,
-        0x00000001 | 0x00000004);
-
-    gr.GdiDrawText(playSymbol, symbolFont, color,
-        centerX - 24, centerY - 24, 48, 48,
-        0x00000001 | 0x00000004);
-
-    gr.GdiDrawText(nextSymbol, symbolFont, color,
-        centerX + spacing, centerY - 24, 48, 48,
-        0x00000001 | 0x00000004);
-
-    //百度搜索当前歌曲      
-    var bg_color = 0xFF1E90FF; // 颜色和字体定义
-    var text_color = 0xFF1E90F0;
-    var font = gdi.Font("Segoe UI", window.Height / 10, 1);
-   gr.GdiDrawText("搜索该歌手", font, text_color, btn_x, btn_y, 200, 30);// 绘制按钮文字
-    //评论框绘制
-    commentBox(gr);
-}
-
-// === 初始化时读取当前曲目红心状态 ===
-updateLoveStatus();     
 // window.Repaint();
