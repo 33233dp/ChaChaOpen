@@ -1,0 +1,29 @@
+# 任务说明书
+```xml
+<reference>
+%%%%%%
+</reference>
+<environment>
+windows+py+html+Google浏览器
+</environment>
+<instruction>
+<requirment>
+-%%%%%%%%
+-极高的响应速度
+-UI风格:%%%%%%%%
+</requirment>
+</instruction>
+<process>
+-文字展示文件夹结构
+-编写文本流程图，每个流程注明调用的文件或函数
+-编写html文件
+-编写python后端文件
+-在数据库中存放必要文件
+-核验代码合理性和有效性
+-核验排版有效性，排除UI显示bug
+-代码复制移植说明书
+-运行教程文档.md
+</process>
+# 注意
+%%%指的是占位符，你在任务开始之前需要询问对应位置的需求或者内容是什么。
+```
