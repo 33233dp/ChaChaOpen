@@ -11,10 +11,14 @@
             "id": "0c6b82bb2f6a9348",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "markdown",
+              "state": {
+                "file": "机器人学/pieper解法.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "pieper解法"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "机器人学/3.1正向运动学.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "3.1正向运动学 的反向链接列表"
             }
           },
           {
@@ -108,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "机器人学/3.1正向运动学.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "3.1正向运动学 的出链列表"
             }
           },
           {
@@ -150,12 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "机器人学/3.1正向运动学.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大纲"
+              "title": "3.1正向运动学 的大纲"
             }
           }
         ]
@@ -178,8 +185,8 @@
   },
   "active": "0c6b82bb2f6a9348",
   "lastOpenFiles": [
-    "机器人学/3.1正向运动学.md",
     "机器人学/3.2逆向运动学.md",
+    "机器人学/3.1正向运动学.md",
     "机器人学/机器人学-例题和习题.md",
     "机器人学/3机器人运动学.md"
   ]
