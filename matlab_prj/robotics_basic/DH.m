@@ -9,9 +9,9 @@ function T = DH(a, alpha, d, theta)
 % 返回值：
 % T 4*4变换矩阵
 T = [
-     cos(theta),-sin(theta),0,a;
-     sin(theta) * cos(alpha),cos(theta) * cos(alpha),-sin(alpha),-d * sin(alpha);
-     sin(theta) * sin(alpha),cos(theta) * sin(alpha),cos(alpha),d * cos(alpha);
+     cosd(theta),-sind(theta),0,a;
+     sind(theta) * cosd(alpha),cosd(theta) * cosd(alpha),-sind(alpha),-d * sind(alpha);
+     sind(theta) * sind(alpha),cosd(theta) * sind(alpha),cosd(alpha),d * cosd(alpha);
      0,0,0,1
     ];
 end
