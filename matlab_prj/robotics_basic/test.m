@@ -1,12 +1,15 @@
-syms theta1 theta2 theta3 real
-syms L1 L2 L3 L4
+% 定义矩阵 A
+A = [0 0 1 10; 
+     1 0 0 5; 
+     0 1 0 0;
+     0 0 0 1];
 
-T01 = DH(0,0, L1+L2,theta1);
-T12 = DH(0,sym(pi)/2, 0,theta2);
-T23 = DH(L3,0,0,theta3);
-T34 = DH(L4,0,0,0);
+d = [1,0,0.5];
+der = [0,0.1,0;];
 
-T04 = T01 * T12 * T23 * T34;
-disp("x = ");disp(T04(1,4));
-disp("y = ");disp(T04(2,4));
-disp("z = ");disp(T04(3,4));
+D = [d,der];
+
+deta = differential_motion(D);
+
+dA = deta * A;
+disp(dA);
