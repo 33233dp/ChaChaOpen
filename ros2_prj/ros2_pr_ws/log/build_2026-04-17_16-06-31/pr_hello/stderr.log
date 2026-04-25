@@ -1,0 +1,4 @@
+[01m[K/home/chacha/code/ros2_prj/ros2_pr_ws/src/pr_hello/src/pr_hello.cpp:[m[K In member function ‘[01m[Kvoid hello::[01;32m[Kcallback[m[K(std_msgs::msg::String)[m[K’:
+[01m[K/home/chacha/code/ros2_prj/ros2_pr_ws/src/pr_hello/src/pr_hello.cpp:24:41:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   24 |     void callback([01;35m[Kstd_msgs::msg::String msg[m[K) {
+      |                   [01;35m[K~~~~~~~~~~~~~~~~~~~~~~^~~[m[K

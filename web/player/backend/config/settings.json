@@ -1,0 +1,6 @@
+{
+  "video_paths": [
+    "/media/chacha/GameDriver/MediaLib/Anime/"
+  ],
+  "exclude_keywords": ["@Recycle", "temp", ".DS_Store"]
+}

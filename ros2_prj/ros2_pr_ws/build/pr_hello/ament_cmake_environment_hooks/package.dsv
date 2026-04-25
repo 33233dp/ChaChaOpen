@@ -1,0 +1,4 @@
+source;share/pr_hello/local_setup.bash
+source;share/pr_hello/local_setup.dsv
+source;share/pr_hello/local_setup.sh
+source;share/pr_hello/local_setup.zsh

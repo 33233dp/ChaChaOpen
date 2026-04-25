@@ -1,0 +1,26 @@
+[0.018s] Invoking command in '/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces -DCMAKE_INSTALL_PREFIX=/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces
+[0.136s] -- The C compiler identification is GNU 13.3.0
+[0.248s] -- The CXX compiler identification is GNU 13.3.0
+[0.280s] -- Detecting C compiler ABI info
+[0.456s] -- Detecting C compiler ABI info - done
+[0.473s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.473s] -- Detecting C compile features
+[0.474s] -- Detecting C compile features - done
+[0.492s] -- Detecting CXX compiler ABI info
+[0.692s] -- Detecting CXX compiler ABI info - done
+[0.716s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.716s] -- Detecting CXX compile features
+[0.717s] -- Detecting CXX compile features - done
+[0.759s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[1.133s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.395s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.503s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.542s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.588s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.636s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.889s] -- Configuring incomplete, errors occurred!
+[1.890s] [31mCMake Error at CMakeLists.txt:12 (find_packege):
+[1.890s]   Unknown CMake command "find_packege".
+[1.890s] 
+[1.890s] [0m
+[1.913s] Invoked command in '/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces -DCMAKE_INSTALL_PREFIX=/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces

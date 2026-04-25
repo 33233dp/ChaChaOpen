@@ -1,0 +1,514 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TaskFlow - 年执行热力图</title>
+  <style>
+    :root {
+      --bg: #08111f;
+      --bg-elevated: rgba(12, 20, 35, 0.82);
+      --bg-card: rgba(17, 28, 46, 0.92);
+      --border: rgba(148, 163, 184, 0.16);
+      --text: #e5eefc;
+      --muted: #8aa0c2;
+      --accent: #4ea1ff;
+      --accent-2: #7ce7d7;
+      --shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+      --radius-xl: 28px;
+      --radius-lg: 20px;
+      --radius-md: 14px;
+      color-scheme: dark;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body {
+      font-family: Inter, "Segoe UI", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(78, 161, 255, 0.18), transparent 32%),
+        radial-gradient(circle at 85% 20%, rgba(124, 231, 215, 0.14), transparent 24%),
+        linear-gradient(180deg, #07111d 0%, #09101a 100%);
+    }
+
+    .page {
+      min-height: 100vh;
+      padding: 28px;
+      display: grid;
+      gap: 18px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .brand-mark {
+      width: 46px;
+      height: 46px;
+      border-radius: 16px;
+      background: linear-gradient(145deg, var(--accent), #8b7bff);
+      box-shadow: 0 12px 28px rgba(78, 161, 255, 0.35);
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 22px;
+      letter-spacing: 0.02em;
+    }
+
+    .brand p {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 13px 16px;
+      border: 0;
+      border-radius: 14px;
+      background: linear-gradient(145deg, var(--accent), #2b7dff);
+      color: white;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 12px 24px rgba(78, 161, 255, 0.18);
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .btn:hover { transform: translateY(-1px); }
+    .btn.secondary {
+      background: rgba(255, 255, 255, 0.05);
+      box-shadow: none;
+      border: 1px solid var(--border);
+    }
+
+    .card {
+      padding: 18px;
+      border-radius: var(--radius-xl);
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      display: grid;
+      gap: 16px;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: flex-end;
+      flex-wrap: wrap;
+    }
+
+    .hero h2 {
+      margin: 0;
+      font-size: clamp(28px, 4vw, 46px);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+    }
+
+    .hero p {
+      margin: 12px 0 0;
+      color: var(--muted);
+      max-width: 760px;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+    }
+
+    .metric {
+      padding: 14px;
+      border-radius: var(--radius-md);
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 22px;
+      margin-bottom: 4px;
+    }
+
+    .metric span { color: var(--muted); font-size: 12px; }
+
+    .year-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      padding: 14px 0 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .year-title {
+      margin: 0;
+      font-size: 20px;
+      letter-spacing: -0.02em;
+    }
+
+    .year-controls {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .heatmap-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .heatmap-head h3 {
+      margin: 0;
+      font-size: 14px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .heatmap-head p {
+      margin: 6px 0 0;
+      color: var(--text);
+      font-size: 18px;
+    }
+
+    .heatmap-meta {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    .heatmap-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 180px));
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .month-card {
+      width: 180px;
+      padding: 10px;
+      border-radius: var(--radius-lg);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      background: rgba(255, 255, 255, 0.03);
+      display: grid;
+      gap: 8px;
+    }
+
+    .month-card-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .month-card-head h4 {
+      margin: 0;
+      font-size: 14px;
+      letter-spacing: -0.02em;
+    }
+
+    .month-card-head span {
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .day-grid {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      gap: 2px;
+    }
+
+    .day-cell {
+      position: relative;
+      aspect-ratio: 1 / 1;
+      border-radius: 4px;
+      border: 1px solid transparent;
+      background: rgba(34, 197, 94, 0.06);
+      overflow: hidden;
+      min-height: 14px;
+      color: var(--text);
+    }
+
+    .day-cell.level-0 {
+      background: rgba(255, 255, 255, 0.03);
+      border-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .day-cell.is-active {
+      border-color: rgba(34, 197, 94, 0.24);
+    }
+
+    .heatmap-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .legend {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .legend-bars {
+      display: inline-flex;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .legend-bar {
+      width: 12px;
+      height: 12px;
+      border-radius: 4px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .legend-bar.level-1 { background: rgba(34, 197, 94, 0.12); }
+    .legend-bar.level-2 { background: rgba(34, 197, 94, 0.28); }
+    .legend-bar.level-3 { background: rgba(34, 197, 94, 0.46); }
+    .legend-bar.level-4 { background: rgba(34, 197, 94, 0.7); }
+
+    @media (max-width: 720px) {
+      .page { padding: 16px; }
+      .stats { grid-template-columns: 1fr; }
+      .heatmap-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="topbar">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div>
+          <h1>TaskFlow</h1>
+          <p>独立的年度执行热力图页面</p>
+        </div>
+      </div>
+      <a class="btn secondary" href="/">返回任务页</a>
+    </div>
+
+    <section class="card">
+      <div class="hero">
+        <div>
+          <h2>任务执行热力图</h2>
+          <p>这是一张独立页面，只展示年度执行密度，不会和“新建任务”或“任务列表”挤在同一个页面里。</p>
+        </div>
+        <div class="heatmap-meta">
+          GitHub 年提交图风格
+          <br />
+          颜色越深，表示当天任务完成越多
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="metric"><strong id="metric-total">0</strong><span>本年完成</span></div>
+        <div class="metric"><strong id="metric-active">0</strong><span>待办任务</span></div>
+        <div class="metric"><strong id="metric-completed">0</strong><span>已完成任务</span></div>
+      </div>
+
+      <div class="year-bar">
+        <div>
+          <h3 class="heatmap-head"><span>Task Activity</span></h3>
+          <p id="heatmap-month" class="year-title">本年执行热力图</p>
+          <div id="heatmap-summary" class="heatmap-meta">正在加载本年任务执行数据…</div>
+        </div>
+        <div class="year-controls">
+          <button class="btn secondary" id="prev-month" type="button">上一年</button>
+          <button class="btn secondary" id="today-month" type="button">本年</button>
+          <button class="btn secondary" id="next-month" type="button">下一年</button>
+        </div>
+      </div>
+
+      <div id="heatmap-grid" class="heatmap-grid" aria-live="polite"></div>
+
+      <div class="heatmap-footer">
+        <div class="legend">
+          <span>少</span>
+          <span class="legend-bars" aria-hidden="true">
+            <span class="legend-bar"></span>
+            <span class="legend-bar level-1"></span>
+            <span class="legend-bar level-2"></span>
+            <span class="legend-bar level-3"></span>
+            <span class="legend-bar level-4"></span>
+          </span>
+          <span>多</span>
+        </div>
+        <div class="heatmap-meta" id="heatmap-total">本年累计 0 次完成</div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    const state = {
+      year: new Date(),
+      stats: { total: 0, active: 0, completed: 0 },
+      activity: { year: '', start: '', end: '', total: 0, daily_counts: [], monthly_counts: [] }
+    };
+
+    const els = {
+      metricTotal: document.getElementById('metric-total'),
+      metricActive: document.getElementById('metric-active'),
+      metricCompleted: document.getElementById('metric-completed'),
+      heatmapMonth: document.getElementById('heatmap-month'),
+      heatmapSummary: document.getElementById('heatmap-summary'),
+      heatmapGrid: document.getElementById('heatmap-grid'),
+      heatmapTotal: document.getElementById('heatmap-total'),
+      prevMonth: document.getElementById('prev-month'),
+      todayMonth: document.getElementById('today-month'),
+      nextMonth: document.getElementById('next-month')
+    };
+
+    function api(path) {
+      return fetch(path).then(async (response) => {
+        const payload = await response.json().catch(() => ({}));
+        if (!response.ok) {
+          throw new Error(payload.error || `请求失败: ${response.status}`);
+        }
+        return payload;
+      });
+    }
+
+    function yearKey(date) {
+      const year = date.getFullYear();
+      return `${year}`;
+    }
+
+    function yearLabel(yearKeyValue) {
+      return `${yearKeyValue} 年`;
+    }
+
+    function heatColor(count, maxCount) {
+      if (count <= 0 || maxCount <= 0) {
+        return {
+          background: 'rgba(255, 255, 255, 0.03)',
+          borderColor: 'rgba(255, 255, 255, 0.05)'
+        };
+      }
+
+      const ratio = Math.min(count / maxCount, 1);
+      const easedRatio = Math.pow(ratio, 0.65);
+      const backgroundAlpha = 0.08 + easedRatio * 0.72;
+      const borderAlpha = 0.12 + easedRatio * 0.38;
+      return {
+        background: `rgba(34, 197, 94, ${backgroundAlpha.toFixed(3)})`,
+        borderColor: `rgba(34, 197, 94, ${borderAlpha.toFixed(3)})`
+      };
+    }
+
+    function shiftYear(offset) {
+      const next = new Date(state.year);
+      next.setFullYear(next.getFullYear() + offset);
+      state.year = next;
+      loadHeatmap();
+    }
+
+    function renderStats() {
+      els.metricTotal.textContent = state.activity.total || 0;
+      els.metricActive.textContent = state.stats.active || 0;
+      els.metricCompleted.textContent = state.stats.completed || 0;
+    }
+
+    function renderHeatmap() {
+      const year = Number(state.activity.year || yearKey(state.year));
+      const dailyCounts = new Map((state.activity.daily_counts || []).map((item) => [item.date, item.count]));
+      const monthlyTotals = new Map((state.activity.monthly_counts || []).map((item) => [item.month, item.count]));
+      const maxDailyCount = Math.max(0, ...Array.from(dailyCounts.values()));
+      const cards = [];
+
+      for (let month = 1; month <= 12; month += 1) {
+        const monthKeyValue = `${year}-${String(month).padStart(2, '0')}`;
+        const monthDate = new Date(year, month - 1, 1);
+        const monthName = new Intl.DateTimeFormat('zh-CN', { month: 'long' }).format(monthDate);
+        const daysInMonth = new Date(year, month, 0).getDate();
+        const monthTotal = monthlyTotals.get(monthKeyValue) || 0;
+        const dayCells = [];
+
+        for (let day = 1; day <= daysInMonth; day += 1) {
+          const dateKey = `${monthKeyValue}-${String(day).padStart(2, '0')}`;
+          const count = dailyCounts.get(dateKey) || 0;
+          const color = heatColor(count, maxDailyCount);
+          dayCells.push(`
+            <div
+              class="day-cell ${count > 0 ? 'is-active' : ''}"
+              style="background:${color.background};border-color:${color.borderColor};"
+              title="${dateKey} · ${count} 次任务完成"
+              aria-label="${dateKey}，${count} 次任务完成"
+            >
+            </div>
+          `);
+        }
+
+        cards.push(`
+          <article class="month-card">
+            <div class="month-card-head">
+              <h4>${monthName}</h4>
+              <span>${monthTotal} 次完成 · ${daysInMonth} 天</span>
+            </div>
+            <div class="day-grid">${dayCells.join('')}</div>
+          </article>
+        `);
+      }
+
+      els.heatmapMonth.textContent = yearLabel(year.toString());
+      els.heatmapSummary.textContent = `${year} 年共 12 个月，累计 ${state.activity.total || 0} 次任务完成。`;
+      els.heatmapTotal.textContent = `${year} 年累计 ${state.activity.total || 0} 次完成`;
+      els.heatmapGrid.innerHTML = cards.join('');
+      renderStats();
+    }
+
+    async function loadHeatmap() {
+      const key = yearKey(state.year);
+      const [activity, stats] = await Promise.all([
+        api(`/api/activity?year=${encodeURIComponent(key)}`),
+        api('/api/stats')
+      ]);
+      state.activity = activity;
+      state.stats = stats;
+      renderHeatmap();
+    }
+
+    els.prevMonth.addEventListener('click', () => shiftYear(-1));
+    els.todayMonth.addEventListener('click', () => {
+      state.year = new Date();
+      loadHeatmap();
+    });
+    els.nextMonth.addEventListener('click', () => shiftYear(1));
+
+    loadHeatmap().catch((error) => {
+      console.error(error);
+      els.heatmapSummary.textContent = '加载失败，请刷新页面重试。';
+      els.heatmapGrid.innerHTML = `<article class="month-card" style="grid-column:1/-1;min-height:160px;display:flex;align-items:center;justify-content:center;text-align:center">无法加载热力图：${error.message}</article>`;
+    });
+  </script>
+</body>
+</html>

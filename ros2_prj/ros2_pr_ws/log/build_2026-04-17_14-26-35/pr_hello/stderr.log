@@ -1,0 +1,7 @@
+[01m[K/home/chacha/code/ros2_prj/ros2_pr_ws/src/pr_hello/src/pr_hello.cpp:10:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+   10 | }
+      |  [01;31m[K^[m[K
+      |  [32m[K;[m[K
+gmake[2]: *** [CMakeFiles/pr_hello_node.dir/build.make:76：CMakeFiles/pr_hello_node.dir/src/pr_hello.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/pr_hello_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

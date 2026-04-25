@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+task_manager.db
+task_manager.db-shm
+task_manager.db-wal

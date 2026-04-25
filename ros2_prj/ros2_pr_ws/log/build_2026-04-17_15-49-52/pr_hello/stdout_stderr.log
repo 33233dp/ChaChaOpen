@@ -1,0 +1,22 @@
+[ 50%] Building CXX object CMakeFiles/pr_hello_node.dir/src/pr_hello.cpp.o
+/home/chacha/code/ros2_prj/ros2_pr_ws/src/pr_hello/src/pr_hello.cpp: In constructor ‘hello::hello(std::string)’:
+/home/chacha/code/ros2_prj/ros2_pr_ws/src/pr_hello/src/pr_hello.cpp:7:82: error: no matching function for call to ‘create_subscription<std_msgs::msg::String>(const char [6], int, std::_Bind_helper<false, void (hello::*)(std_msgs::msg::String_<std::allocator<void> >), hello*, const std::_Placeholder<1>&>::type)’
+    7 |                         sub_ = rclcpp::create_subscription<std_msgs::msg::String>("start",10,std::bind(&hello::callback,this,std::placeholders::_1));
+      |                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /opt/ros/jazzy/include/rclcpp/rclcpp/node_impl.hpp:43,
+                 from /opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:1663,
+                 from /opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,
+                 from /opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:22,
+                 from /opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172,
+                 from /home/chacha/code/ros2_prj/ros2_pr_ws/src/pr_hello/src/pr_hello.cpp:1:
+/opt/ros/jazzy/include/rclcpp/rclcpp/create_subscription.hpp:176:1: note: candidate: ‘template<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT, class NodeT> std::shared_ptr<ROSMessageT> rclcpp::create_subscription(NodeT&, const std::string&, const QoS&, CallbackT&&, const SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)’
+  176 | create_subscription(
+      | ^~~~~~~~~~~~~~~~~~~
+/opt/ros/jazzy/include/rclcpp/rclcpp/create_subscription.hpp:176:1: note:   candidate expects 4 arguments, 3 provided
+/opt/ros/jazzy/include/rclcpp/rclcpp/create_subscription.hpp:205:1: note: candidate: ‘template<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::create_subscription(node_interfaces::NodeParametersInterface::SharedPtr&, node_interfaces::NodeTopicsInterface::SharedPtr&, const std::string&, const QoS&, CallbackT&&, const SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)’
+  205 | create_subscription(
+      | ^~~~~~~~~~~~~~~~~~~
+/opt/ros/jazzy/include/rclcpp/rclcpp/create_subscription.hpp:205:1: note:   candidate expects 5 arguments, 3 provided
+gmake[2]: *** [CMakeFiles/pr_hello_node.dir/build.make:76: CMakeFiles/pr_hello_node.dir/src/pr_hello.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/pr_hello_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

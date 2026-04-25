@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello/pr_hello_node" "/home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello/test_node" "/home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello/pr_test_node" "TARGETS" "pr_hello_node" "test_node" "pr_test_node" "DESTINATION" "lib/pr_hello")

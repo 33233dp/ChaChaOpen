@@ -1,0 +1,29 @@
+[0.017s] Invoking command in '/home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello -- -j8 -l8
+[0.130s] [ 16%] [32mBuilding CXX object CMakeFiles/test_node.dir/src/test.cpp.o[0m
+[0.138s] [ 50%] Built target pr_test_node
+[0.140s] [ 83%] Built target pr_hello_node
+[14.498s] [100%] [32m[1mLinking CXX executable test_node[0m
+[15.030s] [100%] Built target test_node
+[15.046s] Invoked command in '/home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello -- -j8 -l8
+[15.066s] Invoking command in '/home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello
+[15.082s] -- Install configuration: ""
+[15.083s] -- Execute custom install script
+[15.085s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/lib/pr_hello/pr_hello_node
+[15.085s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/lib/pr_hello/test_node
+[15.086s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/lib/pr_hello/pr_test_node
+[15.086s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/ament_index/resource_index/package_run_dependencies/pr_hello
+[15.086s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/ament_index/resource_index/parent_prefix_path/pr_hello
+[15.087s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/environment/ament_prefix_path.sh
+[15.087s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/environment/ament_prefix_path.dsv
+[15.087s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/environment/path.sh
+[15.087s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/environment/path.dsv
+[15.088s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/local_setup.bash
+[15.088s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/local_setup.sh
+[15.088s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/local_setup.zsh
+[15.088s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/local_setup.dsv
+[15.089s] -- Symlinking: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/package.dsv
+[15.104s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/ament_index/resource_index/packages/pr_hello
+[15.104s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/cmake/pr_helloConfig.cmake
+[15.104s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/cmake/pr_helloConfig-version.cmake
+[15.104s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/package.xml
+[15.108s] Invoked command in '/home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello

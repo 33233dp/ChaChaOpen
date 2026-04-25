@@ -1,0 +1,224 @@
+[0.000000] (-) TimerEvent: {}
+[0.000570] (pr_hello) JobQueued: {'identifier': 'pr_hello', 'dependencies': OrderedDict()}
+[0.000681] (pr_hello) JobStarted: {'identifier': 'pr_hello'}
+[0.025196] (pr_hello) JobProgress: {'identifier': 'pr_hello', 'progress': 'cmake'}
+[0.026802] (pr_hello) JobProgress: {'identifier': 'pr_hello', 'progress': 'build'}
+[0.028235] (pr_hello) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello', '--', '-j8', '-l8'], 'cwd': '/home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'LANGUAGE': 'zh_CN:en_US:en', 'USER': 'chacha', 'LC_TIME': 'zh_CN.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'STARSHIP_SHELL': 'bash', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'INPUT_METHOD': 'fcitx', 'HOME': '/home/chacha', 'CHROME_DESKTOP': 'code.desktop', 'TERM_PROGRAM_VERSION': '1.114.0', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SDL_IM_MODULE': 'fcitx', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'zh_CN.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '2586', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '3051', 'BUNDLED_DEBUGPY_PATH': '/home/chacha/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6376', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'QT_QPA_PLATFORMTHEME': 'qt5ct', 'https_proxy': 'http://127.0.0.1:7890', 'ROS_DISTRO': 'jazzy', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'chacha', 'http_proxy': 'http://127.0.0.1:7890', 'JOURNAL_STREAM': '9:25658', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'chacha', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'lsa': 'ls -al', 'WINDOWPATH': '2', 'PATH': '/home/chacha/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/chacha/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/chacha/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/chacha/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/chacha/.local/bin:/home/chacha/.local/bin:/home/chacha/.local/bin:/home/chacha/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts:/home/chacha/.local/bin', 'SESSION_MANAGER': 'local/chacha-Lenovo-XiaoXinPro-16IHU-2021:@/tmp/.ICE-unix/3008,unix/chacha-Lenovo-XiaoXinPro-16IHU-2021:/tmp/.ICE-unix/3008', 'INVOCATION_ID': '81c56f4d633c40b3bc4ab682caeb7334', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'zh_CN.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/chacha/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-ac1021c403e6e499.txt', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'PYTHONSTARTUP': '/home/chacha/.config/Code/User/workspaceStorage/5c59d61bc3f726fad33b4f40bc38fd95/ms-python.python/pythonrc.py', 'LC_TELEPHONE': 'zh_CN.UTF-8', 'XMODIFIERS': '@im=fcitx', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-6df86f673d.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'zh_CN.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'zh_CN.UTF-8', 'GCC_COLORS': 'error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'zh_CN.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/chacha/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'STARSHIP_SESSION_KEY': '3253721488904628', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'zh_CN.UTF-8', 'LC_PAPER': 'zh_CN.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.095919] (-) TimerEvent: {}
+[0.151537] (pr_hello) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.196021] (-) TimerEvent: {}
+[0.296623] (-) TimerEvent: {}
+[0.397764] (-) TimerEvent: {}
+[0.499154] (-) TimerEvent: {}
+[0.514291] (pr_hello) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.535670] (pr_hello) StdoutLine: {'line': b'-- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.591014] (pr_hello) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.599917] (-) TimerEvent: {}
+[0.612045] (pr_hello) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.650066] (pr_hello) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.680932] (pr_hello) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.700185] (-) TimerEvent: {}
+[0.801913] (-) TimerEvent: {}
+[0.804998] (pr_hello) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.808642] (pr_hello) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.902417] (-) TimerEvent: {}
+[0.926479] (pr_hello) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.002485] (-) TimerEvent: {}
+[1.056421] (pr_hello) StdoutLine: {'line': b'-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[1.094097] (pr_hello) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[1.103903] (-) TimerEvent: {}
+[1.204257] (-) TimerEvent: {}
+[1.304159] (pr_hello) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.304318] (-) TimerEvent: {}
+[1.304431] (pr_hello) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.304557] (pr_hello) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.305903] (pr_hello) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.307372] (pr_hello) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.307578] (pr_hello) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.308052] (pr_hello) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.312037] (pr_hello) StdoutLine: {'line': b'-- Configuring done (1.2s)\n'}
+[1.343579] (pr_hello) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[1.352652] (pr_hello) StdoutLine: {'line': b'-- Build files have been written to: /home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello\n'}
+[1.395603] (pr_hello) StdoutLine: {'line': b'[ 16%] \x1b[32mBuilding CXX object CMakeFiles/pr_test_node.dir/src/pr_test.cpp.o\x1b[0m\n'}
+[1.401538] (pr_hello) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/test_node.dir/src/test.cpp.o\x1b[0m\n'}
+[1.404426] (-) TimerEvent: {}
+[1.407854] (pr_hello) StdoutLine: {'line': b'[ 66%] Built target pr_hello_node\n'}
+[1.504547] (-) TimerEvent: {}
+[1.604852] (-) TimerEvent: {}
+[1.705142] (-) TimerEvent: {}
+[1.805398] (-) TimerEvent: {}
+[1.905735] (-) TimerEvent: {}
+[2.006011] (-) TimerEvent: {}
+[2.106274] (-) TimerEvent: {}
+[2.206586] (-) TimerEvent: {}
+[2.306914] (-) TimerEvent: {}
+[2.407580] (-) TimerEvent: {}
+[2.511872] (-) TimerEvent: {}
+[2.612798] (-) TimerEvent: {}
+[2.713268] (-) TimerEvent: {}
+[2.813683] (-) TimerEvent: {}
+[2.915345] (-) TimerEvent: {}
+[3.015795] (-) TimerEvent: {}
+[3.116544] (-) TimerEvent: {}
+[3.217850] (-) TimerEvent: {}
+[3.321125] (-) TimerEvent: {}
+[3.421798] (-) TimerEvent: {}
+[3.522348] (-) TimerEvent: {}
+[3.622813] (-) TimerEvent: {}
+[3.724230] (-) TimerEvent: {}
+[3.825029] (-) TimerEvent: {}
+[3.925558] (-) TimerEvent: {}
+[4.026174] (-) TimerEvent: {}
+[4.128265] (-) TimerEvent: {}
+[4.229741] (-) TimerEvent: {}
+[4.330344] (-) TimerEvent: {}
+[4.430899] (-) TimerEvent: {}
+[4.531391] (-) TimerEvent: {}
+[4.632061] (-) TimerEvent: {}
+[4.733952] (-) TimerEvent: {}
+[4.837251] (-) TimerEvent: {}
+[4.939130] (-) TimerEvent: {}
+[5.039799] (-) TimerEvent: {}
+[5.146934] (-) TimerEvent: {}
+[5.247712] (-) TimerEvent: {}
+[5.348353] (-) TimerEvent: {}
+[5.448927] (-) TimerEvent: {}
+[5.566516] (-) TimerEvent: {}
+[5.673291] (-) TimerEvent: {}
+[5.774079] (-) TimerEvent: {}
+[5.874685] (-) TimerEvent: {}
+[5.975973] (-) TimerEvent: {}
+[6.078544] (-) TimerEvent: {}
+[6.179381] (-) TimerEvent: {}
+[6.280676] (-) TimerEvent: {}
+[6.382502] (-) TimerEvent: {}
+[6.483201] (-) TimerEvent: {}
+[6.584268] (-) TimerEvent: {}
+[6.685327] (-) TimerEvent: {}
+[6.785959] (-) TimerEvent: {}
+[6.888002] (-) TimerEvent: {}
+[6.990147] (-) TimerEvent: {}
+[7.090725] (-) TimerEvent: {}
+[7.191451] (-) TimerEvent: {}
+[7.292094] (-) TimerEvent: {}
+[7.392647] (-) TimerEvent: {}
+[7.493252] (-) TimerEvent: {}
+[7.595965] (-) TimerEvent: {}
+[7.696590] (-) TimerEvent: {}
+[7.797174] (-) TimerEvent: {}
+[7.897949] (-) TimerEvent: {}
+[7.998601] (-) TimerEvent: {}
+[8.099220] (-) TimerEvent: {}
+[8.200002] (-) TimerEvent: {}
+[8.300609] (-) TimerEvent: {}
+[8.401222] (-) TimerEvent: {}
+[8.501771] (-) TimerEvent: {}
+[8.603404] (-) TimerEvent: {}
+[8.709133] (-) TimerEvent: {}
+[8.811241] (-) TimerEvent: {}
+[8.911966] (-) TimerEvent: {}
+[9.012590] (-) TimerEvent: {}
+[9.113180] (-) TimerEvent: {}
+[9.213792] (-) TimerEvent: {}
+[9.314367] (-) TimerEvent: {}
+[9.415564] (-) TimerEvent: {}
+[9.516125] (-) TimerEvent: {}
+[9.616667] (-) TimerEvent: {}
+[9.717226] (-) TimerEvent: {}
+[9.817781] (-) TimerEvent: {}
+[9.918431] (-) TimerEvent: {}
+[10.018962] (-) TimerEvent: {}
+[10.119465] (-) TimerEvent: {}
+[10.219953] (-) TimerEvent: {}
+[10.320472] (-) TimerEvent: {}
+[10.421015] (-) TimerEvent: {}
+[10.521514] (-) TimerEvent: {}
+[10.621920] (-) TimerEvent: {}
+[10.722311] (-) TimerEvent: {}
+[10.822760] (-) TimerEvent: {}
+[10.923142] (-) TimerEvent: {}
+[11.023563] (-) TimerEvent: {}
+[11.124033] (-) TimerEvent: {}
+[11.224477] (-) TimerEvent: {}
+[11.324929] (-) TimerEvent: {}
+[11.425303] (-) TimerEvent: {}
+[11.525667] (-) TimerEvent: {}
+[11.626008] (-) TimerEvent: {}
+[11.726374] (-) TimerEvent: {}
+[11.826707] (-) TimerEvent: {}
+[11.927047] (-) TimerEvent: {}
+[12.027394] (-) TimerEvent: {}
+[12.127781] (-) TimerEvent: {}
+[12.228268] (-) TimerEvent: {}
+[12.328603] (-) TimerEvent: {}
+[12.337373] (pr_hello) StdoutLine: {'line': b'[ 83%] \x1b[32m\x1b[1mLinking CXX executable pr_test_node\x1b[0m\n'}
+[12.428735] (-) TimerEvent: {}
+[12.529073] (-) TimerEvent: {}
+[12.629437] (-) TimerEvent: {}
+[12.644686] (pr_hello) StdoutLine: {'line': b'[ 83%] Built target pr_test_node\n'}
+[12.729551] (-) TimerEvent: {}
+[12.829858] (-) TimerEvent: {}
+[12.930199] (-) TimerEvent: {}
+[13.030740] (-) TimerEvent: {}
+[13.131133] (-) TimerEvent: {}
+[13.231713] (-) TimerEvent: {}
+[13.332040] (-) TimerEvent: {}
+[13.432363] (-) TimerEvent: {}
+[13.532670] (-) TimerEvent: {}
+[13.632966] (-) TimerEvent: {}
+[13.733271] (-) TimerEvent: {}
+[13.833592] (-) TimerEvent: {}
+[13.933909] (-) TimerEvent: {}
+[14.034207] (-) TimerEvent: {}
+[14.134514] (-) TimerEvent: {}
+[14.234813] (-) TimerEvent: {}
+[14.335095] (-) TimerEvent: {}
+[14.435397] (-) TimerEvent: {}
+[14.535698] (-) TimerEvent: {}
+[14.635975] (-) TimerEvent: {}
+[14.736270] (-) TimerEvent: {}
+[14.836550] (-) TimerEvent: {}
+[14.936847] (-) TimerEvent: {}
+[15.037090] (-) TimerEvent: {}
+[15.137342] (-) TimerEvent: {}
+[15.237644] (-) TimerEvent: {}
+[15.338179] (-) TimerEvent: {}
+[15.438538] (-) TimerEvent: {}
+[15.538889] (-) TimerEvent: {}
+[15.639160] (-) TimerEvent: {}
+[15.739422] (-) TimerEvent: {}
+[15.839696] (-) TimerEvent: {}
+[15.939972] (-) TimerEvent: {}
+[16.040384] (-) TimerEvent: {}
+[16.087520] (pr_hello) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable test_node\x1b[0m\n'}
+[16.140541] (-) TimerEvent: {}
+[16.240870] (-) TimerEvent: {}
+[16.341142] (-) TimerEvent: {}
+[16.374037] (pr_hello) StdoutLine: {'line': b'[100%] Built target test_node\n'}
+[16.385948] (pr_hello) CommandEnded: {'returncode': 0}
+[16.386582] (pr_hello) JobProgress: {'identifier': 'pr_hello', 'progress': 'install'}
+[16.397006] (pr_hello) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello'], 'cwd': '/home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'LANGUAGE': 'zh_CN:en_US:en', 'USER': 'chacha', 'LC_TIME': 'zh_CN.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'STARSHIP_SHELL': 'bash', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'INPUT_METHOD': 'fcitx', 'HOME': '/home/chacha', 'CHROME_DESKTOP': 'code.desktop', 'TERM_PROGRAM_VERSION': '1.114.0', 'DESKTOP_SESSION': 'ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SDL_IM_MODULE': 'fcitx', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'zh_CN.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '2586', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'SYSTEMD_EXEC_PID': '3051', 'BUNDLED_DEBUGPY_PATH': '/home/chacha/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6376', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'QT_QPA_PLATFORMTHEME': 'qt5ct', 'https_proxy': 'http://127.0.0.1:7890', 'ROS_DISTRO': 'jazzy', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'chacha', 'http_proxy': 'http://127.0.0.1:7890', 'JOURNAL_STREAM': '9:25658', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'chacha', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'lsa': 'ls -al', 'WINDOWPATH': '2', 'PATH': '/home/chacha/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/home/chacha/.config/Code/User/globalStorage/github.copilot-chat/copilotCli:/home/chacha/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/chacha/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/chacha/.local/bin:/home/chacha/.local/bin:/home/chacha/.local/bin:/home/chacha/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/scripts/noConfigScripts:/home/chacha/.local/bin', 'SESSION_MANAGER': 'local/chacha-Lenovo-XiaoXinPro-16IHU-2021:@/tmp/.ICE-unix/3008,unix/chacha-Lenovo-XiaoXinPro-16IHU-2021:/tmp/.ICE-unix/3008', 'INVOCATION_ID': '81c56f4d633c40b3bc4ab682caeb7334', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'zh_CN.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/chacha/.vscode/extensions/ms-python.debugpy-2025.18.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-ac1021c403e6e499.txt', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'PYTHONSTARTUP': '/home/chacha/.config/Code/User/workspaceStorage/5c59d61bc3f726fad33b4f40bc38fd95/ms-python.python/pythonrc.py', 'LC_TELEPHONE': 'zh_CN.UTF-8', 'XMODIFIERS': '@im=fcitx', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-6df86f673d.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'zh_CN.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'zh_CN.UTF-8', 'GCC_COLORS': 'error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'zh_CN.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/chacha/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'STARSHIP_SESSION_KEY': '3253721488904628', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'zh_CN.UTF-8', 'LC_PAPER': 'zh_CN.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[16.406481] (pr_hello) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.406678] (pr_hello) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[16.406948] (pr_hello) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/lib/pr_hello/pr_hello_node\n'}
+[16.407105] (pr_hello) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/lib/pr_hello/test_node\n'}
+[16.407215] (pr_hello) StdoutLine: {'line': b'-- Symlinking: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/lib/pr_hello/pr_test_node\n'}
+[16.416727] (pr_hello) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/ament_index/resource_index/package_run_dependencies/pr_hello\n'}
+[16.416958] (pr_hello) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/ament_index/resource_index/parent_prefix_path/pr_hello\n'}
+[16.417068] (pr_hello) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/environment/ament_prefix_path.sh\n'}
+[16.417167] (pr_hello) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/environment/ament_prefix_path.dsv\n'}
+[16.417261] (pr_hello) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/environment/path.sh\n'}
+[16.417349] (pr_hello) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/environment/path.dsv\n'}
+[16.417524] (pr_hello) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/local_setup.bash\n'}
+[16.417713] (pr_hello) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/local_setup.sh\n'}
+[16.417896] (pr_hello) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/local_setup.zsh\n'}
+[16.418014] (pr_hello) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/local_setup.dsv\n'}
+[16.418120] (pr_hello) StdoutLine: {'line': b'-- Symlinking: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/package.dsv\n'}
+[16.428081] (pr_hello) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/ament_index/resource_index/packages/pr_hello\n'}
+[16.428337] (pr_hello) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/cmake/pr_helloConfig.cmake\n'}
+[16.428514] (pr_hello) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/cmake/pr_helloConfig-version.cmake\n'}
+[16.428709] (pr_hello) StdoutLine: {'line': b'-- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/package.xml\n'}
+[16.430852] (pr_hello) CommandEnded: {'returncode': 0}
+[16.441764] (-) TimerEvent: {}
+[16.453465] (pr_hello) JobEnded: {'identifier': 'pr_hello', 'rc': 0}
+[16.454194] (-) EventReactorShutdown: {}

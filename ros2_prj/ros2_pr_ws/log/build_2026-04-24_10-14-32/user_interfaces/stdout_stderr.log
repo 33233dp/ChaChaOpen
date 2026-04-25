@@ -1,0 +1,235 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+-- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+-- Found PythonExtra: /usr/bin/python3  
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+-- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (8.8s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/chacha/code/ros2_prj/ros2_pr_ws/build/user_interfaces
+[  2%] Generating type hashes for ROS interfaces
+[  2%] Built target ament_cmake_python_copy_user_interfaces
+running egg_info
+creating user_interfaces.egg-info
+[  2%] Built target user_interfaces__rosidl_generator_type_description
+writing user_interfaces.egg-info/PKG-INFO
+writing dependency_links to user_interfaces.egg-info/dependency_links.txt
+writing top-level names to user_interfaces.egg-info/top_level.txt
+writing manifest file 'user_interfaces.egg-info/SOURCES.txt'
+[  5%] Generating C code for ROS interfaces
+[  8%] Generating C++ code for ROS interfaces
+reading manifest file 'user_interfaces.egg-info/SOURCES.txt'
+writing manifest file 'user_interfaces.egg-info/SOURCES.txt'
+[  8%] Built target ament_cmake_python_build_user_interfaces_egg
+[  8%] Built target user_interfaces__cpp
+[ 11%] Building C object CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__description.c.o
+[ 14%] Building C object CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__functions.c.o
+[ 17%] Building C object CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c.o
+[ 20%] Linking C shared library libuser_interfaces__rosidl_generator_c.so
+[ 20%] Built target user_interfaces__rosidl_generator_c
+[ 23%] Generating C++ introspection for ROS interfaces
+[ 29%] Generating C++ type support for eProsima Fast-RTPS
+[ 29%] Generating C++ type support dispatch for ROS interfaces
+[ 32%] Generating C type support dispatch for ROS interfaces
+[ 35%] Generating C type support for eProsima Fast-RTPS
+[ 38%] Generating C introspection for ROS interfaces
+[ 41%] Building CXX object CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp.o
+[ 44%] Linking CXX shared library libuser_interfaces__rosidl_typesupport_c.so
+[ 47%] Building CXX object CMakeFiles/user_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_interfaces/msg/detail/dds_fastrtps/user__type_support.cpp.o
+[ 50%] Building CXX object CMakeFiles/user_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/user_interfaces/msg/detail/user__type_support_c.cpp.o
+[ 52%] Building CXX object CMakeFiles/user_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/user_interfaces/msg/user__type_support.cpp.o
+[ 55%] Building C object CMakeFiles/user_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/user_interfaces/msg/detail/user__type_support.c.o
+[ 58%] Building CXX object CMakeFiles/user_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/user_interfaces/msg/detail/user__type_support.cpp.o
+[ 58%] Built target user_interfaces__rosidl_typesupport_c
+[ 61%] Linking C shared library libuser_interfaces__rosidl_typesupport_introspection_c.so
+[ 61%] Built target user_interfaces__rosidl_typesupport_introspection_c
+[ 64%] Linking CXX shared library libuser_interfaces__rosidl_typesupport_cpp.so
+[ 67%] Linking CXX shared library libuser_interfaces__rosidl_typesupport_introspection_cpp.so
+[ 67%] Built target user_interfaces__rosidl_typesupport_cpp
+[ 67%] Built target user_interfaces__rosidl_typesupport_introspection_cpp
+[ 70%] Linking CXX shared library libuser_interfaces__rosidl_typesupport_fastrtps_c.so
+[ 73%] Linking CXX shared library libuser_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[ 73%] Built target user_interfaces__rosidl_typesupport_fastrtps_c
+[ 73%] Built target user_interfaces__rosidl_typesupport_fastrtps_cpp
+[ 73%] Built target user_interfaces
+[ 76%] Generating Python code for ROS interfaces
+[ 76%] Built target user_interfaces__py
+[ 79%] Building C object CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/msg/_user_s.c.o
+[ 82%] Linking C shared library libuser_interfaces__rosidl_generator_py.so
+[ 82%] Built target user_interfaces__rosidl_generator_py
+[ 85%] Building C object CMakeFiles/user_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_c.c.o
+[ 88%] Building C object CMakeFiles/user_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o
+[ 91%] Building C object CMakeFiles/user_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o
+[ 94%] Linking C shared module rosidl_generator_py/user_interfaces/user_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[ 97%] Linking C shared module rosidl_generator_py/user_interfaces/user_interfaces_s__rosidl_typesupport_introspection_c.so
+[100%] Linking C shared module rosidl_generator_py/user_interfaces/user_interfaces_s__rosidl_typesupport_c.so
+[100%] Built target user_interfaces_s__rosidl_typesupport_fastrtps_c
+[100%] Built target user_interfaces_s__rosidl_typesupport_c
+[100%] Built target user_interfaces_s__rosidl_typesupport_introspection_c
+-- Install configuration: ""
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/ament_index/resource_index/rosidl_interfaces/user_interfaces
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/msg/User.json
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/rosidl_generator_c__visibility_control.h
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/user.h
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__type_support.c
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__struct.h
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__functions.h
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__type_support.h
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__functions.c
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__description.c
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/environment/library_path.sh
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/environment/library_path.dsv
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/libuser_interfaces__rosidl_generator_c.so
+-- Set non-toolchain portion of runtime path of "/home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/libuser_interfaces__rosidl_generator_c.so" to ""
+-- Up-to-date: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces
+-- Up-to-date: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Up-to-date: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_fastrtps_c.so
+-- Set non-toolchain portion of runtime path of "/home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+-- Up-to-date: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces
+-- Up-to-date: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/user.hpp
+-- Up-to-date: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__traits.hpp
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__builder.hpp
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__struct.hpp
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__type_support.hpp
+-- Up-to-date: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces
+-- Up-to-date: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Up-to-date: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__rosidl_typesupport_fastrtps_cpp.hpp
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/dds_fastrtps
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_fastrtps_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Up-to-date: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces
+-- Up-to-date: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Up-to-date: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__type_support.c
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__rosidl_typesupport_introspection_c.h
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_introspection_c.so
+-- Set non-toolchain portion of runtime path of "/home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_c.so
+-- Set non-toolchain portion of runtime path of "/home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_c.so" to ""
+-- Up-to-date: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces
+-- Up-to-date: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg
+-- Up-to-date: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__type_support.cpp
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__rosidl_typesupport_introspection_cpp.hpp
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_introspection_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_cpp.so
+-- Set non-toolchain portion of runtime path of "/home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_cpp.so" to ""
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/environment/pythonpath.sh
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/environment/pythonpath.dsv
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces-0.0.0-py3.12.egg-info
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces-0.0.0-py3.12.egg-info/top_level.txt
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces-0.0.0-py3.12.egg-info/PKG-INFO
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/user_interfaces_s__rosidl_typesupport_c.so
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/msg
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/msg/_user_s.c
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/msg/__init__.py
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/msg/_user.py
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_c.c
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/user_interfaces_s__rosidl_typesupport_fastrtps_c.so
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/__init__.py
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/user_interfaces_s__rosidl_typesupport_introspection_c.so
+Listing '/home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces'...
+Compiling '/home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/__init__.py'...
+Listing '/home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/msg'...
+Compiling '/home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/msg/__init__.py'...
+Compiling '/home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/msg/_user.py'...
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/user_interfaces_s__rosidl_typesupport_fastrtps_c.so
+-- Set non-toolchain portion of runtime path of "/home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/user_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/user_interfaces_s__rosidl_typesupport_introspection_c.so
+-- Set non-toolchain portion of runtime path of "/home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/user_interfaces_s__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/user_interfaces_s__rosidl_typesupport_c.so
+-- Set non-toolchain portion of runtime path of "/home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/user_interfaces_s__rosidl_typesupport_c.so" to ""
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/libuser_interfaces__rosidl_generator_py.so
+-- Set non-toolchain portion of runtime path of "/home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/libuser_interfaces__rosidl_generator_py.so" to ""
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/msg/User.idl
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/msg/User.msg
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/ament_index/resource_index/package_run_dependencies/user_interfaces
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/ament_index/resource_index/parent_prefix_path/user_interfaces
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/environment/ament_prefix_path.sh
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/environment/ament_prefix_path.dsv
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/environment/path.sh
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/environment/path.dsv
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/local_setup.bash
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/local_setup.sh
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/local_setup.zsh
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/local_setup.dsv
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/package.dsv
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/ament_index/resource_index/packages/user_interfaces
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/export_user_interfaces__rosidl_generator_cExport.cmake
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/export_user_interfaces__rosidl_generator_cExport-noconfig.cmake
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/export_user_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/export_user_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/export_user_interfaces__rosidl_generator_cppExport.cmake
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/export_user_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/export_user_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/user_interfaces__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/user_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/user_interfaces__rosidl_typesupport_cExport.cmake
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/user_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/user_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/user_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/user_interfaces__rosidl_typesupport_cppExport.cmake
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/user_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/export_user_interfaces__rosidl_generator_pyExport.cmake
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/export_user_interfaces__rosidl_generator_pyExport-noconfig.cmake
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/rosidl_cmake-extras.cmake
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/user_interfacesConfig.cmake
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/user_interfacesConfig-version.cmake
+-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/package.xml

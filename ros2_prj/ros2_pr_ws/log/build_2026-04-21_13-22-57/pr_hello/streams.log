@@ -1,0 +1,42 @@
+[0.027s] Invoking command in '/home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello -- -j8 -l8
+[0.173s] [ 66%] Built target pr_test_node
+[0.174s] [ 66%] Built target pr_hello_node
+[0.186s] [ 83%] [32mBuilding CXX object CMakeFiles/test_node.dir/src/test.cpp.o[0m
+[5.679s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[5.679s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[5.679s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[5.679s]                  from [01m[K/home/chacha/code/ros2_prj/ros2_pr_ws/src/pr_hello/src/test.cpp:1[m[K:
+[5.680s] [01m[K/home/chacha/code/ros2_prj/ros2_pr_ws/src/pr_hello/src/test.cpp:[m[K In constructor ‘[01m[KtestNode::[01;32m[KtestNode[m[K(std::string)[m[K’:
+[5.680s] [01m[K/home/chacha/code/ros2_prj/ros2_pr_ws/src/pr_hello/src/test.cpp:7:48:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 5 has type ‘[01m[Kstd::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wformat=-Wformat=]8;;[m[K]
+[5.680s]     7 |                 RCLCPP_INFO(this->get_logger(),[01;35m[K"create node : %s\n"[m[K,node_name);
+[5.680s]       |                                                [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[5.681s] [01m[K/home/chacha/code/ros2_prj/ros2_pr_ws/src/pr_hello/src/test.cpp:7:64:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[5.681s]     7 |                 RCLCPP_INFO(this->get_logger(),"create node : [01;36m[K%s[m[K\n",node_name);
+[5.681s]       |                                                               [01;36m[K~^[m[K
+[5.682s]       |                                                                [01;36m[K|[m[K
+[5.682s]       |                                                                [01;36m[Kchar*[m[K
+[20.620s] [100%] [32m[1mLinking CXX executable test_node[0m
+[21.432s] [100%] Built target test_node
+[21.455s] Invoked command in '/home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello -- -j8 -l8
+[21.476s] Invoking command in '/home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello
+[21.499s] -- Install configuration: ""
+[21.501s] -- Execute custom install script
+[21.504s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/lib/pr_hello/pr_hello_node
+[21.504s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/lib/pr_hello/test_node
+[21.504s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/lib/pr_hello/pr_test_node
+[21.505s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/ament_index/resource_index/package_run_dependencies/pr_hello
+[21.505s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/ament_index/resource_index/parent_prefix_path/pr_hello
+[21.505s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/environment/ament_prefix_path.sh
+[21.506s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/environment/ament_prefix_path.dsv
+[21.506s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/environment/path.sh
+[21.506s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/environment/path.dsv
+[21.507s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/local_setup.bash
+[21.507s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/local_setup.sh
+[21.508s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/local_setup.zsh
+[21.508s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/local_setup.dsv
+[21.509s] -- Symlinking: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/package.dsv
+[21.527s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/ament_index/resource_index/packages/pr_hello
+[21.528s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/cmake/pr_helloConfig.cmake
+[21.528s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/cmake/pr_helloConfig-version.cmake
+[21.528s] -- Up-to-date symlink: /home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/package.xml
+[21.533s] Invoked command in '/home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello

@@ -1,0 +1,10 @@
+[0.011s] Invoking command in '/home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello -- -j8 -l8
+[0.066s] [ 50%] [32mBuilding CXX object CMakeFiles/pr_hello_node.dir/src/pr_hello.cpp.o[0m
+[0.264s] [01m[K/home/chacha/code/ros2_prj/ros2_pr_ws/src/pr_hello/src/pr_hello.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/string.hpp: 没有那个文件或目录
+[0.264s]     2 | #include [01;31m[K"std_msgs/msg/string.hpp"[m[K
+[0.264s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.265s] compilation terminated.
+[0.269s] gmake[2]: *** [CMakeFiles/pr_hello_node.dir/build.make:76：CMakeFiles/pr_hello_node.dir/src/pr_hello.cpp.o] 错误 1
+[0.270s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/pr_hello_node.dir/all] 错误 2
+[0.270s] gmake: *** [Makefile:146：all] 错误 2
+[0.271s] Invoked command in '/home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello -- -j8 -l8

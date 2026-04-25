@@ -1,0 +1,6 @@
+{
+  "package_name": "user_interfaces",
+  "non_idl_tuples": [
+    "/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces:msg/User.msg"
+  ]
+}

@@ -1,0 +1,406 @@
+[0.000000] (-) TimerEvent: {}
+[0.000320] (user_interfaces) JobQueued: {'identifier': 'user_interfaces', 'dependencies': OrderedDict()}
+[0.000617] (user_interfaces) JobStarted: {'identifier': 'user_interfaces'}
+[0.014142] (user_interfaces) JobProgress: {'identifier': 'user_interfaces', 'progress': 'cmake'}
+[0.015527] (user_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces'], 'cwd': '/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'TMUX': '/tmp/tmux-1000/default,8913,0', 'HTTPS_PROXY': 'http://http://127.0.0.1:7890/', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'no_proxy': 'localhost,127.0.0.0/8,::1', 'LANGUAGE': 'zh_CN:en_US:en', 'USER': 'chacha', 'LC_TIME': 'zh_CN.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'STARSHIP_SHELL': 'bash', 'all_proxy': 'socks://http://127.0.0.1:7890/', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'INPUT_METHOD': 'fcitx', 'HOME': '/home/chacha', 'OLDPWD': '/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/msg', 'TERM_PROGRAM_VERSION': '3.4', 'DESKTOP_SESSION': 'ubuntu', 'NO_PROXY': 'localhost,127.0.0.0/8,::1', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SDL_IM_MODULE': 'fcitx', 'LC_MONETARY': 'zh_CN.UTF-8', 'SYSTEMD_EXEC_PID': '3171', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'QT_QPA_PLATFORMTHEME': 'qt5ct', 'https_proxy': 'http://127.0.0.1:7890', 'ROS_DISTRO': 'jazzy', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'chacha', 'ALL_PROXY': 'socks://http://127.0.0.1:7890/', 'http_proxy': 'http://127.0.0.1:7890', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'chacha', 'TERM': 'tmux-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'lsa': 'ls -al', 'WINDOWPATH': '2', 'PATH': '/home/chacha/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/chacha/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/chacha/.local/bin:/home/chacha/.local/bin:/home/chacha/.local/bin:/home/chacha/.local/bin', 'SESSION_MANAGER': 'local/chacha-Lenovo-XiaoXinPro-16IHU-2021:@/tmp/.ICE-unix/2974,unix/chacha-Lenovo-XiaoXinPro-16IHU-2021:/tmp/.ICE-unix/2974', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'zh_CN.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/95ddeb53_3671_4a6c_8790_cc4f4816d376', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'zh_CN.UTF-8', 'XMODIFIERS': '@im=fcitx', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.146', 'TERM_PROGRAM': 'tmux', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'zh_CN.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'zh_CN.UTF-8', 'GCC_COLORS': 'error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'zh_CN.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/chacha/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'STARSHIP_SESSION_KEY': '1416828684212311', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'HTTP_PROXY': 'http://http://127.0.0.1:7890/', 'LC_NUMERIC': 'zh_CN.UTF-8', 'LC_PAPER': 'zh_CN.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'TMUX_PANE': '%0', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.049240] (user_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.099751] (-) TimerEvent: {}
+[0.200039] (-) TimerEvent: {}
+[0.300462] (-) TimerEvent: {}
+[0.400766] (-) TimerEvent: {}
+[0.501156] (-) TimerEvent: {}
+[0.544439] (user_interfaces) StdoutLine: {'line': b'-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[0.601498] (-) TimerEvent: {}
+[0.605017] (user_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.625586] (user_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.653464] (user_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.686524] (user_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.701660] (-) TimerEvent: {}
+[0.744411] (user_interfaces) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[0.801809] (-) TimerEvent: {}
+[0.850438] (user_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[0.865353] (user_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[0.901923] (-) TimerEvent: {}
+[1.002278] (-) TimerEvent: {}
+[1.102634] (-) TimerEvent: {}
+[1.204071] (-) TimerEvent: {}
+[1.304895] (-) TimerEvent: {}
+[1.408130] (-) TimerEvent: {}
+[1.508996] (-) TimerEvent: {}
+[1.610217] (-) TimerEvent: {}
+[1.711126] (-) TimerEvent: {}
+[1.811720] (-) TimerEvent: {}
+[1.912240] (-) TimerEvent: {}
+[2.012719] (-) TimerEvent: {}
+[2.113277] (-) TimerEvent: {}
+[2.214066] (-) TimerEvent: {}
+[2.314492] (-) TimerEvent: {}
+[2.414840] (-) TimerEvent: {}
+[2.515211] (-) TimerEvent: {}
+[2.565415] (user_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[2.615346] (-) TimerEvent: {}
+[2.715703] (-) TimerEvent: {}
+[2.816436] (-) TimerEvent: {}
+[2.920271] (-) TimerEvent: {}
+[3.020832] (-) TimerEvent: {}
+[3.121348] (-) TimerEvent: {}
+[3.221922] (-) TimerEvent: {}
+[3.322566] (-) TimerEvent: {}
+[3.423044] (-) TimerEvent: {}
+[3.523503] (-) TimerEvent: {}
+[3.624116] (-) TimerEvent: {}
+[3.724716] (-) TimerEvent: {}
+[3.825221] (-) TimerEvent: {}
+[3.925828] (-) TimerEvent: {}
+[4.026644] (-) TimerEvent: {}
+[4.127429] (-) TimerEvent: {}
+[4.228115] (-) TimerEvent: {}
+[4.329179] (-) TimerEvent: {}
+[4.433266] (-) TimerEvent: {}
+[4.538276] (-) TimerEvent: {}
+[4.639141] (-) TimerEvent: {}
+[4.739912] (-) TimerEvent: {}
+[4.840525] (-) TimerEvent: {}
+[4.904335] (user_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.940881] (-) TimerEvent: {}
+[5.042042] (-) TimerEvent: {}
+[5.142667] (-) TimerEvent: {}
+[5.243047] (-) TimerEvent: {}
+[5.343568] (-) TimerEvent: {}
+[5.449314] (-) TimerEvent: {}
+[5.550019] (-) TimerEvent: {}
+[5.650599] (-) TimerEvent: {}
+[5.751430] (-) TimerEvent: {}
+[5.763546] (user_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.773497] (user_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[5.852398] (-) TimerEvent: {}
+[5.952858] (-) TimerEvent: {}
+[6.053289] (-) TimerEvent: {}
+[6.148849] (user_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[6.153401] (-) TimerEvent: {}
+[6.253753] (-) TimerEvent: {}
+[6.354153] (-) TimerEvent: {}
+[6.454574] (-) TimerEvent: {}
+[6.554918] (-) TimerEvent: {}
+[6.655259] (-) TimerEvent: {}
+[6.755649] (-) TimerEvent: {}
+[6.856157] (-) TimerEvent: {}
+[6.956733] (-) TimerEvent: {}
+[7.057344] (-) TimerEvent: {}
+[7.157947] (-) TimerEvent: {}
+[7.258653] (-) TimerEvent: {}
+[7.263228] (user_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[7.359018] (-) TimerEvent: {}
+[7.439530] (user_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[7.459176] (-) TimerEvent: {}
+[7.523293] (user_interfaces) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[7.529142] (user_interfaces) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_c>;$<BUILD_INTERFACE:/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_typesupport_fastrtps_c>;$<BUILD_INTERFACE:/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_cpp>;$<BUILD_INTERFACE:/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_typesupport_fastrtps_cpp>;$<BUILD_INTERFACE:/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_typesupport_introspection_c>;$<BUILD_INTERFACE:/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_typesupport_introspection_cpp>;/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_c;/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_py\n'}
+[7.529917] (user_interfaces) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[7.532656] (user_interfaces) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[7.533317] (user_interfaces) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[7.547121] (user_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[7.550045] (user_interfaces) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[7.559403] (-) TimerEvent: {}
+[7.578679] (user_interfaces) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[7.579321] (user_interfaces) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[7.585553] (user_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[7.602101] (user_interfaces) StdoutLine: {'line': b'-- Configuring done (7.6s)\n'}
+[7.659549] (-) TimerEvent: {}
+[7.760225] (-) TimerEvent: {}
+[7.780797] (user_interfaces) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[7.831227] (user_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces\n'}
+[7.860455] (-) TimerEvent: {}
+[7.868079] (user_interfaces) CommandEnded: {'returncode': 0}
+[7.870535] (user_interfaces) JobProgress: {'identifier': 'user_interfaces', 'progress': 'build'}
+[7.874203] (user_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces', '--', '-j8', '-l8'], 'cwd': '/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'TMUX': '/tmp/tmux-1000/default,8913,0', 'HTTPS_PROXY': 'http://http://127.0.0.1:7890/', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'no_proxy': 'localhost,127.0.0.0/8,::1', 'LANGUAGE': 'zh_CN:en_US:en', 'USER': 'chacha', 'LC_TIME': 'zh_CN.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'STARSHIP_SHELL': 'bash', 'all_proxy': 'socks://http://127.0.0.1:7890/', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'INPUT_METHOD': 'fcitx', 'HOME': '/home/chacha', 'OLDPWD': '/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/msg', 'TERM_PROGRAM_VERSION': '3.4', 'DESKTOP_SESSION': 'ubuntu', 'NO_PROXY': 'localhost,127.0.0.0/8,::1', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SDL_IM_MODULE': 'fcitx', 'LC_MONETARY': 'zh_CN.UTF-8', 'SYSTEMD_EXEC_PID': '3171', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'QT_QPA_PLATFORMTHEME': 'qt5ct', 'https_proxy': 'http://127.0.0.1:7890', 'ROS_DISTRO': 'jazzy', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'chacha', 'ALL_PROXY': 'socks://http://127.0.0.1:7890/', 'http_proxy': 'http://127.0.0.1:7890', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'chacha', 'TERM': 'tmux-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'lsa': 'ls -al', 'WINDOWPATH': '2', 'PATH': '/home/chacha/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/chacha/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/chacha/.local/bin:/home/chacha/.local/bin:/home/chacha/.local/bin:/home/chacha/.local/bin', 'SESSION_MANAGER': 'local/chacha-Lenovo-XiaoXinPro-16IHU-2021:@/tmp/.ICE-unix/2974,unix/chacha-Lenovo-XiaoXinPro-16IHU-2021:/tmp/.ICE-unix/2974', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'zh_CN.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/95ddeb53_3671_4a6c_8790_cc4f4816d376', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'zh_CN.UTF-8', 'XMODIFIERS': '@im=fcitx', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.146', 'TERM_PROGRAM': 'tmux', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'zh_CN.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'zh_CN.UTF-8', 'GCC_COLORS': 'error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'zh_CN.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/chacha/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'STARSHIP_SESSION_KEY': '1416828684212311', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'HTTP_PROXY': 'http://http://127.0.0.1:7890/', 'LC_NUMERIC': 'zh_CN.UTF-8', 'LC_PAPER': 'zh_CN.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'TMUX_PANE': '%0', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[7.960752] (-) TimerEvent: {}
+[8.035263] (user_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[8.061166] (-) TimerEvent: {}
+[8.065394] (user_interfaces) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_copy_user_interfaces\n'}
+[8.161390] (-) TimerEvent: {}
+[8.262003] (-) TimerEvent: {}
+[8.362425] (-) TimerEvent: {}
+[8.463019] (-) TimerEvent: {}
+[8.563725] (-) TimerEvent: {}
+[8.664202] (-) TimerEvent: {}
+[8.669934] (user_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[8.673745] (user_interfaces) StdoutLine: {'line': b'creating user_interfaces.egg-info\n'}
+[8.674758] (user_interfaces) StdoutLine: {'line': b'[  2%] Built target user_interfaces__rosidl_generator_type_description\n'}
+[8.706248] (user_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[8.738164] (user_interfaces) StdoutLine: {'line': b'writing user_interfaces.egg-info/PKG-INFO\n'}
+[8.739092] (user_interfaces) StdoutLine: {'line': b'writing dependency_links to user_interfaces.egg-info/dependency_links.txt\n'}
+[8.739429] (user_interfaces) StdoutLine: {'line': b'writing top-level names to user_interfaces.egg-info/top_level.txt\n'}
+[8.739753] (user_interfaces) StdoutLine: {'line': b"writing manifest file 'user_interfaces.egg-info/SOURCES.txt'\n"}
+[8.747463] (user_interfaces) StdoutLine: {'line': b'[  8%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[8.764412] (-) TimerEvent: {}
+[8.867085] (-) TimerEvent: {}
+[8.971087] (-) TimerEvent: {}
+[8.979456] (user_interfaces) StdoutLine: {'line': b"reading manifest file 'user_interfaces.egg-info/SOURCES.txt'\n"}
+[8.980293] (user_interfaces) StdoutLine: {'line': b"writing manifest file 'user_interfaces.egg-info/SOURCES.txt'\n"}
+[9.071356] (-) TimerEvent: {}
+[9.170189] (user_interfaces) StdoutLine: {'line': b'[  8%] Built target ament_cmake_python_build_user_interfaces_egg\n'}
+[9.171435] (-) TimerEvent: {}
+[9.272288] (-) TimerEvent: {}
+[9.373724] (-) TimerEvent: {}
+[9.474415] (-) TimerEvent: {}
+[9.574930] (-) TimerEvent: {}
+[9.675670] (-) TimerEvent: {}
+[9.725231] (user_interfaces) StdoutLine: {'line': b'[  8%] Built target user_interfaces__cpp\n'}
+[9.757283] (user_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__functions.c.o\x1b[0m\n'}
+[9.758270] (user_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__description.c.o\x1b[0m\n'}
+[9.758618] (user_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c.o\x1b[0m\n'}
+[9.775844] (-) TimerEvent: {}
+[9.876766] (-) TimerEvent: {}
+[9.926352] (user_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libuser_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[9.976944] (-) TimerEvent: {}
+[10.055119] (user_interfaces) StdoutLine: {'line': b'[ 20%] Built target user_interfaces__rosidl_generator_c\n'}
+[10.077483] (-) TimerEvent: {}
+[10.095730] (user_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[10.096509] (user_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[10.096858] (user_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[10.101543] (user_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[10.101880] (user_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[10.102170] (user_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[10.178873] (-) TimerEvent: {}
+[10.294379] (-) TimerEvent: {}
+[10.394905] (-) TimerEvent: {}
+[10.504499] (-) TimerEvent: {}
+[10.619087] (-) TimerEvent: {}
+[10.720156] (-) TimerEvent: {}
+[10.820986] (-) TimerEvent: {}
+[10.925524] (-) TimerEvent: {}
+[11.026930] (-) TimerEvent: {}
+[11.130351] (-) TimerEvent: {}
+[11.233600] (-) TimerEvent: {}
+[11.337367] (-) TimerEvent: {}
+[11.341886] (user_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding C object CMakeFiles/user_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/user_interfaces/msg/detail/user__type_support.c.o\x1b[0m\n'}
+[11.438187] (-) TimerEvent: {}
+[11.485853] (user_interfaces) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/user_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/user_interfaces/msg/user__type_support.cpp.o\x1b[0m\n'}
+[11.540131] (-) TimerEvent: {}
+[11.548406] (user_interfaces) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/user_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_interfaces/msg/detail/dds_fastrtps/user__type_support.cpp.o\x1b[0m\n'}
+[11.566308] (user_interfaces) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp.o\x1b[0m\n'}
+[11.604462] (user_interfaces) StdoutLine: {'line': b'[ 52%] \x1b[32m\x1b[1mLinking C shared library libuser_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[11.641085] (-) TimerEvent: {}
+[11.659206] (user_interfaces) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/user_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/user_interfaces/msg/detail/user__type_support.cpp.o\x1b[0m\n'}
+[11.742135] (-) TimerEvent: {}
+[11.831022] (user_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/user_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/user_interfaces/msg/detail/user__type_support_c.cpp.o\x1b[0m\n'}
+[11.838050] (user_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libuser_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[11.842281] (-) TimerEvent: {}
+[11.910225] (user_interfaces) StdoutLine: {'line': b'[ 61%] Built target user_interfaces__rosidl_typesupport_introspection_c\n'}
+[11.942550] (-) TimerEvent: {}
+[12.048182] (-) TimerEvent: {}
+[12.149081] (-) TimerEvent: {}
+[12.229602] (user_interfaces) StdoutLine: {'line': b'[ 61%] Built target user_interfaces__rosidl_typesupport_c\n'}
+[12.249311] (-) TimerEvent: {}
+[12.354270] (-) TimerEvent: {}
+[12.455398] (-) TimerEvent: {}
+[12.559738] (-) TimerEvent: {}
+[12.669845] (-) TimerEvent: {}
+[12.771294] (-) TimerEvent: {}
+[12.884453] (-) TimerEvent: {}
+[12.986259] (-) TimerEvent: {}
+[13.066688] (user_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libuser_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[13.086549] (-) TimerEvent: {}
+[13.188362] (-) TimerEvent: {}
+[13.201912] (user_interfaces) StdoutLine: {'line': b'[ 64%] Built target user_interfaces__rosidl_typesupport_cpp\n'}
+[13.288647] (-) TimerEvent: {}
+[13.289401] (user_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libuser_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[13.388953] (-) TimerEvent: {}
+[13.490035] (-) TimerEvent: {}
+[13.580420] (user_interfaces) StdoutLine: {'line': b'[ 67%] Built target user_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[13.590300] (-) TimerEvent: {}
+[13.691125] (-) TimerEvent: {}
+[13.791549] (-) TimerEvent: {}
+[13.892000] (-) TimerEvent: {}
+[13.941398] (user_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libuser_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[13.992151] (-) TimerEvent: {}
+[14.035184] (user_interfaces) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX shared library libuser_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[14.092323] (-) TimerEvent: {}
+[14.193020] (-) TimerEvent: {}
+[14.258847] (user_interfaces) StdoutLine: {'line': b'[ 73%] Built target user_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[14.293296] (-) TimerEvent: {}
+[14.334651] (user_interfaces) StdoutLine: {'line': b'[ 73%] Built target user_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[14.393575] (-) TimerEvent: {}
+[14.416574] (user_interfaces) StdoutLine: {'line': b'[ 73%] Built target user_interfaces\n'}
+[14.483231] (user_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[14.493716] (-) TimerEvent: {}
+[14.594170] (-) TimerEvent: {}
+[14.695066] (-) TimerEvent: {}
+[14.796155] (-) TimerEvent: {}
+[14.896797] (-) TimerEvent: {}
+[14.998076] (-) TimerEvent: {}
+[15.098743] (-) TimerEvent: {}
+[15.199723] (-) TimerEvent: {}
+[15.300488] (-) TimerEvent: {}
+[15.401316] (-) TimerEvent: {}
+[15.474523] (user_interfaces) StdoutLine: {'line': b'[ 76%] Built target user_interfaces__py\n'}
+[15.501552] (-) TimerEvent: {}
+[15.542044] (user_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/msg/_user_s.c.o\x1b[0m\n'}
+[15.601878] (-) TimerEvent: {}
+[15.702922] (-) TimerEvent: {}
+[15.804598] (-) TimerEvent: {}
+[15.905589] (-) TimerEvent: {}
+[15.909380] (user_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking C shared library libuser_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[16.005854] (-) TimerEvent: {}
+[16.062188] (user_interfaces) StdoutLine: {'line': b'[ 82%] Built target user_interfaces__rosidl_generator_py\n'}
+[16.106205] (-) TimerEvent: {}
+[16.135477] (user_interfaces) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/user_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[16.137149] (user_interfaces) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/user_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[16.143882] (user_interfaces) StdoutLine: {'line': b'[ 91%] \x1b[32mBuilding C object CMakeFiles/user_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[16.206478] (-) TimerEvent: {}
+[16.308081] (-) TimerEvent: {}
+[16.408799] (-) TimerEvent: {}
+[16.511109] (-) TimerEvent: {}
+[16.560119] (user_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/user_interfaces/user_interfaces_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[16.574256] (user_interfaces) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/user_interfaces/user_interfaces_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[16.616217] (-) TimerEvent: {}
+[16.630396] (user_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/user_interfaces/user_interfaces_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[16.716341] (-) TimerEvent: {}
+[16.769861] (user_interfaces) StdoutLine: {'line': b'[100%] Built target user_interfaces_s__rosidl_typesupport_c\n'}
+[16.778943] (user_interfaces) StdoutLine: {'line': b'[100%] Built target user_interfaces_s__rosidl_typesupport_fastrtps_c\n'}
+[16.812864] (user_interfaces) StdoutLine: {'line': b'[100%] Built target user_interfaces_s__rosidl_typesupport_introspection_c\n'}
+[16.816567] (-) TimerEvent: {}
+[16.865990] (user_interfaces) CommandEnded: {'returncode': 0}
+[16.868932] (user_interfaces) JobProgress: {'identifier': 'user_interfaces', 'progress': 'install'}
+[16.905195] (user_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces'], 'cwd': '/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'TMUX': '/tmp/tmux-1000/default,8913,0', 'HTTPS_PROXY': 'http://http://127.0.0.1:7890/', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'no_proxy': 'localhost,127.0.0.0/8,::1', 'LANGUAGE': 'zh_CN:en_US:en', 'USER': 'chacha', 'LC_TIME': 'zh_CN.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'STARSHIP_SHELL': 'bash', 'all_proxy': 'socks://http://127.0.0.1:7890/', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'INPUT_METHOD': 'fcitx', 'HOME': '/home/chacha', 'OLDPWD': '/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/msg', 'TERM_PROGRAM_VERSION': '3.4', 'DESKTOP_SESSION': 'ubuntu', 'NO_PROXY': 'localhost,127.0.0.0/8,::1', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SDL_IM_MODULE': 'fcitx', 'LC_MONETARY': 'zh_CN.UTF-8', 'SYSTEMD_EXEC_PID': '3171', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'QT_QPA_PLATFORMTHEME': 'qt5ct', 'https_proxy': 'http://127.0.0.1:7890', 'ROS_DISTRO': 'jazzy', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'chacha', 'ALL_PROXY': 'socks://http://127.0.0.1:7890/', 'http_proxy': 'http://127.0.0.1:7890', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'chacha', 'TERM': 'tmux-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'lsa': 'ls -al', 'WINDOWPATH': '2', 'PATH': '/home/chacha/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/chacha/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/chacha/.local/bin:/home/chacha/.local/bin:/home/chacha/.local/bin:/home/chacha/.local/bin', 'SESSION_MANAGER': 'local/chacha-Lenovo-XiaoXinPro-16IHU-2021:@/tmp/.ICE-unix/2974,unix/chacha-Lenovo-XiaoXinPro-16IHU-2021:/tmp/.ICE-unix/2974', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'zh_CN.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/95ddeb53_3671_4a6c_8790_cc4f4816d376', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'zh_CN.UTF-8', 'XMODIFIERS': '@im=fcitx', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.146', 'TERM_PROGRAM': 'tmux', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'zh_CN.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'zh_CN.UTF-8', 'GCC_COLORS': 'error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'zh_CN.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/chacha/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'STARSHIP_SESSION_KEY': '1416828684212311', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'HTTP_PROXY': 'http://http://127.0.0.1:7890/', 'LC_NUMERIC': 'zh_CN.UTF-8', 'LC_PAPER': 'zh_CN.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'TMUX_PANE': '%0', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[16.916904] (-) TimerEvent: {}
+[16.942488] (user_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.943268] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/ament_index/resource_index/rosidl_interfaces/user_interfaces\n'}
+[16.944322] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/msg/User.json\n'}
+[16.944857] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces\n'}
+[16.945335] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg\n'}
+[16.945622] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[16.945924] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg/user.h\n'}
+[16.946319] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail\n'}
+[16.946688] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__type_support.c\n'}
+[16.947218] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__struct.h\n'}
+[16.947744] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__functions.h\n'}
+[16.948413] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__type_support.h\n'}
+[16.948709] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__functions.c\n'}
+[16.948903] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__description.c\n'}
+[16.950151] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/environment/library_path.sh\n'}
+[16.950558] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/environment/library_path.dsv\n'}
+[16.950810] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/libuser_interfaces__rosidl_generator_c.so\n'}
+[16.951478] (user_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/libuser_interfaces__rosidl_generator_c.so" to ""\n'}
+[16.951789] (user_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces\n'}
+[16.952089] (user_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg\n'}
+[16.952341] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[16.952611] (user_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail\n'}
+[16.952871] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__rosidl_typesupport_fastrtps_c.h\n'}
+[16.953177] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[16.954014] (user_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[16.954401] (user_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces\n'}
+[16.954613] (user_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg\n'}
+[16.954805] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[16.955111] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg/user.hpp\n'}
+[16.955309] (user_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail\n'}
+[16.955621] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__traits.hpp\n'}
+[16.956016] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__builder.hpp\n'}
+[16.956400] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__struct.hpp\n'}
+[16.956861] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__type_support.hpp\n'}
+[16.957184] (user_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces\n'}
+[16.957486] (user_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg\n'}
+[16.957788] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[16.958021] (user_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail\n'}
+[16.958239] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[16.958531] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/dds_fastrtps\n'}
+[16.958736] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[16.959120] (user_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[16.959543] (user_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces\n'}
+[16.959759] (user_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg\n'}
+[16.960211] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[16.960428] (user_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail\n'}
+[16.960678] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__type_support.c\n'}
+[16.960892] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__rosidl_typesupport_introspection_c.h\n'}
+[16.961191] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[16.962020] (user_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[16.962292] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_c.so\n'}
+[16.963250] (user_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[16.963558] (user_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces\n'}
+[16.964200] (user_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg\n'}
+[16.964797] (user_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail\n'}
+[16.965492] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__type_support.cpp\n'}
+[16.965947] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__rosidl_typesupport_introspection_cpp.hpp\n'}
+[16.966479] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[16.966803] (user_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[16.967137] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_cpp.so\n'}
+[16.967578] (user_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[16.968059] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/environment/pythonpath.sh\n'}
+[16.968555] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/environment/pythonpath.dsv\n'}
+[16.968910] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/python3.12/site-packages/user_interfaces-0.0.0-py3.12.egg-info\n'}
+[16.969439] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/python3.12/site-packages/user_interfaces-0.0.0-py3.12.egg-info/top_level.txt\n'}
+[16.969924] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/python3.12/site-packages/user_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt\n'}
+[16.970263] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/python3.12/site-packages/user_interfaces-0.0.0-py3.12.egg-info/PKG-INFO\n'}
+[16.970649] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/python3.12/site-packages/user_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt\n'}
+[16.971070] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/python3.12/site-packages/user_interfaces\n'}
+[16.971436] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/user_interfaces_s__rosidl_typesupport_c.so\n'}
+[16.971794] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/msg\n'}
+[16.972184] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/msg/_user_s.c\n'}
+[16.972523] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/msg/__init__.py\n'}
+[16.972870] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/msg/_user.py\n'}
+[16.973262] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[16.973602] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[16.974109] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/user_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[16.974540] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[16.974810] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/__init__.py\n'}
+[16.975214] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/user_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[17.017104] (-) TimerEvent: {}
+[17.117771] (-) TimerEvent: {}
+[17.132073] (user_interfaces) StdoutLine: {'line': b"Listing '/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/python3.12/site-packages/user_interfaces'...\n"}
+[17.132763] (user_interfaces) StdoutLine: {'line': b"Compiling '/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/__init__.py'...\n"}
+[17.133189] (user_interfaces) StdoutLine: {'line': b"Listing '/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/msg'...\n"}
+[17.133579] (user_interfaces) StdoutLine: {'line': b"Compiling '/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/msg/__init__.py'...\n"}
+[17.133876] (user_interfaces) StdoutLine: {'line': b"Compiling '/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/msg/_user.py'...\n"}
+[17.154882] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/user_interfaces_s__rosidl_typesupport_fastrtps_c.so\n'}
+[17.155635] (user_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/user_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[17.156318] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/user_interfaces_s__rosidl_typesupport_introspection_c.so\n'}
+[17.157287] (user_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/user_interfaces_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[17.157837] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/user_interfaces_s__rosidl_typesupport_c.so\n'}
+[17.158810] (user_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/user_interfaces_s__rosidl_typesupport_c.so" to ""\n'}
+[17.159498] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/libuser_interfaces__rosidl_generator_py.so\n'}
+[17.160292] (user_interfaces) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/lib/libuser_interfaces__rosidl_generator_py.so" to ""\n'}
+[17.160771] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/msg/User.idl\n'}
+[17.161248] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/msg/User.msg\n'}
+[17.161519] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/ament_index/resource_index/package_run_dependencies/user_interfaces\n'}
+[17.162145] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/ament_index/resource_index/parent_prefix_path/user_interfaces\n'}
+[17.162526] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/environment/ament_prefix_path.sh\n'}
+[17.162867] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/environment/ament_prefix_path.dsv\n'}
+[17.163376] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/environment/path.sh\n'}
+[17.163844] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/environment/path.dsv\n'}
+[17.164244] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/local_setup.bash\n'}
+[17.165869] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/local_setup.sh\n'}
+[17.166243] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/local_setup.zsh\n'}
+[17.166493] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/local_setup.dsv\n'}
+[17.166661] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/package.dsv\n'}
+[17.166821] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/ament_index/resource_index/packages/user_interfaces\n'}
+[17.167092] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/cmake/export_user_interfaces__rosidl_generator_cExport.cmake\n'}
+[17.167610] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/cmake/export_user_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[17.168267] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/cmake/export_user_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[17.168653] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/cmake/export_user_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[17.169085] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/cmake/export_user_interfaces__rosidl_generator_cppExport.cmake\n'}
+[17.169586] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/cmake/export_user_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[17.170272] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/cmake/export_user_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[17.170805] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/cmake/user_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[17.171310] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/cmake/user_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[17.171698] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/cmake/user_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[17.171951] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/cmake/user_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[17.172429] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/cmake/user_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[17.172949] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/cmake/user_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[17.173376] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/cmake/user_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[17.173801] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/cmake/user_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[17.174368] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/cmake/export_user_interfaces__rosidl_generator_pyExport.cmake\n'}
+[17.174847] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/cmake/export_user_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[17.175254] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[17.175664] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[17.176181] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[17.176565] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[17.177044] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[17.177455] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[17.177992] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[17.178393] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/cmake/user_interfacesConfig.cmake\n'}
+[17.178684] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/cmake/user_interfacesConfig-version.cmake\n'}
+[17.179083] (user_interfaces) StdoutLine: {'line': b'-- Installing: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/install/user_interfaces/share/user_interfaces/package.xml\n'}
+[17.186822] (user_interfaces) CommandEnded: {'returncode': 0}
+[17.219347] (-) TimerEvent: {}
+[17.263747] (user_interfaces) JobEnded: {'identifier': 'user_interfaces', 'rc': 0}
+[17.266609] (-) EventReactorShutdown: {}

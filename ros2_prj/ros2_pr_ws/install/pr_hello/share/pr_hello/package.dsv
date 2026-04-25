@@ -1,0 +1,8 @@
+source;share/pr_hello/hook/cmake_prefix_path.ps1
+source;share/pr_hello/hook/cmake_prefix_path.dsv
+source;share/pr_hello/hook/cmake_prefix_path.sh
+source;share/pr_hello/local_setup.bash
+source;share/pr_hello/local_setup.dsv
+source;share/pr_hello/local_setup.ps1
+source;share/pr_hello/local_setup.sh
+source;share/pr_hello/local_setup.zsh

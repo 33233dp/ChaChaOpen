@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "user_interfaces__py",
+		"source" : "/home/chacha/code/ros2_prj/ros2_pr_ws/build/user_interfaces/user_interfaces__py"
+	}
+}

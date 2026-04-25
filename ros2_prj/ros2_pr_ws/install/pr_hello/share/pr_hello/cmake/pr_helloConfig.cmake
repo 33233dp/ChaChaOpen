@@ -1,0 +1,1 @@
+/home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello/ament_cmake_core/pr_helloConfig.cmake
