@@ -2,7 +2,7 @@
 
 # since this file is sourced use either the provided AMENT_CURRENT_PREFIX
 # or fall back to the destination set at configure time
-: ${AMENT_CURRENT_PREFIX:="/home/chacha/code/ros2_prj/ros2_pr_ws/install/pr_hello"}
+: ${AMENT_CURRENT_PREFIX:="/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello"}
 if [ ! -d "$AMENT_CURRENT_PREFIX" ]; then
   if [ -z "$COLCON_CURRENT_PREFIX" ]; then
     echo "The compile time prefix path '$AMENT_CURRENT_PREFIX' doesn't " \

@@ -1,0 +1,70 @@
+[0.009s] Invoking command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/pr_hello': AMENT_PREFIX_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/pr_hello -DCMAKE_INSTALL_PREFIX=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello
+[0.051s] -- The C compiler identification is GNU 13.3.0
+[0.096s] -- The CXX compiler identification is GNU 13.3.0
+[0.109s] -- Detecting C compiler ABI info
+[0.178s] -- Detecting C compiler ABI info - done
+[0.185s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.185s] -- Detecting C compile features
+[0.185s] -- Detecting C compile features - done
+[0.193s] -- Detecting CXX compiler ABI info
+[0.273s] -- Detecting CXX compiler ABI info - done
+[0.281s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.281s] -- Detecting CXX compile features
+[0.281s] -- Detecting CXX compile features - done
+[0.284s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.419s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.543s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.588s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.603s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.623s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.643s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.722s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.726s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.808s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[0.832s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[0.856s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.936s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.949s] -- Found user_interfaces: 0.0.0 (/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake)
+[1.017s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.114s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.114s] -- Configured cppcheck include dirs: 
+[1.114s] -- Configured cppcheck exclude dirs and/or files: 
+[1.115s] -- Added test 'lint_cmake' to check CMake code style
+[1.116s] -- Added test 'uncrustify' to check C / C++ code style
+[1.116s] -- Configured uncrustify additional arguments: 
+[1.116s] -- Added test 'xmllint' to check XML markup files
+[1.118s] -- Configuring done (1.1s)
+[1.141s] -- Generating done (0.0s)
+[1.149s] -- Build files have been written to: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/pr_hello
+[1.160s] Invoked command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/pr_hello' returned '0': AMENT_PREFIX_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/pr_hello -DCMAKE_INSTALL_PREFIX=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello
+[1.162s] Invoking command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/pr_hello': AMENT_PREFIX_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/pr_hello -- -j8 -l8
+[1.225s] [ 33%] Built target pr_test_node
+[1.225s] [ 66%] Building CXX object CMakeFiles/pr_hello_node.dir/src/pr_hello.cpp.o
+[1.225s] [ 66%] Building CXX object CMakeFiles/test_node.dir/src/test.cpp.o
+[11.632s] [ 83%] Linking CXX executable test_node
+[11.688s] [100%] Linking CXX executable pr_hello_node
+[12.053s] [100%] Built target test_node
+[12.079s] [100%] Built target pr_hello_node
+[12.094s] Invoked command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/pr_hello' returned '0': AMENT_PREFIX_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/pr_hello -- -j8 -l8
+[12.106s] Invoking command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/pr_hello': AMENT_PREFIX_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/pr_hello
+[12.116s] -- Install configuration: ""
+[12.117s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/lib/pr_hello/pr_hello_node
+[12.120s] -- Set non-toolchain portion of runtime path of "/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/lib/pr_hello/pr_hello_node" to ""
+[12.120s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/lib/pr_hello/test_node
+[12.124s] -- Set non-toolchain portion of runtime path of "/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/lib/pr_hello/test_node" to ""
+[12.124s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/lib/pr_hello/pr_test_node
+[12.125s] -- Set non-toolchain portion of runtime path of "/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/lib/pr_hello/pr_test_node" to ""
+[12.125s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/ament_index/resource_index/package_run_dependencies/pr_hello
+[12.126s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/ament_index/resource_index/parent_prefix_path/pr_hello
+[12.126s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/environment/ament_prefix_path.dsv
+[12.126s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/environment/path.dsv
+[12.126s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/local_setup.bash
+[12.127s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/local_setup.sh
+[12.127s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/local_setup.zsh
+[12.127s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/local_setup.dsv
+[12.127s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/package.dsv
+[12.127s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/ament_index/resource_index/packages/pr_hello
+[12.127s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/cmake/pr_helloConfig.cmake
+[12.128s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/cmake/pr_helloConfig-version.cmake
+[12.128s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/package.xml
+[12.129s] Invoked command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/pr_hello' returned '0': AMENT_PREFIX_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/pr_hello

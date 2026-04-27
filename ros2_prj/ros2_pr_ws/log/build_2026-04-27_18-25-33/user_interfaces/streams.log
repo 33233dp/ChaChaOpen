@@ -1,0 +1,72 @@
+[0.007s] Invoking command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces -DCMAKE_INSTALL_PREFIX=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces
+[0.097s] -- The C compiler identification is GNU 13.3.0
+[0.140s] -- The CXX compiler identification is GNU 13.3.0
+[0.155s] -- Detecting C compiler ABI info
+[0.229s] -- Detecting C compiler ABI info - done
+[0.236s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.236s] -- Detecting C compile features
+[0.237s] -- Detecting C compile features - done
+[0.244s] -- Detecting CXX compiler ABI info
+[0.319s] -- Detecting CXX compiler ABI info - done
+[0.326s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.326s] -- Detecting CXX compile features
+[0.327s] -- Detecting CXX compile features - done
+[0.334s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.444s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.552s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.605s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.623s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.646s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.667s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.703s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[0.758s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.774s] -- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.025s] CMake Error at /opt/ros/jazzy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):
+[1.025s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[1.025s]   user_interfaces --arguments-file
+[1.025s]   /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces/rosidl_adapter__arguments__user_interfaces.json
+[1.025s]   --output-dir
+[1.025s]   /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces/rosidl_adapter/user_interfaces
+[1.026s]   --output-file
+[1.026s]   /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces/rosidl_adapter/user_interfaces.idls)
+[1.026s]   returned error code 1:
+[1.026s] 
+[1.026s]   Error processing 'string out1;' of 'user_interfaces/user_Request': ''out1;'
+[1.026s]   is an invalid field name.  It should have the pattern
+[1.026s]   '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$''
+[1.026s] 
+[1.026s]   Traceback (most recent call last):
+[1.026s] 
+[1.026s]     File "<frozen runpy>", line 198, in _run_module_as_main
+[1.026s]     File "<frozen runpy>", line 88, in _run_code
+[1.026s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[1.026s]       sys.exit(main())
+[1.026s]                ^^^^^^
+[1.026s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/main.py", line 53, in main
+[1.026s]       abs_idl_file = convert_to_idl(
+[1.026s]                      ^^^^^^^^^^^^^^^
+[1.026s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__init__.py", line 24, in convert_to_idl
+[1.026s]       return convert_srv_to_idl(
+[1.027s]              ^^^^^^^^^^^^^^^^^^^
+[1.027s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/srv/__init__.py", line 28, in convert_srv_to_idl
+[1.027s]       srv = parse_service_string(package_name, input_file.stem, content)
+[1.027s]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1.027s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 860, in parse_service_string
+[1.027s]       request_message = parse_message_string(
+[1.027s]                         ^^^^^^^^^^^^^^^^^^^^^
+[1.027s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 520, in parse_message_string
+[1.027s]       fields.append(Field(
+[1.027s]                     ^^^^^^
+[1.027s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 355, in __init__
+[1.027s]       raise NameError(
+[1.027s] 
+[1.027s]   NameError: 'out1;' is an invalid field name.  It should have the pattern
+[1.027s]   '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$'
+[1.027s] 
+[1.027s] Call Stack (most recent call first):
+[1.027s]   /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)
+[1.027s]   CMakeLists.txt:15 (rosidl_generate_interfaces)
+[1.028s] 
+[1.028s] 
+[1.028s] -- Configuring incomplete, errors occurred!
+[1.032s] Invoked command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces -DCMAKE_INSTALL_PREFIX=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces

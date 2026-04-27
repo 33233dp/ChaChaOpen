@@ -1,2 +1,4 @@
 msg/User.idl
 msg/User.msg
+srv/User.idl
+srv/User.srv

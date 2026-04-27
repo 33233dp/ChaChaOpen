@@ -1,0 +1,4 @@
+[0mCMake Error: The current CMakeCache.txt directory /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces/CMakeCache.txt is different than the directory /home/chacha/code/ros2_prj/ros2_pr_ws/build/user_interfaces where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
+[0mCMake Error: The source directory "/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces" does not exist.
+Specify --help for usage, or press the help button on the CMake GUI.[0m
+gmake: *** [Makefile:815：cmake_check_build_system] 错误 1

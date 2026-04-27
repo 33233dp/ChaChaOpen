@@ -13,9 +13,15 @@ find_package(sensor_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 # 添加消息文件和依赖
 rosidl_generate_interfaces(${PROJECT_NAME}
+  # msg和srv文件路径
   "msg/User.msg"
+  "srv/User.srv"
+  # 依赖关系
   DEPENDENCIES std_msgs sensor_msgs
 )
+
+ament_export_dependencies(rosidl_default_runtime)
+
 
 # uncomment the following section in order to fill in
 # further dependencies manually.

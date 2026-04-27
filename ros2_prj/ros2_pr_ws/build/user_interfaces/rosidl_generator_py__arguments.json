@@ -1,9 +1,10 @@
 {
   "package_name": "user_interfaces",
-  "output_dir": "/home/chacha/code/ros2_prj/ros2_pr_ws/build/user_interfaces/rosidl_generator_py/user_interfaces",
+  "output_dir": "/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces/rosidl_generator_py/user_interfaces",
   "template_dir": "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource",
   "idl_tuples": [
-    "/home/chacha/code/ros2_prj/ros2_pr_ws/build/user_interfaces/rosidl_adapter/user_interfaces:msg/User.idl"
+    "/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces/rosidl_adapter/user_interfaces:msg/User.idl",
+    "/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces/rosidl_adapter/user_interfaces:srv/User.idl"
   ],
   "ros_interface_dependencies": [
     "std_msgs:/opt/ros/jazzy/share/std_msgs/msg/Bool.idl",
@@ -114,7 +115,8 @@
     "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_msg.py.em",
     "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_srv_pkg_typesupport_entry_point.c.em",
     "/opt/ros/jazzy/share/rosidl_generator_py/cmake/../resource/_srv.py.em",
-    "/home/chacha/code/ros2_prj/ros2_pr_ws/build/user_interfaces/rosidl_adapter/user_interfaces/msg/User.idl",
+    "/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces/rosidl_adapter/user_interfaces/msg/User.idl",
+    "/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces/rosidl_adapter/user_interfaces/srv/User.idl",
     "/opt/ros/jazzy/share/std_msgs/msg/Bool.idl",
     "/opt/ros/jazzy/share/std_msgs/msg/Byte.idl",
     "/opt/ros/jazzy/share/std_msgs/msg/ByteMultiArray.idl",

@@ -1,0 +1,14 @@
+/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/pr_hello/src/test.cpp:1:10: fatal error: rclcpp/rclcpp.hpp: No such file or directory
+    1 | #include "rclcpp/rclcpp.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[2]: *** [CMakeFiles/test_node.dir/build.make:76: CMakeFiles/test_node.dir/src/test.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/test_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/pr_hello/src/pr_hello.cpp:1:10: fatal error: rclcpp/rclcpp.hpp: No such file or directory
+    1 | #include "rclcpp/rclcpp.hpp"
+      |          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[2]: *** [CMakeFiles/pr_hello_node.dir/build.make:76: CMakeFiles/pr_hello_node.dir/src/pr_hello.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:141: CMakeFiles/pr_hello_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

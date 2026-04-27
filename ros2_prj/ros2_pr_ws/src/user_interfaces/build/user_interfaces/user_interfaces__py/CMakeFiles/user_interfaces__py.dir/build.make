@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces
+CMAKE_SOURCE_DIR = /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces
+CMAKE_BINARY_DIR = /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces
 
 # Utility rule file for user_interfaces__py.
 
@@ -70,8 +70,11 @@ user_interfaces__py/CMakeFiles/user_interfaces__py: rosidl_generator_py/user_int
 user_interfaces__py/CMakeFiles/user_interfaces__py: rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_introspection_c.c
 user_interfaces__py/CMakeFiles/user_interfaces__py: rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_c.c
 user_interfaces__py/CMakeFiles/user_interfaces__py: rosidl_generator_py/user_interfaces/msg/_user.py
+user_interfaces__py/CMakeFiles/user_interfaces__py: rosidl_generator_py/user_interfaces/srv/_user.py
 user_interfaces__py/CMakeFiles/user_interfaces__py: rosidl_generator_py/user_interfaces/msg/__init__.py
+user_interfaces__py/CMakeFiles/user_interfaces__py: rosidl_generator_py/user_interfaces/srv/__init__.py
 user_interfaces__py/CMakeFiles/user_interfaces__py: rosidl_generator_py/user_interfaces/msg/_user_s.c
+user_interfaces__py/CMakeFiles/user_interfaces__py: rosidl_generator_py/user_interfaces/srv/_user_s.c
 
 rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/lib/rosidl_generator_py/rosidl_generator_py
 rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_py/__init__.py
@@ -87,6 +90,7 @@ rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_fas
 rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/rosidl_generator_py/resource/_srv_pkg_typesupport_entry_point.c.em
 rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/rosidl_generator_py/resource/_srv.py.em
 rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/user_interfaces/msg/User.idl
+rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: rosidl_adapter/user_interfaces/srv/User.idl
 rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/std_msgs/msg/Bool.idl
 rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/std_msgs/msg/Byte.idl
 rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/std_msgs/msg/ByteMultiArray.idl
@@ -180,8 +184,8 @@ rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_fas
 rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/geometry_msgs/msg/Wrench.idl
 rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/geometry_msgs/msg/WrenchStamped.idl
 rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
-	cd /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/user_interfaces__py && /usr/bin/python3 /opt/ros/jazzy/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
+	cd /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/user_interfaces__py && /usr/bin/python3 /opt/ros/jazzy/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
 rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_introspection_c.c: rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_introspection_c.c
@@ -192,11 +196,20 @@ rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_c.c
 rosidl_generator_py/user_interfaces/msg/_user.py: rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/user_interfaces/msg/_user.py
 
+rosidl_generator_py/user_interfaces/srv/_user.py: rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/user_interfaces/srv/_user.py
+
 rosidl_generator_py/user_interfaces/msg/__init__.py: rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/user_interfaces/msg/__init__.py
 
+rosidl_generator_py/user_interfaces/srv/__init__.py: rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/user_interfaces/srv/__init__.py
+
 rosidl_generator_py/user_interfaces/msg/_user_s.c: rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/user_interfaces/msg/_user_s.c
+
+rosidl_generator_py/user_interfaces/srv/_user_s.c: rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/user_interfaces/srv/_user_s.c
 
 user_interfaces__py: rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_c.c
 user_interfaces__py: rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
@@ -204,6 +217,9 @@ user_interfaces__py: rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.r
 user_interfaces__py: rosidl_generator_py/user_interfaces/msg/__init__.py
 user_interfaces__py: rosidl_generator_py/user_interfaces/msg/_user.py
 user_interfaces__py: rosidl_generator_py/user_interfaces/msg/_user_s.c
+user_interfaces__py: rosidl_generator_py/user_interfaces/srv/__init__.py
+user_interfaces__py: rosidl_generator_py/user_interfaces/srv/_user.py
+user_interfaces__py: rosidl_generator_py/user_interfaces/srv/_user_s.c
 user_interfaces__py: user_interfaces__py/CMakeFiles/user_interfaces__py
 user_interfaces__py: user_interfaces__py/CMakeFiles/user_interfaces__py.dir/build.make
 .PHONY : user_interfaces__py
@@ -213,10 +229,10 @@ user_interfaces__py/CMakeFiles/user_interfaces__py.dir/build: user_interfaces__p
 .PHONY : user_interfaces__py/CMakeFiles/user_interfaces__py.dir/build
 
 user_interfaces__py/CMakeFiles/user_interfaces__py.dir/clean:
-	cd /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/user_interfaces__py && $(CMAKE_COMMAND) -P CMakeFiles/user_interfaces__py.dir/cmake_clean.cmake
+	cd /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/user_interfaces__py && $(CMAKE_COMMAND) -P CMakeFiles/user_interfaces__py.dir/cmake_clean.cmake
 .PHONY : user_interfaces__py/CMakeFiles/user_interfaces__py.dir/clean
 
 user_interfaces__py/CMakeFiles/user_interfaces__py.dir/depend:
-	cd /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/user_interfaces__py /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/user_interfaces__py /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/user_interfaces__py/CMakeFiles/user_interfaces__py.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/user_interfaces__py /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/user_interfaces__py /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/user_interfaces__py/CMakeFiles/user_interfaces__py.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : user_interfaces__py/CMakeFiles/user_interfaces__py.dir/depend
 

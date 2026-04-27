@@ -5,6 +5,9 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/user_interfaces/msg/__init__.py"
   "../rosidl_generator_py/user_interfaces/msg/_user.py"
   "../rosidl_generator_py/user_interfaces/msg/_user_s.c"
+  "../rosidl_generator_py/user_interfaces/srv/__init__.py"
+  "../rosidl_generator_py/user_interfaces/srv/_user.py"
+  "../rosidl_generator_py/user_interfaces/srv/_user_s.c"
   "CMakeFiles/user_interfaces__py"
 )
 

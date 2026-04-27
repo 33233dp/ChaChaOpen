@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces
+CMAKE_SOURCE_DIR = /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces
+CMAKE_BINARY_DIR = /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces
 
 # Include any dependencies generated for this target.
 include CMakeFiles/user_interfaces__rosidl_generator_c.dir/depend.make
@@ -89,6 +89,7 @@ rosidl_generator_c/user_interfaces/msg/user.h: /opt/ros/jazzy/share/rosidl_gener
 rosidl_generator_c/user_interfaces/msg/user.h: /opt/ros/jazzy/share/rosidl_generator_c/resource/srv__type_support.c.em
 rosidl_generator_c/user_interfaces/msg/user.h: /opt/ros/jazzy/share/rosidl_generator_c/resource/srv__type_support.h.em
 rosidl_generator_c/user_interfaces/msg/user.h: rosidl_adapter/user_interfaces/msg/User.idl
+rosidl_generator_c/user_interfaces/msg/user.h: rosidl_adapter/user_interfaces/srv/User.idl
 rosidl_generator_c/user_interfaces/msg/user.h: /opt/ros/jazzy/share/std_msgs/msg/Bool.idl
 rosidl_generator_c/user_interfaces/msg/user.h: /opt/ros/jazzy/share/std_msgs/msg/Byte.idl
 rosidl_generator_c/user_interfaces/msg/user.h: /opt/ros/jazzy/share/std_msgs/msg/ByteMultiArray.idl
@@ -182,8 +183,8 @@ rosidl_generator_c/user_interfaces/msg/user.h: /opt/ros/jazzy/share/geometry_msg
 rosidl_generator_c/user_interfaces/msg/user.h: /opt/ros/jazzy/share/geometry_msgs/msg/Wrench.idl
 rosidl_generator_c/user_interfaces/msg/user.h: /opt/ros/jazzy/share/geometry_msgs/msg/WrenchStamped.idl
 rosidl_generator_c/user_interfaces/msg/user.h: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/jazzy/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_c__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/jazzy/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c --generator-arguments-file /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_c__arguments.json
 
 rosidl_generator_c/user_interfaces/msg/detail/user__functions.h: rosidl_generator_c/user_interfaces/msg/user.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/user_interfaces/msg/detail/user__functions.h
@@ -194,6 +195,18 @@ rosidl_generator_c/user_interfaces/msg/detail/user__struct.h: rosidl_generator_c
 rosidl_generator_c/user_interfaces/msg/detail/user__type_support.h: rosidl_generator_c/user_interfaces/msg/user.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/user_interfaces/msg/detail/user__type_support.h
 
+rosidl_generator_c/user_interfaces/srv/user.h: rosidl_generator_c/user_interfaces/msg/user.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/user_interfaces/srv/user.h
+
+rosidl_generator_c/user_interfaces/srv/detail/user__functions.h: rosidl_generator_c/user_interfaces/msg/user.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/user_interfaces/srv/detail/user__functions.h
+
+rosidl_generator_c/user_interfaces/srv/detail/user__struct.h: rosidl_generator_c/user_interfaces/msg/user.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/user_interfaces/srv/detail/user__struct.h
+
+rosidl_generator_c/user_interfaces/srv/detail/user__type_support.h: rosidl_generator_c/user_interfaces/msg/user.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/user_interfaces/srv/detail/user__type_support.h
+
 rosidl_generator_c/user_interfaces/msg/detail/user__description.c: rosidl_generator_c/user_interfaces/msg/user.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/user_interfaces/msg/detail/user__description.c
 
@@ -203,53 +216,107 @@ rosidl_generator_c/user_interfaces/msg/detail/user__functions.c: rosidl_generato
 rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c: rosidl_generator_c/user_interfaces/msg/user.h
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c
 
+rosidl_generator_c/user_interfaces/srv/detail/user__description.c: rosidl_generator_c/user_interfaces/msg/user.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/user_interfaces/srv/detail/user__description.c
+
+rosidl_generator_c/user_interfaces/srv/detail/user__functions.c: rosidl_generator_c/user_interfaces/msg/user.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/user_interfaces/srv/detail/user__functions.c
+
+rosidl_generator_c/user_interfaces/srv/detail/user__type_support.c: rosidl_generator_c/user_interfaces/msg/user.h
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_c/user_interfaces/srv/detail/user__type_support.c
+
 CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__description.c.o: CMakeFiles/user_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__description.c.o: rosidl_generator_c/user_interfaces/msg/detail/user__description.c
 CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__description.c.o: CMakeFiles/user_interfaces__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__description.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__description.c.o -MF CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__description.c.o.d -o CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__description.c.o -c /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_c/user_interfaces/msg/detail/user__description.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__description.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__description.c.o -MF CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__description.c.o.d -o CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__description.c.o -c /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_c/user_interfaces/msg/detail/user__description.c
 
 CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__description.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__description.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_c/user_interfaces/msg/detail/user__description.c > CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__description.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_c/user_interfaces/msg/detail/user__description.c > CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__description.c.i
 
 CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__description.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__description.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_c/user_interfaces/msg/detail/user__description.c -o CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__description.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_c/user_interfaces/msg/detail/user__description.c -o CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__description.c.s
 
 CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__functions.c.o: CMakeFiles/user_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__functions.c.o: rosidl_generator_c/user_interfaces/msg/detail/user__functions.c
 CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__functions.c.o: CMakeFiles/user_interfaces__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__functions.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__functions.c.o -MF CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__functions.c.o.d -o CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__functions.c.o -c /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_c/user_interfaces/msg/detail/user__functions.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__functions.c.o -MF CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__functions.c.o.d -o CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__functions.c.o -c /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_c/user_interfaces/msg/detail/user__functions.c
 
 CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__functions.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__functions.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_c/user_interfaces/msg/detail/user__functions.c > CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__functions.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_c/user_interfaces/msg/detail/user__functions.c > CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__functions.c.i
 
 CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__functions.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__functions.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_c/user_interfaces/msg/detail/user__functions.c -o CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__functions.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_c/user_interfaces/msg/detail/user__functions.c -o CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__functions.c.s
 
 CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c.o: CMakeFiles/user_interfaces__rosidl_generator_c.dir/flags.make
 CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c.o: rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c
 CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c.o: CMakeFiles/user_interfaces__rosidl_generator_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c.o -MF CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c.o.d -o CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c.o -c /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c.o -MF CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c.o.d -o CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c.o -c /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c
 
 CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c > CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c > CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c.i
 
 CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c -o CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c -o CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c.s
+
+CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__description.c.o: CMakeFiles/user_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__description.c.o: rosidl_generator_c/user_interfaces/srv/detail/user__description.c
+CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__description.c.o: CMakeFiles/user_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__description.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__description.c.o -MF CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__description.c.o.d -o CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__description.c.o -c /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_c/user_interfaces/srv/detail/user__description.c
+
+CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__description.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__description.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_c/user_interfaces/srv/detail/user__description.c > CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__description.c.i
+
+CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__description.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__description.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_c/user_interfaces/srv/detail/user__description.c -o CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__description.c.s
+
+CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__functions.c.o: CMakeFiles/user_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__functions.c.o: rosidl_generator_c/user_interfaces/srv/detail/user__functions.c
+CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__functions.c.o: CMakeFiles/user_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__functions.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__functions.c.o -MF CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__functions.c.o.d -o CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__functions.c.o -c /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_c/user_interfaces/srv/detail/user__functions.c
+
+CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__functions.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__functions.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_c/user_interfaces/srv/detail/user__functions.c > CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__functions.c.i
+
+CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__functions.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__functions.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_c/user_interfaces/srv/detail/user__functions.c -o CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__functions.c.s
+
+CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__type_support.c.o: CMakeFiles/user_interfaces__rosidl_generator_c.dir/flags.make
+CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__type_support.c.o: rosidl_generator_c/user_interfaces/srv/detail/user__type_support.c
+CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__type_support.c.o: CMakeFiles/user_interfaces__rosidl_generator_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__type_support.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__type_support.c.o -MF CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__type_support.c.o.d -o CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__type_support.c.o -c /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_c/user_interfaces/srv/detail/user__type_support.c
+
+CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__type_support.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__type_support.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_c/user_interfaces/srv/detail/user__type_support.c > CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__type_support.c.i
+
+CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__type_support.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__type_support.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_c/user_interfaces/srv/detail/user__type_support.c -o CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__type_support.c.s
 
 # Object files for target user_interfaces__rosidl_generator_c
 user_interfaces__rosidl_generator_c_OBJECTS = \
 "CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__description.c.o" \
 "CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__functions.c.o" \
-"CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c.o"
+"CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c.o" \
+"CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__description.c.o" \
+"CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__functions.c.o" \
+"CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__type_support.c.o"
 
 # External object files for target user_interfaces__rosidl_generator_c
 user_interfaces__rosidl_generator_c_EXTERNAL_OBJECTS =
@@ -257,6 +324,9 @@ user_interfaces__rosidl_generator_c_EXTERNAL_OBJECTS =
 libuser_interfaces__rosidl_generator_c.so: CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__description.c.o
 libuser_interfaces__rosidl_generator_c.so: CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__functions.c.o
 libuser_interfaces__rosidl_generator_c.so: CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c.o
+libuser_interfaces__rosidl_generator_c.so: CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__description.c.o
+libuser_interfaces__rosidl_generator_c.so: CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__functions.c.o
+libuser_interfaces__rosidl_generator_c.so: CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__type_support.c.o
 libuser_interfaces__rosidl_generator_c.so: CMakeFiles/user_interfaces__rosidl_generator_c.dir/build.make
 libuser_interfaces__rosidl_generator_c.so: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_generator_c.so
 libuser_interfaces__rosidl_generator_c.so: /opt/ros/jazzy/lib/libgeometry_msgs__rosidl_generator_c.so
@@ -266,7 +336,7 @@ libuser_interfaces__rosidl_generator_c.so: /opt/ros/jazzy/lib/libbuiltin_interfa
 libuser_interfaces__rosidl_generator_c.so: /opt/ros/jazzy/lib/librosidl_runtime_c.so
 libuser_interfaces__rosidl_generator_c.so: /opt/ros/jazzy/lib/librcutils.so
 libuser_interfaces__rosidl_generator_c.so: CMakeFiles/user_interfaces__rosidl_generator_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C shared library libuser_interfaces__rosidl_generator_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C shared library libuser_interfaces__rosidl_generator_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/user_interfaces__rosidl_generator_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -284,6 +354,13 @@ CMakeFiles/user_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/us
 CMakeFiles/user_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c
 CMakeFiles/user_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/user_interfaces/msg/detail/user__type_support.h
 CMakeFiles/user_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/user_interfaces/msg/user.h
-	cd /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles/user_interfaces__rosidl_generator_c.dir/DependInfo.cmake "--color=$(COLOR)"
+CMakeFiles/user_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/user_interfaces/srv/detail/user__description.c
+CMakeFiles/user_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/user_interfaces/srv/detail/user__functions.c
+CMakeFiles/user_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/user_interfaces/srv/detail/user__functions.h
+CMakeFiles/user_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/user_interfaces/srv/detail/user__struct.h
+CMakeFiles/user_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/user_interfaces/srv/detail/user__type_support.c
+CMakeFiles/user_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/user_interfaces/srv/detail/user__type_support.h
+CMakeFiles/user_interfaces__rosidl_generator_c.dir/depend: rosidl_generator_c/user_interfaces/srv/user.h
+	cd /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles/user_interfaces__rosidl_generator_c.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/user_interfaces__rosidl_generator_c.dir/depend
 

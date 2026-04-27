@@ -1,0 +1,42 @@
+[0.008s] Invoking command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces -- -j8 -l8
+[0.042s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.062s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.154s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.176s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.184s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.195s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.210s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.237s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[0.286s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.294s] -- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.509s] Error parsing '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/package.xml':
+[3.848s] Traceback (most recent call last):
+[3.849s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 150, in <module>
+[3.849s]     main()
+[3.849s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 53, in main
+[3.849s]     raise e
+[3.849s]   File "/opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 49, in main
+[3.849s]     package = parse_package_string(
+[3.849s]               ^^^^^^^^^^^^^^^^^^^^^
+[3.849s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 788, in parse_package_string
+[3.849s]     pkg.validate(warnings=warnings)
+[3.850s]   File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 330, in validate
+[3.850s]     raise InvalidPackage('\n'.join(errors), self.filename)
+[3.850s] catkin_pkg.package.InvalidPackage: Error(s) in package '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/package.xml':
+[3.850s] The package "user_interfaces" must not "build_depend" on a package with the same name as this package
+[3.850s] The package "user_interfaces" must not "build_export_depend" on a package with the same name as this package
+[3.850s] The package "user_interfaces" must not "exec_depend" on a package with the same name as this package
+[3.903s] CMake Error at /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:95 (message):
+[3.903s]   execute_process(/usr/bin/python3
+[3.903s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py
+[3.903s]   /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/package.xml
+[3.903s]   /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces/ament_cmake_core/package.cmake)
+[3.903s]   returned error code 1
+[3.903s] Call Stack (most recent call first):
+[3.903s]   /opt/ros/jazzy/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)
+[3.903s]   /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:220 (ament_package_xml)
+[3.903s]   CMakeLists.txt:15 (rosidl_generate_interfaces)
+[3.904s] 
+[3.904s] 
+[3.904s] -- Configuring incomplete, errors occurred!
+[3.910s] gmake: *** [Makefile:1085: cmake_check_build_system] Error 1

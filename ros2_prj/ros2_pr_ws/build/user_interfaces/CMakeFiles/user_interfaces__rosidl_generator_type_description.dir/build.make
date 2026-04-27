@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces
+CMAKE_SOURCE_DIR = /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/chacha/code/ros2_prj/ros2_pr_ws/build/user_interfaces
+CMAKE_BINARY_DIR = /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces
 
 # Utility rule file for user_interfaces__rosidl_generator_type_description.
 
@@ -67,15 +67,21 @@ include CMakeFiles/user_interfaces__rosidl_generator_type_description.dir/compil
 include CMakeFiles/user_interfaces__rosidl_generator_type_description.dir/progress.make
 
 CMakeFiles/user_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/user_interfaces/msg/User.json
+CMakeFiles/user_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/user_interfaces/srv/User.json
 
 rosidl_generator_type_description/user_interfaces/msg/User.json: /opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description
 rosidl_generator_type_description/user_interfaces/msg/User.json: /opt/ros/jazzy/lib/python3.12/site-packages/rosidl_generator_type_description/__init__.py
 rosidl_generator_type_description/user_interfaces/msg/User.json: rosidl_adapter/user_interfaces/msg/User.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/chacha/code/ros2_prj/ros2_pr_ws/build/user_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating type hashes for ROS interfaces"
-	/usr/bin/python3 /opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description --generator-arguments-file /home/chacha/code/ros2_prj/ros2_pr_ws/build/user_interfaces/rosidl_generator_type_description__arguments.json
+rosidl_generator_type_description/user_interfaces/msg/User.json: rosidl_adapter/user_interfaces/srv/User.idl
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating type hashes for ROS interfaces"
+	/usr/bin/python3 /opt/ros/jazzy/lib/rosidl_generator_type_description/rosidl_generator_type_description --generator-arguments-file /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces/rosidl_generator_type_description__arguments.json
+
+rosidl_generator_type_description/user_interfaces/srv/User.json: rosidl_generator_type_description/user_interfaces/msg/User.json
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_type_description/user_interfaces/srv/User.json
 
 user_interfaces__rosidl_generator_type_description: CMakeFiles/user_interfaces__rosidl_generator_type_description
 user_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/user_interfaces/msg/User.json
+user_interfaces__rosidl_generator_type_description: rosidl_generator_type_description/user_interfaces/srv/User.json
 user_interfaces__rosidl_generator_type_description: CMakeFiles/user_interfaces__rosidl_generator_type_description.dir/build.make
 .PHONY : user_interfaces__rosidl_generator_type_description
 
@@ -88,6 +94,6 @@ CMakeFiles/user_interfaces__rosidl_generator_type_description.dir/clean:
 .PHONY : CMakeFiles/user_interfaces__rosidl_generator_type_description.dir/clean
 
 CMakeFiles/user_interfaces__rosidl_generator_type_description.dir/depend:
-	cd /home/chacha/code/ros2_prj/ros2_pr_ws/build/user_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces /home/chacha/code/ros2_prj/ros2_pr_ws/build/user_interfaces /home/chacha/code/ros2_prj/ros2_pr_ws/build/user_interfaces /home/chacha/code/ros2_prj/ros2_pr_ws/build/user_interfaces/CMakeFiles/user_interfaces__rosidl_generator_type_description.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces/CMakeFiles/user_interfaces__rosidl_generator_type_description.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/user_interfaces__rosidl_generator_type_description.dir/depend
 

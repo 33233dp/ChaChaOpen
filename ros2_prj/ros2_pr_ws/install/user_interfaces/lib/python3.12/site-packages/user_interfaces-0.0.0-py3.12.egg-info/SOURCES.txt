@@ -4,3 +4,7 @@ user_interfaces.egg-info/PKG-INFO
 user_interfaces.egg-info/SOURCES.txt
 user_interfaces.egg-info/dependency_links.txt
 user_interfaces.egg-info/top_level.txt
+user_interfaces/msg/__init__.py
+user_interfaces/msg/_user.py
+user_interfaces/srv/__init__.py
+user_interfaces/srv/_user.py

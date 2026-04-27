@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces
+CMAKE_SOURCE_DIR = /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces
+CMAKE_BINARY_DIR = /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces
 
 # Utility rule file for user_interfaces.
 
@@ -66,7 +66,8 @@ include CMakeFiles/user_interfaces.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/user_interfaces.dir/progress.make
 
-CMakeFiles/user_interfaces: /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/msg/User.msg
+CMakeFiles/user_interfaces: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/msg/User.msg
+CMakeFiles/user_interfaces: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/srv/User.srv
 CMakeFiles/user_interfaces: /opt/ros/jazzy/share/std_msgs/msg/Bool.idl
 CMakeFiles/user_interfaces: /opt/ros/jazzy/share/std_msgs/msg/Byte.idl
 CMakeFiles/user_interfaces: /opt/ros/jazzy/share/std_msgs/msg/ByteMultiArray.idl
@@ -125,6 +126,7 @@ CMakeFiles/user_interfaces: /opt/ros/jazzy/share/sensor_msgs/msg/RelativeHumidit
 CMakeFiles/user_interfaces: /opt/ros/jazzy/share/sensor_msgs/msg/Temperature.idl
 CMakeFiles/user_interfaces: /opt/ros/jazzy/share/sensor_msgs/msg/TimeReference.idl
 CMakeFiles/user_interfaces: /opt/ros/jazzy/share/sensor_msgs/srv/SetCameraInfo.idl
+CMakeFiles/user_interfaces: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
 
 user_interfaces: CMakeFiles/user_interfaces
 user_interfaces: CMakeFiles/user_interfaces.dir/build.make
@@ -139,6 +141,6 @@ CMakeFiles/user_interfaces.dir/clean:
 .PHONY : CMakeFiles/user_interfaces.dir/clean
 
 CMakeFiles/user_interfaces.dir/depend:
-	cd /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles/user_interfaces.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles/user_interfaces.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/user_interfaces.dir/depend
 

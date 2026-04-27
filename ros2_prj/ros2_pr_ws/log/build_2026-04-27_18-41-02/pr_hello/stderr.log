@@ -1,0 +1,4 @@
+CMake Error: The current CMakeCache.txt directory /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/pr_hello/CMakeCache.txt is different than the directory /home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt
+CMake Error: The source directory "/home/chacha/code/ros2_prj/ros2_pr_ws/src/pr_hello" does not exist.
+Specify --help for usage, or press the help button on the CMake GUI.
+gmake: *** [Makefile:349: cmake_check_build_system] Error 1

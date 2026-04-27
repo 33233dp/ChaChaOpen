@@ -1,8 +1,9 @@
 {
   "package_name": "user_interfaces",
-  "output_dir": "/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_type_description/user_interfaces",
+  "output_dir": "/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_type_description/user_interfaces",
   "idl_tuples": [
-    "/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_adapter/user_interfaces:msg/User.idl"
+    "/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_adapter/user_interfaces:msg/User.idl",
+    "/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_adapter/user_interfaces:srv/User.idl"
   ],
   "include_paths": [
     "std_msgs:/opt/ros/jazzy/share/std_msgs",
