@@ -22,7 +22,7 @@ public:
       10,
       std::bind(&TestNode::callback, this, std::placeholders::_1));
 
-    // 创建一个服务端，服务名为 test_service。
+    // 创建一个服务端，服务名为 test_service。----
     service_ = this->create_service<user_interfaces::srv::User>(
       "test_service",
       std::bind(
