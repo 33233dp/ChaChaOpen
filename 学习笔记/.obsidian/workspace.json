@@ -11,10 +11,21 @@
             "id": "0c6b82bb2f6a9348",
             "type": "leaf",
             "state": {
+<<<<<<< HEAD
               "type": "graph",
               "state": {},
               "icon": "lucide-git-fork",
               "title": "关系图谱"
+=======
+              "type": "markdown",
+              "state": {
+                "file": "robotics-toolbox-matlab.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "robotics-toolbox-matlab"
+>>>>>>> f690d57b2df446a06a1dd4c1dc1b11ebd8516faa
             }
           }
         ]
@@ -74,7 +85,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "57082c5efdd1c352",
@@ -181,13 +193,23 @@
   },
   "active": "0c6b82bb2f6a9348",
   "lastOpenFiles": [
+    "开源项目README翻译.md",
+    "robotics-toolbox-matlab.md",
+    "ROS2/Cpp服务实现.md",
+    "ROS2/服务编程实现.md",
+    "ROS2/2_2服务.md",
+    "ROS2/cpp创建服务总结.md",
+    "ROS2/自定义接口.md",
+    "ROS2/编程验证自定义接口.md",
+    "ROS2/多线程.md",
+    "机器人学/3.3.1变换式中的微分关系.md",
     "机器人学/3.3机器人的雅可比矩阵 (Jacobian Matrix).md",
     "机器人学/3机器人运动学.md",
     "机器人学/3.2逆向运动学.md",
     "机器人学/3.3.2 求雅可比矩阵.md",
     "机器人学/3.3.1变换式中的微分关系.md",
     "机器人学/0机器人学.md",
-    "pieper编程实现.md",
+    "ROS2/pieper编程实现.md",
     "机器人学/pieper解法.md",
     "机器人学/机器人学-例题和习题.md",
     "算法/两数相加.md",

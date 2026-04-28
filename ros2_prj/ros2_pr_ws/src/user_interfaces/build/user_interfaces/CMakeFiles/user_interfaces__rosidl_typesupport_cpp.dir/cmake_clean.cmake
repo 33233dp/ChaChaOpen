@@ -1,9 +1,12 @@
 file(REMOVE_RECURSE
   "CMakeFiles/user_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/user_interfaces/msg/user__type_support.cpp.o"
   "CMakeFiles/user_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/user_interfaces/msg/user__type_support.cpp.o.d"
+  "CMakeFiles/user_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/user_interfaces/srv/user__type_support.cpp.o"
+  "CMakeFiles/user_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/user_interfaces/srv/user__type_support.cpp.o.d"
   "libuser_interfaces__rosidl_typesupport_cpp.pdb"
   "libuser_interfaces__rosidl_typesupport_cpp.so"
   "rosidl_typesupport_cpp/user_interfaces/msg/user__type_support.cpp"
+  "rosidl_typesupport_cpp/user_interfaces/srv/user__type_support.cpp"
 )
 
 # Per-language clean rules from dependency scanning.

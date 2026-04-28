@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces
+CMAKE_SOURCE_DIR = /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces
+CMAKE_BINARY_DIR = /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces
 
 # Utility rule file for user_interfaces__cpp.
 
@@ -71,6 +71,11 @@ CMakeFiles/user_interfaces__cpp: rosidl_generator_cpp/user_interfaces/msg/detail
 CMakeFiles/user_interfaces__cpp: rosidl_generator_cpp/user_interfaces/msg/detail/user__struct.hpp
 CMakeFiles/user_interfaces__cpp: rosidl_generator_cpp/user_interfaces/msg/detail/user__traits.hpp
 CMakeFiles/user_interfaces__cpp: rosidl_generator_cpp/user_interfaces/msg/detail/user__type_support.hpp
+CMakeFiles/user_interfaces__cpp: rosidl_generator_cpp/user_interfaces/srv/user.hpp
+CMakeFiles/user_interfaces__cpp: rosidl_generator_cpp/user_interfaces/srv/detail/user__builder.hpp
+CMakeFiles/user_interfaces__cpp: rosidl_generator_cpp/user_interfaces/srv/detail/user__struct.hpp
+CMakeFiles/user_interfaces__cpp: rosidl_generator_cpp/user_interfaces/srv/detail/user__traits.hpp
+CMakeFiles/user_interfaces__cpp: rosidl_generator_cpp/user_interfaces/srv/detail/user__type_support.hpp
 CMakeFiles/user_interfaces__cpp: rosidl_generator_cpp/user_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
 
 rosidl_generator_cpp/user_interfaces/msg/user.hpp: /opt/ros/jazzy/lib/rosidl_generator_cpp/rosidl_generator_cpp
@@ -93,6 +98,7 @@ rosidl_generator_cpp/user_interfaces/msg/user.hpp: /opt/ros/jazzy/share/rosidl_g
 rosidl_generator_cpp/user_interfaces/msg/user.hpp: /opt/ros/jazzy/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/user_interfaces/msg/user.hpp: /opt/ros/jazzy/share/rosidl_generator_cpp/resource/srv__type_support.hpp.em
 rosidl_generator_cpp/user_interfaces/msg/user.hpp: rosidl_adapter/user_interfaces/msg/User.idl
+rosidl_generator_cpp/user_interfaces/msg/user.hpp: rosidl_adapter/user_interfaces/srv/User.idl
 rosidl_generator_cpp/user_interfaces/msg/user.hpp: /opt/ros/jazzy/share/std_msgs/msg/Bool.idl
 rosidl_generator_cpp/user_interfaces/msg/user.hpp: /opt/ros/jazzy/share/std_msgs/msg/Byte.idl
 rosidl_generator_cpp/user_interfaces/msg/user.hpp: /opt/ros/jazzy/share/std_msgs/msg/ByteMultiArray.idl
@@ -186,8 +192,8 @@ rosidl_generator_cpp/user_interfaces/msg/user.hpp: /opt/ros/jazzy/share/geometry
 rosidl_generator_cpp/user_interfaces/msg/user.hpp: /opt/ros/jazzy/share/geometry_msgs/msg/Wrench.idl
 rosidl_generator_cpp/user_interfaces/msg/user.hpp: /opt/ros/jazzy/share/geometry_msgs/msg/WrenchStamped.idl
 rosidl_generator_cpp/user_interfaces/msg/user.hpp: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/jazzy/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/jazzy/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/user_interfaces/msg/detail/user__builder.hpp: rosidl_generator_cpp/user_interfaces/msg/user.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/user_interfaces/msg/detail/user__builder.hpp
@@ -201,6 +207,21 @@ rosidl_generator_cpp/user_interfaces/msg/detail/user__traits.hpp: rosidl_generat
 rosidl_generator_cpp/user_interfaces/msg/detail/user__type_support.hpp: rosidl_generator_cpp/user_interfaces/msg/user.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/user_interfaces/msg/detail/user__type_support.hpp
 
+rosidl_generator_cpp/user_interfaces/srv/user.hpp: rosidl_generator_cpp/user_interfaces/msg/user.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/user_interfaces/srv/user.hpp
+
+rosidl_generator_cpp/user_interfaces/srv/detail/user__builder.hpp: rosidl_generator_cpp/user_interfaces/msg/user.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/user_interfaces/srv/detail/user__builder.hpp
+
+rosidl_generator_cpp/user_interfaces/srv/detail/user__struct.hpp: rosidl_generator_cpp/user_interfaces/msg/user.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/user_interfaces/srv/detail/user__struct.hpp
+
+rosidl_generator_cpp/user_interfaces/srv/detail/user__traits.hpp: rosidl_generator_cpp/user_interfaces/msg/user.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/user_interfaces/srv/detail/user__traits.hpp
+
+rosidl_generator_cpp/user_interfaces/srv/detail/user__type_support.hpp: rosidl_generator_cpp/user_interfaces/msg/user.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/user_interfaces/srv/detail/user__type_support.hpp
+
 rosidl_generator_cpp/user_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp: rosidl_generator_cpp/user_interfaces/msg/user.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/user_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
 
@@ -211,6 +232,11 @@ user_interfaces__cpp: rosidl_generator_cpp/user_interfaces/msg/detail/user__trai
 user_interfaces__cpp: rosidl_generator_cpp/user_interfaces/msg/detail/user__type_support.hpp
 user_interfaces__cpp: rosidl_generator_cpp/user_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
 user_interfaces__cpp: rosidl_generator_cpp/user_interfaces/msg/user.hpp
+user_interfaces__cpp: rosidl_generator_cpp/user_interfaces/srv/detail/user__builder.hpp
+user_interfaces__cpp: rosidl_generator_cpp/user_interfaces/srv/detail/user__struct.hpp
+user_interfaces__cpp: rosidl_generator_cpp/user_interfaces/srv/detail/user__traits.hpp
+user_interfaces__cpp: rosidl_generator_cpp/user_interfaces/srv/detail/user__type_support.hpp
+user_interfaces__cpp: rosidl_generator_cpp/user_interfaces/srv/user.hpp
 user_interfaces__cpp: CMakeFiles/user_interfaces__cpp.dir/build.make
 .PHONY : user_interfaces__cpp
 
@@ -223,6 +249,6 @@ CMakeFiles/user_interfaces__cpp.dir/clean:
 .PHONY : CMakeFiles/user_interfaces__cpp.dir/clean
 
 CMakeFiles/user_interfaces__cpp.dir/depend:
-	cd /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles/user_interfaces__cpp.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles/user_interfaces__cpp.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/user_interfaces__cpp.dir/depend
 

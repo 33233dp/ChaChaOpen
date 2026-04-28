@@ -10,14 +10,17 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
 
+# 添加对user_interfaces功能包的依赖
+find_package(user_interfaces REQUIRED)
+
 add_executable(pr_hello_node src/pr_hello.cpp)
 ament_target_dependencies(pr_hello_node rclcpp std_msgs)
 
 add_executable(test_node src/test.cpp)
-ament_target_dependencies(test_node rclcpp std_msgs)
+ament_target_dependencies(test_node rclcpp std_msgs user_interfaces)
 
 add_executable(pr_test_node src/pr_test.cpp)
-ament_target_dependencies(pr_test_node rclcpp std_msgs)
+ament_target_dependencies(pr_test_node rclcpp std_msgs user_interfaces)
 
 
 install(TARGETS

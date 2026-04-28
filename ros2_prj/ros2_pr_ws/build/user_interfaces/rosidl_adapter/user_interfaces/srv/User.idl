@@ -1,0 +1,23 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from user_interfaces/srv/User.srv
+// generated code does not contain a copyright notice
+
+
+module user_interfaces {
+  module srv {
+    @verbatim (language="comment", text=
+      "请求部分")
+    struct User_Request {
+      string req1;
+
+      uint32 req2;
+    };
+    @verbatim (language="comment", text=
+      "响应部分")
+    struct User_Response {
+      string resp1;
+
+      uint32 resp2;
+    };
+  };
+};

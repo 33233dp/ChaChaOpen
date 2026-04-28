@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from user_interfaces/srv/User.srv
+// generated code does not contain a copyright notice
+
+
+module user_interfaces {
+  module srv {
+    struct User_Request {
+      string out1;
+
+      uint32 out2;
+    };
+    struct User_Response {
+      string re1;
+
+      uint32 re2;
+    };
+  };
+};

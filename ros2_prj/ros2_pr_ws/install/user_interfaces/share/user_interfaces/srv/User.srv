@@ -1,0 +1,7 @@
+# 请求部分
+string req1
+uint32 req2
+---
+# 响应部分
+string resp1
+uint32 resp2

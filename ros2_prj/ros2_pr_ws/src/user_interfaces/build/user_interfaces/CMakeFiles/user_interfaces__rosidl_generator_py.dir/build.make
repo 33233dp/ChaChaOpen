@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces
+CMAKE_SOURCE_DIR = /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces
+CMAKE_BINARY_DIR = /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces
 
 # Include any dependencies generated for this target.
 include CMakeFiles/user_interfaces__rosidl_generator_py.dir/depend.make
@@ -72,25 +72,41 @@ include CMakeFiles/user_interfaces__rosidl_generator_py.dir/flags.make
 CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/msg/_user_s.c.o: CMakeFiles/user_interfaces__rosidl_generator_py.dir/flags.make
 CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/msg/_user_s.c.o: rosidl_generator_py/user_interfaces/msg/_user_s.c
 CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/msg/_user_s.c.o: CMakeFiles/user_interfaces__rosidl_generator_py.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/msg/_user_s.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/msg/_user_s.c.o -MF CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/msg/_user_s.c.o.d -o CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/msg/_user_s.c.o -c /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_py/user_interfaces/msg/_user_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/msg/_user_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/msg/_user_s.c.o -MF CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/msg/_user_s.c.o.d -o CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/msg/_user_s.c.o -c /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_py/user_interfaces/msg/_user_s.c
 
 CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/msg/_user_s.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/msg/_user_s.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_py/user_interfaces/msg/_user_s.c > CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/msg/_user_s.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_py/user_interfaces/msg/_user_s.c > CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/msg/_user_s.c.i
 
 CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/msg/_user_s.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/msg/_user_s.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_py/user_interfaces/msg/_user_s.c -o CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/msg/_user_s.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_py/user_interfaces/msg/_user_s.c -o CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/msg/_user_s.c.s
+
+CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/srv/_user_s.c.o: CMakeFiles/user_interfaces__rosidl_generator_py.dir/flags.make
+CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/srv/_user_s.c.o: rosidl_generator_py/user_interfaces/srv/_user_s.c
+CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/srv/_user_s.c.o: CMakeFiles/user_interfaces__rosidl_generator_py.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/srv/_user_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/srv/_user_s.c.o -MF CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/srv/_user_s.c.o.d -o CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/srv/_user_s.c.o -c /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_py/user_interfaces/srv/_user_s.c
+
+CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/srv/_user_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/srv/_user_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_py/user_interfaces/srv/_user_s.c > CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/srv/_user_s.c.i
+
+CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/srv/_user_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/srv/_user_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_generator_py/user_interfaces/srv/_user_s.c -o CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/srv/_user_s.c.s
 
 # Object files for target user_interfaces__rosidl_generator_py
 user_interfaces__rosidl_generator_py_OBJECTS = \
-"CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/msg/_user_s.c.o"
+"CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/msg/_user_s.c.o" \
+"CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/srv/_user_s.c.o"
 
 # External object files for target user_interfaces__rosidl_generator_py
 user_interfaces__rosidl_generator_py_EXTERNAL_OBJECTS =
 
 libuser_interfaces__rosidl_generator_py.so: CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/msg/_user_s.c.o
+libuser_interfaces__rosidl_generator_py.so: CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/srv/_user_s.c.o
 libuser_interfaces__rosidl_generator_py.so: CMakeFiles/user_interfaces__rosidl_generator_py.dir/build.make
 libuser_interfaces__rosidl_generator_py.so: libuser_interfaces__rosidl_typesupport_c.so
 libuser_interfaces__rosidl_generator_py.so: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
@@ -145,7 +161,7 @@ libuser_interfaces__rosidl_generator_py.so: /opt/ros/jazzy/lib/libbuiltin_interf
 libuser_interfaces__rosidl_generator_py.so: /opt/ros/jazzy/lib/librosidl_runtime_c.so
 libuser_interfaces__rosidl_generator_py.so: /opt/ros/jazzy/lib/librcutils.so
 libuser_interfaces__rosidl_generator_py.so: CMakeFiles/user_interfaces__rosidl_generator_py.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C shared library libuser_interfaces__rosidl_generator_py.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library libuser_interfaces__rosidl_generator_py.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/user_interfaces__rosidl_generator_py.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -157,6 +173,6 @@ CMakeFiles/user_interfaces__rosidl_generator_py.dir/clean:
 .PHONY : CMakeFiles/user_interfaces__rosidl_generator_py.dir/clean
 
 CMakeFiles/user_interfaces__rosidl_generator_py.dir/depend:
-	cd /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles/user_interfaces__rosidl_generator_py.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles/user_interfaces__rosidl_generator_py.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/user_interfaces__rosidl_generator_py.dir/depend
 

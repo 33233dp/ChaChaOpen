@@ -1,10 +1,14 @@
 file(REMOVE_RECURSE
   "CMakeFiles/user_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/user_interfaces/msg/detail/user__type_support.c.o"
   "CMakeFiles/user_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/user_interfaces/msg/detail/user__type_support.c.o.d"
+  "CMakeFiles/user_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/user_interfaces/srv/detail/user__type_support.c.o"
+  "CMakeFiles/user_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/user_interfaces/srv/detail/user__type_support.c.o.d"
   "libuser_interfaces__rosidl_typesupport_introspection_c.pdb"
   "libuser_interfaces__rosidl_typesupport_introspection_c.so"
   "rosidl_typesupport_introspection_c/user_interfaces/msg/detail/user__rosidl_typesupport_introspection_c.h"
   "rosidl_typesupport_introspection_c/user_interfaces/msg/detail/user__type_support.c"
+  "rosidl_typesupport_introspection_c/user_interfaces/srv/detail/user__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/user_interfaces/srv/detail/user__type_support.c"
 )
 
 # Per-language clean rules from dependency scanning.

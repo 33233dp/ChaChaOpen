@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/user_interfaces__rosidl_generator_type_description"
   "rosidl_generator_type_description/user_interfaces/msg/User.json"
+  "rosidl_generator_type_description/user_interfaces/srv/User.json"
 )
 
 # Per-language clean rules from dependency scanning.

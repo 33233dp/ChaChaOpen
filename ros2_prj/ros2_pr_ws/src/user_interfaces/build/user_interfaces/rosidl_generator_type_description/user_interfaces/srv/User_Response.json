@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "user_interfaces/srv/User_Response",
+      "fields": [
+        {
+          "name": "re1",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "re2",
+          "type": {
+            "type_id": 7,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "user_interfaces/srv/User_Response",
+      "hash_string": "RIHS01_ee0f265ab7b1d65402be105e8a964db937018636044a8d16991be4cda536921e"
+    }
+  ]
+}

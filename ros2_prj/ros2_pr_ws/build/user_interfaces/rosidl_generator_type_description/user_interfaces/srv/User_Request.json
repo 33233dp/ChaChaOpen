@@ -1,0 +1,36 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "user_interfaces/srv/User_Request",
+      "fields": [
+        {
+          "name": "req1",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        },
+        {
+          "name": "req2",
+          "type": {
+            "type_id": 7,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "user_interfaces/srv/User_Request",
+      "hash_string": "RIHS01_b27de6d1a2a743cfc34118ab9c9bf0a8fe5f0b09157639b5f730e1c711aea998"
+    }
+  ]
+}

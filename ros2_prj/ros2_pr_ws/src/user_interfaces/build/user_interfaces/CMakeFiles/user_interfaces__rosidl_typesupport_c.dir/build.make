@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces
+CMAKE_SOURCE_DIR = /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces
+CMAKE_BINARY_DIR = /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces
 
 # Include any dependencies generated for this target.
 include CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/depend.make
@@ -76,6 +76,7 @@ rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp: /opt/ros/jazzy/
 rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp: /opt/ros/jazzy/share/rosidl_typesupport_c/resource/msg__type_support.cpp.em
 rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp: /opt/ros/jazzy/share/rosidl_typesupport_c/resource/srv__type_support.cpp.em
 rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp: rosidl_adapter/user_interfaces/msg/User.idl
+rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp: rosidl_adapter/user_interfaces/srv/User.idl
 rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp: /opt/ros/jazzy/share/std_msgs/msg/Bool.idl
 rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp: /opt/ros/jazzy/share/std_msgs/msg/Byte.idl
 rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp: /opt/ros/jazzy/share/std_msgs/msg/ByteMultiArray.idl
@@ -169,31 +170,50 @@ rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp: /opt/ros/jazzy/
 rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp: /opt/ros/jazzy/share/geometry_msgs/msg/Wrench.idl
 rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp: /opt/ros/jazzy/share/geometry_msgs/msg/WrenchStamped.idl
 rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp: /opt/ros/jazzy/share/service_msgs/msg/ServiceEventInfo.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C type support dispatch for ROS interfaces"
-	/usr/bin/python3 /opt/ros/jazzy/lib/rosidl_typesupport_c/rosidl_typesupport_c --generator-arguments-file /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_typesupport_c__arguments.json --typesupports rosidl_typesupport_fastrtps_c rosidl_typesupport_introspection_c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C type support dispatch for ROS interfaces"
+	/usr/bin/python3 /opt/ros/jazzy/lib/rosidl_typesupport_c/rosidl_typesupport_c --generator-arguments-file /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_typesupport_c__arguments.json --typesupports rosidl_typesupport_fastrtps_c rosidl_typesupport_introspection_c
+
+rosidl_typesupport_c/user_interfaces/srv/user__type_support.cpp: rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_typesupport_c/user_interfaces/srv/user__type_support.cpp
 
 CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp.o: CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/flags.make
 CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp.o: rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp
 CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp.o: CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp.o -MF CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp.o.d -o CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp.o -c /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp.o -MF CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp.o.d -o CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp.o -c /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp
 
 CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp > CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp > CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp.i
 
 CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp -o CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp -o CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp.s
+
+CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/srv/user__type_support.cpp.o: CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/flags.make
+CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/srv/user__type_support.cpp.o: rosidl_typesupport_c/user_interfaces/srv/user__type_support.cpp
+CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/srv/user__type_support.cpp.o: CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/srv/user__type_support.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/srv/user__type_support.cpp.o -MF CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/srv/user__type_support.cpp.o.d -o CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/srv/user__type_support.cpp.o -c /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_typesupport_c/user_interfaces/srv/user__type_support.cpp
+
+CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/srv/user__type_support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/srv/user__type_support.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_typesupport_c/user_interfaces/srv/user__type_support.cpp > CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/srv/user__type_support.cpp.i
+
+CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/srv/user__type_support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/srv/user__type_support.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/rosidl_typesupport_c/user_interfaces/srv/user__type_support.cpp -o CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/srv/user__type_support.cpp.s
 
 # Object files for target user_interfaces__rosidl_typesupport_c
 user_interfaces__rosidl_typesupport_c_OBJECTS = \
-"CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp.o"
+"CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp.o" \
+"CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/srv/user__type_support.cpp.o"
 
 # External object files for target user_interfaces__rosidl_typesupport_c
 user_interfaces__rosidl_typesupport_c_EXTERNAL_OBJECTS =
 
 libuser_interfaces__rosidl_typesupport_c.so: CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp.o
+libuser_interfaces__rosidl_typesupport_c.so: CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/srv/user__type_support.cpp.o
 libuser_interfaces__rosidl_typesupport_c.so: CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/build.make
 libuser_interfaces__rosidl_typesupport_c.so: libuser_interfaces__rosidl_generator_c.so
 libuser_interfaces__rosidl_typesupport_c.so: /opt/ros/jazzy/lib/libsensor_msgs__rosidl_typesupport_c.so
@@ -210,7 +230,7 @@ libuser_interfaces__rosidl_typesupport_c.so: /opt/ros/jazzy/lib/libbuiltin_inter
 libuser_interfaces__rosidl_typesupport_c.so: /opt/ros/jazzy/lib/librosidl_runtime_c.so
 libuser_interfaces__rosidl_typesupport_c.so: /opt/ros/jazzy/lib/librcutils.so
 libuser_interfaces__rosidl_typesupport_c.so: CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libuser_interfaces__rosidl_typesupport_c.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library libuser_interfaces__rosidl_typesupport_c.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -222,6 +242,7 @@ CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/clean:
 .PHONY : CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/clean
 
 CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp
-	cd /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces /home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/DependInfo.cmake "--color=$(COLOR)"
+CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/depend: rosidl_typesupport_c/user_interfaces/srv/user__type_support.cpp
+	cd /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces/build/user_interfaces/CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/depend
 

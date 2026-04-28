@@ -1,1 +1,2 @@
-/home/chacha/code/ros2_prj/ros2_pr_ws/build/pr_hello/ament_cmake_environment_hooks/local_setup.dsv
+source;share/pr_hello/environment/ament_prefix_path.sh
+source;share/pr_hello/environment/path.sh
