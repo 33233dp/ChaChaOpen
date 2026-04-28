@@ -28,17 +28,17 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: out1
+  // member: req1
   {
-    out << "out1: ";
-    rosidl_generator_traits::value_to_yaml(msg.out1, out);
+    out << "req1: ";
+    rosidl_generator_traits::value_to_yaml(msg.req1, out);
     out << ", ";
   }
 
-  // member: out2
+  // member: req2
   {
-    out << "out2: ";
-    rosidl_generator_traits::value_to_yaml(msg.out2, out);
+    out << "req2: ";
+    rosidl_generator_traits::value_to_yaml(msg.req2, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -47,23 +47,23 @@ inline void to_block_style_yaml(
   const User_Request & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: out1
+  // member: req1
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "out1: ";
-    rosidl_generator_traits::value_to_yaml(msg.out1, out);
+    out << "req1: ";
+    rosidl_generator_traits::value_to_yaml(msg.req1, out);
     out << "\n";
   }
 
-  // member: out2
+  // member: req2
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "out2: ";
-    rosidl_generator_traits::value_to_yaml(msg.out2, out);
+    out << "req2: ";
+    rosidl_generator_traits::value_to_yaml(msg.req2, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)
@@ -137,17 +137,17 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
-  // member: re1
+  // member: resp1
   {
-    out << "re1: ";
-    rosidl_generator_traits::value_to_yaml(msg.re1, out);
+    out << "resp1: ";
+    rosidl_generator_traits::value_to_yaml(msg.resp1, out);
     out << ", ";
   }
 
-  // member: re2
+  // member: resp2
   {
-    out << "re2: ";
-    rosidl_generator_traits::value_to_yaml(msg.re2, out);
+    out << "resp2: ";
+    rosidl_generator_traits::value_to_yaml(msg.resp2, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -156,23 +156,23 @@ inline void to_block_style_yaml(
   const User_Response & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: re1
+  // member: resp1
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "re1: ";
-    rosidl_generator_traits::value_to_yaml(msg.re1, out);
+    out << "resp1: ";
+    rosidl_generator_traits::value_to_yaml(msg.resp1, out);
     out << "\n";
   }
 
-  // member: re2
+  // member: resp2
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "re2: ";
-    rosidl_generator_traits::value_to_yaml(msg.re2, out);
+    out << "resp2: ";
+    rosidl_generator_traits::value_to_yaml(msg.resp2, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)

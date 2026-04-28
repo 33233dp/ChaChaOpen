@@ -13,7 +13,7 @@
 
 
 // Include directives for member types
-// Member `out1`
+// Member `req1`
 #include "rosidl_runtime_c/string_functions.h"
 
 #ifdef __cplusplus
@@ -37,7 +37,7 @@ void user_interfaces__srv__User_Request__rosidl_typesupport_introspection_c__Use
 
 static rosidl_typesupport_introspection_c__MessageMember user_interfaces__srv__User_Request__rosidl_typesupport_introspection_c__User_Request_message_member_array[2] = {
   {
-    "out1",  // name
+    "req1",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
@@ -45,7 +45,7 @@ static rosidl_typesupport_introspection_c__MessageMember user_interfaces__srv__U
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(user_interfaces__srv__User_Request, out1),  // bytes offset in struct
+    offsetof(user_interfaces__srv__User_Request, req1),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -55,7 +55,7 @@ static rosidl_typesupport_introspection_c__MessageMember user_interfaces__srv__U
     NULL  // resize(index) function pointer
   },
   {
-    "out2",  // name
+    "req2",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_UINT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
@@ -63,7 +63,7 @@ static rosidl_typesupport_introspection_c__MessageMember user_interfaces__srv__U
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(user_interfaces__srv__User_Request, out2),  // bytes offset in struct
+    offsetof(user_interfaces__srv__User_Request, req2),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -128,7 +128,7 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
 
 
 // Include directives for member types
-// Member `re1`
+// Member `resp1`
 // already included above
 // #include "rosidl_runtime_c/string_functions.h"
 
@@ -153,7 +153,7 @@ void user_interfaces__srv__User_Response__rosidl_typesupport_introspection_c__Us
 
 static rosidl_typesupport_introspection_c__MessageMember user_interfaces__srv__User_Response__rosidl_typesupport_introspection_c__User_Response_message_member_array[2] = {
   {
-    "re1",  // name
+    "resp1",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
@@ -161,7 +161,7 @@ static rosidl_typesupport_introspection_c__MessageMember user_interfaces__srv__U
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(user_interfaces__srv__User_Response, re1),  // bytes offset in struct
+    offsetof(user_interfaces__srv__User_Response, resp1),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer
@@ -171,7 +171,7 @@ static rosidl_typesupport_introspection_c__MessageMember user_interfaces__srv__U
     NULL  // resize(index) function pointer
   },
   {
-    "re2",  // name
+    "resp2",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_UINT32,  // type
     0,  // upper bound of string
     NULL,  // members of sub message
@@ -179,7 +179,7 @@ static rosidl_typesupport_introspection_c__MessageMember user_interfaces__srv__U
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(user_interfaces__srv__User_Response, re2),  // bytes offset in struct
+    offsetof(user_interfaces__srv__User_Response, resp2),  // bytes offset in struct
     NULL,  // default value
     NULL,  // size() function pointer
     NULL,  // get_const(index) function pointer

@@ -4,7 +4,7 @@
       "type_name": "user_interfaces/srv/User_Response",
       "fields": [
         {
-          "name": "re1",
+          "name": "resp1",
           "type": {
             "type_id": 17,
             "capacity": 0,
@@ -14,7 +14,7 @@
           "default_value": ""
         },
         {
-          "name": "re2",
+          "name": "resp2",
           "type": {
             "type_id": 7,
             "capacity": 0,
@@ -30,7 +30,7 @@
   "type_hashes": [
     {
       "type_name": "user_interfaces/srv/User_Response",
-      "hash_string": "RIHS01_ee0f265ab7b1d65402be105e8a964db937018636044a8d16991be4cda536921e"
+      "hash_string": "RIHS01_e9fa5376a7eecf0884c2a06b4c675b0aeb0797adf7ded46b752f0e31a595398f"
     }
   ]
 }

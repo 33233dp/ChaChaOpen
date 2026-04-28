@@ -53,8 +53,8 @@ bool user_interfaces__srv__user__request__convert_from_py(PyObject * _pymsg, voi
     assert(strncmp("user_interfaces.srv._user.User_Request", full_classname_dest, 38) == 0);
   }
   user_interfaces__srv__User_Request * ros_message = _ros_message;
-  {  // out1
-    PyObject * field = PyObject_GetAttrString(_pymsg, "out1");
+  {  // req1
+    PyObject * field = PyObject_GetAttrString(_pymsg, "req1");
     if (!field) {
       return false;
     }
@@ -64,17 +64,17 @@ bool user_interfaces__srv__user__request__convert_from_py(PyObject * _pymsg, voi
       Py_DECREF(field);
       return false;
     }
-    rosidl_runtime_c__String__assign(&ros_message->out1, PyBytes_AS_STRING(encoded_field));
+    rosidl_runtime_c__String__assign(&ros_message->req1, PyBytes_AS_STRING(encoded_field));
     Py_DECREF(encoded_field);
     Py_DECREF(field);
   }
-  {  // out2
-    PyObject * field = PyObject_GetAttrString(_pymsg, "out2");
+  {  // req2
+    PyObject * field = PyObject_GetAttrString(_pymsg, "req2");
     if (!field) {
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->out2 = PyLong_AsUnsignedLong(field);
+    ros_message->req2 = PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
 
@@ -99,28 +99,28 @@ PyObject * user_interfaces__srv__user__request__convert_to_py(void * raw_ros_mes
     }
   }
   user_interfaces__srv__User_Request * ros_message = (user_interfaces__srv__User_Request *)raw_ros_message;
-  {  // out1
+  {  // req1
     PyObject * field = NULL;
     field = PyUnicode_DecodeUTF8(
-      ros_message->out1.data,
-      strlen(ros_message->out1.data),
+      ros_message->req1.data,
+      strlen(ros_message->req1.data),
       "replace");
     if (!field) {
       return NULL;
     }
     {
-      int rc = PyObject_SetAttrString(_pymessage, "out1", field);
+      int rc = PyObject_SetAttrString(_pymessage, "req1", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // out2
+  {  // req2
     PyObject * field = NULL;
-    field = PyLong_FromUnsignedLong(ros_message->out2);
+    field = PyLong_FromUnsignedLong(ros_message->req2);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "out2", field);
+      int rc = PyObject_SetAttrString(_pymessage, "req2", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
@@ -185,8 +185,8 @@ bool user_interfaces__srv__user__response__convert_from_py(PyObject * _pymsg, vo
     assert(strncmp("user_interfaces.srv._user.User_Response", full_classname_dest, 39) == 0);
   }
   user_interfaces__srv__User_Response * ros_message = _ros_message;
-  {  // re1
-    PyObject * field = PyObject_GetAttrString(_pymsg, "re1");
+  {  // resp1
+    PyObject * field = PyObject_GetAttrString(_pymsg, "resp1");
     if (!field) {
       return false;
     }
@@ -196,17 +196,17 @@ bool user_interfaces__srv__user__response__convert_from_py(PyObject * _pymsg, vo
       Py_DECREF(field);
       return false;
     }
-    rosidl_runtime_c__String__assign(&ros_message->re1, PyBytes_AS_STRING(encoded_field));
+    rosidl_runtime_c__String__assign(&ros_message->resp1, PyBytes_AS_STRING(encoded_field));
     Py_DECREF(encoded_field);
     Py_DECREF(field);
   }
-  {  // re2
-    PyObject * field = PyObject_GetAttrString(_pymsg, "re2");
+  {  // resp2
+    PyObject * field = PyObject_GetAttrString(_pymsg, "resp2");
     if (!field) {
       return false;
     }
     assert(PyLong_Check(field));
-    ros_message->re2 = PyLong_AsUnsignedLong(field);
+    ros_message->resp2 = PyLong_AsUnsignedLong(field);
     Py_DECREF(field);
   }
 
@@ -231,28 +231,28 @@ PyObject * user_interfaces__srv__user__response__convert_to_py(void * raw_ros_me
     }
   }
   user_interfaces__srv__User_Response * ros_message = (user_interfaces__srv__User_Response *)raw_ros_message;
-  {  // re1
+  {  // resp1
     PyObject * field = NULL;
     field = PyUnicode_DecodeUTF8(
-      ros_message->re1.data,
-      strlen(ros_message->re1.data),
+      ros_message->resp1.data,
+      strlen(ros_message->resp1.data),
       "replace");
     if (!field) {
       return NULL;
     }
     {
-      int rc = PyObject_SetAttrString(_pymessage, "re1", field);
+      int rc = PyObject_SetAttrString(_pymessage, "resp1", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;
       }
     }
   }
-  {  // re2
+  {  // resp2
     PyObject * field = NULL;
-    field = PyLong_FromUnsignedLong(ros_message->re2);
+    field = PyLong_FromUnsignedLong(ros_message->resp2);
     {
-      int rc = PyObject_SetAttrString(_pymessage, "re2", field);
+      int rc = PyObject_SetAttrString(_pymessage, "resp2", field);
       Py_DECREF(field);
       if (rc) {
         return NULL;

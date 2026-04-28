@@ -24,15 +24,15 @@ namespace srv
 namespace builder
 {
 
-class Init_User_Request_out2
+class Init_User_Request_req2
 {
 public:
-  explicit Init_User_Request_out2(::user_interfaces::srv::User_Request & msg)
+  explicit Init_User_Request_req2(::user_interfaces::srv::User_Request & msg)
   : msg_(msg)
   {}
-  ::user_interfaces::srv::User_Request out2(::user_interfaces::srv::User_Request::_out2_type arg)
+  ::user_interfaces::srv::User_Request req2(::user_interfaces::srv::User_Request::_req2_type arg)
   {
-    msg_.out2 = std::move(arg);
+    msg_.req2 = std::move(arg);
     return std::move(msg_);
   }
 
@@ -40,16 +40,16 @@ private:
   ::user_interfaces::srv::User_Request msg_;
 };
 
-class Init_User_Request_out1
+class Init_User_Request_req1
 {
 public:
-  Init_User_Request_out1()
+  Init_User_Request_req1()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_User_Request_out2 out1(::user_interfaces::srv::User_Request::_out1_type arg)
+  Init_User_Request_req2 req1(::user_interfaces::srv::User_Request::_req1_type arg)
   {
-    msg_.out1 = std::move(arg);
-    return Init_User_Request_out2(msg_);
+    msg_.req1 = std::move(arg);
+    return Init_User_Request_req2(msg_);
   }
 
 private:
@@ -67,7 +67,7 @@ template<>
 inline
 auto build<::user_interfaces::srv::User_Request>()
 {
-  return user_interfaces::srv::builder::Init_User_Request_out1();
+  return user_interfaces::srv::builder::Init_User_Request_req1();
 }
 
 }  // namespace user_interfaces
@@ -82,15 +82,15 @@ namespace srv
 namespace builder
 {
 
-class Init_User_Response_re2
+class Init_User_Response_resp2
 {
 public:
-  explicit Init_User_Response_re2(::user_interfaces::srv::User_Response & msg)
+  explicit Init_User_Response_resp2(::user_interfaces::srv::User_Response & msg)
   : msg_(msg)
   {}
-  ::user_interfaces::srv::User_Response re2(::user_interfaces::srv::User_Response::_re2_type arg)
+  ::user_interfaces::srv::User_Response resp2(::user_interfaces::srv::User_Response::_resp2_type arg)
   {
-    msg_.re2 = std::move(arg);
+    msg_.resp2 = std::move(arg);
     return std::move(msg_);
   }
 
@@ -98,16 +98,16 @@ private:
   ::user_interfaces::srv::User_Response msg_;
 };
 
-class Init_User_Response_re1
+class Init_User_Response_resp1
 {
 public:
-  Init_User_Response_re1()
+  Init_User_Response_resp1()
   : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
   {}
-  Init_User_Response_re2 re1(::user_interfaces::srv::User_Response::_re1_type arg)
+  Init_User_Response_resp2 resp1(::user_interfaces::srv::User_Response::_resp1_type arg)
   {
-    msg_.re1 = std::move(arg);
-    return Init_User_Response_re2(msg_);
+    msg_.resp1 = std::move(arg);
+    return Init_User_Response_resp2(msg_);
   }
 
 private:
@@ -125,7 +125,7 @@ template<>
 inline
 auto build<::user_interfaces::srv::User_Response>()
 {
-  return user_interfaces::srv::builder::Init_User_Response_re1();
+  return user_interfaces::srv::builder::Init_User_Response_resp1();
 }
 
 }  // namespace user_interfaces

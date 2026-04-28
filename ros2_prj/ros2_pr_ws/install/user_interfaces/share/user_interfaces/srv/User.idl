@@ -5,15 +5,19 @@
 
 module user_interfaces {
   module srv {
+    @verbatim (language="comment", text=
+      "请求部分")
     struct User_Request {
-      string out1;
+      string req1;
 
-      uint32 out2;
+      uint32 req2;
     };
+    @verbatim (language="comment", text=
+      "响应部分")
     struct User_Response {
-      string re1;
+      string resp1;
 
-      uint32 re2;
+      uint32 resp2;
     };
   };
 };

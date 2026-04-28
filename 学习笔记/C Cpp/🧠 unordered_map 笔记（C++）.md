@@ -113,6 +113,7 @@ m[key] = value;
 
 ```cpp
 m.emplace(key, value);
+//这是插入操作不会覆盖原来已有的。
 ```
 
 ---
@@ -158,7 +159,12 @@ m.at(key);//❌ key 不存在 → **直接报错（异常）**
 ## 4️⃣ 删除
 
 ```cpp
+//删除其中一个
 m.erase(key);
+//清除所有
+m.clear();
+//清除和彻底释放内存
+m = unordered_map<char, int>();
 ```
 
 ---

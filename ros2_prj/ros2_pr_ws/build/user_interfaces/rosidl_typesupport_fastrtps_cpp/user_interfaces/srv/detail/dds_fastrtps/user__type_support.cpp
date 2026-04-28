@@ -36,11 +36,11 @@ cdr_serialize(
   const user_interfaces::srv::User_Request & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: out1
-  cdr << ros_message.out1;
+  // Member: req1
+  cdr << ros_message.req1;
 
-  // Member: out2
-  cdr << ros_message.out2;
+  // Member: req2
+  cdr << ros_message.req2;
 
   return true;
 }
@@ -51,11 +51,11 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   user_interfaces::srv::User_Request & ros_message)
 {
-  // Member: out1
-  cdr >> ros_message.out1;
+  // Member: req1
+  cdr >> ros_message.req1;
 
-  // Member: out2
-  cdr >> ros_message.out2;
+  // Member: req2
+  cdr >> ros_message.req2;
 
   return true;
 }  // NOLINT(readability/fn_size)
@@ -74,14 +74,14 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: out1
+  // Member: req1
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.out1.size() + 1);
+    (ros_message.req1.size() + 1);
 
-  // Member: out2
+  // Member: req2
   {
-    size_t item_size = sizeof(ros_message.out2);
+    size_t item_size = sizeof(ros_message.req2);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -109,7 +109,7 @@ max_serialized_size_User_Request(
   full_bounded = true;
   is_plain = true;
 
-  // Member: out1
+  // Member: req1
   {
     size_t array_size = 1;
     full_bounded = false;
@@ -120,7 +120,7 @@ max_serialized_size_User_Request(
         1;
     }
   }
-  // Member: out2
+  // Member: req2
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);
@@ -136,7 +136,7 @@ max_serialized_size_User_Request(
     using DataType = user_interfaces::srv::User_Request;
     is_plain =
       (
-      offsetof(DataType, out2) +
+      offsetof(DataType, req2) +
       last_member_size
       ) == ret_val;
   }
@@ -150,11 +150,11 @@ cdr_serialize_key(
   const user_interfaces::srv::User_Request & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: out1
-  cdr << ros_message.out1;
+  // Member: req1
+  cdr << ros_message.req1;
 
-  // Member: out2
-  cdr << ros_message.out2;
+  // Member: req2
+  cdr << ros_message.req2;
 
   return true;
 }
@@ -172,14 +172,14 @@ get_serialized_size_key(
   (void)padding;
   (void)wchar_size;
 
-  // Member: out1
+  // Member: req1
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.out1.size() + 1);
+    (ros_message.req1.size() + 1);
 
-  // Member: out2
+  // Member: req2
   {
-    size_t item_size = sizeof(ros_message.out2);
+    size_t item_size = sizeof(ros_message.req2);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -206,7 +206,7 @@ max_serialized_size_key_User_Request(
   full_bounded = true;
   is_plain = true;
 
-  // Member: out1
+  // Member: req1
   {
     size_t array_size = 1;
     full_bounded = false;
@@ -218,7 +218,7 @@ max_serialized_size_key_User_Request(
     }
   }
 
-  // Member: out2
+  // Member: req2
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);
@@ -234,7 +234,7 @@ max_serialized_size_key_User_Request(
     using DataType = user_interfaces::srv::User_Request;
     is_plain =
       (
-      offsetof(DataType, out2) +
+      offsetof(DataType, req2) +
       last_member_size
       ) == ret_val;
   }
@@ -380,11 +380,11 @@ cdr_serialize(
   const user_interfaces::srv::User_Response & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: re1
-  cdr << ros_message.re1;
+  // Member: resp1
+  cdr << ros_message.resp1;
 
-  // Member: re2
-  cdr << ros_message.re2;
+  // Member: resp2
+  cdr << ros_message.resp2;
 
   return true;
 }
@@ -395,11 +395,11 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   user_interfaces::srv::User_Response & ros_message)
 {
-  // Member: re1
-  cdr >> ros_message.re1;
+  // Member: resp1
+  cdr >> ros_message.resp1;
 
-  // Member: re2
-  cdr >> ros_message.re2;
+  // Member: resp2
+  cdr >> ros_message.resp2;
 
   return true;
 }  // NOLINT(readability/fn_size)
@@ -418,14 +418,14 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
-  // Member: re1
+  // Member: resp1
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.re1.size() + 1);
+    (ros_message.resp1.size() + 1);
 
-  // Member: re2
+  // Member: resp2
   {
-    size_t item_size = sizeof(ros_message.re2);
+    size_t item_size = sizeof(ros_message.resp2);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -453,7 +453,7 @@ max_serialized_size_User_Response(
   full_bounded = true;
   is_plain = true;
 
-  // Member: re1
+  // Member: resp1
   {
     size_t array_size = 1;
     full_bounded = false;
@@ -464,7 +464,7 @@ max_serialized_size_User_Response(
         1;
     }
   }
-  // Member: re2
+  // Member: resp2
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);
@@ -480,7 +480,7 @@ max_serialized_size_User_Response(
     using DataType = user_interfaces::srv::User_Response;
     is_plain =
       (
-      offsetof(DataType, re2) +
+      offsetof(DataType, resp2) +
       last_member_size
       ) == ret_val;
   }
@@ -494,11 +494,11 @@ cdr_serialize_key(
   const user_interfaces::srv::User_Response & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Member: re1
-  cdr << ros_message.re1;
+  // Member: resp1
+  cdr << ros_message.resp1;
 
-  // Member: re2
-  cdr << ros_message.re2;
+  // Member: resp2
+  cdr << ros_message.resp2;
 
   return true;
 }
@@ -516,14 +516,14 @@ get_serialized_size_key(
   (void)padding;
   (void)wchar_size;
 
-  // Member: re1
+  // Member: resp1
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message.re1.size() + 1);
+    (ros_message.resp1.size() + 1);
 
-  // Member: re2
+  // Member: resp2
   {
-    size_t item_size = sizeof(ros_message.re2);
+    size_t item_size = sizeof(ros_message.resp2);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -550,7 +550,7 @@ max_serialized_size_key_User_Response(
   full_bounded = true;
   is_plain = true;
 
-  // Member: re1
+  // Member: resp1
   {
     size_t array_size = 1;
     full_bounded = false;
@@ -562,7 +562,7 @@ max_serialized_size_key_User_Response(
     }
   }
 
-  // Member: re2
+  // Member: resp2
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);
@@ -578,7 +578,7 @@ max_serialized_size_key_User_Response(
     using DataType = user_interfaces::srv::User_Response;
     is_plain =
       (
-      offsetof(DataType, re2) +
+      offsetof(DataType, resp2) +
       last_member_size
       ) == ret_val;
   }

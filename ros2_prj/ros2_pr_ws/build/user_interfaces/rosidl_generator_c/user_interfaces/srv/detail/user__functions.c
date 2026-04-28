@@ -11,7 +11,7 @@
 #include "rcutils/allocator.h"
 
 // Include directives for member types
-// Member `out1`
+// Member `req1`
 #include "rosidl_runtime_c/string_functions.h"
 
 bool
@@ -20,12 +20,12 @@ user_interfaces__srv__User_Request__init(user_interfaces__srv__User_Request * ms
   if (!msg) {
     return false;
   }
-  // out1
-  if (!rosidl_runtime_c__String__init(&msg->out1)) {
+  // req1
+  if (!rosidl_runtime_c__String__init(&msg->req1)) {
     user_interfaces__srv__User_Request__fini(msg);
     return false;
   }
-  // out2
+  // req2
   return true;
 }
 
@@ -35,9 +35,9 @@ user_interfaces__srv__User_Request__fini(user_interfaces__srv__User_Request * ms
   if (!msg) {
     return;
   }
-  // out1
-  rosidl_runtime_c__String__fini(&msg->out1);
-  // out2
+  // req1
+  rosidl_runtime_c__String__fini(&msg->req1);
+  // req2
 }
 
 bool
@@ -46,14 +46,14 @@ user_interfaces__srv__User_Request__are_equal(const user_interfaces__srv__User_R
   if (!lhs || !rhs) {
     return false;
   }
-  // out1
+  // req1
   if (!rosidl_runtime_c__String__are_equal(
-      &(lhs->out1), &(rhs->out1)))
+      &(lhs->req1), &(rhs->req1)))
   {
     return false;
   }
-  // out2
-  if (lhs->out2 != rhs->out2) {
+  // req2
+  if (lhs->req2 != rhs->req2) {
     return false;
   }
   return true;
@@ -67,14 +67,14 @@ user_interfaces__srv__User_Request__copy(
   if (!input || !output) {
     return false;
   }
-  // out1
+  // req1
   if (!rosidl_runtime_c__String__copy(
-      &(input->out1), &(output->out1)))
+      &(input->req1), &(output->req1)))
   {
     return false;
   }
-  // out2
-  output->out2 = input->out2;
+  // req2
+  output->req2 = input->req2;
   return true;
 }
 
@@ -259,7 +259,7 @@ user_interfaces__srv__User_Request__Sequence__copy(
 
 
 // Include directives for member types
-// Member `re1`
+// Member `resp1`
 // already included above
 // #include "rosidl_runtime_c/string_functions.h"
 
@@ -269,12 +269,12 @@ user_interfaces__srv__User_Response__init(user_interfaces__srv__User_Response * 
   if (!msg) {
     return false;
   }
-  // re1
-  if (!rosidl_runtime_c__String__init(&msg->re1)) {
+  // resp1
+  if (!rosidl_runtime_c__String__init(&msg->resp1)) {
     user_interfaces__srv__User_Response__fini(msg);
     return false;
   }
-  // re2
+  // resp2
   return true;
 }
 
@@ -284,9 +284,9 @@ user_interfaces__srv__User_Response__fini(user_interfaces__srv__User_Response * 
   if (!msg) {
     return;
   }
-  // re1
-  rosidl_runtime_c__String__fini(&msg->re1);
-  // re2
+  // resp1
+  rosidl_runtime_c__String__fini(&msg->resp1);
+  // resp2
 }
 
 bool
@@ -295,14 +295,14 @@ user_interfaces__srv__User_Response__are_equal(const user_interfaces__srv__User_
   if (!lhs || !rhs) {
     return false;
   }
-  // re1
+  // resp1
   if (!rosidl_runtime_c__String__are_equal(
-      &(lhs->re1), &(rhs->re1)))
+      &(lhs->resp1), &(rhs->resp1)))
   {
     return false;
   }
-  // re2
-  if (lhs->re2 != rhs->re2) {
+  // resp2
+  if (lhs->resp2 != rhs->resp2) {
     return false;
   }
   return true;
@@ -316,14 +316,14 @@ user_interfaces__srv__User_Response__copy(
   if (!input || !output) {
     return false;
   }
-  // re1
+  // resp1
   if (!rosidl_runtime_c__String__copy(
-      &(input->re1), &(output->re1)))
+      &(input->resp1), &(output->resp1)))
   {
     return false;
   }
-  // re2
-  output->re2 = input->re2;
+  // resp2
+  output->resp2 = input->resp2;
   return true;
 }
 

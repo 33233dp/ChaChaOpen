@@ -1,6 +1,0 @@
-[0.008s] Invoking command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces -- -j8 -l8
-[0.017s] [0mCMake Error: The current CMakeCache.txt directory /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces/CMakeCache.txt is different than the directory /home/chacha/code/ros2_prj/ros2_pr_ws/build/user_interfaces where CMakeCache.txt was created. This may result in binaries being created in the wrong place. If you are not sure, reedit the CMakeCache.txt[0m
-[0.030s] [0mCMake Error: The source directory "/home/chacha/code/ros2_prj/ros2_pr_ws/src/user_interfaces" does not exist.
-[0.030s] Specify --help for usage, or press the help button on the CMake GUI.[0m
-[0.031s] gmake: *** [Makefile:815：cmake_check_build_system] 错误 1
-[0.033s] Invoked command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces -- -j8 -l8

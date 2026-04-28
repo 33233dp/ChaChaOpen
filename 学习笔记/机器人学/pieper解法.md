@@ -52,4 +52,3 @@
 		![[Pasted image 20260418144107.png]]
 		再利用Z_Y_Z求theta4,5,6
 		![[Pasted image 20260418144142.png]]
-### [[pieper编程实现]]

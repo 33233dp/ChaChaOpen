@@ -110,7 +110,7 @@
         "type_name": "user_interfaces/srv/User_Request",
         "fields": [
           {
-            "name": "out1",
+            "name": "req1",
             "type": {
               "type_id": 17,
               "capacity": 0,
@@ -120,7 +120,7 @@
             "default_value": ""
           },
           {
-            "name": "out2",
+            "name": "req2",
             "type": {
               "type_id": 7,
               "capacity": 0,
@@ -135,7 +135,7 @@
         "type_name": "user_interfaces/srv/User_Response",
         "fields": [
           {
-            "name": "re1",
+            "name": "resp1",
             "type": {
               "type_id": 17,
               "capacity": 0,
@@ -145,7 +145,7 @@
             "default_value": ""
           },
           {
-            "name": "re2",
+            "name": "resp2",
             "type": {
               "type_id": 7,
               "capacity": 0,
@@ -161,7 +161,7 @@
   "type_hashes": [
     {
       "type_name": "user_interfaces/srv/User_Event",
-      "hash_string": "RIHS01_cdbb38951ee8010fa020862d025c101971ddad6d8bf44e8f61a6ab1749d39da4"
+      "hash_string": "RIHS01_c4cd92fd9df0a29d8e2dfc751ff3313e11317a914023b58620756dce8e75765a"
     },
     {
       "type_name": "builtin_interfaces/msg/Time",
@@ -173,11 +173,11 @@
     },
     {
       "type_name": "user_interfaces/srv/User_Request",
-      "hash_string": "RIHS01_859d42117c615864f4217e005ec6f1fd4a340de772548588f9ffdfde3025e37f"
+      "hash_string": "RIHS01_b27de6d1a2a743cfc34118ab9c9bf0a8fe5f0b09157639b5f730e1c711aea998"
     },
     {
       "type_name": "user_interfaces/srv/User_Response",
-      "hash_string": "RIHS01_ee0f265ab7b1d65402be105e8a964db937018636044a8d16991be4cda536921e"
+      "hash_string": "RIHS01_e9fa5376a7eecf0884c2a06b4c675b0aeb0797adf7ded46b752f0e31a595398f"
     }
   ]
 }

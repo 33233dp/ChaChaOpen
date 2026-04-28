@@ -4,7 +4,7 @@
       "type_name": "user_interfaces/srv/User_Request",
       "fields": [
         {
-          "name": "out1",
+          "name": "req1",
           "type": {
             "type_id": 17,
             "capacity": 0,
@@ -14,7 +14,7 @@
           "default_value": ""
         },
         {
-          "name": "out2",
+          "name": "req2",
           "type": {
             "type_id": 7,
             "capacity": 0,
@@ -30,7 +30,7 @@
   "type_hashes": [
     {
       "type_name": "user_interfaces/srv/User_Request",
-      "hash_string": "RIHS01_859d42117c615864f4217e005ec6f1fd4a340de772548588f9ffdfde3025e37f"
+      "hash_string": "RIHS01_b27de6d1a2a743cfc34118ab9c9bf0a8fe5f0b09157639b5f730e1c711aea998"
     }
   ]
 }

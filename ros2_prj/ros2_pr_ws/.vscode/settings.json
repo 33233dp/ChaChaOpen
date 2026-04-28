@@ -21,5 +21,19 @@
   "editor.smoothScrolling": true,
   "editor.cursorStyle": "line",
   "terminal.integrated.cursorBlinking": true,
-  "terminal.integrated.cursorStyle": "line"
+  "terminal.integrated.cursorStyle": "line",
+  "background.enabled": true,
+  "background.fullscreen": {
+    "images": [
+      "/home/chacha/Pictures/vscode-bk.png",
+      "/home/chacha/Pictures/vscode-bk2.png",
+      "/home/chacha/Pictures/vscode-bk3.png"
+    ],
+    "opacity": 0.15,
+    "size": "cover",
+    "position": "center",
+    "interval": 0,
+    "random": true
+  },
+  "cmake.sourceDirectory": "/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/pr_hello"
 }

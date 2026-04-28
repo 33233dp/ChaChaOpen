@@ -21,14 +21,14 @@ extern "C"
 // Constants defined in the message
 
 // Include directives for member types
-// Member 'out1'
+// Member 'req1'
 #include "rosidl_runtime_c/string.h"
 
 /// Struct defined in srv/User in the package user_interfaces.
 typedef struct user_interfaces__srv__User_Request
 {
-  rosidl_runtime_c__String out1;
-  uint32_t out2;
+  rosidl_runtime_c__String req1;
+  uint32_t req2;
 } user_interfaces__srv__User_Request;
 
 // Struct for a sequence of user_interfaces__srv__User_Request.
@@ -44,15 +44,15 @@ typedef struct user_interfaces__srv__User_Request__Sequence
 // Constants defined in the message
 
 // Include directives for member types
-// Member 're1'
+// Member 'resp1'
 // already included above
 // #include "rosidl_runtime_c/string.h"
 
 /// Struct defined in srv/User in the package user_interfaces.
 typedef struct user_interfaces__srv__User_Response
 {
-  rosidl_runtime_c__String re1;
-  uint32_t re2;
+  rosidl_runtime_c__String resp1;
+  uint32_t resp2;
 } user_interfaces__srv__User_Response;
 
 // Struct for a sequence of user_interfaces__srv__User_Response.

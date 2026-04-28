@@ -1,6 +1,7 @@
 #include <functional>
 #include <memory>
 #include <string>
+#include <chrono>
 
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/string.hpp"
@@ -21,22 +22,20 @@ public:
       "testTopic",
       10,
       std::bind(&TestNode::callback, this, std::placeholders::_1));
-
-    // 创建一个服务端，服务名为 test_service。----
-    service_ = this->create_service<user_interfaces::srv::User>(
-      "test_service",
-      std::bind(
-        &TestNode::service_callback,
-        this,
-        std::placeholders::_1,
-        std::placeholders::_2));
+ 	  // 创建客户端
+	  client_ = this->create_client<user_interfaces::srv::User>("test_service");
+	  // 创建服务端
+	  service_ = this->create_service<user_interfaces::srv::User>("test_service", std::bind(&TestNode::service_callback, this, std::placeholders::_1, std::placeholders::_2));
   }
 
 private:
-  // 保存订阅者对象，避免离开作用域后订阅失效。
+  // 订阅者对象变量
   rclcpp::Subscription<std_msgs::msg::String>::SharedPtr sub_;
 
-  // 保存服务端对象，避免离开作用域后服务失效。
+  // 客户端对象变量
+  rclcpp::Client<user_interfaces::srv::User>::SharedPtr client_;
+  
+  // 服务对象变量
   rclcpp::Service<user_interfaces::srv::User>::SharedPtr service_;
 
   // 订阅回调：收到话题消息后被自动调用。
@@ -44,32 +43,29 @@ private:
   {
     // 打印收到的消息内容。
     RCLCPP_INFO(this->get_logger(), "get msg: %s", msg->data.c_str());
+    // 服务请求
+    auto request = std::make_shared<user_interfaces::srv::User::Request>();
+    // 编辑消息内容
+    request->req1 = "get msg" + msg->data;
+    request->req2 = 520;
+    // 异步请求
+    client_->async_send_request(request, std::bind(&TestNode::client_request_callback, this, std::placeholders::_1));
   }
 
-  // 服务回调：收到请求后被自动调用，并负责填写响应。
-  void service_callback(
-    const user_interfaces::srv::User::Request::SharedPtr request,
-    user_interfaces::srv::User::Response::SharedPtr response)
-  {
-    // 打印请求内容，方便观察客户端传入了什么参数。
-    RCLCPP_INFO(
-      this->get_logger(),
-      "service request: out1='%s', out2=%u",
-      request->out1.c_str(),
-      request->out2);
-
-    // 根据请求内容组织响应字符串。
-    response->re1 = "received: " + request->out1;
-
-    // 把请求中的数字加 1 后返回，作为示例响应。
-    response->re2 = request->out2 + 1;
-
-    // 打印响应内容，确认服务逻辑已经执行。
-    RCLCPP_INFO(
-      this->get_logger(),
-      "service response: re1='%s', re2=%u",
-      response->re1.c_str(),
-      response->re2);
+  void client_request_callback(rclcpp::Client<user_interfaces::srv::User>::SharedFuture future) {
+ 	auto response = future.get();
+	RCLCPP_INFO(this->get_logger(), "get reply>> resp1 = '%s',resp2 = %u",response->resp1.c_str(), response->resp2);
+  }
+  
+  //服务回调，收到请求后自动调用
+  void service_callback(const user_interfaces::srv::User::Request::SharedPtr request, user_interfaces::srv::User::Response::SharedPtr response) {
+  	//打印信息
+	  RCLCPP_INFO(this->get_logger(), "get request>> req1='%s',req2=%u",request->req1.c_str(), request->req2);
+	//拼接响应字符串
+	response->resp1 = "test_service response >> request received which is" + request->req1;
+	response->resp2 =  request->req2;
+	//打印响应内容
+	RCLCPP_INFO(this->get_logger(), "%s  second response:%u",response->resp1.c_str(), response->resp2);
   }
 };
 

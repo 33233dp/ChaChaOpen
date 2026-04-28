@@ -1,5 +1,0 @@
-string out1
-uint32 out2
----
-string re1
-uint32 re2

@@ -40,7 +40,7 @@ void User_Request_fini_function(void * message_memory)
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMember User_Request_message_member_array[2] = {
   {
-    "out1",  // name
+    "req1",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
@@ -48,7 +48,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember User_Request_
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(user_interfaces::srv::User_Request, out1),  // bytes offset in struct
+    offsetof(user_interfaces::srv::User_Request, req1),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -58,7 +58,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember User_Request_
     nullptr  // resize(index) function pointer
   },
   {
-    "out2",  // name
+    "req2",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT32,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
@@ -66,7 +66,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember User_Request_
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(user_interfaces::srv::User_Request, out2),  // bytes offset in struct
+    offsetof(user_interfaces::srv::User_Request, req2),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -184,7 +184,7 @@ void User_Response_fini_function(void * message_memory)
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMember User_Response_message_member_array[2] = {
   {
-    "re1",  // name
+    "resp1",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
@@ -192,7 +192,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember User_Response
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(user_interfaces::srv::User_Response, re1),  // bytes offset in struct
+    offsetof(user_interfaces::srv::User_Response, resp1),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer
@@ -202,7 +202,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember User_Response
     nullptr  // resize(index) function pointer
   },
   {
-    "re2",  // name
+    "resp2",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_UINT32,  // type
     0,  // upper bound of string
     nullptr,  // members of sub message
@@ -210,7 +210,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember User_Response
     false,  // is array
     0,  // array size
     false,  // is upper bound
-    offsetof(user_interfaces::srv::User_Response, re2),  // bytes offset in struct
+    offsetof(user_interfaces::srv::User_Response, resp2),  // bytes offset in struct
     nullptr,  // default value
     nullptr,  // size() function pointer
     nullptr,  // get_const(index) function pointer

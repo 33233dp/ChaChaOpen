@@ -1,0 +1,102 @@
+[0.000000] (-) TimerEvent: {}
+[0.000049] (-) JobUnselected: {'identifier': 'user_interfaces'}
+[0.000079] (pr_hello) JobQueued: {'identifier': 'pr_hello', 'dependencies': OrderedDict({'user_interfaces': '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces'})}
+[0.000368] (pr_hello) JobStarted: {'identifier': 'pr_hello'}
+[0.008149] (pr_hello) JobProgress: {'identifier': 'pr_hello', 'progress': 'cmake'}
+[0.008587] (pr_hello) JobProgress: {'identifier': 'pr_hello', 'progress': 'build'}
+[0.009049] (pr_hello) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/pr_hello', '--', '-j8', '-l8'], 'cwd': '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/pr_hello', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/chacha', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'HTTPS_PROXY': 'http://127.0.0.1:7890', 'CODEX_CI': '1', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'LANGUAGE': 'zh_CN:en_US:en', 'USER': 'chacha', 'LC_TIME': 'zh_CN.UTF-8', 'CODEX_INTERNAL_ORIGINATOR_OVERRIDE': 'codex_vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/chacha/.config/Code/clp/b3d577d0e0e421f69f6e9379a6ee9c57.zh-cn/tcf.json","messagesFile":"/home/chacha/.config/Code/clp/b3d577d0e0e421f69f6e9379a6ee9c57.zh-cn/e7fb5e96c0730b9deb70b33781f98e2f35975036/nls.messages.json","corruptMarkerFile":"/home/chacha/.config/Code/clp/b3d577d0e0e421f69f6e9379a6ee9c57.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"b3d577d0e0e421f69f6e9379a6ee9c57.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/chacha/.config/Code/clp/b3d577d0e0e421f69f6e9379a6ee9c57.zh-cn/tcf.json","_cacheRoot":"/home/chacha/.config/Code/clp/b3d577d0e0e421f69f6e9379a6ee9c57.zh-cn","_resolvedLanguagePackCoreLocation":"/home/chacha/.config/Code/clp/b3d577d0e0e421f69f6e9379a6ee9c57.zh-cn/e7fb5e96c0730b9deb70b33781f98e2f35975036","_corruptedFile":"/home/chacha/.config/Code/clp/b3d577d0e0e421f69f6e9379a6ee9c57.zh-cn/corrupted.info"}', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'STARSHIP_SHELL': 'bash', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'x11', 'DEBUG': 'release', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'INPUT_METHOD': 'fcitx', 'HOME': '/home/chacha', 'CHROME_DESKTOP': 'code.desktop', 'DESKTOP_SESSION': 'ubuntu', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-cfdfcc60-1.11-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SDL_IM_MODULE': 'fcitx', 'PAGER': 'cat', 'LC_MONETARY': 'zh_CN.UTF-8', 'MANAGERPID': '2795', 'LC_CTYPE': 'C.UTF-8', 'SYSTEMD_EXEC_PID': '3252', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': '', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '6172', 'NODE_TLS_REJECT_UNAUTHORIZED': '0', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'QT_QPA_PLATFORMTHEME': 'qt5ct', 'https_proxy': 'http://127.0.0.1:7890', 'ROS_DISTRO': 'jazzy', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'chacha', 'http_proxy': 'http://127.0.0.1:7890', 'JOURNAL_STREAM': '9:21328', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'RUST_LOG': 'warn', 'USERNAME': 'chacha', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'lsa': 'ls -al', 'WINDOWPATH': '2', 'PATH': '/home/chacha/.local/bin:/home/chacha/.codex/tmp/arg0/codex-arg0qtVQgh:/home/chacha/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/chacha/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/chacha/.local/bin:/home/chacha/.local/bin:/home/chacha/.local/bin:/home/chacha/.vscode/extensions/openai.chatgpt-26.422.30944-linux-x64/bin/linux-x86_64:/home/chacha/.local/bin', 'SESSION_MANAGER': 'local/win-chacha:@/tmp/.ICE-unix/3191,unix/win-chacha:/tmp/.ICE-unix/3191', 'INVOCATION_ID': 'f7daf0e4ef0244049ae864eadb549a97', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'zh_CN.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'zh_CN.UTF-8', 'XMODIFIERS': '@im=fcitx', 'GH_PAGER': 'cat', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'zh_CN.UTF-8', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CODEX_THREAD_ID': '019dd18e-e94d-7422-918f-39c4ac76a4b1', 'LC_MEASUREMENT': 'zh_CN.UTF-8', 'GCC_COLORS': 'error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'zh_CN.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/pr_hello', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/chacha/.config/Code/CachedData/e7fb5e96c0730b9deb70b33781f98e2f35975036', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/chacha/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'STARSHIP_SESSION_KEY': '2500416715179781', 'PYTHONPATH': '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'HTTP_PROXY': 'http://127.0.0.1:7890', 'LC_NUMERIC': 'zh_CN.UTF-8', 'LC_PAPER': 'zh_CN.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'VSCODE_PID': '6172'}), 'shell': False}
+[0.057290] (pr_hello) StdoutLine: {'line': b'[ 50%] Built target pr_test_node\n'}
+[0.057535] (pr_hello) StdoutLine: {'line': b'[ 66%] Built target pr_hello_node\n'}
+[0.062675] (pr_hello) StdoutLine: {'line': b'[ 83%] Building CXX object CMakeFiles/test_node.dir/src/test.cpp.o\n'}
+[0.099908] (-) TimerEvent: {}
+[0.200105] (-) TimerEvent: {}
+[0.300307] (-) TimerEvent: {}
+[0.400486] (-) TimerEvent: {}
+[0.500696] (-) TimerEvent: {}
+[0.600870] (-) TimerEvent: {}
+[0.701070] (-) TimerEvent: {}
+[0.801287] (-) TimerEvent: {}
+[0.901492] (-) TimerEvent: {}
+[1.001697] (-) TimerEvent: {}
+[1.101893] (-) TimerEvent: {}
+[1.202100] (-) TimerEvent: {}
+[1.302368] (-) TimerEvent: {}
+[1.402629] (-) TimerEvent: {}
+[1.502884] (-) TimerEvent: {}
+[1.603154] (-) TimerEvent: {}
+[1.703498] (-) TimerEvent: {}
+[1.803783] (-) TimerEvent: {}
+[1.904041] (-) TimerEvent: {}
+[2.004238] (-) TimerEvent: {}
+[2.104422] (-) TimerEvent: {}
+[2.191668] (pr_hello) StderrLine: {'line': b'/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/pr_hello/src/test.cpp: In constructor \xe2\x80\x98TestNode::TestNode(const std::string&)\xe2\x80\x99:\n'}
+[2.191846] (pr_hello) StderrLine: {'line': b'/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/pr_hello/src/test.cpp:26:68: error: no matching function for call to \xe2\x80\x98create_client<user_interfaces::srv::User>(const char [13])\xe2\x80\x99\n'}
+[2.191910] (pr_hello) StderrLine: {'line': b'   26 |         client_ = rclcpp::create_client<user_interfaces::srv::User>("test_service");\n'}
+[2.191963] (pr_hello) StderrLine: {'line': b'      |                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~\n'}
+[2.192012] (pr_hello) StderrLine: {'line': b'In file included from /opt/ros/jazzy/include/rclcpp/rclcpp/node_impl.hpp:38,\n'}
+[2.192063] (pr_hello) StderrLine: {'line': b'                 from /opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:1663,\n'}
+[2.192112] (pr_hello) StderrLine: {'line': b'                 from /opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28,\n'}
+[2.192159] (pr_hello) StderrLine: {'line': b'                 from /opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:22,\n'}
+[2.192209] (pr_hello) StderrLine: {'line': b'                 from /opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172,\n'}
+[2.192273] (pr_hello) StderrLine: {'line': b'                 from /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/pr_hello/src/test.cpp:6:\n'}
+[2.192326] (pr_hello) StderrLine: {'line': b'/opt/ros/jazzy/include/rclcpp/rclcpp/create_client.hpp:43:1: note: candidate: \xe2\x80\x98template<class ServiceT> typename rclcpp::Client<ServiceT>::SharedPtr rclcpp::create_client(std::shared_ptr<node_interfaces::NodeBaseInterface>, std::shared_ptr<node_interfaces::NodeGraphInterface>, std::shared_ptr<node_interfaces::NodeServicesInterface>, const std::string&, const QoS&, CallbackGroup::SharedPtr)\xe2\x80\x99\n'}
+[2.192394] (pr_hello) StderrLine: {'line': b'   43 | create_client(\n'}
+[2.192464] (pr_hello) StderrLine: {'line': b'      | ^~~~~~~~~~~~~\n'}
+[2.192515] (pr_hello) StderrLine: {'line': b'/opt/ros/jazzy/include/rclcpp/rclcpp/create_client.hpp:43:1: note:   candidate expects 4 arguments, 1 provided\n'}
+[2.192566] (pr_hello) StderrLine: {'line': b'/opt/ros/jazzy/include/rclcpp/rclcpp/create_client.hpp:62:1: note: candidate: \xe2\x80\x98template<class ServiceT> typename rclcpp::Client<ServiceT>::SharedPtr rclcpp::create_client(std::shared_ptr<node_interfaces::NodeBaseInterface>, std::shared_ptr<node_interfaces::NodeGraphInterface>, std::shared_ptr<node_interfaces::NodeServicesInterface>, const std::string&, const rmw_qos_profile_t&, CallbackGroup::SharedPtr)\xe2\x80\x99\n'}
+[2.192626] (pr_hello) StderrLine: {'line': b'   62 | create_client(\n'}
+[2.192686] (pr_hello) StderrLine: {'line': b'      | ^~~~~~~~~~~~~\n'}
+[2.192739] (pr_hello) StderrLine: {'line': b'/opt/ros/jazzy/include/rclcpp/rclcpp/create_client.hpp:62:1: note:   candidate expects 6 arguments, 1 provided\n'}
+[2.194971] (pr_hello) StderrLine: {'line': b'/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/pr_hello/src/test.cpp:28:70: error: no matching function for call to \xe2\x80\x98create_service<user_interfaces::srv::User>(const char [13], std::_Bind_helper<false, void (TestNode::*)(std::shared_ptr<user_interfaces::srv::User_Request_<std::allocator<void> > >, std::shared_ptr<user_interfaces::srv::User_Response_<std::allocator<void> > >), TestNode*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type)\xe2\x80\x99\n'}
+[2.195176] (pr_hello) StderrLine: {'line': b'   28 |         service_ = rclcpp::create_service<user_interfaces::srv::User>("test_service", std::bind(&TestNode::service_callback, this, std::placeholders::_1, std::placeholders::_2));\n'}
+[2.195297] (pr_hello) StderrLine: {'line': b'      |                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[2.195387] (pr_hello) StderrLine: {'line': b'In file included from /opt/ros/jazzy/include/rclcpp/rclcpp/node_impl.hpp:42:\n'}
+[2.195475] (pr_hello) StderrLine: {'line': b'/opt/ros/jazzy/include/rclcpp/rclcpp/create_service.hpp:43:1: note: candidate: \xe2\x80\x98template<class ServiceT, class CallbackT> typename rclcpp::Service<ServiceT>::SharedPtr rclcpp::create_service(std::shared_ptr<node_interfaces::NodeBaseInterface>, std::shared_ptr<node_interfaces::NodeServicesInterface>, const std::string&, CallbackT&&, const QoS&, CallbackGroup::SharedPtr)\xe2\x80\x99\n'}
+[2.195541] (pr_hello) StderrLine: {'line': b'   43 | create_service(\n'}
+[2.195598] (pr_hello) StderrLine: {'line': b'      | ^~~~~~~~~~~~~~\n'}
+[2.195649] (pr_hello) StderrLine: {'line': b'/opt/ros/jazzy/include/rclcpp/rclcpp/create_service.hpp:43:1: note:   candidate expects 6 arguments, 2 provided\n'}
+[2.195700] (pr_hello) StderrLine: {'line': b'/opt/ros/jazzy/include/rclcpp/rclcpp/create_service.hpp:60:1: note: candidate: \xe2\x80\x98template<class ServiceT, class CallbackT> typename rclcpp::Service<ServiceT>::SharedPtr rclcpp::create_service(std::shared_ptr<node_interfaces::NodeBaseInterface>, std::shared_ptr<node_interfaces::NodeServicesInterface>, const std::string&, CallbackT&&, const rmw_qos_profile_t&, CallbackGroup::SharedPtr)\xe2\x80\x99\n'}
+[2.195758] (pr_hello) StderrLine: {'line': b'   60 | create_service(\n'}
+[2.195808] (pr_hello) StderrLine: {'line': b'      | ^~~~~~~~~~~~~~\n'}
+[2.195859] (pr_hello) StderrLine: {'line': b'/opt/ros/jazzy/include/rclcpp/rclcpp/create_service.hpp:60:1: note:   candidate expects 6 arguments, 2 provided\n'}
+[2.202510] (pr_hello) StderrLine: {'line': b'/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/pr_hello/src/test.cpp: In member function \xe2\x80\x98void TestNode::callback(std_msgs::msg::String_<std::allocator<void> >::ConstSharedPtr)\xe2\x80\x99:\n'}
+[2.202702] (pr_hello) StderrLine: {'line': b'/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/pr_hello/src/test.cpp:49:33: error: \xe2\x80\x98meg\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98msg\xe2\x80\x99?\n'}
+[2.202765] (pr_hello) StderrLine: {'line': b'   49 |     request->req1 = "get msg" + meg->data;\n'}
+[2.202833] (pr_hello) StderrLine: {'line': b'      |                                 ^~~\n'}
+[2.202881] (pr_hello) StderrLine: {'line': b'      |                                 msg\n'}
+[2.202927] (pr_hello) StderrLine: {'line': b'/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/pr_hello/src/test.cpp:52:64: error: \xe2\x80\x98cline_request_callback\xe2\x80\x99 is not a member of \xe2\x80\x98TestNode\xe2\x80\x99\n'}
+[2.202973] (pr_hello) StderrLine: {'line': b'   52 |     client_ = async_send_request(request, std::bind(&TestNode::cline_request_callback, this, std::placeholders::_1));\n'}
+[2.203057] (pr_hello) StderrLine: {'line': b'      |                                                                ^~~~~~~~~~~~~~~~~~~~~~\n'}
+[2.204477] (-) TimerEvent: {}
+[2.209332] (pr_hello) StderrLine: {'line': b'/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/pr_hello/src/test.cpp:52:15: error: \xe2\x80\x98async_send_request\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98rmw_send_request\xe2\x80\x99?\n'}
+[2.209512] (pr_hello) StderrLine: {'line': b'   52 |     client_ = async_send_request(request, std::bind(&TestNode::cline_request_callback, this, std::placeholders::_1));\n'}
+[2.209580] (pr_hello) StderrLine: {'line': b'      |               ^~~~~~~~~~~~~~~~~~\n'}
+[2.209628] (pr_hello) StderrLine: {'line': b'      |               rmw_send_request\n'}
+[2.211933] (pr_hello) StderrLine: {'line': b'/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/pr_hello/src/test.cpp: In member function \xe2\x80\x98void TestNode::service_callback(user_interfaces::srv::User_Request_<std::allocator<void> >::SharedPtr, user_interfaces::srv::User_Response_<std::allocator<void> >::SharedPtr)\xe2\x80\x99:\n'}
+[2.212059] (pr_hello) StderrLine: {'line': b'/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/pr_hello/src/test.cpp:65:54: error: invalid operands of types \xe2\x80\x98const char [25]\xe2\x80\x99 and \xe2\x80\x98const char [27]\xe2\x80\x99 to binary \xe2\x80\x98operator+\xe2\x80\x99\n'}
+[2.212148] (pr_hello) StderrLine: {'line': b'   65 |         response->resp1 = "test_service response >>" + "request received which is " + request->req1;\n'}
+[2.212227] (pr_hello) StderrLine: {'line': b'      |                           ~~~~~~~~~~~~~~~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n'}
+[2.212316] (pr_hello) StderrLine: {'line': b'      |                           |                            |\n'}
+[2.212379] (pr_hello) StderrLine: {'line': b'      |                           const char [25]              const char [27]\n'}
+[2.304588] (-) TimerEvent: {}
+[2.404792] (-) TimerEvent: {}
+[2.504979] (-) TimerEvent: {}
+[2.605144] (-) TimerEvent: {}
+[2.705325] (-) TimerEvent: {}
+[2.805543] (-) TimerEvent: {}
+[2.905731] (-) TimerEvent: {}
+[3.005941] (-) TimerEvent: {}
+[3.106135] (-) TimerEvent: {}
+[3.206314] (-) TimerEvent: {}
+[3.306502] (-) TimerEvent: {}
+[3.406687] (-) TimerEvent: {}
+[3.506978] (-) TimerEvent: {}
+[3.607151] (-) TimerEvent: {}
+[3.707300] (-) TimerEvent: {}
+[3.807504] (-) TimerEvent: {}
+[3.827509] (pr_hello) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/test_node.dir/build.make:76: CMakeFiles/test_node.dir/src/test.cpp.o] Error 1\n'}
+[3.827818] (pr_hello) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:167: CMakeFiles/test_node.dir/all] Error 2\n'}
+[3.827887] (pr_hello) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[3.829283] (pr_hello) CommandEnded: {'returncode': 2}
+[3.842696] (pr_hello) JobEnded: {'identifier': 'pr_hello', 'rc': 2}
+[3.853504] (-) EventReactorShutdown: {}

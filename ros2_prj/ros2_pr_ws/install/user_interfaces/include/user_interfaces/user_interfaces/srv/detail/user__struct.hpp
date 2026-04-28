@@ -42,41 +42,41 @@ struct User_Request_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->out1 = "";
-      this->out2 = 0ul;
+      this->req1 = "";
+      this->req2 = 0ul;
     }
   }
 
   explicit User_Request_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : out1(_alloc)
+  : req1(_alloc)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->out1 = "";
-      this->out2 = 0ul;
+      this->req1 = "";
+      this->req2 = 0ul;
     }
   }
 
   // field types and members
-  using _out1_type =
+  using _req1_type =
     std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
-  _out1_type out1;
-  using _out2_type =
+  _req1_type req1;
+  using _req2_type =
     uint32_t;
-  _out2_type out2;
+  _req2_type req2;
 
   // setters for named parameter idiom
-  Type & set__out1(
+  Type & set__req1(
     const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
   {
-    this->out1 = _arg;
+    this->req1 = _arg;
     return *this;
   }
-  Type & set__out2(
+  Type & set__req2(
     const uint32_t & _arg)
   {
-    this->out2 = _arg;
+    this->req2 = _arg;
     return *this;
   }
 
@@ -122,10 +122,10 @@ struct User_Request_
   // comparison operators
   bool operator==(const User_Request_ & other) const
   {
-    if (this->out1 != other.out1) {
+    if (this->req1 != other.req1) {
       return false;
     }
-    if (this->out2 != other.out2) {
+    if (this->req2 != other.req2) {
       return false;
     }
     return true;
@@ -170,41 +170,41 @@ struct User_Response_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->re1 = "";
-      this->re2 = 0ul;
+      this->resp1 = "";
+      this->resp2 = 0ul;
     }
   }
 
   explicit User_Response_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : re1(_alloc)
+  : resp1(_alloc)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
-      this->re1 = "";
-      this->re2 = 0ul;
+      this->resp1 = "";
+      this->resp2 = 0ul;
     }
   }
 
   // field types and members
-  using _re1_type =
+  using _resp1_type =
     std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
-  _re1_type re1;
-  using _re2_type =
+  _resp1_type resp1;
+  using _resp2_type =
     uint32_t;
-  _re2_type re2;
+  _resp2_type resp2;
 
   // setters for named parameter idiom
-  Type & set__re1(
+  Type & set__resp1(
     const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
   {
-    this->re1 = _arg;
+    this->resp1 = _arg;
     return *this;
   }
-  Type & set__re2(
+  Type & set__resp2(
     const uint32_t & _arg)
   {
-    this->re2 = _arg;
+    this->resp2 = _arg;
     return *this;
   }
 
@@ -250,10 +250,10 @@ struct User_Response_
   // comparison operators
   bool operator==(const User_Response_ & other) const
   {
-    if (this->re1 != other.re1) {
+    if (this->resp1 != other.resp1) {
       return false;
     }
-    if (this->re2 != other.re2) {
+    if (this->resp2 != other.resp2) {
       return false;
     }
     return true;

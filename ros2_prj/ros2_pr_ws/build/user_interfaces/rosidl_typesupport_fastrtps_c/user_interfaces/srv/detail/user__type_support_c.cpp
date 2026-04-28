@@ -36,8 +36,8 @@ extern "C"
 {
 #endif
 
-#include "rosidl_runtime_c/string.h"  // out1
-#include "rosidl_runtime_c/string_functions.h"  // out1
+#include "rosidl_runtime_c/string.h"  // req1
+#include "rosidl_runtime_c/string_functions.h"  // req1
 
 // forward declare type support functions
 
@@ -50,9 +50,9 @@ bool cdr_serialize_user_interfaces__srv__User_Request(
   const user_interfaces__srv__User_Request * ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Field name: out1
+  // Field name: req1
   {
-    const rosidl_runtime_c__String * str = &ros_message->out1;
+    const rosidl_runtime_c__String * str = &ros_message->req1;
     if (str->capacity == 0 || str->capacity <= str->size) {
       fprintf(stderr, "string capacity not greater than size\n");
       return false;
@@ -64,9 +64,9 @@ bool cdr_serialize_user_interfaces__srv__User_Request(
     cdr << str->data;
   }
 
-  // Field name: out2
+  // Field name: req2
   {
-    cdr << ros_message->out2;
+    cdr << ros_message->req2;
   }
 
   return true;
@@ -77,25 +77,25 @@ bool cdr_deserialize_user_interfaces__srv__User_Request(
   eprosima::fastcdr::Cdr & cdr,
   user_interfaces__srv__User_Request * ros_message)
 {
-  // Field name: out1
+  // Field name: req1
   {
     std::string tmp;
     cdr >> tmp;
-    if (!ros_message->out1.data) {
-      rosidl_runtime_c__String__init(&ros_message->out1);
+    if (!ros_message->req1.data) {
+      rosidl_runtime_c__String__init(&ros_message->req1);
     }
     bool succeeded = rosidl_runtime_c__String__assign(
-      &ros_message->out1,
+      &ros_message->req1,
       tmp.c_str());
     if (!succeeded) {
-      fprintf(stderr, "failed to assign string into field 'out1'\n");
+      fprintf(stderr, "failed to assign string into field 'req1'\n");
       return false;
     }
   }
 
-  // Field name: out2
+  // Field name: req2
   {
-    cdr >> ros_message->out2;
+    cdr >> ros_message->req2;
   }
 
   return true;
@@ -116,14 +116,14 @@ size_t get_serialized_size_user_interfaces__srv__User_Request(
   (void)padding;
   (void)wchar_size;
 
-  // Field name: out1
+  // Field name: req1
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->out1.size + 1);
+    (ros_message->req1.size + 1);
 
-  // Field name: out2
+  // Field name: req2
   {
-    size_t item_size = sizeof(ros_message->out2);
+    size_t item_size = sizeof(ros_message->req2);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -150,7 +150,7 @@ size_t max_serialized_size_user_interfaces__srv__User_Request(
   full_bounded = true;
   is_plain = true;
 
-  // Field name: out1
+  // Field name: req1
   {
     size_t array_size = 1;
     full_bounded = false;
@@ -162,7 +162,7 @@ size_t max_serialized_size_user_interfaces__srv__User_Request(
     }
   }
 
-  // Field name: out2
+  // Field name: req2
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);
@@ -179,7 +179,7 @@ size_t max_serialized_size_user_interfaces__srv__User_Request(
     using DataType = user_interfaces__srv__User_Request;
     is_plain =
       (
-      offsetof(DataType, out2) +
+      offsetof(DataType, req2) +
       last_member_size
       ) == ret_val;
   }
@@ -191,9 +191,9 @@ bool cdr_serialize_key_user_interfaces__srv__User_Request(
   const user_interfaces__srv__User_Request * ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Field name: out1
+  // Field name: req1
   {
-    const rosidl_runtime_c__String * str = &ros_message->out1;
+    const rosidl_runtime_c__String * str = &ros_message->req1;
     if (str->capacity == 0 || str->capacity <= str->size) {
       fprintf(stderr, "string capacity not greater than size\n");
       return false;
@@ -205,9 +205,9 @@ bool cdr_serialize_key_user_interfaces__srv__User_Request(
     cdr << str->data;
   }
 
-  // Field name: out2
+  // Field name: req2
   {
-    cdr << ros_message->out2;
+    cdr << ros_message->req2;
   }
 
   return true;
@@ -228,14 +228,14 @@ size_t get_serialized_size_key_user_interfaces__srv__User_Request(
   (void)padding;
   (void)wchar_size;
 
-  // Field name: out1
+  // Field name: req1
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->out1.size + 1);
+    (ros_message->req1.size + 1);
 
-  // Field name: out2
+  // Field name: req2
   {
-    size_t item_size = sizeof(ros_message->out2);
+    size_t item_size = sizeof(ros_message->req2);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -260,7 +260,7 @@ size_t max_serialized_size_key_user_interfaces__srv__User_Request(
 
   full_bounded = true;
   is_plain = true;
-  // Field name: out1
+  // Field name: req1
   {
     size_t array_size = 1;
     full_bounded = false;
@@ -272,7 +272,7 @@ size_t max_serialized_size_key_user_interfaces__srv__User_Request(
     }
   }
 
-  // Field name: out2
+  // Field name: req2
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);
@@ -288,7 +288,7 @@ size_t max_serialized_size_key_user_interfaces__srv__User_Request(
     using DataType = user_interfaces__srv__User_Request;
     is_plain =
       (
-      offsetof(DataType, out2) +
+      offsetof(DataType, req2) +
       last_member_size
       ) == ret_val;
   }
@@ -418,9 +418,9 @@ extern "C"
 #endif
 
 // already included above
-// #include "rosidl_runtime_c/string.h"  // re1
+// #include "rosidl_runtime_c/string.h"  // resp1
 // already included above
-// #include "rosidl_runtime_c/string_functions.h"  // re1
+// #include "rosidl_runtime_c/string_functions.h"  // resp1
 
 // forward declare type support functions
 
@@ -433,9 +433,9 @@ bool cdr_serialize_user_interfaces__srv__User_Response(
   const user_interfaces__srv__User_Response * ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Field name: re1
+  // Field name: resp1
   {
-    const rosidl_runtime_c__String * str = &ros_message->re1;
+    const rosidl_runtime_c__String * str = &ros_message->resp1;
     if (str->capacity == 0 || str->capacity <= str->size) {
       fprintf(stderr, "string capacity not greater than size\n");
       return false;
@@ -447,9 +447,9 @@ bool cdr_serialize_user_interfaces__srv__User_Response(
     cdr << str->data;
   }
 
-  // Field name: re2
+  // Field name: resp2
   {
-    cdr << ros_message->re2;
+    cdr << ros_message->resp2;
   }
 
   return true;
@@ -460,25 +460,25 @@ bool cdr_deserialize_user_interfaces__srv__User_Response(
   eprosima::fastcdr::Cdr & cdr,
   user_interfaces__srv__User_Response * ros_message)
 {
-  // Field name: re1
+  // Field name: resp1
   {
     std::string tmp;
     cdr >> tmp;
-    if (!ros_message->re1.data) {
-      rosidl_runtime_c__String__init(&ros_message->re1);
+    if (!ros_message->resp1.data) {
+      rosidl_runtime_c__String__init(&ros_message->resp1);
     }
     bool succeeded = rosidl_runtime_c__String__assign(
-      &ros_message->re1,
+      &ros_message->resp1,
       tmp.c_str());
     if (!succeeded) {
-      fprintf(stderr, "failed to assign string into field 're1'\n");
+      fprintf(stderr, "failed to assign string into field 'resp1'\n");
       return false;
     }
   }
 
-  // Field name: re2
+  // Field name: resp2
   {
-    cdr >> ros_message->re2;
+    cdr >> ros_message->resp2;
   }
 
   return true;
@@ -499,14 +499,14 @@ size_t get_serialized_size_user_interfaces__srv__User_Response(
   (void)padding;
   (void)wchar_size;
 
-  // Field name: re1
+  // Field name: resp1
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->re1.size + 1);
+    (ros_message->resp1.size + 1);
 
-  // Field name: re2
+  // Field name: resp2
   {
-    size_t item_size = sizeof(ros_message->re2);
+    size_t item_size = sizeof(ros_message->resp2);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -533,7 +533,7 @@ size_t max_serialized_size_user_interfaces__srv__User_Response(
   full_bounded = true;
   is_plain = true;
 
-  // Field name: re1
+  // Field name: resp1
   {
     size_t array_size = 1;
     full_bounded = false;
@@ -545,7 +545,7 @@ size_t max_serialized_size_user_interfaces__srv__User_Response(
     }
   }
 
-  // Field name: re2
+  // Field name: resp2
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);
@@ -562,7 +562,7 @@ size_t max_serialized_size_user_interfaces__srv__User_Response(
     using DataType = user_interfaces__srv__User_Response;
     is_plain =
       (
-      offsetof(DataType, re2) +
+      offsetof(DataType, resp2) +
       last_member_size
       ) == ret_val;
   }
@@ -574,9 +574,9 @@ bool cdr_serialize_key_user_interfaces__srv__User_Response(
   const user_interfaces__srv__User_Response * ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
-  // Field name: re1
+  // Field name: resp1
   {
-    const rosidl_runtime_c__String * str = &ros_message->re1;
+    const rosidl_runtime_c__String * str = &ros_message->resp1;
     if (str->capacity == 0 || str->capacity <= str->size) {
       fprintf(stderr, "string capacity not greater than size\n");
       return false;
@@ -588,9 +588,9 @@ bool cdr_serialize_key_user_interfaces__srv__User_Response(
     cdr << str->data;
   }
 
-  // Field name: re2
+  // Field name: resp2
   {
-    cdr << ros_message->re2;
+    cdr << ros_message->resp2;
   }
 
   return true;
@@ -611,14 +611,14 @@ size_t get_serialized_size_key_user_interfaces__srv__User_Response(
   (void)padding;
   (void)wchar_size;
 
-  // Field name: re1
+  // Field name: resp1
   current_alignment += padding +
     eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
-    (ros_message->re1.size + 1);
+    (ros_message->resp1.size + 1);
 
-  // Field name: re2
+  // Field name: resp2
   {
-    size_t item_size = sizeof(ros_message->re2);
+    size_t item_size = sizeof(ros_message->resp2);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
@@ -643,7 +643,7 @@ size_t max_serialized_size_key_user_interfaces__srv__User_Response(
 
   full_bounded = true;
   is_plain = true;
-  // Field name: re1
+  // Field name: resp1
   {
     size_t array_size = 1;
     full_bounded = false;
@@ -655,7 +655,7 @@ size_t max_serialized_size_key_user_interfaces__srv__User_Response(
     }
   }
 
-  // Field name: re2
+  // Field name: resp2
   {
     size_t array_size = 1;
     last_member_size = array_size * sizeof(uint32_t);
@@ -671,7 +671,7 @@ size_t max_serialized_size_key_user_interfaces__srv__User_Response(
     using DataType = user_interfaces__srv__User_Response;
     is_plain =
       (
-      offsetof(DataType, re2) +
+      offsetof(DataType, resp2) +
       last_member_size
       ) == ret_val;
   }

@@ -62,14 +62,14 @@ class User_Request(metaclass=Metaclass_User_Request):
     """Message class 'User_Request'."""
 
     __slots__ = [
-        '_out1',
-        '_out2',
+        '_req1',
+        '_req2',
         '_check_fields',
     ]
 
     _fields_and_field_types = {
-        'out1': 'string',
-        'out2': 'uint32',
+        'req1': 'string',
+        'req2': 'uint32',
     }
 
     # This attribute is used to store an rosidl_parser.definition variable
@@ -88,8 +88,8 @@ class User_Request(metaclass=Metaclass_User_Request):
             assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
                 'Invalid arguments passed to constructor: %s' % \
                 ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.out1 = kwargs.get('out1', str())
-        self.out2 = kwargs.get('out2', int())
+        self.req1 = kwargs.get('req1', str())
+        self.req2 = kwargs.get('req2', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -121,9 +121,9 @@ class User_Request(metaclass=Metaclass_User_Request):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.out1 != other.out1:
+        if self.req1 != other.req1:
             return False
-        if self.out2 != other.out2:
+        if self.req2 != other.req2:
             return False
         return True
 
@@ -133,32 +133,32 @@ class User_Request(metaclass=Metaclass_User_Request):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def out1(self):
-        """Message field 'out1'."""
-        return self._out1
+    def req1(self):
+        """Message field 'req1'."""
+        return self._req1
 
-    @out1.setter
-    def out1(self, value):
+    @req1.setter
+    def req1(self, value):
         if self._check_fields:
             assert \
                 isinstance(value, str), \
-                "The 'out1' field must be of type 'str'"
-        self._out1 = value
+                "The 'req1' field must be of type 'str'"
+        self._req1 = value
 
     @builtins.property
-    def out2(self):
-        """Message field 'out2'."""
-        return self._out2
+    def req2(self):
+        """Message field 'req2'."""
+        return self._req2
 
-    @out2.setter
-    def out2(self, value):
+    @req2.setter
+    def req2(self, value):
         if self._check_fields:
             assert \
                 isinstance(value, int), \
-                "The 'out2' field must be of type 'int'"
+                "The 'req2' field must be of type 'int'"
             assert value >= 0 and value < 4294967296, \
-                "The 'out2' field must be an unsigned integer in [0, 4294967295]"
-        self._out2 = value
+                "The 'req2' field must be an unsigned integer in [0, 4294967295]"
+        self._req2 = value
 
 
 # Import statements for member types
@@ -215,14 +215,14 @@ class User_Response(metaclass=Metaclass_User_Response):
     """Message class 'User_Response'."""
 
     __slots__ = [
-        '_re1',
-        '_re2',
+        '_resp1',
+        '_resp2',
         '_check_fields',
     ]
 
     _fields_and_field_types = {
-        're1': 'string',
-        're2': 'uint32',
+        'resp1': 'string',
+        'resp2': 'uint32',
     }
 
     # This attribute is used to store an rosidl_parser.definition variable
@@ -241,8 +241,8 @@ class User_Response(metaclass=Metaclass_User_Response):
             assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
                 'Invalid arguments passed to constructor: %s' % \
                 ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
-        self.re1 = kwargs.get('re1', str())
-        self.re2 = kwargs.get('re2', int())
+        self.resp1 = kwargs.get('resp1', str())
+        self.resp2 = kwargs.get('resp2', int())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -274,9 +274,9 @@ class User_Response(metaclass=Metaclass_User_Response):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
-        if self.re1 != other.re1:
+        if self.resp1 != other.resp1:
             return False
-        if self.re2 != other.re2:
+        if self.resp2 != other.resp2:
             return False
         return True
 
@@ -286,32 +286,32 @@ class User_Response(metaclass=Metaclass_User_Response):
         return copy(cls._fields_and_field_types)
 
     @builtins.property
-    def re1(self):
-        """Message field 're1'."""
-        return self._re1
+    def resp1(self):
+        """Message field 'resp1'."""
+        return self._resp1
 
-    @re1.setter
-    def re1(self, value):
+    @resp1.setter
+    def resp1(self, value):
         if self._check_fields:
             assert \
                 isinstance(value, str), \
-                "The 're1' field must be of type 'str'"
-        self._re1 = value
+                "The 'resp1' field must be of type 'str'"
+        self._resp1 = value
 
     @builtins.property
-    def re2(self):
-        """Message field 're2'."""
-        return self._re2
+    def resp2(self):
+        """Message field 'resp2'."""
+        return self._resp2
 
-    @re2.setter
-    def re2(self, value):
+    @resp2.setter
+    def resp2(self, value):
         if self._check_fields:
             assert \
                 isinstance(value, int), \
-                "The 're2' field must be of type 'int'"
+                "The 'resp2' field must be of type 'int'"
             assert value >= 0 and value < 4294967296, \
-                "The 're2' field must be an unsigned integer in [0, 4294967295]"
-        self._re2 = value
+                "The 'resp2' field must be an unsigned integer in [0, 4294967295]"
+        self._resp2 = value
 
 
 # Import statements for member types

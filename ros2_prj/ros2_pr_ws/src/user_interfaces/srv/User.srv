@@ -1,5 +1,7 @@
-string out1
-uint32 out2
+# 请求部分
+string req1
+uint32 req2
 ---
-string re1
-uint32 re2
+# 响应部分
+string resp1
+uint32 resp2

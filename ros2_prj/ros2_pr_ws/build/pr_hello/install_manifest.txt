@@ -3,7 +3,9 @@
 /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/lib/pr_hello/pr_test_node
 /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/ament_index/resource_index/package_run_dependencies/pr_hello
 /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/ament_index/resource_index/parent_prefix_path/pr_hello
+/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/environment/ament_prefix_path.sh
 /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/environment/ament_prefix_path.dsv
+/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/environment/path.sh
 /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/environment/path.dsv
 /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/local_setup.bash
 /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/local_setup.sh

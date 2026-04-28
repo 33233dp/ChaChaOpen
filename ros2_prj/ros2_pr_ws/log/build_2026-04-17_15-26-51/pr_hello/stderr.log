@@ -1,4 +1,0 @@
-/home/chacha/code/ros2_prj/ros2_pr_ws/src/pr_hello/src/pr_hello.cpp: In member function ‘void hello::callback(std_msgs::msg::String)’:
-/home/chacha/code/ros2_prj/ros2_pr_ws/src/pr_hello/src/pr_hello.cpp:14:39: warning: unused parameter ‘msg’ [-Wunused-parameter]
-   14 |   void callback(std_msgs::msg::String msg) {
-      |                 ~~~~~~~~~~~~~~~~~~~~~~^~~
