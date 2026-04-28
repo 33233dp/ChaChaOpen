@@ -1,31 +1,24 @@
 {
   "main": {
-    "id": "547feb03edebdb19",
+    "id": "c530c22cc4874780",
     "type": "split",
     "children": [
       {
-        "id": "fbbe982726ad3594",
+        "id": "fdb04c745c3d7ed2",
         "type": "tabs",
         "children": [
           {
-            "id": "0c6b82bb2f6a9348",
+            "id": "6d424bc029b5db80",
             "type": "leaf",
             "state": {
-<<<<<<< HEAD
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
-=======
               "type": "markdown",
               "state": {
-                "file": "robotics-toolbox-matlab.md",
+                "file": "机器人学/pieper解法.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "robotics-toolbox-matlab"
->>>>>>> f690d57b2df446a06a1dd4c1dc1b11ebd8516faa
+              "title": "pieper解法"
             }
           }
         ]
@@ -34,15 +27,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "f5142836ea257696",
+    "id": "06842a26f0662c58",
     "type": "split",
     "children": [
       {
-        "id": "05e0b258f37829c9",
+        "id": "2afc9dbc4eb270ad",
         "type": "tabs",
         "children": [
           {
-            "id": "4606d4239279bd8f",
+            "id": "a670fef6bccf0764",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -55,7 +48,7 @@
             }
           },
           {
-            "id": "424abae0715f83dc",
+            "id": "c4c42fb17fcb8288",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -72,7 +65,7 @@
             }
           },
           {
-            "id": "e49d6b03f0d6046c",
+            "id": "d5a778c76650f076",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -85,24 +78,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
-    "id": "57082c5efdd1c352",
+    "id": "c541572f1c623437",
     "type": "split",
     "children": [
       {
-        "id": "250bbade3f4ade2a",
+        "id": "8860cdc38ca2bc0f",
         "type": "tabs",
         "children": [
           {
-            "id": "b36ba9ed08e65798",
+            "id": "ae02edf34eb0be71",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "机器人学/3.1正向运动学.md",
+                "file": "机器人学/pieper解法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,25 +104,25 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "3.1正向运动学 的反向链接列表"
+              "title": "pieper解法 的反向链接列表"
             }
           },
           {
-            "id": "415d9643154ed70a",
+            "id": "63168306d64b9159",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "机器人学/3.1正向运动学.md",
+                "file": "机器人学/pieper解法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "3.1正向运动学 的出链列表"
+              "title": "pieper解法 的出链列表"
             }
           },
           {
-            "id": "e578e09f4caa58af",
+            "id": "e82a9a2bf059ecd8",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -145,7 +137,7 @@
             }
           },
           {
-            "id": "4ee7ecb11e1a35fa",
+            "id": "994b9fd5a1ecb6ae",
             "type": "leaf",
             "state": {
               "type": "all-properties",
@@ -159,18 +151,18 @@
             }
           },
           {
-            "id": "bee2251e0ebc8723",
+            "id": "9cc01bf9e18778b5",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "机器人学/3.1正向运动学.md",
+                "file": "机器人学/pieper解法.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "3.1正向运动学 的大纲"
+              "title": "pieper解法 的大纲"
             }
           }
         ]
@@ -191,30 +183,8 @@
       "bases:新建数据库": false
     }
   },
-  "active": "0c6b82bb2f6a9348",
+  "active": "6d424bc029b5db80",
   "lastOpenFiles": [
-    "开源项目README翻译.md",
-    "robotics-toolbox-matlab.md",
-    "ROS2/Cpp服务实现.md",
-    "ROS2/服务编程实现.md",
-    "ROS2/2_2服务.md",
-    "ROS2/cpp创建服务总结.md",
-    "ROS2/自定义接口.md",
-    "ROS2/编程验证自定义接口.md",
-    "ROS2/多线程.md",
-    "机器人学/3.3.1变换式中的微分关系.md",
-    "机器人学/3.3机器人的雅可比矩阵 (Jacobian Matrix).md",
-    "机器人学/3机器人运动学.md",
-    "机器人学/3.2逆向运动学.md",
-    "机器人学/3.3.2 求雅可比矩阵.md",
-    "机器人学/3.3.1变换式中的微分关系.md",
-    "机器人学/0机器人学.md",
-    "ROS2/pieper编程实现.md",
-    "机器人学/pieper解法.md",
-    "机器人学/机器人学-例题和习题.md",
-    "算法/两数相加.md",
-    "算法/两数之和.md",
-    "机器人学/3.1正向运动学.md",
-    "机器人学/2机器人学-数学基础.md"
+    "机器人学/0机器人学.md"
   ]
 }
