@@ -1,0 +1,292 @@
+[0.013s] Invoking command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces -DCMAKE_INSTALL_PREFIX=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces
+[0.169s] -- The C compiler identification is GNU 13.3.0
+[0.260s] -- The CXX compiler identification is GNU 13.3.0
+[0.299s] -- Detecting C compiler ABI info
+[0.519s] -- Detecting C compiler ABI info - done
+[0.534s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.534s] -- Detecting C compile features
+[0.535s] -- Detecting C compile features - done
+[0.548s] -- Detecting CXX compiler ABI info
+[0.704s] -- Detecting CXX compiler ABI info - done
+[0.720s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.720s] -- Detecting CXX compile features
+[0.723s] -- Detecting CXX compile features - done
+[0.733s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.950s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.108s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.171s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.198s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.222s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.253s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.303s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.367s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[1.388s] -- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[2.169s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[3.156s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.553s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.565s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[3.753s] -- Found PythonExtra: /usr/bin/python3  
+[4.518s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[4.666s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[4.776s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[4.776s] -- Configured cppcheck include dirs: 
+[4.776s] -- Configured cppcheck exclude dirs and/or files: 
+[4.785s] -- Added test 'flake8' to check Python code syntax and style conventions
+[4.785s] -- Configured 'flake8' exclude dirs and/or files: 
+[4.801s] -- Added test 'lint_cmake' to check CMake code style
+[4.809s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[4.856s] -- Added test 'uncrustify' to check C / C++ code style
+[4.857s] -- Configured uncrustify additional arguments: 
+[4.863s] -- Added test 'xmllint' to check XML markup files
+[4.868s] -- Configuring done (4.8s)
+[4.929s] -- Generating done (0.0s)
+[4.952s] -- Build files have been written to: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces
+[4.969s] Invoked command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces -DCMAKE_INSTALL_PREFIX=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces
+[4.971s] Invoking command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces -- -j8 -l8
+[5.059s] [  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[5.073s] [  2%] Built target ament_cmake_python_copy_user_interfaces
+[5.510s] running egg_info
+[5.512s] creating user_interfaces.egg-info
+[5.548s] writing user_interfaces.egg-info/PKG-INFO
+[5.548s] writing dependency_links to user_interfaces.egg-info/dependency_links.txt
+[5.548s] writing top-level names to user_interfaces.egg-info/top_level.txt
+[5.548s] writing manifest file 'user_interfaces.egg-info/SOURCES.txt'
+[5.616s] [  2%] Built target user_interfaces__rosidl_generator_type_description
+[5.641s] [  4%] [34m[1mGenerating C code for ROS interfaces[0m
+[5.665s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[5.678s] reading manifest file 'user_interfaces.egg-info/SOURCES.txt'
+[5.679s] writing manifest file 'user_interfaces.egg-info/SOURCES.txt'
+[5.754s] [  6%] Built target ament_cmake_python_build_user_interfaces_egg
+[6.483s] [  6%] Built target user_interfaces__cpp
+[6.564s] [ 11%] [32mBuilding C object CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__functions.c.o[0m
+[6.565s] [ 11%] [32mBuilding C object CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__description.c.o[0m
+[6.565s] [ 13%] [32mBuilding C object CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__description.c.o[0m
+[6.566s] [ 15%] [32mBuilding C object CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__type_support.c.o[0m
+[6.566s] [ 18%] [32mBuilding C object CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/msg/detail/user__type_support.c.o[0m
+[6.570s] [ 20%] [32mBuilding C object CMakeFiles/user_interfaces__rosidl_generator_c.dir/rosidl_generator_c/user_interfaces/srv/detail/user__functions.c.o[0m
+[6.755s] [ 22%] [32m[1mLinking C shared library libuser_interfaces__rosidl_generator_c.so[0m
+[6.845s] [ 22%] Built target user_interfaces__rosidl_generator_c
+[6.876s] [ 25%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[6.876s] [ 27%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[6.877s] [ 29%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[6.879s] [ 31%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[6.890s] [ 34%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[6.893s] [ 36%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[8.343s] [ 38%] [32mBuilding CXX object CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/srv/user__type_support.cpp.o[0m
+[8.344s] [ 40%] [32mBuilding CXX object CMakeFiles/user_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/user_interfaces/msg/user__type_support.cpp.o[0m
+[8.458s] [ 43%] [32mBuilding C object CMakeFiles/user_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/user_interfaces/msg/detail/user__type_support.c.o[0m
+[8.462s] [ 45%] [32mBuilding CXX object CMakeFiles/user_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/user_interfaces/srv/user__type_support.cpp.o[0m
+[8.467s] [ 47%] [32mBuilding CXX object CMakeFiles/user_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/user_interfaces/msg/user__type_support.cpp.o[0m
+[8.626s] [ 50%] [32mBuilding C object CMakeFiles/user_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/user_interfaces/srv/detail/user__type_support.c.o[0m
+[8.640s] [ 52%] [32m[1mLinking CXX shared library libuser_interfaces__rosidl_typesupport_c.so[0m
+[8.709s] [ 54%] [32mBuilding CXX object CMakeFiles/user_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/user_interfaces/srv/detail/user__type_support.cpp.o[0m
+[8.710s] [ 56%] [32mBuilding CXX object CMakeFiles/user_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/user_interfaces/msg/detail/user__type_support.cpp.o[0m
+[8.920s] [ 59%] [32mBuilding CXX object CMakeFiles/user_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_interfaces/msg/detail/dds_fastrtps/user__type_support.cpp.o[0m
+[8.949s] [ 59%] Built target user_interfaces__rosidl_typesupport_c
+[8.986s] [ 61%] [32m[1mLinking C shared library libuser_interfaces__rosidl_typesupport_introspection_c.so[0m
+[9.002s] [ 63%] [32mBuilding CXX object CMakeFiles/user_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/user_interfaces/srv/detail/dds_fastrtps/user__type_support.cpp.o[0m
+[9.181s] [ 63%] Built target user_interfaces__rosidl_typesupport_introspection_c
+[9.230s] [ 65%] [32mBuilding CXX object CMakeFiles/user_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/user_interfaces/msg/detail/user__type_support_c.cpp.o[0m
+[9.265s] [ 68%] [32mBuilding CXX object CMakeFiles/user_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/user_interfaces/srv/detail/user__type_support_c.cpp.o[0m
+[10.911s] [ 70%] [32m[1mLinking CXX shared library libuser_interfaces__rosidl_typesupport_cpp.so[0m
+[11.472s] [ 72%] [32m[1mLinking CXX shared library libuser_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[11.482s] [ 72%] Built target user_interfaces__rosidl_typesupport_cpp
+[11.653s] [ 75%] [32m[1mLinking CXX shared library libuser_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[11.672s] [ 75%] Built target user_interfaces__rosidl_typesupport_introspection_cpp
+[11.841s] [ 75%] Built target user_interfaces__rosidl_typesupport_fastrtps_c
+[11.990s] [ 77%] [32m[1mLinking CXX shared library libuser_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[12.191s] [ 77%] Built target user_interfaces__rosidl_typesupport_fastrtps_cpp
+[12.238s] [ 77%] Built target user_interfaces
+[12.282s] [ 79%] [34m[1mGenerating Python code for ROS interfaces[0m
+[13.247s] [ 79%] Built target user_interfaces__py
+[13.278s] [ 84%] [32mBuilding C object CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/msg/_user_s.c.o[0m
+[13.278s] [ 84%] [32mBuilding C object CMakeFiles/user_interfaces__rosidl_generator_py.dir/rosidl_generator_py/user_interfaces/srv/_user_s.c.o[0m
+[13.539s] [ 86%] [32m[1mLinking C shared library libuser_interfaces__rosidl_generator_py.so[0m
+[13.625s] [ 86%] Built target user_interfaces__rosidl_generator_py
+[13.663s] [ 88%] [32mBuilding C object CMakeFiles/user_interfaces_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[13.665s] [ 93%] [32mBuilding C object CMakeFiles/user_interfaces_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[13.665s] [ 93%] [32mBuilding C object CMakeFiles/user_interfaces_s__rosidl_typesupport_c.dir/rosidl_generator_py/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[13.889s] [ 95%] [32m[1mLinking C shared module rosidl_generator_py/user_interfaces/user_interfaces_s__rosidl_typesupport_c.so[0m
+[13.889s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/user_interfaces/user_interfaces_s__rosidl_typesupport_fastrtps_c.so[0m
+[13.891s] [100%] [32m[1mLinking C shared module rosidl_generator_py/user_interfaces/user_interfaces_s__rosidl_typesupport_introspection_c.so[0m
+[13.960s] [100%] Built target user_interfaces_s__rosidl_typesupport_c
+[13.962s] [100%] Built target user_interfaces_s__rosidl_typesupport_fastrtps_c
+[13.967s] [100%] Built target user_interfaces_s__rosidl_typesupport_introspection_c
+[13.994s] Invoked command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces -- -j8 -l8
+[14.016s] Invoking command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces
+[14.040s] -- Install configuration: ""
+[14.040s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/ament_index/resource_index/rosidl_interfaces/user_interfaces
+[14.040s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/msg/User.json
+[14.041s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/srv/User.json
+[14.041s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces
+[14.041s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg
+[14.042s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/rosidl_generator_c__visibility_control.h
+[14.043s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/user.h
+[14.043s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail
+[14.044s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__type_support.c
+[14.045s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__struct.h
+[14.046s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__functions.h
+[14.046s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__type_support.h
+[14.047s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__functions.c
+[14.048s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__description.c
+[14.048s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/srv
+[14.049s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/srv/user.h
+[14.050s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/srv/detail
+[14.050s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/srv/detail/user__type_support.c
+[14.051s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/srv/detail/user__struct.h
+[14.052s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/srv/detail/user__functions.h
+[14.052s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/srv/detail/user__type_support.h
+[14.053s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/srv/detail/user__functions.c
+[14.054s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/srv/detail/user__description.c
+[14.055s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/environment/library_path.sh
+[14.055s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/environment/library_path.dsv
+[14.056s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/libuser_interfaces__rosidl_generator_c.so
+[14.058s] -- Set non-toolchain portion of runtime path of "/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/libuser_interfaces__rosidl_generator_c.so" to ""
+[14.058s] -- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces
+[14.059s] -- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg
+[14.059s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[14.060s] -- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail
+[14.060s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__rosidl_typesupport_fastrtps_c.h
+[14.061s] -- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/srv
+[14.063s] -- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/srv/detail
+[14.063s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/srv/detail/user__rosidl_typesupport_fastrtps_c.h
+[14.064s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_fastrtps_c.so
+[14.065s] -- Set non-toolchain portion of runtime path of "/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[14.065s] -- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces
+[14.066s] -- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg
+[14.066s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[14.067s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/user.hpp
+[14.067s] -- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail
+[14.068s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__traits.hpp
+[14.068s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__builder.hpp
+[14.068s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__struct.hpp
+[14.069s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__type_support.hpp
+[14.069s] -- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/srv
+[14.069s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/srv/user.hpp
+[14.070s] -- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/srv/detail
+[14.070s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/srv/detail/user__traits.hpp
+[14.071s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/srv/detail/user__builder.hpp
+[14.071s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/srv/detail/user__struct.hpp
+[14.071s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/srv/detail/user__type_support.hpp
+[14.072s] -- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces
+[14.072s] -- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg
+[14.072s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[14.072s] -- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail
+[14.072s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__rosidl_typesupport_fastrtps_cpp.hpp
+[14.073s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/dds_fastrtps
+[14.073s] -- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/srv
+[14.073s] -- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/srv/detail
+[14.074s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/srv/detail/user__rosidl_typesupport_fastrtps_cpp.hpp
+[14.075s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/srv/detail/dds_fastrtps
+[14.076s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[14.078s] -- Set non-toolchain portion of runtime path of "/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[14.078s] -- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces
+[14.079s] -- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg
+[14.079s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[14.080s] -- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail
+[14.081s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__type_support.c
+[14.082s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__rosidl_typesupport_introspection_c.h
+[14.082s] -- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/srv
+[14.083s] -- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/srv/detail
+[14.084s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/srv/detail/user__type_support.c
+[14.085s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/srv/detail/user__rosidl_typesupport_introspection_c.h
+[14.086s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_introspection_c.so
+[14.086s] -- Set non-toolchain portion of runtime path of "/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[14.087s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_c.so
+[14.088s] -- Set non-toolchain portion of runtime path of "/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_c.so" to ""
+[14.089s] -- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces
+[14.090s] -- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg
+[14.090s] -- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail
+[14.091s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__type_support.cpp
+[14.092s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/msg/detail/user__rosidl_typesupport_introspection_cpp.hpp
+[14.092s] -- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/srv
+[14.093s] -- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/srv/detail
+[14.093s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/srv/detail/user__type_support.cpp
+[14.094s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/include/user_interfaces/user_interfaces/srv/detail/user__rosidl_typesupport_introspection_cpp.hpp
+[14.095s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_introspection_cpp.so
+[14.097s] -- Set non-toolchain portion of runtime path of "/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[14.097s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_cpp.so
+[14.099s] -- Set non-toolchain portion of runtime path of "/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/libuser_interfaces__rosidl_typesupport_cpp.so" to ""
+[14.099s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/environment/pythonpath.sh
+[14.100s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/environment/pythonpath.dsv
+[14.101s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces-0.0.0-py3.12.egg-info
+[14.102s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces-0.0.0-py3.12.egg-info/top_level.txt
+[14.103s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces-0.0.0-py3.12.egg-info/SOURCES.txt
+[14.104s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces-0.0.0-py3.12.egg-info/PKG-INFO
+[14.104s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces-0.0.0-py3.12.egg-info/dependency_links.txt
+[14.105s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces
+[14.106s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/user_interfaces_s__rosidl_typesupport_c.so
+[14.107s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/msg
+[14.108s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/msg/_user_s.c
+[14.108s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/msg/__init__.py
+[14.109s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/msg/_user.py
+[14.110s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[14.110s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_c.c
+[14.111s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/user_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[14.112s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/_user_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[14.112s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/srv
+[14.113s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/srv/_user_s.c
+[14.114s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/srv/__init__.py
+[14.114s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/srv/_user.py
+[14.115s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/__init__.py
+[14.116s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/user_interfaces_s__rosidl_typesupport_introspection_c.so
+[14.259s] Listing '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces'...
+[14.259s] Compiling '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/__init__.py'...
+[14.259s] Listing '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/msg'...
+[14.259s] Compiling '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/msg/__init__.py'...
+[14.260s] Compiling '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/msg/_user.py'...
+[14.260s] Listing '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/srv'...
+[14.260s] Compiling '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/srv/__init__.py'...
+[14.260s] Compiling '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/srv/_user.py'...
+[14.277s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/user_interfaces_s__rosidl_typesupport_fastrtps_c.so
+[14.277s] -- Set non-toolchain portion of runtime path of "/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/user_interfaces_s__rosidl_typesupport_fastrtps_c.so" to ""
+[14.278s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/user_interfaces_s__rosidl_typesupport_introspection_c.so
+[14.278s] -- Set non-toolchain portion of runtime path of "/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/user_interfaces_s__rosidl_typesupport_introspection_c.so" to ""
+[14.279s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/user_interfaces_s__rosidl_typesupport_c.so
+[14.279s] -- Set non-toolchain portion of runtime path of "/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages/user_interfaces/user_interfaces_s__rosidl_typesupport_c.so" to ""
+[14.280s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/libuser_interfaces__rosidl_generator_py.so
+[14.280s] -- Set non-toolchain portion of runtime path of "/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/libuser_interfaces__rosidl_generator_py.so" to ""
+[14.280s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/msg/User.idl
+[14.281s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/srv/User.idl
+[14.281s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/msg/User.msg
+[14.281s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/srv/User.srv
+[14.282s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/ament_index/resource_index/package_run_dependencies/user_interfaces
+[14.283s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/ament_index/resource_index/parent_prefix_path/user_interfaces
+[14.284s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/environment/ament_prefix_path.sh
+[14.284s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/environment/ament_prefix_path.dsv
+[14.286s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/environment/path.sh
+[14.287s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/environment/path.dsv
+[14.287s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/local_setup.bash
+[14.288s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/local_setup.sh
+[14.288s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/local_setup.zsh
+[14.288s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/local_setup.dsv
+[14.288s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/package.dsv
+[14.289s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/ament_index/resource_index/packages/user_interfaces
+[14.289s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/export_user_interfaces__rosidl_generator_cExport.cmake
+[14.289s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/export_user_interfaces__rosidl_generator_cExport-noconfig.cmake
+[14.289s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/export_user_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[14.290s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/export_user_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[14.290s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/export_user_interfaces__rosidl_generator_cppExport.cmake
+[14.290s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/export_user_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[14.291s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/export_user_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[14.291s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/user_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[14.291s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/user_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[14.291s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/user_interfaces__rosidl_typesupport_cExport.cmake
+[14.292s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/user_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[14.293s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/user_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[14.294s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/user_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[14.294s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/user_interfaces__rosidl_typesupport_cppExport.cmake
+[14.294s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/user_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[14.295s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/export_user_interfaces__rosidl_generator_pyExport.cmake
+[14.295s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/export_user_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[14.296s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/rosidl_cmake-extras.cmake
+[14.296s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[14.296s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[14.297s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[14.297s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[14.297s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[14.297s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[14.297s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/user_interfacesConfig.cmake
+[14.298s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/cmake/user_interfacesConfig-version.cmake
+[14.298s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/package.xml
+[14.303s] Invoked command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces
