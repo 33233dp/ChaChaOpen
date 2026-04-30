@@ -5,8 +5,8 @@
 #include <string.h>
 
 #include "user_interfaces/srv/detail/user__struct.h"
-#include "user_interfaces/srv/detail/user__type_support.h"
 #include "rosidl_typesupport_interface/macros.h"
+#include "user_interfaces/srv/detail/user__type_support.h"
 #include "user_interfaces/srv/detail/user__functions.h"
 
 #ifdef __cplusplus

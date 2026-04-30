@@ -1,0 +1,224 @@
+[0.140s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'pr_hello', 'user_interfaces', '--cmake-args', '-DCMAKE_EXPORT_COMPILE_COMMANDS=ON']
+[0.141s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['pr_hello', 'user_interfaces'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7c043d394530>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7c043d3942f0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7c043d3942f0>>)
+[0.185s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.185s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.185s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.185s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.185s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.185s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.185s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/pr_hello) by extensions ['ignore', 'ignore_ament_install']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/pr_hello) by extension 'ignore'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/pr_hello) by extension 'ignore_ament_install'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/pr_hello) by extensions ['colcon_pkg']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/pr_hello) by extension 'colcon_pkg'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/pr_hello) by extensions ['colcon_meta']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/pr_hello) by extension 'colcon_meta'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/pr_hello) by extensions ['ros']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/pr_hello) by extension 'ros'
+[0.221s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pr_hello' with type 'ros.ament_cmake' and name 'pr_hello'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/user_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/user_interfaces) by extension 'ignore'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/user_interfaces) by extension 'ignore_ament_install'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/user_interfaces) by extensions ['colcon_pkg']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/user_interfaces) by extension 'colcon_pkg'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/user_interfaces) by extensions ['colcon_meta']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/user_interfaces) by extension 'colcon_meta'
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/user_interfaces) by extensions ['ros']
+[0.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/user_interfaces) by extension 'ros'
+[0.223s] DEBUG:colcon.colcon_core.package_identification:Package 'src/user_interfaces' with type 'ros.ament_cmake' and name 'user_interfaces'
+[0.223s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.223s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.223s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.224s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.224s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.253s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.254s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.258s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 318 installed packages in /opt/ros/jazzy
+[0.260s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'user_interfaces' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON']'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'user_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'user_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'user_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'user_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'user_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'user_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'user_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'user_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.312s] DEBUG:colcon.colcon_core.verb:Building package 'user_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces', 'merge_install': False, 'path': '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'pr_hello' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON']'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'pr_hello' build argument 'cmake_target' from command line to 'None'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'pr_hello' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'pr_hello' build argument 'cmake_clean_cache' from command line to 'False'
+[0.312s] Level 5:colcon.colcon_core.verb:set package 'pr_hello' build argument 'cmake_clean_first' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'pr_hello' build argument 'cmake_force_configure' from command line to 'False'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'pr_hello' build argument 'ament_cmake_args' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'pr_hello' build argument 'catkin_cmake_args' from command line to 'None'
+[0.313s] Level 5:colcon.colcon_core.verb:set package 'pr_hello' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.313s] DEBUG:colcon.colcon_core.verb:Building package 'pr_hello' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/pr_hello', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello', 'merge_install': False, 'path': '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/pr_hello', 'symlink_install': False, 'test_result_base': None}
+[0.313s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.314s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.314s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces' with build type 'ament_cmake'
+[0.314s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces'
+[0.316s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.316s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.316s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.324s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_INSTALL_PREFIX=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces
+[3.039s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/user_interfaces -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_INSTALL_PREFIX=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces
+[3.041s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces -- -j8 -l8
+[4.054s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces -- -j8 -l8
+[4.073s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces
+[4.205s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(user_interfaces)
+[4.206s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/user_interfaces
+[4.209s] Level 1:colcon.colcon_core.environment:checking '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces' for CMake module files
+[4.211s] Level 1:colcon.colcon_core.environment:checking '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces' for CMake config files
+[4.212s] Level 1:colcon.colcon_core.shell:create_environment_hook('user_interfaces', 'cmake_prefix_path')
+[4.212s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/hook/cmake_prefix_path.ps1'
+[4.214s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/hook/cmake_prefix_path.dsv'
+[4.215s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/hook/cmake_prefix_path.sh'
+[4.217s] Level 1:colcon.colcon_core.environment:checking '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib'
+[4.217s] Level 1:colcon.colcon_core.shell:create_environment_hook('user_interfaces', 'ld_library_path_lib')
+[4.217s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/hook/ld_library_path_lib.ps1'
+[4.218s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/hook/ld_library_path_lib.dsv'
+[4.219s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/hook/ld_library_path_lib.sh'
+[4.219s] Level 1:colcon.colcon_core.environment:checking '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/bin'
+[4.220s] Level 1:colcon.colcon_core.environment:checking '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/pkgconfig/user_interfaces.pc'
+[4.220s] Level 1:colcon.colcon_core.environment:checking '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages'
+[4.221s] Level 1:colcon.colcon_core.shell:create_environment_hook('user_interfaces', 'pythonpath')
+[4.221s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/hook/pythonpath.ps1'
+[4.222s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/hook/pythonpath.dsv'
+[4.223s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/hook/pythonpath.sh'
+[4.224s] Level 1:colcon.colcon_core.environment:checking '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/bin'
+[4.225s] INFO:colcon.colcon_core.shell:Creating package script '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/package.ps1'
+[4.227s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/package.dsv'
+[4.227s] INFO:colcon.colcon_core.shell:Creating package script '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/package.sh'
+[4.229s] INFO:colcon.colcon_core.shell:Creating package script '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/package.bash'
+[4.230s] INFO:colcon.colcon_core.shell:Creating package script '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/package.zsh'
+[4.230s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/colcon-core/packages/user_interfaces)
+[4.232s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(user_interfaces)
+[4.232s] Level 1:colcon.colcon_core.environment:checking '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces' for CMake module files
+[4.233s] Level 1:colcon.colcon_core.environment:checking '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces' for CMake config files
+[4.234s] Level 1:colcon.colcon_core.shell:create_environment_hook('user_interfaces', 'cmake_prefix_path')
+[4.234s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/hook/cmake_prefix_path.ps1'
+[4.235s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/hook/cmake_prefix_path.dsv'
+[4.235s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/hook/cmake_prefix_path.sh'
+[4.236s] Level 1:colcon.colcon_core.environment:checking '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib'
+[4.236s] Level 1:colcon.colcon_core.shell:create_environment_hook('user_interfaces', 'ld_library_path_lib')
+[4.237s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/hook/ld_library_path_lib.ps1'
+[4.237s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/hook/ld_library_path_lib.dsv'
+[4.238s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/hook/ld_library_path_lib.sh'
+[4.238s] Level 1:colcon.colcon_core.environment:checking '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/bin'
+[4.238s] Level 1:colcon.colcon_core.environment:checking '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/pkgconfig/user_interfaces.pc'
+[4.239s] Level 1:colcon.colcon_core.environment:checking '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages'
+[4.239s] Level 1:colcon.colcon_core.shell:create_environment_hook('user_interfaces', 'pythonpath')
+[4.239s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/hook/pythonpath.ps1'
+[4.240s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/hook/pythonpath.dsv'
+[4.240s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/hook/pythonpath.sh'
+[4.242s] Level 1:colcon.colcon_core.environment:checking '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/bin'
+[4.243s] INFO:colcon.colcon_core.shell:Creating package script '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/package.ps1'
+[4.244s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/package.dsv'
+[4.245s] INFO:colcon.colcon_core.shell:Creating package script '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/package.sh'
+[4.246s] INFO:colcon.colcon_core.shell:Creating package script '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/package.bash'
+[4.247s] INFO:colcon.colcon_core.shell:Creating package script '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/user_interfaces/package.zsh'
+[4.248s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/share/colcon-core/packages/user_interfaces)
+[4.248s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/pr_hello' with build type 'ament_cmake'
+[4.249s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/pr_hello'
+[4.249s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[4.249s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[4.270s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/pr_hello': AMENT_PREFIX_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/pr_hello -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_INSTALL_PREFIX=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello
+[5.850s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/pr_hello' returned '0': AMENT_PREFIX_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/src/pr_hello -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_INSTALL_PREFIX=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello
+[5.852s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/pr_hello': AMENT_PREFIX_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/pr_hello -- -j8 -l8
+[5.986s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/pr_hello' returned '0': AMENT_PREFIX_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/pr_hello -- -j8 -l8
+[5.988s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/pr_hello': AMENT_PREFIX_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/pr_hello
+[6.013s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pr_hello)
+[6.013s] Level 1:colcon.colcon_core.environment:checking '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello' for CMake module files
+[6.014s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/pr_hello' returned '0': AMENT_PREFIX_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/user_interfaces/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/build/pr_hello
+[6.015s] Level 1:colcon.colcon_core.environment:checking '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello' for CMake config files
+[6.015s] Level 1:colcon.colcon_core.shell:create_environment_hook('pr_hello', 'cmake_prefix_path')
+[6.016s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/hook/cmake_prefix_path.ps1'
+[6.016s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/hook/cmake_prefix_path.dsv'
+[6.017s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/hook/cmake_prefix_path.sh'
+[6.018s] Level 1:colcon.colcon_core.environment:checking '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/lib'
+[6.018s] Level 1:colcon.colcon_core.environment:checking '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/bin'
+[6.018s] Level 1:colcon.colcon_core.environment:checking '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/lib/pkgconfig/pr_hello.pc'
+[6.019s] Level 1:colcon.colcon_core.environment:checking '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/lib/python3.12/site-packages'
+[6.019s] Level 1:colcon.colcon_core.environment:checking '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/bin'
+[6.020s] INFO:colcon.colcon_core.shell:Creating package script '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/package.ps1'
+[6.021s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/package.dsv'
+[6.022s] INFO:colcon.colcon_core.shell:Creating package script '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/package.sh'
+[6.023s] INFO:colcon.colcon_core.shell:Creating package script '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/package.bash'
+[6.023s] INFO:colcon.colcon_core.shell:Creating package script '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/package.zsh'
+[6.024s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/colcon-core/packages/pr_hello)
+[6.024s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pr_hello)
+[6.025s] Level 1:colcon.colcon_core.environment:checking '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello' for CMake module files
+[6.026s] Level 1:colcon.colcon_core.environment:checking '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello' for CMake config files
+[6.026s] Level 1:colcon.colcon_core.shell:create_environment_hook('pr_hello', 'cmake_prefix_path')
+[6.026s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/hook/cmake_prefix_path.ps1'
+[6.027s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/hook/cmake_prefix_path.dsv'
+[6.027s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/hook/cmake_prefix_path.sh'
+[6.029s] Level 1:colcon.colcon_core.environment:checking '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/lib'
+[6.029s] Level 1:colcon.colcon_core.environment:checking '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/bin'
+[6.029s] Level 1:colcon.colcon_core.environment:checking '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/lib/pkgconfig/pr_hello.pc'
+[6.030s] Level 1:colcon.colcon_core.environment:checking '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/lib/python3.12/site-packages'
+[6.031s] Level 1:colcon.colcon_core.environment:checking '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/bin'
+[6.031s] INFO:colcon.colcon_core.shell:Creating package script '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/package.ps1'
+[6.033s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/package.dsv'
+[6.033s] INFO:colcon.colcon_core.shell:Creating package script '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/package.sh'
+[6.034s] INFO:colcon.colcon_core.shell:Creating package script '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/package.bash'
+[6.035s] INFO:colcon.colcon_core.shell:Creating package script '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/pr_hello/package.zsh'
+[6.035s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/pr_hello/share/colcon-core/packages/pr_hello)
+[6.036s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[6.036s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[6.036s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[6.037s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[6.047s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[6.047s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[6.047s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[6.072s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[6.073s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/local_setup.ps1'
+[6.074s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/_local_setup_util_ps1.py'
+[6.076s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/setup.ps1'
+[6.079s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/local_setup.sh'
+[6.080s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/_local_setup_util_sh.py'
+[6.081s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/setup.sh'
+[6.083s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/local_setup.bash'
+[6.085s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/setup.bash'
+[6.086s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/local_setup.zsh'
+[6.087s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_pr_ws/install/setup.zsh'

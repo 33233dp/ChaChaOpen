@@ -6,7 +6,7 @@
 mkdir -p town_ws/src
 cd town_ws/src
 ```
-**2.创建功能包**
+**2.在src下面创建功能包**
 ```
 ros2 pkg create village_li --build-type ament_cmake --dependencies rclcpp
 ```
@@ -16,7 +16,7 @@ ros2 pkg create village_li --build-type ament_cmake --dependencies rclcpp
 -
 最后得到文件结构
 ![[Pasted image 20260416162041.png]]
-**3.创建节点**
+**3.在功能包的src文件夹下创建节点**
 ``` shell
 cd src && nano wang2.cpp
 ```
@@ -42,7 +42,9 @@ int main(int argc, char **argv)
 **5.添加到CMakeLists**
 	在CMakeLists最后一行添加。
 ``` txt
+# 从用户的cpp文件构建一个会生成可执行文件的目标。左边：目标名称，右边：目标源文件
 add_executable(wang2_node src/wang2.cpp) 
+# 
 ament_target_dependencies(wang2_node rclcpp)
 ```
 	需要手动将编译好的文件安装到`install/village_wang/lib/village_wang`下在CMakeLists
