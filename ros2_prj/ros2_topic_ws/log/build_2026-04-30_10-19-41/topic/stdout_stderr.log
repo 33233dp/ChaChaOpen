@@ -1,0 +1,20 @@
+[ 50%] Built target pub_node
+[100%] Built target sub_node
+-- Install configuration: ""
+-- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/lib/topic/sub_node
+-- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/lib/topic/pub_node
+-- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/ament_index/resource_index/package_run_dependencies/topic
+-- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/ament_index/resource_index/parent_prefix_path/topic
+-- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/environment/ament_prefix_path.sh
+-- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/environment/path.sh
+-- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/environment/path.dsv
+-- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/local_setup.bash
+-- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/local_setup.sh
+-- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/local_setup.zsh
+-- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/local_setup.dsv
+-- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/package.dsv
+-- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/ament_index/resource_index/packages/topic
+-- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/cmake/topicConfig.cmake
+-- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/cmake/topicConfig-version.cmake
+-- Up-to-date: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/package.xml

@@ -1,0 +1,25 @@
+[0.012s] Invoking command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/build/topic': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/build/topic -- -j8 -l8
+[0.066s] [ 50%] [32mBuilding CXX object CMakeFiles/topic_node.dir/src/topicNode.cpp.o[0m
+[3.959s] [100%] [32m[1mLinking CXX executable topic_node[0m
+[4.213s] [100%] Built target topic_node
+[4.231s] Invoked command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/build/topic' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/build/topic -- -j8 -l8
+[4.247s] Invoking command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/build/topic': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/build/topic
+[4.260s] -- Install configuration: ""
+[4.260s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/lib/topic/topic_node
+[4.260s] -- Set non-toolchain portion of runtime path of "/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/lib/topic/topic_node" to ""
+[4.260s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/ament_index/resource_index/package_run_dependencies/topic
+[4.260s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/ament_index/resource_index/parent_prefix_path/topic
+[4.260s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/environment/ament_prefix_path.sh
+[4.261s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/environment/ament_prefix_path.dsv
+[4.261s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/environment/path.sh
+[4.261s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/environment/path.dsv
+[4.261s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/local_setup.bash
+[4.261s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/local_setup.sh
+[4.261s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/local_setup.zsh
+[4.262s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/local_setup.dsv
+[4.262s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/package.dsv
+[4.262s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/ament_index/resource_index/packages/topic
+[4.263s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/cmake/topicConfig.cmake
+[4.263s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/cmake/topicConfig-version.cmake
+[4.263s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/package.xml
+[4.266s] Invoked command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/build/topic' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/build/topic

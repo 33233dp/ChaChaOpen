@@ -1,0 +1,7 @@
+[01m[K/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/src/topic/src/pub.cpp:11:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+   11 | }
+      |  [01;31m[K^[m[K
+      |  [32m[K;[m[K
+gmake[2]: *** [CMakeFiles/pub_node.dir/build.make:76：CMakeFiles/pub_node.dir/src/pub.cpp.o] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/pub_node.dir/all] 错误 2
+gmake: *** [Makefile:146：all] 错误 2

@@ -1,0 +1,48 @@
+[0.009s] Invoking command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/build/topic': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/build/topic -- -j8 -l8
+[0.082s] [ 50%] Built target sub_node
+[0.082s] [ 75%] [32mBuilding CXX object CMakeFiles/pub_node.dir/src/pub.cpp.o[0m
+[1.998s] [01m[K/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/src/topic/src/pub.cpp:9:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs[m[K’ was not declared in this scope
+[1.998s]     9 |                 rclcpp::Publisher<[01;31m[Kstd_msgs[m[K::msg::String>::SharedPtr pub_;
+[1.999s]       |                                   [01;31m[K^~~~~~~~[m[K
+[1.999s] [01m[K/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/src/topic/src/pub.cpp:9:56:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.999s]     9 |                 rclcpp::Publisher<std_msgs::msg::String[01;31m[K>[m[K::SharedPtr pub_;
+[1.999s]       |                                                        [01;31m[K^[m[K
+[1.999s] [01m[K/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/src/topic/src/pub.cpp:9:59:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[1.999s]     9 |                 rclcpp::Publisher<std_msgs::msg::String>::[01;31m[KSharedPtr[m[K pub_;
+[1.999s]       |                                                           [01;31m[K^~~~~~~~~[m[K
+[1.999s]       |                                                                    [32m[K;[m[K
+[2.000s] [01m[K/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/src/topic/src/pub.cpp:9:69:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_[m[K’ does not name a type
+[2.000s]     9 |                 rclcpp::Publisher<std_msgs::msg::String>::SharedPtr [01;31m[Kpub_[m[K;
+[2.000s]       |                                                                     [01;31m[K^~~~[m[K
+[2.000s] [01m[K/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/src/topic/src/pub.cpp:10:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+[2.001s]    10 | }
+[2.001s]       |  [01;31m[K^[m[K
+[2.001s]       |  [32m[K;[m[K
+[2.005s] [01m[K/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/src/topic/src/pub.cpp:[m[K In constructor ‘[01m[KpubNode::[01;32m[KpubNode[m[K(std::string)[m[K’:
+[2.006s] [01m[K/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/src/topic/src/pub.cpp:6:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kpub_[m[K’ was not declared in this scope
+[2.006s]     6 |                         [01;31m[Kpub_[m[K = this->create_publisher<std_msgs::msg::String>("pub_node", 10);
+[2.006s]       |                         [01;31m[K^~~~[m[K
+[2.011s] [01m[K/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/src/topic/src/pub.cpp:6:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_msgs[m[K’ was not declared in this scope
+[2.011s]     6 |                         pub_ = this->create_publisher<[01;31m[Kstd_msgs[m[K::msg::String>("pub_node", 10);
+[2.011s]       |                                                       [01;31m[K^~~~~~~~[m[K
+[2.011s] [01m[K/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/src/topic/src/pub.cpp:6:38:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[2.011s]     6 |                         pub_ = this->[01;31m[Kcreate_publisher<std_msgs::msg::String>[m[K("pub_node", 10);
+[2.011s]       |                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.011s] [01m[K/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/src/topic/src/pub.cpp:6:77:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KpubNode::create_publisher<<expression error> >(const char [9], int)[m[K’
+[2.012s]     6 |                         pub_ = [01;31m[Kthis->create_publisher<std_msgs::msg::String>("pub_node", 10)[m[K;
+[2.012s]       |                                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[2.012s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[2.012s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[2.012s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K,
+[2.012s]                  from [01m[K/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/src/topic/src/pub.cpp:1[m[K:
+[2.012s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:197:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::[01;32m[Kcreate_publisher[m[K(const std::string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[2.012s]   197 |   [01;36m[Kcreate_publisher[m[K(
+[2.013s]       |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[2.013s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/node.hpp:197:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.013s] [01m[K/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/src/topic/src/pub.cpp:6:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.013s]     6 |                         pub_ = [01;31m[Kthis->create_publisher<std_msgs::msg::String>("pub_node", 10)[m[K;
+[2.013s]       |                                [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~[m[K
+[2.540s] gmake[2]: *** [CMakeFiles/pub_node.dir/build.make:76：CMakeFiles/pub_node.dir/src/pub.cpp.o] 错误 1
+[2.541s] gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/pub_node.dir/all] 错误 2
+[2.541s] gmake: *** [Makefile:146：all] 错误 2
+[2.543s] Invoked command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/build/topic' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/build/topic -- -j8 -l8

@@ -1,4 +1,23 @@
-1.编写代码
+**1.创建工作空间**
+```
+mkdir -p town_ws/src
+cd town_ws/src
+```
+**2.在src下面创建功能包**
+```
+ros2 pkg create village_li --build-type ament_cmake --dependencies rclcpp
+```
+- pkg create 是创建包的意思
+- --build-type 用来指定该包的编译类型，一共有三个可选项`ament_python`、`ament_cmake`、`cmake`
+- --dependencies 指的是这个功能包的依赖
+-
+最后得到文件结构
+![[Pasted image 20260416162041.png]]
+**3.在功能包的src文件夹下创建节点**
+``` shell
+cd src && nano wang2.cpp
+```
+4.**编写代码**
 ``` cpp
 
   

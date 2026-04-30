@@ -1,0 +1,14 @@
+[0.011s] Invoking command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/build/topic': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/build/topic -- -j8 -l8
+[0.079s] [ 25%] [32mBuilding CXX object CMakeFiles/sub_node.dir/src/sub.cpp.o[0m
+[0.080s] [ 50%] [32mBuilding CXX object CMakeFiles/pub_node.dir/src/pub.cpp.o[0m
+[0.303s] [01m[K/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/src/topic/src/sub.cpp:2:10:[m[K [01;31m[Kfatal error: [m[Kstd_msgs/msg/string: 没有那个文件或目录
+[0.303s]     2 | #include [01;31m[K"std_msgs/msg/string"[m[K
+[0.304s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[0.304s] compilation terminated.
+[0.309s] gmake[2]: *** [CMakeFiles/sub_node.dir/build.make:76：CMakeFiles/sub_node.dir/src/sub.cpp.o] 错误 1
+[0.309s] gmake[1]: *** [CMakeFiles/Makefile2:139：CMakeFiles/sub_node.dir/all] 错误 2
+[0.309s] gmake[1]: *** 正在等待未完成的任务....
+[4.026s] [ 75%] [32m[1mLinking CXX executable pub_node[0m
+[4.142s] [ 75%] Built target pub_node
+[4.144s] gmake: *** [Makefile:146：all] 错误 2
+[4.147s] Invoked command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/build/topic' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/build/topic -- -j8 -l8

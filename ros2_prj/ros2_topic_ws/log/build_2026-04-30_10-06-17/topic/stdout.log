@@ -1,0 +1,4 @@
+[ 25%] [32mBuilding CXX object CMakeFiles/sub_node.dir/src/sub.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/pub_node.dir/src/pub.cpp.o[0m
+[ 75%] [32m[1mLinking CXX executable pub_node[0m
+[ 75%] Built target pub_node

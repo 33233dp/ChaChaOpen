@@ -1,0 +1,21 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/topic_node.dir/src/topicNode.cpp.o[0m
+[100%] [32m[1mLinking CXX executable topic_node[0m
+[100%] Built target topic_node
+-- Install configuration: ""
+-- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/lib/topic/topic_node
+-- Set non-toolchain portion of runtime path of "/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/lib/topic/topic_node" to ""
+-- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/ament_index/resource_index/package_run_dependencies/topic
+-- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/ament_index/resource_index/parent_prefix_path/topic
+-- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/environment/ament_prefix_path.sh
+-- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/environment/ament_prefix_path.dsv
+-- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/environment/path.sh
+-- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/environment/path.dsv
+-- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/local_setup.bash
+-- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/local_setup.sh
+-- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/local_setup.zsh
+-- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/local_setup.dsv
+-- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/package.dsv
+-- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/ament_index/resource_index/packages/topic
+-- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/cmake/topicConfig.cmake
+-- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/cmake/topicConfig-version.cmake
+-- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/install/topic/share/topic/package.xml

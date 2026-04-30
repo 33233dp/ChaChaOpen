@@ -1,0 +1,11 @@
+[0.008s] Invoking command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/build/topic': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/build/topic -- -j8 -l8
+[0.059s] [ 50%] Built target sub_node
+[0.061s] [ 75%] [32mBuilding CXX object CMakeFiles/pub_node.dir/src/pub.cpp.o[0m
+[2.123s] [01m[K/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/src/topic/src/pub.cpp:11:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+[2.123s]    11 | }
+[2.123s]       |  [01;31m[K^[m[K
+[2.123s]       |  [32m[K;[m[K
+[2.918s] gmake[2]: *** [CMakeFiles/pub_node.dir/build.make:76：CMakeFiles/pub_node.dir/src/pub.cpp.o] 错误 1
+[2.918s] gmake[1]: *** [CMakeFiles/Makefile2:165：CMakeFiles/pub_node.dir/all] 错误 2
+[2.918s] gmake: *** [Makefile:146：all] 错误 2
+[2.920s] Invoked command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/build/topic' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/build/topic -- -j8 -l8

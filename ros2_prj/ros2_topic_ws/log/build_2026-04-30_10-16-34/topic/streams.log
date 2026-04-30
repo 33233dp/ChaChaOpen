@@ -1,0 +1,17 @@
+[0.008s] Invoking command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/build/topic': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/build/topic -- -j8 -l8
+[0.058s] [ 50%] Built target pub_node
+[0.062s] [ 75%] [32mBuilding CXX object CMakeFiles/sub_node.dir/src/sub.cpp.o[0m
+[1.943s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[1.943s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[1.943s]                  from [01m[K/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/src/topic/src/sub.cpp:1[m[K:
+[1.943s] [01m[K/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/src/topic/src/sub.cpp:[m[K In constructor ‘[01m[KsubNode::[01;32m[KsubNode[m[K(std::string)[m[K’:
+[1.943s] [01m[K/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/src/topic/src/sub.cpp:7:37:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ was not declared in this scope; did you mean ‘[01m[KNode[m[K’?
+[1.943s]     7 |                         RCLCPP_INFO([01;31m[Knode[m[K->get_logger(), "sub_node created!");
+[1.943s]       |                                     [01;31m[K^~~~[m[K
+[1.943s] [01m[K/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/src/topic/src/sub.cpp:7:25:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[1.943s]     7 |                         [01;31m[KRCLCPP_INFO[m[K(node->get_logger(), "sub_node created!");
+[1.943s]       |                         [01;31m[K^~~~~~~~~~~[m[K
+[3.734s] gmake[2]: *** [CMakeFiles/sub_node.dir/build.make:76：CMakeFiles/sub_node.dir/src/sub.cpp.o] 错误 1
+[3.735s] gmake[1]: *** [CMakeFiles/Makefile2:139：CMakeFiles/sub_node.dir/all] 错误 2
+[3.735s] gmake: *** [Makefile:146：all] 错误 2
+[3.738s] Invoked command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/build/topic' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/build/topic -- -j8 -l8

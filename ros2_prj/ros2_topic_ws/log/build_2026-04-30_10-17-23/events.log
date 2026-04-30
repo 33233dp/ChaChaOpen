@@ -1,0 +1,98 @@
+[0.000000] (-) TimerEvent: {}
+[0.000158] (topic) JobQueued: {'identifier': 'topic', 'dependencies': OrderedDict()}
+[0.000347] (topic) JobStarted: {'identifier': 'topic'}
+[0.006298] (topic) JobProgress: {'identifier': 'topic', 'progress': 'cmake'}
+[0.006553] (topic) JobProgress: {'identifier': 'topic', 'progress': 'build'}
+[0.007021] (topic) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/build/topic', '--', '-j8', '-l8'], 'cwd': '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/build/topic', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/chacha', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'HTTPS_PROXY': 'http://127.0.0.1:7890', 'CODEX_CI': '1', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'LANGUAGE': 'zh_CN:en_US:en', 'USER': 'chacha', 'LC_TIME': 'zh_CN.UTF-8', 'CODEX_INTERNAL_ORIGINATOR_OVERRIDE': 'codex_vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/chacha/.config/Code/clp/b3d577d0e0e421f69f6e9379a6ee9c57.zh-cn/tcf.json","messagesFile":"/home/chacha/.config/Code/clp/b3d577d0e0e421f69f6e9379a6ee9c57.zh-cn/e7fb5e96c0730b9deb70b33781f98e2f35975036/nls.messages.json","corruptMarkerFile":"/home/chacha/.config/Code/clp/b3d577d0e0e421f69f6e9379a6ee9c57.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"b3d577d0e0e421f69f6e9379a6ee9c57.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/chacha/.config/Code/clp/b3d577d0e0e421f69f6e9379a6ee9c57.zh-cn/tcf.json","_cacheRoot":"/home/chacha/.config/Code/clp/b3d577d0e0e421f69f6e9379a6ee9c57.zh-cn","_resolvedLanguagePackCoreLocation":"/home/chacha/.config/Code/clp/b3d577d0e0e421f69f6e9379a6ee9c57.zh-cn/e7fb5e96c0730b9deb70b33781f98e2f35975036","_corruptedFile":"/home/chacha/.config/Code/clp/b3d577d0e0e421f69f6e9379a6ee9c57.zh-cn/corrupted.info"}', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'STARSHIP_SHELL': 'bash', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'x11', 'DEBUG': 'release', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'INPUT_METHOD': 'fcitx', 'HOME': '/home/chacha', 'CHROME_DESKTOP': 'code.desktop', 'DESKTOP_SESSION': 'ubuntu', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-cfdfcc60-1.11-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SDL_IM_MODULE': 'fcitx', 'PAGER': 'cat', 'LC_MONETARY': 'zh_CN.UTF-8', 'MANAGERPID': '2611', 'LC_CTYPE': 'C.UTF-8', 'SYSTEMD_EXEC_PID': '3072', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': '', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '9484', 'NODE_TLS_REJECT_UNAUTHORIZED': '0', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'QT_QPA_PLATFORMTHEME': 'qt5ct', 'https_proxy': 'http://127.0.0.1:7890', 'ROS_DISTRO': 'jazzy', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'chacha', 'http_proxy': 'http://127.0.0.1:7890', 'JOURNAL_STREAM': '9:22828', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@x11.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'RUST_LOG': 'warn', 'USERNAME': 'chacha', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'lsa': 'ls -al', 'WINDOWPATH': '2', 'PATH': '/home/chacha/.local/bin:/home/chacha/.codex/tmp/arg0/codex-arg0XKXhgV:/home/chacha/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/chacha/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/chacha/.local/bin:/home/chacha/.local/bin:/home/chacha/.local/bin:/home/chacha/.vscode/extensions/openai.chatgpt-26.422.71525-linux-x64/bin/linux-x86_64:/home/chacha/.local/bin', 'SESSION_MANAGER': 'local/win-chacha:@/tmp/.ICE-unix/3015,unix/win-chacha:/tmp/.ICE-unix/3015', 'INVOCATION_ID': 'b853a6121d6841e2821f68407f516c48', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'zh_CN.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'zh_CN.UTF-8', 'XMODIFIERS': '@im=fcitx', 'GH_PAGER': 'cat', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'zh_CN.UTF-8', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CODEX_THREAD_ID': '019ddc05-a7e6-7d70-a54a-ef0d9f00d554', 'LC_MEASUREMENT': 'zh_CN.UTF-8', 'GCC_COLORS': 'error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'zh_CN.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/build/topic', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/chacha/.config/Code/CachedData/e7fb5e96c0730b9deb70b33781f98e2f35975036', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/chacha/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'STARSHIP_SESSION_KEY': '1709324409228153', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'HTTP_PROXY': 'http://127.0.0.1:7890', 'LC_NUMERIC': 'zh_CN.UTF-8', 'LC_PAPER': 'zh_CN.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'VSCODE_PID': '9484'}), 'shell': False}
+[0.027185] (topic) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.099867] (-) TimerEvent: {}
+[0.200037] (-) TimerEvent: {}
+[0.208650] (topic) StdoutLine: {'line': b'-- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.230099] (topic) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.238481] (topic) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.248608] (topic) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.259583] (topic) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.300141] (-) TimerEvent: {}
+[0.315682] (topic) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.317155] (topic) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.377380] (topic) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.400262] (-) TimerEvent: {}
+[0.434734] (topic) StdoutLine: {'line': b'-- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)\n'}
+[0.450220] (topic) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[0.500340] (-) TimerEvent: {}
+[0.536151] (topic) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.536354] (topic) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[0.536461] (topic) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.536664] (topic) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.536803] (topic) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[0.537558] (topic) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.538124] (topic) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.539813] (topic) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.539971] (topic) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.540492] (topic) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.541529] (topic) StdoutLine: {'line': b'-- Configuring done (0.5s)\n'}
+[0.553394] (topic) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[0.557972] (topic) StdoutLine: {'line': b'-- Build files have been written to: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/build/topic\n'}
+[0.600117] (topic) StdoutLine: {'line': b'[ 50%] Built target pub_node\n'}
+[0.600399] (-) TimerEvent: {}
+[0.602891] (topic) StdoutLine: {'line': b'[ 75%] Building CXX object CMakeFiles/sub_node.dir/src/sub.cpp.o\n'}
+[0.700518] (-) TimerEvent: {}
+[0.800731] (-) TimerEvent: {}
+[0.901027] (-) TimerEvent: {}
+[1.001282] (-) TimerEvent: {}
+[1.101477] (-) TimerEvent: {}
+[1.201678] (-) TimerEvent: {}
+[1.301879] (-) TimerEvent: {}
+[1.402215] (-) TimerEvent: {}
+[1.502453] (-) TimerEvent: {}
+[1.602668] (-) TimerEvent: {}
+[1.702840] (-) TimerEvent: {}
+[1.803081] (-) TimerEvent: {}
+[1.903494] (-) TimerEvent: {}
+[2.003915] (-) TimerEvent: {}
+[2.104134] (-) TimerEvent: {}
+[2.204406] (-) TimerEvent: {}
+[2.308161] (-) TimerEvent: {}
+[2.408380] (-) TimerEvent: {}
+[2.508661] (-) TimerEvent: {}
+[2.608947] (-) TimerEvent: {}
+[2.709276] (-) TimerEvent: {}
+[2.809504] (-) TimerEvent: {}
+[2.815833] (topic) StderrLine: {'line': b'In file included from /opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27,\n'}
+[2.816115] (topic) StderrLine: {'line': b'                 from /opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171,\n'}
+[2.816239] (topic) StderrLine: {'line': b'                 from /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/src/topic/src/sub.cpp:1:\n'}
+[2.816349] (topic) StderrLine: {'line': b'/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/src/topic/src/sub.cpp: In constructor \xe2\x80\x98subNode::subNode(std::string)\xe2\x80\x99:\n'}
+[2.816450] (topic) StderrLine: {'line': b'/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/src/topic/src/sub.cpp:7:37: error: \xe2\x80\x98node\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98Node\xe2\x80\x99?\n'}
+[2.816558] (topic) StderrLine: {'line': b'    7 |                         RCLCPP_INFO(node->get_logger(), "sub_node created!");\n'}
+[2.816667] (topic) StderrLine: {'line': b'      |                                     ^~~~\n'}
+[2.816780] (topic) StderrLine: {'line': b'/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_topic_ws/src/topic/src/sub.cpp:7:25: error: template argument 1 is invalid\n'}
+[2.816896] (topic) StderrLine: {'line': b'    7 |                         RCLCPP_INFO(node->get_logger(), "sub_node created!");\n'}
+[2.817004] (topic) StderrLine: {'line': b'      |                         ^~~~~~~~~~~\n'}
+[2.909621] (-) TimerEvent: {}
+[3.009878] (-) TimerEvent: {}
+[3.110097] (-) TimerEvent: {}
+[3.210320] (-) TimerEvent: {}
+[3.310524] (-) TimerEvent: {}
+[3.410727] (-) TimerEvent: {}
+[3.510953] (-) TimerEvent: {}
+[3.611161] (-) TimerEvent: {}
+[3.711497] (-) TimerEvent: {}
+[3.811681] (-) TimerEvent: {}
+[3.911878] (-) TimerEvent: {}
+[4.012088] (-) TimerEvent: {}
+[4.112321] (-) TimerEvent: {}
+[4.212550] (-) TimerEvent: {}
+[4.312779] (-) TimerEvent: {}
+[4.413192] (-) TimerEvent: {}
+[4.513495] (-) TimerEvent: {}
+[4.613835] (-) TimerEvent: {}
+[4.714315] (-) TimerEvent: {}
+[4.814655] (-) TimerEvent: {}
+[4.915011] (-) TimerEvent: {}
+[5.015284] (-) TimerEvent: {}
+[5.083492] (topic) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/sub_node.dir/build.make:76: CMakeFiles/sub_node.dir/src/sub.cpp.o] Error 1\n'}
+[5.083704] (topic) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/sub_node.dir/all] Error 2\n'}
+[5.083787] (topic) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[5.085025] (topic) CommandEnded: {'returncode': 2}
+[5.092433] (topic) JobEnded: {'identifier': 'topic', 'rc': 2}
+[5.102746] (-) EventReactorShutdown: {}
