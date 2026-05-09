@@ -1,0 +1,86 @@
+[0.000000] (-) TimerEvent: {}
+[0.000084] (topic) JobQueued: {'identifier': 'topic', 'dependencies': OrderedDict()}
+[0.000484] (topic) JobStarted: {'identifier': 'topic'}
+[0.007362] (topic) JobProgress: {'identifier': 'topic', 'progress': 'cmake'}
+[0.007950] (topic) JobProgress: {'identifier': 'topic', 'progress': 'build'}
+[0.008578] (topic) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/topic', '--', '-j8', '-l8'], 'cwd': '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/topic', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'VSCODE_CWD': '/home/chacha', 'VSCODE_ESM_ENTRYPOINT': 'vs/workbench/api/node/extensionHostProcess', 'HTTPS_PROXY': 'http://127.0.0.1:7890', 'CODEX_CI': '1', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'LANGUAGE': 'zh_CN:en_US:en', 'USER': 'chacha', 'LC_TIME': 'zh_CN.UTF-8', 'CODEX_INTERNAL_ORIGINATOR_OVERRIDE': 'codex_vscode', 'VSCODE_NLS_CONFIG': '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/usr/share/code/resources/app/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/chacha/.config/Code/clp/b912e1cc94c8380c6bb426bdce2c540f.zh-cn/tcf.json","messagesFile":"/home/chacha/.config/Code/clp/b912e1cc94c8380c6bb426bdce2c540f.zh-cn/e7fb5e96c0730b9deb70b33781f98e2f35975036/nls.messages.json","corruptMarkerFile":"/home/chacha/.config/Code/clp/b912e1cc94c8380c6bb426bdce2c540f.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"b912e1cc94c8380c6bb426bdce2c540f.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/chacha/.config/Code/clp/b912e1cc94c8380c6bb426bdce2c540f.zh-cn/tcf.json","_cacheRoot":"/home/chacha/.config/Code/clp/b912e1cc94c8380c6bb426bdce2c540f.zh-cn","_resolvedLanguagePackCoreLocation":"/home/chacha/.config/Code/clp/b912e1cc94c8380c6bb426bdce2c540f.zh-cn/e7fb5e96c0730b9deb70b33781f98e2f35975036","_corruptedFile":"/home/chacha/.config/Code/clp/b912e1cc94c8380c6bb426bdce2c540f.zh-cn/corrupted.info"}', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'STARSHIP_SHELL': 'bash', 'VSCODE_HANDLES_UNCAUGHT_ERRORS': 'true', 'XDG_SESSION_TYPE': 'wayland', 'DEBUG': 'release', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'SHLVL': '0', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'INPUT_METHOD': 'fcitx', 'HOME': '/home/chacha', 'CHROME_DESKTOP': 'code.desktop', 'DESKTOP_SESSION': 'ubuntu', 'VSCODE_IPC_HOOK': '/run/user/1000/vscode-cfdfcc60-1.11-main.sock', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SDL_IM_MODULE': 'fcitx', 'PAGER': 'cat', 'LC_MONETARY': 'zh_CN.UTF-8', 'MANAGERPID': '2628', 'LC_CTYPE': 'C.UTF-8', 'SYSTEMD_EXEC_PID': '2930', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'NO_COLOR': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': '', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '11498', 'NODE_TLS_REJECT_UNAUTHORIZED': '0', 'VSCODE_CRASH_REPORTER_PROCESS_TYPE': 'extensionHost', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'WAYLAND_DISPLAY': 'wayland-0', 'https_proxy': 'http://127.0.0.1:7890', 'ROS_DISTRO': 'jazzy', 'GTK_IM_MODULE': 'fcitx', 'LOGNAME': 'chacha', 'http_proxy': 'http://127.0.0.1:7890', 'JOURNAL_STREAM': '9:20165', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'RUST_LOG': 'warn', 'USERNAME': 'chacha', 'TERM': 'dumb', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'FC_FONTATIONS': '1', 'lsa': 'ls -al', 'PATH': '/home/chacha/.local/bin:/home/chacha/.codex/tmp/arg0/codex-arg0sqHdiy:/home/chacha/.local/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/chacha/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/chacha/.local/bin:/home/chacha/.local/bin:/home/chacha/.local/bin:/home/chacha/.vscode/extensions/openai.chatgpt-26.506.31421-linux-x64/bin/linux-x86_64:/home/chacha/.local/bin', 'SESSION_MANAGER': 'local/win-chacha:@/tmp/.ICE-unix/2873,unix/win-chacha:/tmp/.ICE-unix/2873', 'INVOCATION_ID': 'af932281f5864aecaba8a8866f540d66', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'zh_CN.UTF-8', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'wayland', 'DISPLAY': ':0', 'LANG': 'C.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'zh_CN.UTF-8', 'XMODIFIERS': '@im=fcitx', 'GH_PAGER': 'cat', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.YASIO3', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'zh_CN.UTF-8', 'QT_ACCESSIBILITY': '1', 'ELECTRON_RUN_AS_NODE': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'CODEX_THREAD_ID': '019e0a3d-d67f-7643-9881-0d66161899d1', 'LC_MEASUREMENT': 'zh_CN.UTF-8', 'GCC_COLORS': 'error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01', 'GJS_DEBUG_OUTPUT': 'stderr', 'LC_IDENTIFICATION': 'zh_CN.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'GIT_PAGER': 'cat', 'QT_IM_MODULE': 'fcitx', 'PWD': '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/topic', 'LC_ALL': 'C.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'VSCODE_CODE_CACHE_PATH': '/home/chacha/.config/Code/CachedData/e7fb5e96c0730b9deb70b33781f98e2f35975036', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/home/chacha/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'QTWEBENGINE_DICTIONARIES_PATH': '/usr/share/hunspell-bdic/', 'STARSHIP_SESSION_KEY': '2360115932114692', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'HTTP_PROXY': 'http://127.0.0.1:7890', 'LC_NUMERIC': 'zh_CN.UTF-8', 'LC_PAPER': 'zh_CN.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy', 'VSCODE_PID': '11498'}), 'shell': False}
+[0.084291] (topic) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/sub_node.dir/src/sub_node.cpp.o\n'}
+[0.099802] (-) TimerEvent: {}
+[0.200028] (-) TimerEvent: {}
+[0.300239] (-) TimerEvent: {}
+[0.400455] (-) TimerEvent: {}
+[0.500642] (-) TimerEvent: {}
+[0.600851] (-) TimerEvent: {}
+[0.701043] (-) TimerEvent: {}
+[0.801238] (-) TimerEvent: {}
+[0.901429] (-) TimerEvent: {}
+[1.001612] (-) TimerEvent: {}
+[1.101812] (-) TimerEvent: {}
+[1.202020] (-) TimerEvent: {}
+[1.302206] (-) TimerEvent: {}
+[1.402420] (-) TimerEvent: {}
+[1.502654] (-) TimerEvent: {}
+[1.602885] (-) TimerEvent: {}
+[1.703101] (-) TimerEvent: {}
+[1.803313] (-) TimerEvent: {}
+[1.903514] (-) TimerEvent: {}
+[2.003708] (-) TimerEvent: {}
+[2.103906] (-) TimerEvent: {}
+[2.204155] (-) TimerEvent: {}
+[2.304366] (-) TimerEvent: {}
+[2.404570] (-) TimerEvent: {}
+[2.504771] (-) TimerEvent: {}
+[2.604982] (-) TimerEvent: {}
+[2.705183] (-) TimerEvent: {}
+[2.777302] (topic) StderrLine: {'line': b'/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/src/topic/src/sub_node.cpp:18:5: warning: first argument of \xe2\x80\x98int main(int*, char*)\xe2\x80\x99 should be \xe2\x80\x98int\xe2\x80\x99 [-Wmain]\n'}
+[2.777521] (topic) StderrLine: {'line': b'   18 | int main(int* argc, char* argv) {\n'}
+[2.777607] (topic) StderrLine: {'line': b'      |     ^~~~\n'}
+[2.777686] (topic) StderrLine: {'line': b'/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/src/topic/src/sub_node.cpp:18:5: warning: second argument of \xe2\x80\x98int main(int*, char*)\xe2\x80\x99 should be \xe2\x80\x98char **\xe2\x80\x99 [-Wmain]\n'}
+[2.777765] (topic) StderrLine: {'line': b'/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/src/topic/src/sub_node.cpp: In function \xe2\x80\x98int main(int*, char*)\xe2\x80\x99:\n'}
+[2.777843] (topic) StderrLine: {'line': b'/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/src/topic/src/sub_node.cpp:19:22: error: invalid conversion from \xe2\x80\x98int*\xe2\x80\x99 to \xe2\x80\x98int\xe2\x80\x99 [-fpermissive]\n'}
+[2.777917] (topic) StderrLine: {'line': b'   19 |         rclcpp::init(argc, argv);\n'}
+[2.777989] (topic) StderrLine: {'line': b'      |                      ^~~~\n'}
+[2.778063] (topic) StderrLine: {'line': b'      |                      |\n'}
+[2.778136] (topic) StderrLine: {'line': b'      |                      int*\n'}
+[2.778219] (topic) StderrLine: {'line': b'/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/src/topic/src/sub_node.cpp:19:28: error: cannot convert \xe2\x80\x98char*\xe2\x80\x99 to \xe2\x80\x98const char* const*\xe2\x80\x99\n'}
+[2.778309] (topic) StderrLine: {'line': b'   19 |         rclcpp::init(argc, argv);\n'}
+[2.778394] (topic) StderrLine: {'line': b'      |                            ^~~~\n'}
+[2.778510] (topic) StderrLine: {'line': b'      |                            |\n'}
+[2.778635] (topic) StderrLine: {'line': b'      |                            char*\n'}
+[2.778751] (topic) StderrLine: {'line': b'In file included from /opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:25,\n'}
+[2.778883] (topic) StderrLine: {'line': b'                 from /opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27,\n'}
+[2.779000] (topic) StderrLine: {'line': b'                 from /opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171,\n'}
+[2.779112] (topic) StderrLine: {'line': b'                 from /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/src/topic/src/sub_node.cpp:1:\n'}
+[2.779233] (topic) StderrLine: {'line': b'/opt/ros/jazzy/include/rclcpp/rclcpp/utilities.hpp:77:24: note:   initializing argument 2 of \xe2\x80\x98void rclcpp::init(int, const char* const*, const InitOptions&, SignalHandlerOptions)\xe2\x80\x99\n'}
+[2.779356] (topic) StderrLine: {'line': b'   77 |   char const * const * argv,\n'}
+[2.779506] (topic) StderrLine: {'line': b'      |   ~~~~~~~~~~~~~~~~~~~~~^~~~\n'}
+[2.805303] (-) TimerEvent: {}
+[2.905495] (-) TimerEvent: {}
+[3.005675] (-) TimerEvent: {}
+[3.105875] (-) TimerEvent: {}
+[3.206078] (-) TimerEvent: {}
+[3.306301] (-) TimerEvent: {}
+[3.407458] (-) TimerEvent: {}
+[3.507681] (-) TimerEvent: {}
+[3.607883] (-) TimerEvent: {}
+[3.708102] (-) TimerEvent: {}
+[3.808314] (-) TimerEvent: {}
+[3.908553] (-) TimerEvent: {}
+[4.008805] (-) TimerEvent: {}
+[4.109016] (-) TimerEvent: {}
+[4.209241] (-) TimerEvent: {}
+[4.309455] (-) TimerEvent: {}
+[4.409646] (-) TimerEvent: {}
+[4.509866] (-) TimerEvent: {}
+[4.610087] (-) TimerEvent: {}
+[4.710301] (-) TimerEvent: {}
+[4.810491] (-) TimerEvent: {}
+[4.910665] (-) TimerEvent: {}
+[5.010864] (-) TimerEvent: {}
+[5.111063] (-) TimerEvent: {}
+[5.173777] (topic) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/sub_node.dir/build.make:76: CMakeFiles/sub_node.dir/src/sub_node.cpp.o] Error 1\n'}
+[5.174130] (topic) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/sub_node.dir/all] Error 2\n'}
+[5.174367] (topic) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[5.175987] (topic) CommandEnded: {'returncode': 2}
+[5.188857] (topic) JobEnded: {'identifier': 'topic', 'rc': 2}
+[5.199386] (-) EventReactorShutdown: {}

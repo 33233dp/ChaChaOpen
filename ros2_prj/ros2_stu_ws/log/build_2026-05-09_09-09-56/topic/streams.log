@@ -1,0 +1,22 @@
+[0.012s] Invoking command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/topic': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/topic -- -j8 -l8
+[0.095s] [ 50%] [32mBuilding CXX object CMakeFiles/sub_node.dir/src/sub_node.cpp.o[0m
+[2.902s] [01m[K/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/src/topic/src/sub_node.cpp:18:5:[m[K [01;35m[Kwarning: [m[Kfirst argument of ‘[01m[Kint[01;32m[K main[m[K(int*, char**)[m[K’ should be ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmain-Wmain]8;;[m[K]
+[2.902s]    18 | int [01;35m[Kmain[m[K(int* argc, char* argv[]) {
+[2.902s]       |     [01;35m[K^~~~[m[K
+[2.902s] [01m[K/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/src/topic/src/sub_node.cpp:[m[K In function ‘[01m[Kint[01;32m[K main[m[K(int*, char**)[m[K’:
+[2.903s] [01m[K/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/src/topic/src/sub_node.cpp:19:22:[m[K [01;31m[Kerror: [m[Kinvalid conversion from ‘[01m[Kint*[m[K’ to ‘[01m[Kint[m[K’ [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[2.903s]    19 |         rclcpp::init([01;31m[Kargc[m[K, argv);
+[2.903s]       |                      [01;31m[K^~~~[m[K
+[2.903s]       |                      [01;31m[K|[m[K
+[2.903s]       |                      [01;31m[Kint*[m[K
+[2.903s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:25[m[K,
+[2.903s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[2.904s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[2.904s]                  from [01m[K/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/src/topic/src/sub_node.cpp:1[m[K:
+[2.904s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/utilities.hpp:76:7:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid rclcpp::[01;32m[Kinit[m[K(int, const char* const*, const InitOptions&, SignalHandlerOptions)[m[K’
+[2.904s]    76 |   [01;36m[Kint argc[m[K,
+[2.904s]       |   [01;36m[K~~~~^~~~[m[K
+[5.539s] gmake[2]: *** [CMakeFiles/sub_node.dir/build.make:76：CMakeFiles/sub_node.dir/src/sub_node.cpp.o] 错误 1
+[5.539s] gmake[1]: *** [CMakeFiles/Makefile2:137：CMakeFiles/sub_node.dir/all] 错误 2
+[5.539s] gmake: *** [Makefile:146：all] 错误 2
+[5.541s] Invoked command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/topic' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/topic -- -j8 -l8

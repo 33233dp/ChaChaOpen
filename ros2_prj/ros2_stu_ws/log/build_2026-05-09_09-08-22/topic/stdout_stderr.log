@@ -1,0 +1,26 @@
+[ 50%] Building CXX object CMakeFiles/sub_node.dir/src/sub_node.cpp.o
+/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/src/topic/src/sub_node.cpp:18:5: warning: first argument of ‘int main(int*, char*)’ should be ‘int’ [-Wmain]
+   18 | int main(int* argc, char* argv) {
+      |     ^~~~
+/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/src/topic/src/sub_node.cpp:18:5: warning: second argument of ‘int main(int*, char*)’ should be ‘char **’ [-Wmain]
+/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/src/topic/src/sub_node.cpp: In function ‘int main(int*, char*)’:
+/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/src/topic/src/sub_node.cpp:19:22: error: invalid conversion from ‘int*’ to ‘int’ [-fpermissive]
+   19 |         rclcpp::init(argc, argv);
+      |                      ^~~~
+      |                      |
+      |                      int*
+/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/src/topic/src/sub_node.cpp:19:28: error: cannot convert ‘char*’ to ‘const char* const*’
+   19 |         rclcpp::init(argc, argv);
+      |                            ^~~~
+      |                            |
+      |                            char*
+In file included from /opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:25,
+                 from /opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27,
+                 from /opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171,
+                 from /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/src/topic/src/sub_node.cpp:1:
+/opt/ros/jazzy/include/rclcpp/rclcpp/utilities.hpp:77:24: note:   initializing argument 2 of ‘void rclcpp::init(int, const char* const*, const InitOptions&, SignalHandlerOptions)’
+   77 |   char const * const * argv,
+      |   ~~~~~~~~~~~~~~~~~~~~~^~~~
+gmake[2]: *** [CMakeFiles/sub_node.dir/build.make:76: CMakeFiles/sub_node.dir/src/sub_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/sub_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

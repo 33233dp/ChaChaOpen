@@ -1,0 +1,57 @@
+[0.013s] Invoking command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/topic': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/src/topic -DCMAKE_INSTALL_PREFIX=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/install/topic
+[0.163s] -- The C compiler identification is GNU 13.3.0
+[0.276s] -- The CXX compiler identification is GNU 13.3.0
+[0.323s] -- Detecting C compiler ABI info
+[0.444s] -- Detecting C compiler ABI info - done
+[0.453s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.454s] -- Detecting C compile features
+[0.455s] -- Detecting C compile features - done
+[0.468s] -- Detecting CXX compiler ABI info
+[0.582s] -- Detecting CXX compiler ABI info - done
+[0.599s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.600s] -- Detecting CXX compile features
+[0.600s] -- Detecting CXX compile features - done
+[0.619s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.850s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[1.095s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[1.193s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[1.215s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[1.242s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.272s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.373s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.379s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.467s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.488s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.508s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.590s] -- Found ament_lint_auto: 0.17.4 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.693s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.693s] -- Configured cppcheck include dirs: 
+[1.693s] -- Configured cppcheck exclude dirs and/or files: 
+[1.694s] -- Added test 'lint_cmake' to check CMake code style
+[1.696s] -- Added test 'uncrustify' to check C / C++ code style
+[1.696s] -- Configured uncrustify additional arguments: 
+[1.697s] -- Added test 'xmllint' to check XML markup files
+[1.699s] -- Configuring done (1.7s)
+[1.702s] -- Generating done (0.0s)
+[1.705s] -- Build files have been written to: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/topic
+[1.713s] Invoked command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/topic' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/src/topic -DCMAKE_INSTALL_PREFIX=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/install/topic
+[1.714s] Invoking command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/topic': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/topic -- -j8 -l8
+[1.755s] Invoked command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/topic' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/topic -- -j8 -l8
+[1.764s] Invoking command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/topic': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/topic
+[1.771s] -- Install configuration: ""
+[1.771s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/install/topic/share/ament_index/resource_index/package_run_dependencies/topic
+[1.772s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/install/topic/share/ament_index/resource_index/parent_prefix_path/topic
+[1.772s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/install/topic/share/topic/environment/ament_prefix_path.sh
+[1.772s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/install/topic/share/topic/environment/ament_prefix_path.dsv
+[1.772s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/install/topic/share/topic/environment/path.sh
+[1.772s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/install/topic/share/topic/environment/path.dsv
+[1.772s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/install/topic/share/topic/local_setup.bash
+[1.773s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/install/topic/share/topic/local_setup.sh
+[1.773s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/install/topic/share/topic/local_setup.zsh
+[1.773s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/install/topic/share/topic/local_setup.dsv
+[1.773s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/install/topic/share/topic/package.dsv
+[1.773s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/install/topic/share/ament_index/resource_index/packages/topic
+[1.773s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/install/topic/share/topic/cmake/topicConfig.cmake
+[1.773s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/install/topic/share/topic/cmake/topicConfig-version.cmake
+[1.774s] -- Installing: /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/install/topic/share/topic/package.xml
+[1.775s] Invoked command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/topic' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/topic
