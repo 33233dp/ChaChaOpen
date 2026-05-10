@@ -210,6 +210,43 @@ sub_node/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/sub_node.dir/build.make CMakeFiles/sub_node.dir/build
 .PHONY : sub_node/fast
 
+#=============================================================================
+# Target rules for targets named pub_node
+
+# Build rule for target.
+pub_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pub_node
+.PHONY : pub_node
+
+# fast build rule for target.
+pub_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_node.dir/build.make CMakeFiles/pub_node.dir/build
+.PHONY : pub_node/fast
+
+src/pub_node.o: src/pub_node.cpp.o
+.PHONY : src/pub_node.o
+
+# target to build an object file
+src/pub_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_node.dir/build.make CMakeFiles/pub_node.dir/src/pub_node.cpp.o
+.PHONY : src/pub_node.cpp.o
+
+src/pub_node.i: src/pub_node.cpp.i
+.PHONY : src/pub_node.i
+
+# target to preprocess a source file
+src/pub_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_node.dir/build.make CMakeFiles/pub_node.dir/src/pub_node.cpp.i
+.PHONY : src/pub_node.cpp.i
+
+src/pub_node.s: src/pub_node.cpp.s
+.PHONY : src/pub_node.s
+
+# target to generate assembly for a file
+src/pub_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pub_node.dir/build.make CMakeFiles/pub_node.dir/src/pub_node.cpp.s
+.PHONY : src/pub_node.cpp.s
+
 src/sub_node.o: src/sub_node.cpp.o
 .PHONY : src/sub_node.o
 
@@ -249,7 +286,11 @@ help:
 	@echo "... test"
 	@echo "... topic_uninstall"
 	@echo "... uninstall"
+	@echo "... pub_node"
 	@echo "... sub_node"
+	@echo "... src/pub_node.o"
+	@echo "... src/pub_node.i"
+	@echo "... src/pub_node.s"
 	@echo "... src/sub_node.o"
 	@echo "... src/sub_node.i"
 	@echo "... src/sub_node.s"

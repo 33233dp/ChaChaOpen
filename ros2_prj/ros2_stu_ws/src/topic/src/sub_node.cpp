@@ -5,7 +5,7 @@ class subNode : public rclcpp::Node {
 	public:
 		subNode(std::string node_name) : Node(node_name) {
 			RCLCPP_INFO(this->get_logger(),"create node : %s",node_name.c_str());
-			sub_ = this->create_subscription<std_msgs::msg::String>("topic", 10, std::bind(&subNode::callback, this, std::placeholders::_1));
+			sub_ = this->create_subscription<std_msgs::msg::String>("topic_msg", 10, std::bind(&subNode::callback, this, std::placeholders::_1));
 		}
 	private:
 		rclcpp::Subscription<std_msgs::msg::String>::SharedPtr sub_;

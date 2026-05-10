@@ -668,4 +668,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/uninstall.dir/DependInfo.cmake"
   "CMakeFiles/topic_uninstall.dir/DependInfo.cmake"
   "CMakeFiles/sub_node.dir/DependInfo.cmake"
+  "CMakeFiles/pub_node.dir/DependInfo.cmake"
   )

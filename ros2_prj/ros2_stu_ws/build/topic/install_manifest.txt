@@ -1,3 +1,4 @@
+/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/install/topic/lib/topic/pub_node
 /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/install/topic/lib/topic/sub_node
 /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/install/topic/share/ament_index/resource_index/package_run_dependencies/topic
 /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/install/topic/share/ament_index/resource_index/parent_prefix_path/topic
