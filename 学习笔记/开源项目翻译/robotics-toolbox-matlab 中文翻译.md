@@ -26,3 +26,59 @@ Advantages of the Toolbox are that:
 - 代码较为成熟，并且为相同算法的其他实现提供了良好的对比参考；
 - 大多数例程采用直观、易读的方式编写，便于理解，但这在一定程度上可能以牺牲计算效率为代价。如果你对计算效率有较高要求，可以自行对函数进行优化重写，或使用 MATLAB 编译器对 M 文件进行编译，亦可创建对应的 MEX 版本；
 - 由于源码开放，这对于学习和教学具有重要价值。
+
+This Toolbox dates back to 1993 and **significantly** **predates** the [Robotics Systems Toolbox®](https://www.mathworks.com/products/robotics.html) from MathWorks. The **former** is free, open and not supported, while the latter is a fully supported commercial product.
+
+这个工具箱可以追溯到1993年并且大大的早于MathWorks的 [Robotics Systems Toolbox®](https://www.mathworks.com/products/robotics.html)。前者是免费，开源并且不受支持的，而后者是完全是受支持的商业化产品。
+
+# 代码示例
+```
+>> mdl_puma560
+>> p560
+p560 = 
+
+Puma 560 [Unimation]:: 6 axis, RRRRRR, stdDH, fastRNE            
+ - viscous friction; params of 8/95;                             
++---+-----------+-----------+-----------+-----------+-----------+
+| j |     theta |         d |         a |     alpha |    offset |
++---+-----------+-----------+-----------+-----------+-----------+
+|  1|         q1|          0|          0|     1.5708|          0|
+|  2|         q2|          0|     0.4318|          0|          0|
+|  3|         q3|    0.15005|     0.0203|    -1.5708|          0|
+|  4|         q4|     0.4318|          0|     1.5708|          0|
+|  5|         q5|          0|          0|    -1.5708|          0|
+|  6|         q6|          0|          0|          0|          0|
++---+-----------+-----------+-----------+-----------+-----------+
+ 
+>> p560.fkine([0 0 0 0 0 0])  % forward kinematics
+ans = 
+         1         0         0    0.4521
+         0         1         0     -0.15
+         0         0         1    0.4318
+         0         0         0         1
+```
+
+We can **animate a path**
+
+我们能动画展示一条路径
+
+![[move2ball.gif]]
+```
+mdl_puma560
+
+p = [0.8 0 0];
+T = transl(p) * troty(pi/2);
+qr(1) = -pi/2;
+qqr = p560.ikine6s(T, 'ru');
+qrt = jtraj(qr, qqr, 50);
+
+plot_sphere(p, 0.05, 'y');
+p560.plot3d(qrt, 'view', ae, 'movie', 'move2ball.gif');
+```
+### 四旋翼飞行器动画
+
+Mobile robot **lifting off** and **hovering** over a point following a circular **trajectory**, while also slowly turning.
+
+移动机器人升空并悬停在某一点上，沿圆形轨迹运动，同时缓慢转弯。
+
+![[quad.gif]]
