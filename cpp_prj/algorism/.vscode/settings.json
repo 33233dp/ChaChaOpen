@@ -1,0 +1,32 @@
+{
+    // C/C++ 配置
+    "C_Cpp.default.intelliSenseMode": "linux-gcc-x64",
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.cStandard": "c17",
+    "C_Cpp.default.compilerPath": "/usr/bin/g++",
+    "C_Cpp.autocomplete": "default",
+    "C_Cpp.suggestSnippets": true,
+    "C_Cpp.errorSquiggles": "enabled",
+    "C_Cpp.intelliSenseEngine": "default",
+    "C_Cpp.intelliSenseEngineFallback": "enabled",
+    
+    // 编辑器代码补全
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": true,
+        "strings": true
+    },
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.tabCompletion": "on",
+    "editor.suggestSelection": "first",
+    "editor.parameterHints.enabled": true,
+    "editor.autoClosingQuotes": "always",
+    "editor.autoClosingBrackets": "always",
+    
+    // 文件关联
+    "files.associations": {
+        "*.cpp": "cpp",
+        "*.h": "cpp",
+        "*.hpp": "cpp"
+    }
+}
