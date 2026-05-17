@@ -1,0 +1,7 @@
+# 使用ros2的原始数据类型
+string user_msg
+int cout
+
+# 使用标准接口std_msgs的String类型
+std_msgs/String content
+

@@ -5,10 +5,12 @@
   <version>0.0.0</version>
   <description>TODO: Package description</description>
   <maintainer email="2918334521@qq.com">chacha</maintainer>
-  <license>TODO: License declaration</license>
-
+  <license>TODO: License declaration</license>、
+  
+  <!--  构建工具依赖 -->
   <buildtool_depend>ament_cmake</buildtool_depend>
 
+  <!-- 依赖关系 -->
   <depend>rclcpp</depend>
   <depend>std_msgs</depend>
 

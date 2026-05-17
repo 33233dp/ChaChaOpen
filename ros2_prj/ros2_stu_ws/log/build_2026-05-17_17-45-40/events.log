@@ -1,0 +1,3 @@
+[0.000000] (-) TimerEvent: {}
+[0.000295] (-) JobUnselected: {'identifier': 'topic'}
+[0.000528] (-) EventReactorShutdown: {}

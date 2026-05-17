@@ -1,0 +1,59 @@
+# 话题
+
+话题通信的订阅者和发布者的创建方法见代码中的注释
+
+# 自定义接口
+
+1 在workspace的src文件夹下新创建(create)一个功能包
+``` bash
+ros2 pkg create user_interfaces --buid-type ament_cmake
+```
+2 进入新创建的功能包新建msg文件夹和文件User.msg。必须大写开头
+``` bash
+cd user_interfaces && mkdir msg && vim User.msg
+```
+
+3 编写msg内容 成员只能小写
+``` markdown
+# 使用ros2的原始数据类型
+string user_msg
+# 使用标准接口std_msgs下的string类型
+std_msgs/String content
+# 图像消息，使用sensor_msgs的Image类型
+sensor_msgs/Image image
+```
+
+4 修改CMakeLists.txt
+``` txt
+# 添加sensor_msgs和std_msgs的功能包
+
+find_package(ament_cmake REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
+
+# 添加自定义接口的依赖
+find_package(rosidl_default_generators REQUIRED)
+
+#添加消息文件和依赖
+rosidl_generate_interfaces(${PROJECT_NAME}
+	"msg/use.msg" #要和msg文件夹下的.msg文件名一致
+	DEPENDENCIES sensor_msgs std_msgs
+)
+```
+
+5 修改pakage.xml
+``` xml
+
+<depend>sensor_msgs</depend>
+
+<build_depend>rosidl_default_generators</build_depend>
+<exec_depend>rosidl_default_runtime</exec_depend>
+
+<member_of_group>rosidl_interface_packages</member_of_group>
+
+```
+
+6 编译刚刚添创建的功能包
+``` bash
+colcon build --packages-select user_interfaces
+```

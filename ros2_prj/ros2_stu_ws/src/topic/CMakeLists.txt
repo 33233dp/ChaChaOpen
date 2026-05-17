@@ -6,9 +6,11 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
 endif()
 
 # find dependencies
+# 查找ament_cmake、rclcpp和std_msgs包
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
+
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -22,12 +24,14 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
+# 添加可执行文件sub_node，源文件为src/sub_node.cpp
 add_executable(sub_node src/sub_node.cpp)
 ament_target_dependencies(sub_node rclcpp std_msgs)
 
 add_executable(pub_node src/pub_node.cpp)
 ament_target_dependencies(pub_node rclcpp std_msgs)
 
+# 安装可执行文件pub_node和sub_node，安装路径为lib/${PROJECT_NAME}
 install(TARGETS
   pub_node
   sub_node

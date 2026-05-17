@@ -1,0 +1,61 @@
+[0.015s] Invoking command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/topic': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/topic -- -j8 -l8
+[0.052s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.366s] -- Found rclcpp: 28.1.16 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.398s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.408s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.419s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.435s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.516s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.518s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.591s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.665s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.678s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.685s] -- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.934s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):
+[0.934s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name topic
+[0.934s]   --arguments-file
+[0.934s]   /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/topic/rosidl_adapter__arguments__topic.json
+[0.934s]   --output-dir
+[0.934s]   /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/topic/rosidl_adapter/topic
+[0.934s]   --output-file
+[0.934s]   /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/topic/rosidl_adapter/topic.idls)
+[0.934s]   returned error code 1:
+[0.934s] 
+[0.935s]   Error processing 'int cout' of 'topic/user': ''int' is an invalid message
+[0.935s]   name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$''
+[0.935s] 
+[0.935s]   Traceback (most recent call last):
+[0.935s] 
+[0.935s]     File "<frozen runpy>", line 198, in _run_module_as_main
+[0.935s]     File "<frozen runpy>", line 88, in _run_code
+[0.935s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[0.935s]       sys.exit(main())
+[0.935s]                ^^^^^^
+[0.935s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/main.py", line 53, in main
+[0.935s]       abs_idl_file = convert_to_idl(
+[0.936s]                      ^^^^^^^^^^^^^^^
+[0.936s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[0.936s]       return convert_msg_to_idl(
+[0.936s]              ^^^^^^^^^^^^^^^^^^^
+[0.936s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[0.936s]       msg = parse_message_string(package_name, input_file.stem, content)
+[0.936s]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0.936s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 521, in parse_message_string
+[0.936s]       Type(type_string, context_package_name=pkg_name),
+[0.936s]       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0.936s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 278, in __init__
+[0.936s]       super(Type, self).__init__(
+[0.936s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 206, in __init__
+[0.937s]       raise InvalidResourceName(
+[0.937s] 
+[0.937s]   rosidl_adapter.parser.InvalidResourceName: 'int' is an invalid message
+[0.937s]   name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[0.937s] 
+[0.937s] Call Stack (most recent call first):
+[0.937s]   /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)
+[0.937s]   CMakeLists.txt:18 (rosidl_generate_interfaces)
+[0.937s] 
+[0.937s] [0m
+[0.938s] -- Configuring incomplete, errors occurred!
+[0.944s] gmake: *** [Makefile:308：cmake_check_build_system] 错误 1
+[0.947s] Invoked command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/topic' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/topic -- -j8 -l8

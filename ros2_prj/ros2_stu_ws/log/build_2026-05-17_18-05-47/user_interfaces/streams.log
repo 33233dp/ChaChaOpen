@@ -1,0 +1,55 @@
+[0.014s] Invoking command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/user_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/src/user_interfaces -DCMAKE_INSTALL_PREFIX=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/install/user_interfaces
+[0.029s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.326s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.366s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.378s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.394s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.412s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.446s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[0.456s] -- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[0.721s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):
+[0.722s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[0.723s]   user_interfaces --arguments-file
+[0.723s]   /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/user_interfaces/rosidl_adapter__arguments__user_interfaces.json
+[0.723s]   --output-dir
+[0.723s]   /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/user_interfaces/rosidl_adapter/user_interfaces
+[0.723s]   --output-file
+[0.723s]   /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/user_interfaces/rosidl_adapter/user_interfaces.idls)
+[0.723s]   returned error code 1:
+[0.724s] 
+[0.724s]   Error processing 'string User_msg' of 'user_interfaces/user': ''User_msg'
+[0.724s]   is an invalid field name.  It should have the pattern
+[0.724s]   '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$''
+[0.724s] 
+[0.724s]   Traceback (most recent call last):
+[0.724s] 
+[0.724s]     File "<frozen runpy>", line 198, in _run_module_as_main
+[0.725s]     File "<frozen runpy>", line 88, in _run_code
+[0.725s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[0.725s]       sys.exit(main())
+[0.725s]                ^^^^^^
+[0.725s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/main.py", line 53, in main
+[0.725s]       abs_idl_file = convert_to_idl(
+[0.725s]                      ^^^^^^^^^^^^^^^
+[0.725s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[0.726s]       return convert_msg_to_idl(
+[0.726s]              ^^^^^^^^^^^^^^^^^^^
+[0.726s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[0.726s]       msg = parse_message_string(package_name, input_file.stem, content)
+[0.726s]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[0.726s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 520, in parse_message_string
+[0.726s]       fields.append(Field(
+[0.727s]                     ^^^^^^
+[0.727s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 355, in __init__
+[0.727s]       raise NameError(
+[0.727s] 
+[0.727s]   NameError: 'User_msg' is an invalid field name.  It should have the pattern
+[0.727s]   '^(?!.*__)(?!.*_$)[a-z][a-z0-9_]*$'
+[0.727s] 
+[0.727s] Call Stack (most recent call first):
+[0.727s]   /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)
+[0.727s]   CMakeLists.txt:16 (rosidl_generate_interfaces)
+[0.728s] 
+[0.728s] [0m
+[0.728s] -- Configuring incomplete, errors occurred!
+[0.732s] Invoked command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/user_interfaces' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/src/user_interfaces -DCMAKE_INSTALL_PREFIX=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/install/user_interfaces

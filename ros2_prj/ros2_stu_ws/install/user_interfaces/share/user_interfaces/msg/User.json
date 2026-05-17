@@ -1,0 +1,26 @@
+{
+  "type_description_msg": {
+    "type_description": {
+      "type_name": "user_interfaces/msg/User",
+      "fields": [
+        {
+          "name": "user_msg",
+          "type": {
+            "type_id": 17,
+            "capacity": 0,
+            "string_capacity": 0,
+            "nested_type_name": ""
+          },
+          "default_value": ""
+        }
+      ]
+    },
+    "referenced_type_descriptions": []
+  },
+  "type_hashes": [
+    {
+      "type_name": "user_interfaces/msg/User",
+      "hash_string": "RIHS01_90d81f2da723edefa2bc5c78caf1d9d6555f7085c36016ddbda4701504ce69ad"
+    }
+  ]
+}

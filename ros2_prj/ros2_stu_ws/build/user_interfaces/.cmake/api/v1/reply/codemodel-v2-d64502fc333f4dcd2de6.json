@@ -1,0 +1,242 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-e094b0d4e485b0f63f56.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "user_interfaces__py",
+					"jsonFile" : "directory-user_interfaces__py-c219b7ce0306bb6b55af.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/user_interfaces/user_interfaces__py",
+					"targetIndexes" : 
+					[
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "user_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_user_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_user_interfaces_egg-ba62d1b535299f3722ae.json",
+					"name" : "ament_cmake_python_build_user_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_user_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_user_interfaces-d366b4e86e9b8b4b7bb3.json",
+					"name" : "ament_cmake_python_copy_user_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-8daf6b30ea7597a2743d.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "user_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-user_interfaces-4cc29e12d7566d4bd74b.json",
+					"name" : "user_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "user_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-user_interfaces__cpp-767394815e37063eecb2.json",
+					"name" : "user_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "user_interfaces__py::@e5aaf182b14ce3bf3fe3",
+					"jsonFile" : "target-user_interfaces__py-a8443cbbc50f1de2b2ae.json",
+					"name" : "user_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "user_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-user_interfaces__rosidl_generator_c-8045fd6d1582d5887b47.json",
+					"name" : "user_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "user_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-user_interfaces__rosidl_generator_py-28f7ec47af0910de7226.json",
+					"name" : "user_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "user_interfaces__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-user_interfaces__rosidl_generator_type_description-2fe62ead188d53f422c4.json",
+					"name" : "user_interfaces__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "user_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-user_interfaces__rosidl_typesupport_c-1d204ef50dff0c3a8812.json",
+					"name" : "user_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "user_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-user_interfaces__rosidl_typesupport_cpp-8eb85d5f83612cb5b355.json",
+					"name" : "user_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "user_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-user_interfaces__rosidl_typesupport_fastrtps_c-1debaf7ba8f5280990a2.json",
+					"name" : "user_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "user_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-user_interfaces__rosidl_typesupport_fastrtps_cpp-d96672dd786e916774c6.json",
+					"name" : "user_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "user_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-user_interfaces__rosidl_typesupport_introspection_c-cec901ef67f948251bca.json",
+					"name" : "user_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "user_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-user_interfaces__rosidl_typesupport_introspection_cpp-50d127f811c08d3892d2.json",
+					"name" : "user_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "user_interfaces_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-user_interfaces_s__rosidl_typesupport_c-b2c764de43dc0ddc8c8b.json",
+					"name" : "user_interfaces_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "user_interfaces_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-user_interfaces_s__rosidl_typesupport_fastrtps_c-256ac16727c3ce8fd35a.json",
+					"name" : "user_interfaces_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "user_interfaces_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-user_interfaces_s__rosidl_typesupport_introspection_c-2432c61a8d8f238458bf.json",
+					"name" : "user_interfaces_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "user_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-user_interfaces_uninstall-efdb38dba54b297dd935.json",
+					"name" : "user_interfaces_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/user_interfaces",
+		"source" : "/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/src/user_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

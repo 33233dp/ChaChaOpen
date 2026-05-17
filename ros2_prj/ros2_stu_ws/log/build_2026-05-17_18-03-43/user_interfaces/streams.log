@@ -1,0 +1,68 @@
+[0.017s] Invoking command in '/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/user_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/src/user_interfaces -DCMAKE_INSTALL_PREFIX=/home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/install/user_interfaces
+[0.155s] -- The C compiler identification is GNU 13.3.0
+[0.330s] -- The CXX compiler identification is GNU 13.3.0
+[0.363s] -- Detecting C compiler ABI info
+[0.470s] -- Detecting C compiler ABI info - done
+[0.483s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.484s] -- Detecting C compile features
+[0.485s] -- Detecting C compile features - done
+[0.495s] -- Detecting CXX compiler ABI info
+[0.601s] -- Detecting CXX compiler ABI info - done
+[0.612s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.613s] -- Detecting CXX compile features
+[0.613s] -- Detecting CXX compile features - done
+[0.620s] -- Found ament_cmake: 2.5.5 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.763s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.868s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.910s] -- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.927s] -- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.951s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.973s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.009s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[1.025s] -- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.269s] [31mCMake Error at /opt/ros/jazzy/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:57 (message):
+[1.269s]   execute_process(/usr/bin/python3 -m rosidl_adapter --package-name
+[1.270s]   user_interfaces --arguments-file
+[1.270s]   /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/user_interfaces/rosidl_adapter__arguments__user_interfaces.json
+[1.270s]   --output-dir
+[1.270s]   /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/user_interfaces/rosidl_adapter/user_interfaces
+[1.270s]   --output-file
+[1.270s]   /home/chacha/code/repo/ChaChaOpen/ros2_prj/ros2_stu_ws/build/user_interfaces/rosidl_adapter/user_interfaces.idls)
+[1.270s]   returned error code 1:
+[1.270s] 
+[1.270s]   Error processing 'int cout' of 'user_interfaces/user': ''int' is an invalid
+[1.271s]   message name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$''
+[1.271s] 
+[1.271s]   Traceback (most recent call last):
+[1.271s] 
+[1.271s]     File "<frozen runpy>", line 198, in _run_module_as_main
+[1.271s]     File "<frozen runpy>", line 88, in _run_code
+[1.271s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[1.272s]       sys.exit(main())
+[1.272s]                ^^^^^^
+[1.272s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/main.py", line 53, in main
+[1.272s]       abs_idl_file = convert_to_idl(
+[1.272s]                      ^^^^^^^^^^^^^^^
+[1.272s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[1.272s]       return convert_msg_to_idl(
+[1.272s]              ^^^^^^^^^^^^^^^^^^^
+[1.272s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[1.273s]       msg = parse_message_string(package_name, input_file.stem, content)
+[1.273s]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1.273s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 521, in parse_message_string
+[1.273s]       Type(type_string, context_package_name=pkg_name),
+[1.273s]       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1.273s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 278, in __init__
+[1.273s]       super(Type, self).__init__(
+[1.273s]     File "/opt/ros/jazzy/lib/python3.12/site-packages/rosidl_adapter/parser.py", line 206, in __init__
+[1.273s]       raise InvalidResourceName(
+[1.274s] 
+[1.274s]   rosidl_adapter.parser.InvalidResourceName: 'int' is an invalid message
+[1.274s]   name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[1.274s] 
+[1.274s] Call Stack (most recent call first):
+[1.274s]   /opt/ros/jazzy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:132 (rosidl_adapt_interfaces)
+[1.274s]   CMakeLists.txt:16 (rosidl_generate_interfaces)
+[1.274s] 
+[1.274s] [0m
+[1.275s] -- Configuring incomplete, errors occurred!
