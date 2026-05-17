@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/slsa_mm_parameter_tuning/R2021b">
+  <slsa.mm.parametertuning.VariableRegistry type="slsa.mm.parametertuning.VariableRegistry" uuid="4d66af22-37f8-43e5-ade6-b1b97740bf3e">
+    <name>sm1</name>
+  </slsa.mm.parametertuning.VariableRegistry>
+</MF0>
