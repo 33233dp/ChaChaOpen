@@ -3,6 +3,6 @@ https://fishros.com/d2lros2foxy/#/
 ![[Pasted image 20260416165106.png]]
 
 
-[[_1_ROS2基础]]
-[[_2_通信机制]]
+[[1.ROS2基础]]
+[[2.通信机制]]
 
