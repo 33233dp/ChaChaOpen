@@ -469,6 +469,198 @@ a {
   opacity: 0.4;
 }
 
+.episodes-panel {
+  display: grid;
+  gap: 18px;
+  padding: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 28px;
+  background: rgba(8, 16, 28, 0.78);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+}
+
+.episodes-panel__head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  gap: 16px;
+  align-items: center;
+}
+
+.episodes-panel__eyebrow {
+  margin: 0 0 8px;
+  color: var(--accent);
+  font-size: 0.82rem;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+}
+
+.episodes-panel__title h2 {
+  margin: 0;
+  font-size: 1.34rem;
+}
+
+.episodes-panel__status {
+  display: grid;
+  gap: 6px;
+  justify-items: end;
+}
+
+.episodes-panel__status-label {
+  color: var(--text-soft);
+  font-size: 0.88rem;
+}
+
+.episodes-panel__status-value {
+  padding: 8px 14px;
+  border: 1px solid rgba(74, 213, 198, 0.24);
+  border-radius: 999px;
+  background: rgba(74, 213, 198, 0.08);
+  color: var(--text);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.episodes-panel__config-toggle,
+.episodes-config__save {
+  padding: 12px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--text);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.episodes-panel__config-toggle:hover,
+.episodes-panel__config-toggle:focus-visible,
+.episodes-config__save:hover,
+.episodes-config__save:focus-visible {
+  transform: translateY(-1px);
+  border-color: rgba(74, 213, 198, 0.42);
+}
+
+.episodes-panel__config-toggle.is-active {
+  background: linear-gradient(135deg, var(--accent), #2ea3c6);
+  color: #041019;
+  border-color: transparent;
+}
+
+.episodes-config {
+  display: grid;
+  gap: 18px;
+  padding: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.episodes-config[hidden] {
+  display: none;
+}
+
+.episodes-config__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.episodes-config__field {
+  display: grid;
+  gap: 10px;
+}
+
+.episodes-config__field span {
+  color: var(--text-soft);
+  font-size: 0.92rem;
+}
+
+.episodes-config__field input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  background: rgba(6, 13, 22, 0.9);
+  color: var(--text);
+  font: inherit;
+  outline: none;
+  transition: border-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+
+.episodes-config__field input:focus {
+  border-color: rgba(74, 213, 198, 0.65);
+  transform: translateY(-1px);
+  box-shadow: 0 0 0 4px rgba(74, 213, 198, 0.08);
+}
+
+.episodes-config__field input[readonly] {
+  color: var(--text-soft);
+  cursor: default;
+}
+
+.episodes-config__actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.episodes-config__save {
+  background: linear-gradient(135deg, var(--accent), #2ea3c6);
+  border-color: transparent;
+  color: #041019;
+}
+
+.episodes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
+  gap: 14px;
+}
+
+.episode-card,
+.episodes-empty {
+  display: grid;
+  gap: 10px;
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(11, 20, 36, 0.78), rgba(5, 10, 18, 0.92));
+  box-shadow: 0 18px 32px rgba(0, 0, 0, 0.22);
+}
+
+.episode-card {
+  transition: transform 180ms ease, border-color 180ms ease;
+}
+
+.episode-card:hover,
+.episode-card:focus-visible {
+  transform: translateY(-4px);
+  border-color: rgba(74, 213, 198, 0.45);
+}
+
+.episode-card--active {
+  border-color: rgba(74, 213, 198, 0.5);
+  background: linear-gradient(180deg, rgba(29, 59, 72, 0.78), rgba(8, 18, 26, 0.94));
+}
+
+.episode-card__roman {
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.episode-card__label,
+.episodes-empty {
+  color: var(--text-soft);
+}
+
+.episodes-empty {
+  margin: 0;
+  place-items: center;
+  min-height: 112px;
+  text-align: center;
+}
+
 .info-panel {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -540,6 +732,15 @@ a {
   .detail-hero,
   .info-panel {
     grid-template-columns: 1fr;
+  }
+
+  .episodes-panel__head,
+  .episodes-config__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .episodes-panel__status {
+    justify-items: start;
   }
 
   .detail-copy__synopsis {

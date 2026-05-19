@@ -119,3 +119,26 @@ if (playbackForm instanceof HTMLFormElement) {
     syncEditingState();
   }
 }
+
+const episodesPanel = document.querySelector("[data-episodes-panel]");
+
+if (episodesPanel instanceof HTMLElement) {
+  const configToggle = episodesPanel.querySelector("[data-episodes-config-toggle]");
+  const configForm = episodesPanel.querySelector("[data-episodes-config-form]");
+
+  if (
+    configToggle instanceof HTMLButtonElement &&
+    configForm instanceof HTMLFormElement
+  ) {
+    const syncConfigState = (open) => {
+      configForm.hidden = !open;
+      configToggle.setAttribute("aria-expanded", open ? "true" : "false");
+      configToggle.classList.toggle("is-active", open);
+    };
+
+    syncConfigState(false);
+    configToggle.addEventListener("click", () => {
+      syncConfigState(configForm.hidden);
+    });
+  }
+}
