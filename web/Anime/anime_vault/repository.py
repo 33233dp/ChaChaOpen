@@ -139,6 +139,62 @@ def get_anime(slug: str) -> dict[str, Any] | None:
     return None
 
 
+def anime_exists(slug: str) -> bool:
+    return get_anime(slug) is not None
+
+
+def create_anime(record: dict[str, Any]) -> None:
+    with sqlite3.connect(DB_PATH) as connection:
+        connection.execute(
+            """
+            INSERT INTO anime (
+                slug,
+                title,
+                subtitle,
+                release_info,
+                studio,
+                synopsis,
+                cast_json,
+                keywords_json,
+                poster_path,
+                still_path,
+                sources_json,
+                playback_url,
+                episode_count,
+                episode_root_domain,
+                episode_route,
+                episode_query_prefix,
+                episode_start_number,
+                episode_other,
+                last_played_episode
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            """,
+            (
+                record["slug"],
+                record["title"],
+                record["subtitle"],
+                record["release_info"],
+                record["studio"],
+                record["synopsis"],
+                json.dumps(record["cast"], ensure_ascii=False),
+                json.dumps(record["keywords"], ensure_ascii=False),
+                record["poster_path"],
+                record["still_path"],
+                json.dumps(record["sources"], ensure_ascii=False),
+                record["playback_url"],
+                record["episode_count"],
+                record["episode_root_domain"],
+                record["episode_route"],
+                record["episode_query_prefix"],
+                record["episode_start_number"],
+                record["episode_other"],
+                record["last_played_episode"],
+            ),
+        )
+        connection.commit()
+    load_catalog.cache_clear()
+
+
 def save_playback_url(slug: str, playback_url: str) -> None:
     with sqlite3.connect(DB_PATH) as connection:
         connection.execute(

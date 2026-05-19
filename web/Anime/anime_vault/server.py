@@ -10,6 +10,7 @@ from .config import BASE_DIR
 from .renderers import (
     asset_url,
     compose_episode_url,
+    render_anime_form_page,
     render_card,
     render_chip_list,
     render_episode_section,
@@ -18,6 +19,8 @@ from .renderers import (
     render_template,
 )
 from .repository import (
+    anime_exists,
+    create_anime,
     get_anime,
     load_catalog,
     record_last_played_episode,
@@ -43,6 +46,9 @@ class AnimeRequestHandler(SimpleHTTPRequestHandler):
     def do_POST(self) -> None:
         parsed = urlparse(self.path)
         route = unquote(parsed.path)
+        if route == "/anime/create":
+            self.create_anime_entry()
+            return
         if route.startswith("/anime/") and route.endswith("/playback-url"):
             slug = route.removeprefix("/anime/").removesuffix("/playback-url").strip("/")
             if slug:
@@ -60,6 +66,9 @@ class AnimeRequestHandler(SimpleHTTPRequestHandler):
         route = unquote(parsed.path)
         if route == "/":
             self.render_home(include_body=include_body)
+            return True
+        if route == "/anime/new":
+            self.render_anime_form(include_body=include_body)
             return True
         if route.startswith("/anime/"):
             inner_route = route.removeprefix("/anime/").strip("/")
@@ -83,6 +92,15 @@ class AnimeRequestHandler(SimpleHTTPRequestHandler):
                 "POSTER_CARDS": cards,
             },
         )
+        self.respond_html(page, include_body=include_body)
+
+    def render_anime_form(
+        self,
+        include_body: bool = True,
+        values: dict[str, str] | None = None,
+        error_message: str = "",
+    ) -> None:
+        page = render_anime_form_page(values or {}, error_message)
         self.respond_html(page, include_body=include_body)
 
     def render_detail(self, slug: str, include_body: bool = True) -> None:
@@ -120,6 +138,85 @@ class AnimeRequestHandler(SimpleHTTPRequestHandler):
         playback_url = form_data.get("playback_url", [""])[0].strip()
         save_playback_url(slug, playback_url)
         self.redirect(f"/anime/{quote(slug)}", HTTPStatus.SEE_OTHER)
+
+    def create_anime_entry(self) -> None:
+        form_data = self.read_form_data()
+
+        def field(name: str, default: str = "") -> str:
+            return form_data.get(name, [default])[0].strip()
+
+        values = {
+            "slug": field("slug"),
+            "title": field("title"),
+            "subtitle": field("subtitle"),
+            "release_info": field("release_info"),
+            "studio": field("studio"),
+            "poster_path": field("poster_path"),
+            "still_path": field("still_path"),
+            "playback_url": field("playback_url"),
+            "synopsis": field("synopsis"),
+            "cast_text": field("cast_text"),
+            "keyword_text": field("keyword_text"),
+            "source_text": field("source_text"),
+            "episode_count": field("episode_count", "0"),
+            "episode_root_domain": field("episode_root_domain"),
+            "episode_route": field("episode_route"),
+            "episode_query_prefix": field("episode_query_prefix"),
+            "episode_start_number": field("episode_start_number", "1"),
+            "episode_other": field("episode_other"),
+        }
+
+        if not values["slug"] or not values["title"] or not values["poster_path"] or not values["still_path"]:
+            self.render_anime_form(
+                values=values,
+                error_message="slug、番剧名、海报路径和详情页剧照/背景图路径为必填项。",
+            )
+            return
+
+        if anime_exists(values["slug"]):
+            self.render_anime_form(
+                values=values,
+                error_message="该 slug 已存在，请换一个唯一标识。",
+            )
+            return
+
+        try:
+            episode_count = max(0, int(values["episode_count"] or "0"))
+        except ValueError:
+            episode_count = 0
+        try:
+            episode_start_number = int(values["episode_start_number"] or "1")
+        except ValueError:
+            episode_start_number = 1
+
+        cast = self.parse_lines(values["cast_text"])
+        keywords = self.parse_tag_lines(values["keyword_text"])
+        sources = self.parse_sources(values["source_text"])
+
+        create_anime(
+            {
+                "slug": values["slug"],
+                "title": values["title"],
+                "subtitle": values["subtitle"],
+                "release_info": values["release_info"],
+                "studio": values["studio"],
+                "synopsis": values["synopsis"],
+                "cast": cast,
+                "keywords": keywords,
+                "poster_path": values["poster_path"],
+                "still_path": values["still_path"],
+                "sources": sources,
+                "playback_url": values["playback_url"],
+                "episode_count": episode_count,
+                "episode_root_domain": values["episode_root_domain"],
+                "episode_route": values["episode_route"],
+                "episode_query_prefix": values["episode_query_prefix"],
+                "episode_start_number": episode_start_number,
+                "episode_other": values["episode_other"],
+                "last_played_episode": 0,
+            }
+        )
+        self.redirect(f"/anime/{quote(values['slug'])}", HTTPStatus.SEE_OTHER)
 
     def update_episode_config(self, slug: str) -> None:
         if get_anime(slug) is None:
@@ -174,6 +271,32 @@ class AnimeRequestHandler(SimpleHTTPRequestHandler):
         content_length = int(self.headers.get("Content-Length", "0") or 0)
         payload = self.rfile.read(content_length).decode("utf-8") if content_length else ""
         return parse_qs(payload, keep_blank_values=True)
+
+    def parse_lines(self, raw_text: str) -> list[str]:
+        return [line.strip() for line in raw_text.splitlines() if line.strip()]
+
+    def parse_tag_lines(self, raw_text: str) -> list[str]:
+        normalized = raw_text.replace("，", ",")
+        items: list[str] = []
+        for block in normalized.splitlines():
+            for item in block.split(","):
+                cleaned = item.strip()
+                if cleaned:
+                    items.append(cleaned)
+        return items
+
+    def parse_sources(self, raw_text: str) -> list[dict[str, str]]:
+        sources: list[dict[str, str]] = []
+        for line in raw_text.splitlines():
+            cleaned = line.strip()
+            if not cleaned:
+                continue
+            if "|" in cleaned:
+                label, url = cleaned.split("|", 1)
+                sources.append({"label": label.strip(), "url": url.strip()})
+            else:
+                sources.append({"label": cleaned, "url": cleaned})
+        return sources
 
     def redirect(self, location: str, status: HTTPStatus) -> None:
         self.send_response(status)

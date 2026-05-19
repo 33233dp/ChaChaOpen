@@ -47,6 +47,41 @@ def render_card(anime: dict[str, Any]) -> str:
     """.strip()
 
 
+def render_anime_form_page(values: dict[str, str], error_message: str = "") -> str:
+    context = {
+        "ERROR_BANNER": (
+            f'<p class="editor-error">{html.escape(error_message)}</p>'
+            if error_message
+            else ""
+        ),
+        "SLUG": html.escape(values.get("slug", ""), quote=True),
+        "TITLE": html.escape(values.get("title", ""), quote=True),
+        "SUBTITLE": html.escape(values.get("subtitle", ""), quote=True),
+        "RELEASE_INFO": html.escape(values.get("release_info", ""), quote=True),
+        "STUDIO": html.escape(values.get("studio", ""), quote=True),
+        "POSTER_PATH": html.escape(values.get("poster_path", ""), quote=True),
+        "STILL_PATH": html.escape(values.get("still_path", ""), quote=True),
+        "PLAYBACK_URL": html.escape(values.get("playback_url", ""), quote=True),
+        "SYNOPSIS": html.escape(values.get("synopsis", "")),
+        "CAST_TEXT": html.escape(values.get("cast_text", "")),
+        "KEYWORD_TEXT": html.escape(values.get("keyword_text", "")),
+        "SOURCE_TEXT": html.escape(values.get("source_text", "")),
+        "EPISODE_COUNT": html.escape(values.get("episode_count", "0"), quote=True),
+        "EPISODE_ROOT_DOMAIN": html.escape(
+            values.get("episode_root_domain", ""), quote=True
+        ),
+        "EPISODE_ROUTE": html.escape(values.get("episode_route", ""), quote=True),
+        "EPISODE_QUERY_PREFIX": html.escape(
+            values.get("episode_query_prefix", ""), quote=True
+        ),
+        "EPISODE_START_NUMBER": html.escape(
+            values.get("episode_start_number", "1"), quote=True
+        ),
+        "EPISODE_OTHER": html.escape(values.get("episode_other", ""), quote=True),
+    }
+    return render_template("anime_form.html", context)
+
+
 def render_chip_list(items: list[str], variant: str) -> str:
     return "\n".join(
         f'<li class="{variant}-chip">{html.escape(item)}</li>' for item in items

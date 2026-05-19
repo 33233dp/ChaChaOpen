@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>新增番剧 - Anime Vault</title>
+  <meta name="description" content="新增番剧配置页面。">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body class="anime-form-page">
+  <div class="page-shell">
+    <header class="detail-nav">
+      <a class="back-link" href="/">返回海报墙</a>
+      <p class="eyebrow">NEW ANIME</p>
+    </header>
+
+    <main class="editor-layout">
+      <section class="editor-panel">
+        <div class="editor-panel__head">
+          <div>
+            <p class="section-head__eyebrow">Create Entry</p>
+            <h1>新增番剧</h1>
+          </div>
+          <p class="editor-panel__hint">图片路径建议填写项目内相对路径，例如 `poster/新番剧.webp`。</p>
+        </div>
+
+        {{ERROR_BANNER}}
+
+        <form class="editor-form" method="post" action="/anime/create">
+          <section class="editor-section">
+            <div class="editor-section__head">
+              <h2>基本信息</h2>
+              <p>填写详情页展示所需的全部内容。</p>
+            </div>
+
+            <div class="editor-grid">
+              <label class="editor-field">
+                <span>唯一标识 slug</span>
+                <input name="slug" type="text" required value="{{SLUG}}" placeholder="例如 my-new-anime">
+              </label>
+              <label class="editor-field">
+                <span>番剧名</span>
+                <input name="title" type="text" required value="{{TITLE}}">
+              </label>
+              <label class="editor-field">
+                <span>副标题</span>
+                <input name="subtitle" type="text" value="{{SUBTITLE}}">
+              </label>
+              <label class="editor-field">
+                <span>发行信息</span>
+                <input name="release_info" type="text" value="{{RELEASE_INFO}}" placeholder="例如 2024 · Studio Name">
+              </label>
+              <label class="editor-field">
+                <span>制作公司</span>
+                <input name="studio" type="text" value="{{STUDIO}}">
+              </label>
+              <label class="editor-field">
+                <span>海报路径</span>
+                <input name="poster_path" type="text" required value="{{POSTER_PATH}}" placeholder="poster/example.webp">
+              </label>
+              <label class="editor-field">
+                <span>详情页剧照/背景图路径</span>
+                <input name="still_path" type="text" required value="{{STILL_PATH}}" placeholder="Stills/example.webp">
+              </label>
+              <label class="editor-field editor-field--wide">
+                <span>播放地址</span>
+                <input name="playback_url" type="text" value="{{PLAYBACK_URL}}">
+              </label>
+              <label class="editor-field editor-field--wide">
+                <span>简介</span>
+                <textarea name="synopsis" rows="6">{{SYNOPSIS}}</textarea>
+              </label>
+              <label class="editor-field">
+                <span>剧集演员</span>
+                <textarea name="cast_text" rows="8" placeholder="每行一条，例如：&#10;主角 / 声优">{{CAST_TEXT}}</textarea>
+              </label>
+              <label class="editor-field">
+                <span>关键词</span>
+                <textarea name="keyword_text" rows="8" placeholder="每行一个关键词，或用逗号分隔">{{KEYWORD_TEXT}}</textarea>
+              </label>
+              <label class="editor-field editor-field--wide">
+                <span>资料来源</span>
+                <textarea name="source_text" rows="6" placeholder="每行一条，格式：标签 | URL">{{SOURCE_TEXT}}</textarea>
+              </label>
+            </div>
+          </section>
+
+          <section class="editor-section">
+            <div class="editor-section__head">
+              <h2>剧集信息</h2>
+              <p>配置方式和详情页中的“剧集 -> 配置”一致。</p>
+            </div>
+
+            <div class="editor-grid">
+              <label class="editor-field">
+                <span>总集数</span>
+                <input name="episode_count" type="number" min="0" step="1" value="{{EPISODE_COUNT}}">
+              </label>
+              <label class="editor-field">
+                <span>根域名</span>
+                <input name="episode_root_domain" type="text" value="{{EPISODE_ROOT_DOMAIN}}">
+              </label>
+              <label class="editor-field">
+                <span>路由</span>
+                <input name="episode_route" type="text" value="{{EPISODE_ROUTE}}">
+              </label>
+              <label class="editor-field">
+                <span>查询参数前缀</span>
+                <input name="episode_query_prefix" type="text" value="{{EPISODE_QUERY_PREFIX}}">
+              </label>
+              <label class="editor-field">
+                <span>集数查询偏移</span>
+                <input name="episode_start_number" type="number" step="1" value="{{EPISODE_START_NUMBER}}">
+              </label>
+              <label class="editor-field">
+                <span>集数</span>
+                <input type="text" value="自动生成" readonly>
+              </label>
+              <label class="editor-field editor-field--wide">
+                <span>其他</span>
+                <input name="episode_other" type="text" value="{{EPISODE_OTHER}}">
+              </label>
+            </div>
+          </section>
+
+          <div class="editor-actions">
+            <button class="editor-submit" type="submit">创建番剧</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

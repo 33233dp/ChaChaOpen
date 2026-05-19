@@ -116,6 +116,27 @@ a {
   gap: 14px;
 }
 
+.quick-create-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 0 18px;
+  border: 1px solid rgba(74, 213, 198, 0.28);
+  border-radius: 16px;
+  background: rgba(74, 213, 198, 0.08);
+  color: var(--accent);
+  font-weight: 700;
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+}
+
+.quick-create-link:hover,
+.quick-create-link:focus-visible {
+  transform: translateY(-1px);
+  border-color: rgba(74, 213, 198, 0.55);
+  background: rgba(74, 213, 198, 0.14);
+}
+
 .search-box {
   display: grid;
   gap: 10px;
@@ -260,6 +281,10 @@ a {
 .detail-page {
   position: relative;
   overflow-x: hidden;
+}
+
+.anime-form-page {
+  position: relative;
 }
 
 .detail-backdrop,
@@ -661,6 +686,130 @@ a {
   text-align: center;
 }
 
+.editor-layout {
+  margin-top: 26px;
+}
+
+.editor-panel {
+  display: grid;
+  gap: 22px;
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 28px;
+  background: linear-gradient(135deg, rgba(8, 16, 28, 0.72), rgba(8, 16, 29, 0.92));
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+}
+
+.editor-panel__head {
+  display: grid;
+  gap: 10px;
+}
+
+.editor-panel__head h1,
+.editor-section__head h2 {
+  margin: 0;
+}
+
+.editor-panel__hint,
+.editor-section__head p,
+.editor-field span,
+.editor-field textarea::placeholder,
+.editor-field input::placeholder {
+  color: var(--text-soft);
+}
+
+.editor-error {
+  margin: 0;
+  padding: 16px 18px;
+  border: 1px solid rgba(255, 115, 115, 0.24);
+  border-radius: 18px;
+  background: rgba(255, 115, 115, 0.08);
+  color: #ffd3d3;
+}
+
+.editor-form,
+.editor-section {
+  display: grid;
+  gap: 18px;
+}
+
+.editor-section {
+  padding: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.editor-section__head {
+  display: grid;
+  gap: 8px;
+}
+
+.editor-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.editor-field {
+  display: grid;
+  gap: 10px;
+}
+
+.editor-field--wide {
+  grid-column: 1 / -1;
+}
+
+.editor-field input,
+.editor-field textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  background: rgba(6, 13, 22, 0.9);
+  color: var(--text);
+  font: inherit;
+  outline: none;
+  resize: vertical;
+  transition: border-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+
+.editor-field input:focus,
+.editor-field textarea:focus {
+  border-color: rgba(74, 213, 198, 0.65);
+  transform: translateY(-1px);
+  box-shadow: 0 0 0 4px rgba(74, 213, 198, 0.08);
+}
+
+.editor-field input[readonly] {
+  color: var(--text-soft);
+  cursor: default;
+}
+
+.editor-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.editor-submit {
+  padding: 13px 22px;
+  border: 0;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--accent), #2ea3c6);
+  color: #041019;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform 180ms ease, opacity 180ms ease;
+}
+
+.editor-submit:hover,
+.editor-submit:focus-visible {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
 .info-panel {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -735,7 +884,8 @@ a {
   }
 
   .episodes-panel__head,
-  .episodes-config__grid {
+  .episodes-config__grid,
+  .editor-grid {
     grid-template-columns: 1fr;
   }
 
